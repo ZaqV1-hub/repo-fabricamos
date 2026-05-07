@@ -8,7 +8,7 @@ class Fabricamos_Native {
 	const ROLE = 'fabricante';
 	const MENU_LOCATION = 'fabricamos_native_menu';
 	const MENU_NAME = 'Fabricamos';
-	const MENU_VERSION = 2;
+	const MENU_VERSION = 3;
 	const OPTION_MAIL_TO = 'fabricamos_native_mail_to';
 	const OPTION_ANNOUNCE_MAIL_TO = 'fabricamos_native_announce_mail_to';
 	const OPTION_PANEL_LOGIN_EMAIL = 'fabricamos_native_panel_login_email';
