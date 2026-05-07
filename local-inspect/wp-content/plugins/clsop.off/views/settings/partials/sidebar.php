@@ -1,0 +1,61 @@
+<?php
+/**
+ * Source file was changed by CloudLinux on Wed Jul 02 14:54:30 2025 +0000
+ * Sidebar template.
+ *
+ * @since 3.0
+ */
+
+defined( 'ABSPATH' ) || exit;
+
+?>
+
+<h3 class="wpr-Sidebar-title wpr-title2"><?php esc_html_e( 'How to correctly measure your website’s loading time', 'rocket' ); ?></h3>
+<?php
+/*
+CL.
+<div class="wpr-Sidebar-notice">
+	<p><?php esc_html_e( 'Check our tutorial and learn how to measure the speed of your site.', 'rocket' ); ?></p>
+	<a href="<?php echo esc_url( 'https://docs.cloudlinux.com/user-docs/user-docs-shared-pro-cloudlinux/#acceleratewp' ); ?>" target="_blank" rel="noopener" class="wpr-Sidebar-notice-link"><?php esc_html_e( 'Read our guide', 'rocket' ); ?></a>
+</div>
+*/
+?>
+<?php
+	/*
+	CL.
+<div class="wpr-Sidebar-notice">
+	<p>
+	esc_html_e( 'Learn about optimal AccelerateWP settings for mobile.', 'rocket' ); ?></p>
+	<?php
+	$rocket_mobile_doc_url = false !== strpos( get_locale(), 'fr' )
+			? 'https://docs.cloudlinux.com/user-docs/user-docs-shared-pro-cloudlinux/#acceleratewp'
+			: 'https://docs.cloudlinux.com/user-docs/user-docs-shared-pro-cloudlinux/#acceleratewp'
+	?>
+	<a href="<?php echo esc_url( $rocket_mobile_doc_url ); ?>" target="_blank" class="wpr-Sidebar-notice-link"><?php esc_html_e( 'Read our guide', 'rocket' ); ?></a>
+</div>
+	*/
+?>
+<div class="wpr-Sidebar-notice">
+	<p><?php esc_html_e( 'Test and Improve Google Core Web Vitals for WordPress.', 'rocket' ); ?></p>
+	<?php
+	/*
+	CL.
+	<a href="<?php echo esc_url( 'https://docs.cloudlinux.com/user-docs/user-docs-shared-pro-cloudlinux/#acceleratewp' ); ?>" target="_blank" class="wpr-Sidebar-notice-link"><?php esc_html_e( 'Read more', 'rocket' ); ?></a>
+	*/
+	?>
+</div>
+<?php if ( ! get_rocket_option( 'cache_logged_user', 0 ) ) : ?>
+<div class="wpr-Sidebar-info">
+	<i class="wpr-icon-information2"></i>
+	<h4><?php esc_html_e( 'You have not activated logged-in user cache.', 'rocket' ); ?></h4>
+	<p><?php esc_html_e( 'Use a private browser to check your website\'s speed and visual appearance.', 'rocket' ); ?></p>
+</div>
+<?php endif; ?>
+<div class="wpr-Sidebar-info">
+	<?php $this->render_part( 'documentation-sidebar' ); ?>
+</div>
+<?php
+/*
+CL.
+$this->render_part( 'documentation' );
+*/
