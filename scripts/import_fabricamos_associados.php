@@ -56,7 +56,7 @@ $unmatchedSubstances = 0;
 $rowsImported = 0;
 
 foreach ($companies as $item) {
-    $company = normalize_text((string) array_get($item, 'company', ''));
+    $company = canonical_company_name(normalize_text((string) array_get($item, 'company', '')));
     if ($company === '') {
         continue;
     }
@@ -136,6 +136,8 @@ foreach ($companies as $item) {
         $updated++;
     }
 
+    deactivate_duplicate_manufacturers($manufacturerId, $company);
+
     update_post_meta($manufacturerId, 'fab_associate_status', $associateStatus);
     update_post_meta($manufacturerId, 'fab_processo', implode(' / ', $processes));
     update_post_meta($manufacturerId, 'fab_origem', implode(' / ', $origins));
@@ -144,9 +146,9 @@ foreach ($companies as $item) {
     sync_post_meta_text($manufacturerId, 'fab_responsavel_nome', $responsibleName);
     sync_post_meta_text($manufacturerId, 'fab_responsavel_telefone', $responsiblePhone);
     sync_post_meta_text($manufacturerId, 'fab_responsavel_email', $responsibleEmail);
-    sync_post_meta_text($manufacturerId, 'fab_contact_name', $responsibleName);
-    sync_post_meta_text($manufacturerId, 'fab_phone', $responsiblePhone);
-    sync_post_meta_text($manufacturerId, 'fab_email', $responsibleEmail);
+    sync_post_meta_text($manufacturerId, 'fab_contact_name', '');
+    sync_post_meta_text($manufacturerId, 'fab_phone', '');
+    sync_post_meta_text($manufacturerId, 'fab_email', '');
     sync_post_meta_text($manufacturerId, 'fab_source_workbook', $sourceWorkbook);
     sync_post_meta_text($manufacturerId, 'fab_source_sheet', $sourceSheet);
     sync_post_meta_text($manufacturerId, 'fab_source_updated_label', $sourceUpdatedLabel);
@@ -235,30 +237,96 @@ function parse_cli_options($args)
     return $options;
 }
 
+function canonical_company_name($title)
+{
+    if (normalize_title_lookup($title) === 'cristalia produtos quimicos farmaceutico ltda.') {
+        return 'CRISTÁLIA PRODUTOS QUÍMICOS FARMACEUTICOS Ltda.';
+    }
+
+    return $title;
+}
+
+function manufacturer_title_aliases($title)
+{
+    $canonical = canonical_company_name($title);
+    $aliases = array($canonical);
+
+    if ($canonical === 'CRISTÁLIA PRODUTOS QUÍMICOS FARMACEUTICOS Ltda.') {
+        $aliases[] = 'CRISTÁLIA PRODUTOS QUÍMICOS FARMACĘUTICO Ltda.';
+        $aliases[] = 'CRISTÁLIA PRODUTOS QUÍMICOS FARMACÊUTICO Ltda.';
+    }
+
+    return array_values(array_unique($aliases));
+}
+
+function normalize_title_lookup($value)
+{
+    $value = strtolower(remove_accents((string) $value));
+    $value = preg_replace('/\s+/u', ' ', $value);
+    return trim((string) $value);
+}
+
 function find_manufacturer_by_title($title)
 {
-    $posts = get_posts(array(
-        'post_type' => 'fabricante',
-        'post_status' => array('publish', 'draft', 'pending', 'private'),
-        'posts_per_page' => 1,
-        'title' => $title,
-        'orderby' => 'ID',
-        'order' => 'ASC',
-        'suppress_filters' => false,
-    ));
+    $titles = manufacturer_title_aliases($title);
 
-    if (! empty($posts)) {
-        return (int) $posts[0]->ID;
+    foreach ($titles as $candidateTitle) {
+        $posts = get_posts(array(
+            'post_type' => 'fabricante',
+            'post_status' => array('publish', 'draft', 'pending', 'private'),
+            'posts_per_page' => 1,
+            'title' => $candidateTitle,
+            'orderby' => 'ID',
+            'order' => 'ASC',
+            'suppress_filters' => false,
+        ));
+
+        if (! empty($posts)) {
+            return (int) $posts[0]->ID;
+        }
     }
 
     global $wpdb;
-    $postId = $wpdb->get_var($wpdb->prepare(
-        "SELECT ID FROM {$wpdb->posts} WHERE post_type = %s AND post_status IN ('publish','draft','pending','private') AND post_title = %s ORDER BY ID ASC LIMIT 1",
-        'fabricante',
-        $title
-    ));
+    foreach ($titles as $candidateTitle) {
+        $postId = $wpdb->get_var($wpdb->prepare(
+            "SELECT ID FROM {$wpdb->posts} WHERE post_type = %s AND post_status IN ('publish','draft','pending','private') AND post_title = %s ORDER BY ID ASC LIMIT 1",
+            'fabricante',
+            $candidateTitle
+        ));
 
-    return $postId ? (int) $postId : 0;
+        if ($postId) {
+            return (int) $postId;
+        }
+    }
+
+    return 0;
+}
+
+function deactivate_duplicate_manufacturers($primaryId, $title)
+{
+    $titles = manufacturer_title_aliases($title);
+    foreach ($titles as $candidateTitle) {
+        $posts = get_posts(array(
+            'post_type' => 'fabricante',
+            'post_status' => array('publish', 'draft', 'pending', 'private'),
+            'posts_per_page' => -1,
+            'title' => $candidateTitle,
+            'orderby' => 'ID',
+            'order' => 'ASC',
+            'suppress_filters' => false,
+        ));
+
+        foreach ($posts as $post) {
+            if ((int) $post->ID === (int) $primaryId) {
+                continue;
+            }
+
+            wp_update_post(array(
+                'ID' => (int) $post->ID,
+                'post_status' => 'draft',
+            ));
+        }
+    }
 }
 
 function ensure_editor_account(

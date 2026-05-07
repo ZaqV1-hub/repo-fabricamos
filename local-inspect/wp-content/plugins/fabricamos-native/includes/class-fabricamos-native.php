@@ -2365,9 +2365,12 @@ class Fabricamos_Native {
 		}
 
 		$this->update_manufacturer_field( $manufacturer->ID, 'field_fab_description', 'fab_description', $description );
-		$this->update_manufacturer_field( $manufacturer->ID, 'field_fab_contact_name', 'fab_contact_name', $name );
-		$this->update_manufacturer_field( $manufacturer->ID, 'field_fab_phone', 'fab_phone', $phone );
-		$this->update_manufacturer_field( $manufacturer->ID, 'field_fab_email', 'fab_email', $email );
+		update_post_meta( $manufacturer->ID, 'fab_responsavel_nome', $name );
+		update_post_meta( $manufacturer->ID, 'fab_responsavel_telefone', $phone );
+		update_post_meta( $manufacturer->ID, 'fab_responsavel_email', $email );
+		$this->update_manufacturer_field( $manufacturer->ID, 'field_fab_contact_name', 'fab_contact_name', '' );
+		$this->update_manufacturer_field( $manufacturer->ID, 'field_fab_phone', 'fab_phone', '' );
+		$this->update_manufacturer_field( $manufacturer->ID, 'field_fab_email', 'fab_email', '' );
 		$this->update_manufacturer_field( $manufacturer->ID, 'field_fab_site', 'fab_site', $site );
 		$this->update_manufacturer_field( $manufacturer->ID, 'field_fab_substances', 'fab_substances', $substance_submission['matched_ids'] );
 		update_post_meta( $manufacturer->ID, 'fab_compiled_substances', $substance_submission['compiled'] );
@@ -2474,9 +2477,12 @@ class Fabricamos_Native {
 		}
 
 		$this->update_manufacturer_field( $manufacturer_id, 'field_fab_description', 'fab_description', $description );
-		$this->update_manufacturer_field( $manufacturer_id, 'field_fab_contact_name', 'fab_contact_name', $name );
-		$this->update_manufacturer_field( $manufacturer_id, 'field_fab_phone', 'fab_phone', $phone );
-		$this->update_manufacturer_field( $manufacturer_id, 'field_fab_email', 'fab_email', $email );
+		update_post_meta( $manufacturer_id, 'fab_responsavel_nome', $name );
+		update_post_meta( $manufacturer_id, 'fab_responsavel_telefone', $phone );
+		update_post_meta( $manufacturer_id, 'fab_responsavel_email', $email );
+		$this->update_manufacturer_field( $manufacturer_id, 'field_fab_contact_name', 'fab_contact_name', '' );
+		$this->update_manufacturer_field( $manufacturer_id, 'field_fab_phone', 'fab_phone', '' );
+		$this->update_manufacturer_field( $manufacturer_id, 'field_fab_email', 'fab_email', '' );
 		$this->update_manufacturer_field( $manufacturer_id, 'field_fab_site', 'fab_site', $site );
 		$this->update_manufacturer_field( $manufacturer_id, 'field_fab_substances', 'fab_substances', $substance_submission['matched_ids'] );
 		update_post_meta( $manufacturer_id, 'fab_compiled_substances', $substance_submission['compiled'] );
@@ -2936,6 +2942,7 @@ class Fabricamos_Native {
 
 		foreach ( $manufacturers as $manufacturer ) {
 			$detail       = $this->get_manufacturer_detail( $manufacturer );
+			$editor       = $this->get_manufacturer_editor_detail( $manufacturer->ID );
 			$associate    = $this->get_manufacturer_meta_text( $manufacturer->ID, 'fab_associate_status' );
 			$process      = $this->get_manufacturer_meta_text( $manufacturer->ID, 'fab_processo' );
 			$origin       = $this->get_manufacturer_meta_text( $manufacturer->ID, 'fab_origem' );
@@ -2956,8 +2963,8 @@ class Fabricamos_Native {
 					'cas'           => $substance && ! empty( $substance['meta']['cas'] ) ? $substance['meta']['cas'] : '-',
 					'ncm'           => $substance && ! empty( $substance['meta']['ncm'] ) ? $substance['meta']['ncm'] : '-',
 					'certificate'   => $substance && ! empty( $substance['meta']['cbpf'] ) ? $substance['meta']['cbpf'] : '-',
-					'contact_name'  => $detail['contact_name'] ? $detail['contact_name'] : '-',
-					'phone'         => $detail['phone'] ? $detail['phone'] : '-',
+					'contact_name'  => $editor['name'] ? $editor['name'] : '-',
+					'phone'         => $editor['phone'] ? $editor['phone'] : '-',
 					'email'         => $login_email ? $login_email : '-',
 					'password'      => $has_password ? '••••••' : '-',
 					'edit_url'      => $this->panel_form_url( $manufacturer->ID ),
@@ -3228,9 +3235,36 @@ class Fabricamos_Native {
 		return false === strpos( $status, 'nao associado' );
 	}
 
+	protected function get_manufacturer_editor_detail( $post_id ) {
+		$name  = (string) get_post_meta( $post_id, 'fab_responsavel_nome', true );
+		$phone = (string) get_post_meta( $post_id, 'fab_responsavel_telefone', true );
+		$email = (string) get_post_meta( $post_id, 'fab_responsavel_email', true );
+
+		if ( '' === trim( $name ) ) {
+			$name = $this->get_manufacturer_field( $post_id, 'fab_contact_name' );
+		}
+		if ( '' === trim( $phone ) ) {
+			$phone = $this->get_manufacturer_field( $post_id, 'fab_phone' );
+		}
+		if ( '' === trim( $email ) ) {
+			$email = $this->get_manufacturer_field( $post_id, 'fab_email' );
+		}
+
+		return array(
+			'name'  => $name,
+			'phone' => $phone,
+			'email' => $email,
+		);
+	}
+
 	public function get_panel_form_context( $manufacturer_id = 0 ) {
 		$manufacturer = $manufacturer_id ? get_post( $manufacturer_id ) : null;
 		$detail       = $manufacturer instanceof WP_Post ? $this->get_manufacturer_detail( $manufacturer ) : null;
+		$editor       = $manufacturer instanceof WP_Post ? $this->get_manufacturer_editor_detail( $manufacturer->ID ) : array(
+			'name'  => '',
+			'phone' => '',
+			'email' => '',
+		);
 		$placeholder  = $this->editor_placeholder_image_url();
 
 		return array(
@@ -3240,9 +3274,9 @@ class Fabricamos_Native {
 			'process'        => $manufacturer instanceof WP_Post ? $this->get_manufacturer_meta_text( $manufacturer->ID, 'fab_processo' ) : '',
 			'origin'         => $manufacturer instanceof WP_Post ? $this->get_manufacturer_meta_text( $manufacturer->ID, 'fab_origem' ) : '',
 			'description'    => $detail ? $detail['description'] : '',
-			'contact_name'   => $detail ? $detail['contact_name'] : '',
-			'phone'          => $detail ? $detail['phone'] : '',
-			'email'          => $detail ? $detail['email'] : '',
+			'contact_name'   => $editor['name'],
+			'phone'          => $editor['phone'],
+			'email'          => $editor['email'],
 			'site'           => $detail ? $detail['site'] : '',
 			'image'          => $detail ? ( $detail['has_hero_image'] ? $detail['hero_image'] : $placeholder ) : $placeholder,
 			'has_image'      => $detail ? $detail['has_hero_image'] : false,
@@ -3509,16 +3543,7 @@ class Fabricamos_Native {
 		$site        = $this->get_manufacturer_field( $post->ID, 'fab_site' );
 		$hero        = $this->get_manufacturer_image_data( $post->ID, 'fab_hero_image' );
 		$logo        = $this->get_manufacturer_image_data( $post->ID, 'fab_logo' );
-
-		if ( '' === trim( (string) $name ) ) {
-			$name = get_post_meta( $post->ID, 'fab_responsavel_nome', true );
-		}
-		if ( '' === trim( (string) $phone ) ) {
-			$phone = get_post_meta( $post->ID, 'fab_responsavel_telefone', true );
-		}
-		if ( '' === trim( (string) $email ) ) {
-			$email = get_post_meta( $post->ID, 'fab_responsavel_email', true );
-		}
+		$editor      = $this->get_manufacturer_editor_detail( $post->ID );
 
 		return array(
 			'post'             => $post,
@@ -3527,6 +3552,9 @@ class Fabricamos_Native {
 			'contact_name'     => $name,
 			'phone'            => $phone,
 			'email'            => $email,
+			'editor_name'      => $editor['name'],
+			'editor_phone'     => $editor['phone'],
+			'editor_email'     => $editor['email'],
 			'site'             => $site,
 			'hero_image'       => ! empty( $hero['url'] ) ? $hero['url'] : $this->placeholder_image_url(),
 			'has_hero_image'   => ! empty( $hero['url'] ),

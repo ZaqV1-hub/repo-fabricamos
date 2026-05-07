@@ -69,18 +69,18 @@ include __DIR__ . '/partials/page-start.php';
 
 				<div class="fab-panel">
 					<div class="fab-form-stack">
-						<label class="fab-label-strong" for="fab-contact-name">Nome/Departamento</label>
-						<input id="fab-contact-name" class="fab-input" name="fab_contact_name" value="<?php echo esc_attr( $detail['contact_name'] ); ?>" />
+						<label class="fab-label-strong" for="fab-contact-name">Responsável pela edição</label>
+						<input id="fab-contact-name" class="fab-input" name="fab_contact_name" value="<?php echo esc_attr( $detail['editor_name'] ); ?>" />
 					</div>
 
 					<div class="fab-two-cols">
 						<div class="fab-form-stack">
-							<label class="fab-label-strong" for="fab-phone">Telefone</label>
-							<input id="fab-phone" class="fab-input" name="fab_phone" type="tel" inputmode="tel" placeholder="(11) 4000-1000" value="<?php echo esc_attr( $detail['phone'] ); ?>" />
+							<label class="fab-label-strong" for="fab-phone">Telefone do responsável</label>
+							<input id="fab-phone" class="fab-input" name="fab_phone" type="tel" inputmode="tel" placeholder="(11) 4000-1000" value="<?php echo esc_attr( $detail['editor_phone'] ); ?>" />
 						</div>
 						<div class="fab-form-stack">
-							<label class="fab-label-strong" for="fab-email">E-mail</label>
-							<input id="fab-email" class="fab-input" name="fab_email" type="email" value="<?php echo esc_attr( $detail['email'] ); ?>" />
+							<label class="fab-label-strong" for="fab-email">E-mail do responsável</label>
+							<input id="fab-email" class="fab-input" name="fab_email" type="email" value="<?php echo esc_attr( $detail['editor_email'] ); ?>" />
 						</div>
 					</div>
 

@@ -40,15 +40,15 @@ include __DIR__ . '/partials/page-start.php';
 			<div class="fab-contact-grid">
 				<div class="fab-contact-row">
 					<strong>Nome/Departamento:</strong>
-					<span><?php echo esc_html( $detail['contact_name'] ? $detail['contact_name'] : '-' ); ?></span>
+					<span><?php echo esc_html( $detail['contact_name'] ); ?></span>
 				</div>
 				<div class="fab-contact-row">
 					<strong>Telefone:</strong>
-					<span><?php echo esc_html( $detail['phone'] ? $detail['phone'] : '-' ); ?></span>
+					<span><?php echo esc_html( $detail['phone'] ); ?></span>
 				</div>
 				<div class="fab-contact-row">
 					<strong>E-mail:</strong>
-					<span><?php echo esc_html( $detail['email'] ? $detail['email'] : '-' ); ?></span>
+					<span><?php echo esc_html( $detail['email'] ); ?></span>
 				</div>
 			</div>
 			<?php if ( $detail['site'] ) : ?>

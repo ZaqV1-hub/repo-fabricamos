@@ -6,6 +6,7 @@ import argparse
 import json
 import math
 import re
+import unicodedata
 from collections import OrderedDict
 from datetime import date, datetime
 from pathlib import Path
@@ -27,6 +28,9 @@ PLACEHOLDER_VALUES = {
     "nan",
     "n/a",
     "não aplicável",
+}
+COMPANY_REPLACEMENTS = {
+    "cristalia produtos quimicos farmaceutico ltda.": "CRISTÁLIA PRODUTOS QUÍMICOS FARMACEUTICOS Ltda.",
 }
 
 
@@ -64,25 +68,27 @@ def clean_scalar(value: object) -> str:
     return text
 
 
+def normalize_key(value: str) -> str:
+    ascii_text = unicodedata.normalize("NFKD", value).encode("ascii", "ignore").decode("ascii")
+    return re.sub(r"\s+", " ", ascii_text.strip().lower())
+
+
+def normalize_company_name(value: str) -> str:
+    return COMPANY_REPLACEMENTS.get(normalize_key(value), value)
+
+
 def is_placeholder(value: str) -> bool:
-    normalized = value.strip().lower()
-    return normalized in PLACEHOLDER_VALUES
+    return normalize_key(value) in PLACEHOLDER_VALUES
+
+
+def is_associated_status(value: str) -> bool:
+    normalized = normalize_key(value)
+    return bool(normalized) and normalized.startswith("associado")
 
 
 def append_unique(target: list[str], value: str) -> None:
     if value and value not in target:
         target.append(value)
-
-
-def normalize_key(value: str) -> str:
-    return re.sub(r"\s+", " ", value.strip().lower())
-
-
-def is_associated_status(value: str) -> bool:
-    normalized = normalize_key(value)
-    if not normalized:
-        return False
-    return normalized.startswith("associado")
 
 
 def preferred_substance_name(inn: str, insumo: str) -> str:
@@ -126,7 +132,7 @@ def main() -> None:
     companies: OrderedDict[str, dict[str, object]] = OrderedDict()
 
     for _, row in rows.iterrows():
-        company = clean_scalar(row["empresa"])
+        company = normalize_company_name(clean_scalar(row["empresa"]))
         if not company or company in LEGEND_COMPANIES:
             continue
 
@@ -135,7 +141,6 @@ def main() -> None:
             continue
 
         company_key = normalize_key(company)
-
         item = companies.setdefault(
             company_key,
             {
@@ -192,7 +197,6 @@ def main() -> None:
             "validade": validade,
             "display_name": display_name,
         }
-
         catalog_key = tuple(
             normalize_key(str(catalog_item[field]))
             for field in ("display_name", "insumo", "dcb", "inn", "cas", "ncm", "cbpf", "validade")

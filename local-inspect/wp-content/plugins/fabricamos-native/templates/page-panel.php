@@ -128,17 +128,17 @@ include __DIR__ . '/partials/page-start.php';
 
 				<div class="fab-panel">
 					<div class="fab-form-stack">
-						<label class="fab-label-strong" for="fab-contact-name">Nome/Departamento</label>
+						<label class="fab-label-strong" for="fab-contact-name">Responsável pela edição</label>
 						<input id="fab-contact-name" class="fab-input" name="fab_contact_name" value="<?php echo esc_attr( $context['contact_name'] ); ?>" required />
 					</div>
 
 					<div class="fab-two-cols">
 						<div class="fab-form-stack">
-							<label class="fab-label-strong" for="fab-phone">Telefone</label>
+							<label class="fab-label-strong" for="fab-phone">Telefone do responsável</label>
 							<input id="fab-phone" class="fab-input" name="fab_phone" type="tel" inputmode="tel" placeholder="(11) 4000-1000" value="<?php echo esc_attr( $context['phone'] ); ?>" minlength="10" required />
 						</div>
 						<div class="fab-form-stack">
-							<label class="fab-label-strong" for="fab-email">E-mail de contato</label>
+							<label class="fab-label-strong" for="fab-email">E-mail do responsável</label>
 							<input id="fab-email" class="fab-input" name="fab_email" type="email" value="<?php echo esc_attr( $context['email'] ); ?>" required />
 						</div>
 					</div>
