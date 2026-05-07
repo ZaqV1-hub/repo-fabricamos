@@ -343,7 +343,7 @@ class Fabricamos_Native {
 			),
 			array(
 				'title' => 'site abiquifi',
-				'url'   => 'https://abiquifi.org.br/',
+				'url'   => 'https://abiquifi.questione.ai/',
 			),
 		);
 
