@@ -1,0 +1,10 @@
+wp-content/cache/
+wp-content/uploads/cache/
+node_modules/
+vendor/
+*.log
+*.zip
+*.tar
+*.gz
+.DS_Store
+.env
