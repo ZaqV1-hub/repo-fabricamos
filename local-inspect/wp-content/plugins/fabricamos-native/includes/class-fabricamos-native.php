@@ -3332,6 +3332,36 @@ class Fabricamos_Native {
 			return '';
 		}
 
+		if ( $this->contains_mojibake_text( $value ) ) {
+			$best       = $value;
+			$best_score = $this->mojibake_score( $best );
+			$candidates = array();
+
+			if ( function_exists( 'mb_convert_encoding' ) ) {
+				$candidates[] = @mb_convert_encoding( $value, 'ISO-8859-1', 'UTF-8' );
+				$candidates[] = @mb_convert_encoding( $value, 'Windows-1252', 'UTF-8' );
+			}
+
+			if ( function_exists( 'iconv' ) ) {
+				$candidates[] = @iconv( 'UTF-8', 'ISO-8859-1//IGNORE', $value );
+				$candidates[] = @iconv( 'UTF-8', 'Windows-1252//IGNORE', $value );
+			}
+
+			foreach ( $candidates as $candidate ) {
+				if ( ! is_string( $candidate ) || '' === $candidate ) {
+					continue;
+				}
+
+				$candidate_score = $this->mojibake_score( $candidate );
+				if ( $candidate_score < $best_score ) {
+					$best       = $candidate;
+					$best_score = $candidate_score;
+				}
+			}
+
+			$value = $best;
+		}
+
 		$replacements = array(
 			'Ã¡' => 'á',
 			'Ãà' => 'à',
@@ -3401,6 +3431,12 @@ class Fabricamos_Native {
 
 	protected function contains_mojibake_text( $value ) {
 		return false !== strpos( (string) $value, 'Ã' ) || false !== strpos( (string) $value, 'Â' ) || false !== strpos( (string) $value, 'â€' );
+	}
+
+	protected function mojibake_score( $value ) {
+		$value = (string) $value;
+
+		return substr_count( $value, 'Ã' ) + substr_count( $value, 'Â' ) + substr_count( $value, 'â€' );
 	}
 
 	protected function get_manufacturer_display_title( $post ) {

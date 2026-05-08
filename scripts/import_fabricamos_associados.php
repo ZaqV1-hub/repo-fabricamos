@@ -273,6 +273,36 @@ function normalize_mojibake_lookup($value)
 {
     $value = (string) $value;
 
+    if (contains_mojibake_lookup($value)) {
+        $best = $value;
+        $bestScore = mojibake_lookup_score($best);
+        $candidates = array();
+
+        if (function_exists('mb_convert_encoding')) {
+            $candidates[] = @mb_convert_encoding($value, 'ISO-8859-1', 'UTF-8');
+            $candidates[] = @mb_convert_encoding($value, 'Windows-1252', 'UTF-8');
+        }
+
+        if (function_exists('iconv')) {
+            $candidates[] = @iconv('UTF-8', 'ISO-8859-1//IGNORE', $value);
+            $candidates[] = @iconv('UTF-8', 'Windows-1252//IGNORE', $value);
+        }
+
+        foreach ($candidates as $candidate) {
+            if (!is_string($candidate) || $candidate === '') {
+                continue;
+            }
+
+            $candidateScore = mojibake_lookup_score($candidate);
+            if ($candidateScore < $bestScore) {
+                $best = $candidate;
+                $bestScore = $candidateScore;
+            }
+        }
+
+        $value = $best;
+    }
+
     $map = array(
         'Ã¡' => 'a',
         'Ãà' => 'a',
@@ -383,6 +413,18 @@ function normalize_mojibake_lookup($value)
     );
 
     return strtr($value, $map);
+}
+
+function contains_mojibake_lookup($value)
+{
+    $value = (string) $value;
+    return strpos($value, 'Ã') !== false || strpos($value, 'Â') !== false || strpos($value, 'â€') !== false;
+}
+
+function mojibake_lookup_score($value)
+{
+    $value = (string) $value;
+    return substr_count($value, 'Ã') + substr_count($value, 'Â') + substr_count($value, 'â€');
 }
 
 function normalize_title_lookup($value)
