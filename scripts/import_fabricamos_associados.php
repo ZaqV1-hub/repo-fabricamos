@@ -268,8 +268,125 @@ function manufacturer_title_aliases($title)
     return array_values(array_unique($aliases));
 }
 
+function normalize_mojibake_lookup($value)
+{
+    $value = (string) $value;
+
+    $map = array(
+        'Ã¡' => 'a',
+        'Ãà' => 'a',
+        'Ãâ' => 'a',
+        'Ãã' => 'a',
+        'Ãä' => 'a',
+        'Ãå' => 'a',
+        'ÃÁ' => 'a',
+        'ÃÀ' => 'a',
+        'ÃÂ' => 'a',
+        'ÃÃ' => 'a',
+        'ÃÄ' => 'a',
+        'ÃÅ' => 'a',
+        'á' => 'a',
+        'à' => 'a',
+        'â' => 'a',
+        'ã' => 'a',
+        'ä' => 'a',
+        'å' => 'a',
+        'Á' => 'a',
+        'À' => 'a',
+        'Â' => 'a',
+        'Ã' => 'a',
+        'Ä' => 'a',
+        'Å' => 'a',
+        'Ã©' => 'e',
+        'Ã¨' => 'e',
+        'Ãê' => 'e',
+        'Ãë' => 'e',
+        'ÃÉ' => 'e',
+        'ÃÈ' => 'e',
+        'ÃÊ' => 'e',
+        'ÃË' => 'e',
+        'é' => 'e',
+        'è' => 'e',
+        'ê' => 'e',
+        'ë' => 'e',
+        'É' => 'e',
+        'È' => 'e',
+        'Ê' => 'e',
+        'Ë' => 'e',
+        'Ä™' => 'e',
+        'Ä˜' => 'e',
+        'Ãí' => 'i',
+        'Ãì' => 'i',
+        'Ãî' => 'i',
+        'Ãï' => 'i',
+        'ÃÍ' => 'i',
+        'ÃÌ' => 'i',
+        'ÃÎ' => 'i',
+        'ÃÏ' => 'i',
+        'í' => 'i',
+        'ì' => 'i',
+        'î' => 'i',
+        'ï' => 'i',
+        'Í' => 'i',
+        'Ì' => 'i',
+        'Î' => 'i',
+        'Ï' => 'i',
+        'Ãó' => 'o',
+        'Ãò' => 'o',
+        'Ãô' => 'o',
+        'Ãõ' => 'o',
+        'Ãö' => 'o',
+        'ÃÓ' => 'o',
+        'ÃÒ' => 'o',
+        'ÃÔ' => 'o',
+        'ÃÕ' => 'o',
+        'ÃÖ' => 'o',
+        'ó' => 'o',
+        'ò' => 'o',
+        'ô' => 'o',
+        'õ' => 'o',
+        'ö' => 'o',
+        'Ó' => 'o',
+        'Ò' => 'o',
+        'Ô' => 'o',
+        'Õ' => 'o',
+        'Ö' => 'o',
+        'Ãú' => 'u',
+        'Ãù' => 'u',
+        'Ãû' => 'u',
+        'Ãü' => 'u',
+        'ÃÚ' => 'u',
+        'ÃÙ' => 'u',
+        'ÃÛ' => 'u',
+        'ÃÜ' => 'u',
+        'ú' => 'u',
+        'ù' => 'u',
+        'û' => 'u',
+        'ü' => 'u',
+        'Ú' => 'u',
+        'Ù' => 'u',
+        'Û' => 'u',
+        'Ü' => 'u',
+        'Ãç' => 'c',
+        'ÃÇ' => 'c',
+        'ç' => 'c',
+        'Ç' => 'c',
+        'Ãñ' => 'n',
+        'ÃÑ' => 'n',
+        'ñ' => 'n',
+        'Ñ' => 'n',
+        'Â' => '',
+        'â€™' => '',
+        'â€œ' => '',
+        'â€' => '',
+    );
+
+    return strtr($value, $map);
+}
+
 function normalize_title_lookup($value)
 {
+    $value = normalize_mojibake_lookup((string) $value);
     $value = strtolower(remove_accents((string) $value));
     $value = preg_replace('/\s+/u', ' ', $value);
     return trim((string) $value);
@@ -278,58 +395,74 @@ function normalize_title_lookup($value)
 function find_manufacturer_by_title($title)
 {
     $titles = manufacturer_title_aliases($title);
+    $normalizedCandidates = array();
 
     foreach ($titles as $candidateTitle) {
-        $posts = get_posts(array(
-            'post_type' => 'fabricante',
-            'post_status' => array('publish', 'draft', 'pending', 'private'),
-            'posts_per_page' => 1,
-            'title' => $candidateTitle,
-            'orderby' => 'ID',
-            'order' => 'ASC',
-            'suppress_filters' => false,
-        ));
+        $normalizedCandidates[] = normalize_title_lookup($candidateTitle);
+    }
 
-        if (! empty($posts)) {
-            return (int) $posts[0]->ID;
+    $normalizedCandidates = array_values(array_unique(array_filter($normalizedCandidates)));
+
+    $posts = get_posts(array(
+        'post_type' => 'fabricante',
+        'post_status' => array('publish', 'draft', 'pending', 'private'),
+        'posts_per_page' => -1,
+        'orderby' => 'ID',
+        'order' => 'ASC',
+        'suppress_filters' => false,
+    ));
+
+    $bestId = 0;
+    $bestScore = -1;
+
+    foreach ($posts as $post) {
+        $normalizedTitle = normalize_title_lookup($post->post_title);
+        if ($normalizedTitle === '' || ! in_array($normalizedTitle, $normalizedCandidates, true)) {
+            continue;
+        }
+
+        $score = 0;
+        if (in_array((string) $post->post_title, $titles, true)) {
+            $score += 100;
+        }
+        if ((int) get_post_thumbnail_id($post->ID) > 0) {
+            $score += 50;
+        }
+        if ($post->post_status === 'publish') {
+            $score += 10;
+        }
+
+        if ($bestId === 0 || $score > $bestScore || ($score === $bestScore && (int) $post->ID < $bestId)) {
+            $bestId = (int) $post->ID;
+            $bestScore = $score;
         }
     }
 
-    global $wpdb;
-    foreach ($titles as $candidateTitle) {
-        $postId = $wpdb->get_var($wpdb->prepare(
-            "SELECT ID FROM {$wpdb->posts} WHERE post_type = %s AND post_status IN ('publish','draft','pending','private') AND post_title = %s ORDER BY ID ASC LIMIT 1",
-            'fabricante',
-            $candidateTitle
-        ));
-
-        if ($postId) {
-            return (int) $postId;
-        }
-    }
-
-    return 0;
+    return $bestId;
 }
 
 function deactivate_duplicate_manufacturers($primaryId, $title)
 {
-    $titles = manufacturer_title_aliases($title);
-    foreach ($titles as $candidateTitle) {
-        $posts = get_posts(array(
-            'post_type' => 'fabricante',
-            'post_status' => array('publish', 'draft', 'pending', 'private'),
-            'posts_per_page' => -1,
-            'title' => $candidateTitle,
-            'orderby' => 'ID',
-            'order' => 'ASC',
-            'suppress_filters' => false,
-        ));
+    $normalizedPrimary = normalize_title_lookup($title);
+    if ($normalizedPrimary === '') {
+        return;
+    }
 
-        foreach ($posts as $post) {
-            if ((int) $post->ID === (int) $primaryId) {
-                continue;
-            }
+    $posts = get_posts(array(
+        'post_type' => 'fabricante',
+        'post_status' => array('publish', 'draft', 'pending', 'private'),
+        'posts_per_page' => -1,
+        'orderby' => 'ID',
+        'order' => 'ASC',
+        'suppress_filters' => false,
+    ));
 
+    foreach ($posts as $post) {
+        if ((int) $post->ID === (int) $primaryId) {
+            continue;
+        }
+
+        if (normalize_title_lookup($post->post_title) === $normalizedPrimary) {
             wp_update_post(array(
                 'ID' => (int) $post->ID,
                 'post_status' => 'draft',
