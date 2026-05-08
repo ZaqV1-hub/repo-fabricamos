@@ -126,6 +126,7 @@ foreach ($companies as $item) {
     deactivate_duplicate_manufacturers($manufacturerId, $company);
 
     update_post_meta($manufacturerId, 'fab_associate_status', $associateStatus);
+    update_post_meta($manufacturerId, 'fab_company_name', $company);
     update_post_meta($manufacturerId, 'fab_processo', implode(' / ', $processes));
     update_post_meta($manufacturerId, 'fab_origem', implode(' / ', $origins));
     update_post_meta($manufacturerId, 'fab_compiled_substances', array_values(array_unique($compiledSubstances)));

@@ -3320,9 +3320,140 @@ class Fabricamos_Native {
 	}
 
 	protected function normalize_lookup_value( $value ) {
+		$value = $this->repair_mojibake_text( (string) $value );
 		$value = strtolower( remove_accents( wp_strip_all_tags( (string) $value ) ) );
 		$value = preg_replace( '/\s+/', ' ', $value );
 		return trim( (string) $value );
+	}
+
+	protected function repair_mojibake_text( $value ) {
+		$value = (string) $value;
+		if ( '' === $value ) {
+			return '';
+		}
+
+		$replacements = array(
+			'Ã¡' => 'á',
+			'Ãà' => 'à',
+			'Ãâ' => 'â',
+			'Ãã' => 'ã',
+			'Ãä' => 'ä',
+			'ÃÁ' => 'Á',
+			'ÃÀ' => 'À',
+			'ÃÂ' => 'Â',
+			'ÃÃ' => 'Ã',
+			'ÃÄ' => 'Ä',
+			'Ã©' => 'é',
+			'Ã¨' => 'è',
+			'Ãê' => 'ê',
+			'Ãë' => 'ë',
+			'Ã‰' => 'É',
+			'Ãˆ' => 'È',
+			'ÃŠ' => 'Ê',
+			'Ã‹' => 'Ë',
+			'Ãí' => 'í',
+			'Ã¬' => 'ì',
+			'Ãî' => 'î',
+			'Ãï' => 'ï',
+			'ÃÍ' => 'Í',
+			'ÃŒ' => 'Ì',
+			'ÃŽ' => 'Î',
+			'Ã' => 'Ï',
+			'Ã³' => 'ó',
+			'Ã²' => 'ò',
+			'Ã´' => 'ô',
+			'Ãµ' => 'õ',
+			'Ãö' => 'ö',
+			'Ã“' => 'Ó',
+			'Ã’' => 'Ò',
+			'Ã”' => 'Ô',
+			'Ã•' => 'Õ',
+			'Ã–' => 'Ö',
+			'Ãº' => 'ú',
+			'Ã¹' => 'ù',
+			'Ã»' => 'û',
+			'Ã¼' => 'ü',
+			'Ãš' => 'Ú',
+			'Ã™' => 'Ù',
+			'Ã›' => 'Û',
+			'Ãœ' => 'Ü',
+			'Ã§' => 'ç',
+			'Ã‡' => 'Ç',
+			'Ã±' => 'ñ',
+			'Ã‘' => 'Ñ',
+			'Âº' => 'º',
+			'Âª' => 'ª',
+			'Â°' => '°',
+			'Â·' => '·',
+			'â€“' => '–',
+			'â€”' => '—',
+			'â€˜' => '‘',
+			'â€™' => '’',
+			'â€œ' => '“',
+			'â€' => '”',
+			'â€¢' => '•',
+			'â€¦' => '…',
+			'Â'   => '',
+		);
+
+		return strtr( $value, $replacements );
+	}
+
+	protected function contains_mojibake_text( $value ) {
+		return false !== strpos( (string) $value, 'Ã' ) || false !== strpos( (string) $value, 'Â' ) || false !== strpos( (string) $value, 'â€' );
+	}
+
+	protected function get_manufacturer_display_title( $post ) {
+		$post = $post instanceof WP_Post ? $post : get_post( $post );
+		if ( ! $post instanceof WP_Post ) {
+			return '';
+		}
+
+		$title = (string) get_post_meta( $post->ID, 'fab_company_name', true );
+		if ( '' === trim( $title ) ) {
+			$title = get_the_title( $post );
+		}
+
+		return $this->repair_mojibake_text( $title );
+	}
+
+	protected function get_manufacturer_preference_score( $post ) {
+		$post = $post instanceof WP_Post ? $post : get_post( $post );
+		if ( ! $post instanceof WP_Post ) {
+			return -9999;
+		}
+
+		$score = 0;
+		$title = (string) $post->post_title;
+		$display_title = $this->get_manufacturer_display_title( $post );
+
+		if ( has_post_thumbnail( $post ) ) {
+			$score += 100;
+		}
+
+		$logo = $this->get_manufacturer_image_data( $post->ID, 'fab_logo' );
+		if ( ! empty( $logo['url'] ) ) {
+			$score += 75;
+		}
+
+		$hero = $this->get_manufacturer_image_data( $post->ID, 'fab_hero_image' );
+		if ( ! empty( $hero['url'] ) ) {
+			$score += 50;
+		}
+
+		if ( ! $this->contains_mojibake_text( $title ) ) {
+			$score += 40;
+		}
+
+		if ( $display_title === $title ) {
+			$score += 20;
+		}
+
+		if ( 'publish' === $post->post_status ) {
+			$score += 10;
+		}
+
+		return $score;
 	}
 
 	protected function is_associated_manufacturer( $post_id ) {
@@ -3424,12 +3555,16 @@ class Fabricamos_Native {
 		$unique_posts = array();
 		$seen_titles  = array();
 		foreach ( $query->posts as $post ) {
-			$key = $this->normalize_lookup_value( get_the_title( $post ) );
+			$key = $this->normalize_lookup_value( $this->get_manufacturer_display_title( $post ) );
 			if ( isset( $seen_titles[ $key ] ) ) {
+				$current = $unique_posts[ $seen_titles[ $key ] ];
+				if ( $this->get_manufacturer_preference_score( $post ) > $this->get_manufacturer_preference_score( $current ) ) {
+					$unique_posts[ $seen_titles[ $key ] ] = $post;
+				}
 				continue;
 			}
 
-			$seen_titles[ $key ] = true;
+			$seen_titles[ $key ] = count( $unique_posts );
 			$unique_posts[]      = $post;
 		}
 
@@ -3561,7 +3696,7 @@ class Fabricamos_Native {
 
 		return array(
 			'id'        => (int) $post->ID,
-			'title'     => get_the_title( $post ),
+			'title'     => $this->get_manufacturer_display_title( $post ),
 			'url'       => get_permalink( $post ),
 			'image'     => ! empty( $image['url'] ) ? $image['url'] : $this->placeholder_image_url(),
 			'has_image' => ! empty( $image['url'] ),
@@ -3649,7 +3784,7 @@ class Fabricamos_Native {
 
 		return array(
 			'post'             => $post,
-			'title'            => get_the_title( $post ),
+			'title'            => $this->get_manufacturer_display_title( $post ),
 			'description'      => $description,
 			'contact_name'     => $name,
 			'phone'            => $phone,
@@ -3930,10 +4065,23 @@ SVG;
 		}
 
 		$filtered = array();
+		$seen_titles = array();
 		foreach ( $posts as $post ) {
-			if ( $this->is_associated_manufacturer( $post->ID ) ) {
-				$filtered[] = $post;
+			if ( ! $this->is_associated_manufacturer( $post->ID ) ) {
+				continue;
 			}
+
+			$key = $this->normalize_lookup_value( $this->get_manufacturer_display_title( $post ) );
+			if ( isset( $seen_titles[ $key ] ) ) {
+				$current = $filtered[ $seen_titles[ $key ] ];
+				if ( $this->get_manufacturer_preference_score( $post ) > $this->get_manufacturer_preference_score( $current ) ) {
+					$filtered[ $seen_titles[ $key ] ] = $post;
+				}
+				continue;
+			}
+
+			$seen_titles[ $key ] = count( $filtered );
+			$filtered[] = $post;
 		}
 
 		if ( $limit > 0 ) {
