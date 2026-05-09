@@ -114,8 +114,11 @@ class Fabricamos_Native {
 		add_action( 'admin_post_fabricamos_panel_export', array( $this, 'handle_panel_export' ) );
 		add_filter( 'show_admin_bar', array( $this, 'maybe_hide_admin_bar' ) );
 		add_filter( 'auth_cookie_expiration', array( $this, 'filter_auth_cookie_expiration' ), 10, 3 );
-		add_filter( 'pre_get_document_title', array( $this, 'filter_document_title' ) );
-		add_filter( 'document_title_parts', array( $this, 'filter_document_title_parts' ) );
+		add_filter( 'pre_get_document_title', array( $this, 'filter_document_title' ), 999999 );
+		add_filter( 'document_title_parts', array( $this, 'filter_document_title_parts' ), 999999 );
+		add_filter( 'wp_title', array( $this, 'filter_document_title' ), 999999 );
+		add_filter( 'aioseo_title', array( $this, 'filter_document_title' ), 999999 );
+		add_filter( 'wpseo_title', array( $this, 'filter_document_title' ), 999999 );
 	}
 
 	public function register_role() {
