@@ -3108,7 +3108,7 @@ class Fabricamos_Native {
 	}
 
 	protected function clean_catalog_value( $value ) {
-		$text = trim( (string) $value );
+		$text = trim( $this->repair_mojibake_text( (string) $value ) );
 		return $this->is_placeholder_catalog_value( $text ) ? '' : $text;
 	}
 
