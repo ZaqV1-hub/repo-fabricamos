@@ -114,6 +114,7 @@ class Fabricamos_Native {
 		add_action( 'admin_post_fabricamos_panel_export', array( $this, 'handle_panel_export' ) );
 		add_filter( 'show_admin_bar', array( $this, 'maybe_hide_admin_bar' ) );
 		add_filter( 'auth_cookie_expiration', array( $this, 'filter_auth_cookie_expiration' ), 10, 3 );
+		add_filter( 'pre_get_document_title', array( $this, 'filter_document_title' ) );
 		add_filter( 'document_title_parts', array( $this, 'filter_document_title_parts' ) );
 	}
 
@@ -3571,6 +3572,19 @@ class Fabricamos_Native {
 
 		$parts['title'] = $this->get_manufacturer_display_title( $post );
 		return $parts;
+	}
+
+	public function filter_document_title( $title ) {
+		if ( ! is_singular( 'fabricante' ) ) {
+			return $title;
+		}
+
+		$post = get_queried_object();
+		if ( ! $post instanceof WP_Post ) {
+			return $title;
+		}
+
+		return $this->get_manufacturer_display_title( $post );
 	}
 
 	public function get_manufacturer_sector_slug( $post_id ) {
