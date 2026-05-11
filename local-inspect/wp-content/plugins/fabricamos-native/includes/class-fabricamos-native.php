@@ -2354,6 +2354,67 @@ class Fabricamos_Native {
 		return null;
 	}
 
+	protected function remote_password_reset( $login_or_email, $password ) {
+		$sso = $this->public_sso();
+		if ( $sso && method_exists( $sso, 'remote_reset_password' ) ) {
+			return $sso->remote_reset_password( $login_or_email, $password );
+		}
+
+		$authority_url = '';
+		if ( $sso && method_exists( $sso, 'authority_url' ) ) {
+			$authority_url = esc_url_raw( (string) $sso->authority_url() );
+		}
+
+		if ( '' === $authority_url ) {
+			$authority_url = esc_url_raw( (string) $this->read_env_value( 'ABIQUIFI_PUBLIC_SSO_AUTHORITY_URL', 'https://dicionario.abiquifi.questione.ai/' ) );
+		}
+
+		$secret = trim( (string) $this->read_env_value( 'ABIQUIFI_PUBLIC_SSO_SECRET', '' ) );
+		if ( '' === $secret ) {
+			$secret = trim( (string) get_option( 'abiquifi_public_sso_secret', '' ) );
+		}
+
+		if ( '' === $authority_url ) {
+			return new WP_Error( 'missing_sso_authority_url', 'Nao foi possivel localizar a URL da autoridade de login.' );
+		}
+
+		if ( '' === $secret ) {
+			return new WP_Error( 'missing_sso_secret', 'Nao foi possivel localizar o segredo interno do SSO.' );
+		}
+
+		$response = wp_remote_post(
+			trailingslashit( $authority_url ) . 'wp-json/abiquifi-sso/v1/reset-password',
+			array(
+				'timeout'     => 20,
+				'redirection' => 2,
+				'body'        => array(
+					'secret'   => $secret,
+					'login'    => $login_or_email,
+					'password' => $password,
+				),
+			)
+		);
+
+		if ( is_wp_error( $response ) ) {
+			return array(
+				'_transport_error' => $response->get_error_message(),
+			);
+		}
+
+		$body   = wp_remote_retrieve_body( $response );
+		$result = json_decode( $body, true );
+		if ( ! is_array( $result ) ) {
+			$result = array();
+		}
+
+		$result['_http_status'] = (int) wp_remote_retrieve_response_code( $response );
+		if ( empty( $result['message'] ) && $result['_http_status'] >= 400 && '' !== trim( (string) $body ) ) {
+			$result['message'] = trim( wp_strip_all_tags( (string) $body ) );
+		}
+
+		return $result;
+	}
+
 	protected function build_registration_confirmation_headers() {
 		return array(
 			'Content-Type: text/html; charset=UTF-8',
@@ -2562,21 +2623,18 @@ class Fabricamos_Native {
 			exit;
 		}
 
-		$sso = $this->public_sso();
-		if ( $sso && method_exists( $sso, 'remote_reset_password' ) ) {
-			$remote_identifier = sanitize_email( (string) $user->user_email );
-			if ( '' === $remote_identifier ) {
-				$remote_identifier = (string) $user->user_login;
-			}
+		$remote_identifier = sanitize_email( (string) $user->user_email );
+		if ( '' === $remote_identifier ) {
+			$remote_identifier = (string) $user->user_login;
+		}
 
-			$remote_error = $this->normalize_remote_password_reset_error(
-				$sso->remote_reset_password( $remote_identifier, $password )
-			);
+		$remote_error = $this->normalize_remote_password_reset_error(
+			$this->remote_password_reset( $remote_identifier, $password )
+		);
 
-			if ( $remote_error instanceof WP_Error ) {
-				wp_safe_redirect( add_query_arg( 'password_error', 'sync', $reset_url ) );
-				exit;
-			}
+		if ( $remote_error instanceof WP_Error ) {
+			wp_safe_redirect( add_query_arg( 'password_error', 'sync', $reset_url ) );
+			exit;
 		}
 
 		reset_password( $user, $password );
