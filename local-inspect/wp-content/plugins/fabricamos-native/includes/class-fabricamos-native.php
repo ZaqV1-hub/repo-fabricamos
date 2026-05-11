@@ -942,6 +942,11 @@ class Fabricamos_Native {
 		$this->clear_shared_guest_cookie();
 	}
 
+	protected function grant_public_catalog_access() {
+		$expires_at = time() + $this->guest_access_ttl();
+		$this->set_shared_guest_cookie( $expires_at );
+	}
+
 	public function has_shared_guest_access() {
 		$expires_at = isset( $_COOKIE[ $this->shared_guest_cookie_name() ] )
 			? (int) sanitize_text_field( wp_unslash( $_COOKIE[ $this->shared_guest_cookie_name() ] ) )
@@ -1915,6 +1920,7 @@ class Fabricamos_Native {
 		if ( $sso && method_exists( $sso, 'remote_login' ) && method_exists( $sso, 'set_public_session_from_response' ) ) {
 			$result = $sso->remote_login( $login, $password, $remember );
 			if ( ! is_wp_error( $result ) && $sso->set_public_session_from_response( $result ) ) {
+				$this->grant_public_catalog_access();
 				wp_safe_redirect( $redirect_to );
 				exit;
 			}
@@ -2235,6 +2241,7 @@ class Fabricamos_Native {
 			return;
 		}
 
+		$this->grant_public_catalog_access();
 		$this->public_auth_cookie_expiration = DAY_IN_SECONDS;
 		wp_set_current_user( $user->ID );
 		wp_set_auth_cookie( $user->ID, true, is_ssl() );
