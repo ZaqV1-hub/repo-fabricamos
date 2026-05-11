@@ -154,7 +154,7 @@ include __DIR__ . '/partials/page-start.php';
 				</form>
 
 				<p class="fab-login-alt">
-					<a href="<?php echo esc_url( wp_lostpassword_url( $login_url ) ); ?>">Esqueceu sua senha?</a>
+					<a href="<?php echo esc_url( $fabricamos->site_lost_password_url( $redirect_to ) ); ?>">Esqueceu sua senha?</a>
 				</p>
 			<?php endif; ?>
 		</div>

@@ -36,6 +36,9 @@ class Fabricamos_Native {
 		'entrar'                => 'site-login',
 		'log-in'                => 'site-login',
 		'cadastro'              => 'site-register',
+		'esqueceu-sua-senha'    => 'site-forgot-password',
+		'recuperar-senha'       => 'site-forgot-password',
+		'redefinir-senha'       => 'site-reset-password',
 		'fabricante'            => 'login',
 		'fabricamos-fabricante' => 'catalog-seller',
 		'anunciar-fabricante'   => 'announce',
@@ -215,6 +218,14 @@ class Fabricamos_Native {
 			'cadastro' => array(
 				'title'   => 'Cadastro',
 				'content' => 'Crie sua conta para acessar o dicionário.',
+			),
+			'esqueceu-sua-senha' => array(
+				'title'   => 'Esqueceu sua senha',
+				'content' => 'Solicite o link de redefinicao de senha do Fabricamos.',
+			),
+			'redefinir-senha' => array(
+				'title'   => 'Redefinir senha',
+				'content' => 'Defina uma nova senha para acessar o Fabricamos.',
 			),
 			'fabricante' => array(
 				'title'   => 'Fabricante',
@@ -398,6 +409,26 @@ class Fabricamos_Native {
 		}
 
 		return home_url( '/cadastro/' );
+	}
+
+	protected function get_site_lost_password_page_url() {
+		foreach ( array( 'esqueceu-sua-senha', 'recuperar-senha' ) as $slug ) {
+			$page = get_page_by_path( $slug, OBJECT, 'page' );
+			if ( $page && 'publish' === $page->post_status ) {
+				return get_permalink( $page );
+			}
+		}
+
+		return home_url( '/esqueceu-sua-senha/' );
+	}
+
+	protected function get_site_reset_password_page_url() {
+		$page = get_page_by_path( 'redefinir-senha', OBJECT, 'page' );
+		if ( $page && 'publish' === $page->post_status ) {
+			return get_permalink( $page );
+		}
+
+		return home_url( '/redefinir-senha/' );
 	}
 
 	protected function public_catalog_url() {
@@ -1110,6 +1141,14 @@ class Fabricamos_Native {
 
 		if ( is_page( 'cadastro' ) ) {
 			$this->handle_site_register();
+		}
+
+		if ( is_page( array( 'esqueceu-sua-senha', 'recuperar-senha' ) ) ) {
+			$this->handle_site_lost_password();
+		}
+
+		if ( is_page( 'redefinir-senha' ) ) {
+			$this->handle_site_reset_password();
 		}
 	}
 
@@ -2206,6 +2245,89 @@ class Fabricamos_Native {
 		);
 	}
 
+	protected function get_public_site_user_by_login_or_email( $identifier ) {
+		$identifier = trim( (string) $identifier );
+		if ( '' === $identifier ) {
+			return null;
+		}
+
+		$user = null;
+		if ( is_email( $identifier ) ) {
+			$user = get_user_by( 'email', $identifier );
+		}
+
+		if ( ! $user instanceof WP_User ) {
+			$user = get_user_by( 'login', sanitize_user( $identifier, true ) );
+		}
+
+		if ( ! $this->is_public_site_user( $user ) ) {
+			return null;
+		}
+
+		return $user;
+	}
+
+	public function validate_public_password_reset_request( $login, $key ) {
+		$login = trim( (string) $login );
+		$key   = trim( (string) $key );
+
+		if ( '' === $login || '' === $key ) {
+			return new WP_Error( 'invalid_key', 'Solicitacao invalida.' );
+		}
+
+		$user = check_password_reset_key( $key, $login );
+		if ( is_wp_error( $user ) ) {
+			return $user;
+		}
+
+		if ( ! $this->is_public_site_user( $user ) ) {
+			return new WP_Error( 'invalid_user', 'Conta invalida.' );
+		}
+
+		return $user;
+	}
+
+	protected function send_site_password_reset_email( WP_User $user, $redirect_to = '' ) {
+		$key = get_password_reset_key( $user );
+		if ( is_wp_error( $key ) ) {
+			return $key;
+		}
+
+		$reset_url = $this->site_reset_password_url( (string) $user->user_login, (string) $key, $redirect_to );
+		$name      = trim( (string) $user->display_name );
+		$name      = '' === $name ? (string) $user->user_login : $name;
+		$subject   = 'Redefinicao de senha | Fabricamos';
+		$message   = sprintf(
+			'<html><body style="margin:0;padding:0;background:#f4f7fb;font-family:Arial,sans-serif;color:#162b40;">'
+			. '<div style="max-width:640px;margin:0 auto;padding:32px 20px;">'
+			. '<div style="background:#ffffff;border-radius:16px;padding:32px;border:1px solid #d9e2ec;">'
+			. '<p style="margin:0 0 16px;font-size:14px;letter-spacing:.08em;text-transform:uppercase;color:#6c8195;">Fabricamos</p>'
+			. '<h1 style="margin:0 0 20px;font-size:28px;line-height:1.2;color:#0d2236;">Redefina sua senha</h1>'
+			. '<p style="margin:0 0 16px;font-size:16px;line-height:1.6;">Ola %1$s, recebemos uma solicitacao para redefinir a senha da sua conta no Fabricamos.</p>'
+			. '<p style="margin:0 0 24px;font-size:16px;line-height:1.6;">Clique no botao abaixo para criar uma nova senha. Se voce nao pediu essa alteracao, ignore esta mensagem.</p>'
+			. '<p style="margin:0 0 24px;"><a href="%2$s" style="display:inline-block;background:#0d2236;color:#ffffff;text-decoration:none;padding:14px 20px;border-radius:999px;font-weight:700;">Redefinir senha</a></p>'
+			. '<p style="margin:0;font-size:13px;line-height:1.6;color:#6c8195;">Se o botao nao funcionar, copie e cole este endereco no navegador:</p>'
+			. '<p style="margin:8px 0 0;font-size:13px;line-height:1.6;word-break:break-all;color:#6c8195;">%3$s</p>'
+			. '</div></div></body></html>',
+			esc_html( $name ),
+			esc_url( $reset_url ),
+			esc_html( $reset_url )
+		);
+
+		$sent = wp_mail(
+			sanitize_email( (string) $user->user_email ),
+			$subject,
+			$message,
+			$this->build_registration_confirmation_headers()
+		);
+
+		if ( $sent ) {
+			return true;
+		}
+
+		return new WP_Error( 'mail_failed', 'Nao foi possivel enviar o e-mail de redefinicao.' );
+	}
+
 	protected function send_registration_confirmation_email( $user ) {
 		if ( ! $user instanceof WP_User || ! $user->exists() ) {
 			return false;
@@ -2239,6 +2361,103 @@ class Fabricamos_Native {
 		);
 
 		return (bool) wp_mail( $to, $subject, $message, $this->build_registration_confirmation_headers() );
+	}
+
+	public function handle_site_lost_password() {
+		$redirect = $this->site_lost_password_url();
+
+		if ( ! isset( $_POST['fabricamos_site_lost_password_nonce'] ) || ! wp_verify_nonce( sanitize_text_field( wp_unslash( $_POST['fabricamos_site_lost_password_nonce'] ) ), 'fabricamos_site_lost_password' ) ) {
+			wp_safe_redirect( add_query_arg( 'password_error', 'nonce', $redirect ) );
+			exit;
+		}
+
+		$identifier  = isset( $_POST['user_login'] ) ? sanitize_text_field( wp_unslash( $_POST['user_login'] ) ) : '';
+		$redirect_to = isset( $_POST['redirect_to'] ) ? esc_url_raw( wp_unslash( $_POST['redirect_to'] ) ) : $this->public_catalog_url();
+		if ( '' === $redirect_to ) {
+			$redirect_to = $this->public_catalog_url();
+		}
+
+		if ( '' === $identifier ) {
+			wp_safe_redirect( add_query_arg( 'password_error', 'required', $this->site_lost_password_url( $redirect_to ) ) );
+			exit;
+		}
+
+		if ( false !== strpos( $identifier, '@' ) && ! is_email( $identifier ) ) {
+			wp_safe_redirect( add_query_arg( 'password_error', 'email', $this->site_lost_password_url( $redirect_to ) ) );
+			exit;
+		}
+
+		$user = $this->get_public_site_user_by_login_or_email( $identifier );
+		if ( $user instanceof WP_User ) {
+			$sent = $this->send_site_password_reset_email( $user, $redirect_to );
+			if ( is_wp_error( $sent ) ) {
+				wp_safe_redirect( add_query_arg( 'password_error', 'send', $this->site_lost_password_url( $redirect_to ) ) );
+				exit;
+			}
+		}
+
+		$args = array(
+			'password_notice' => 'sent',
+		);
+
+		if ( is_email( $identifier ) ) {
+			$args['login_hint'] = sanitize_email( $identifier );
+		}
+
+		wp_safe_redirect( add_query_arg( $args, $this->site_lost_password_url( $redirect_to ) ) );
+		exit;
+	}
+
+	public function handle_site_reset_password() {
+		$login       = isset( $_POST['login'] ) ? sanitize_text_field( wp_unslash( $_POST['login'] ) ) : '';
+		$key         = isset( $_POST['key'] ) ? sanitize_text_field( wp_unslash( $_POST['key'] ) ) : '';
+		$redirect_to = isset( $_POST['redirect_to'] ) ? esc_url_raw( wp_unslash( $_POST['redirect_to'] ) ) : $this->public_catalog_url();
+		if ( '' === $redirect_to ) {
+			$redirect_to = $this->public_catalog_url();
+		}
+
+		$reset_url = $this->site_reset_password_url( $login, $key, $redirect_to );
+		if ( ! isset( $_POST['fabricamos_site_reset_password_nonce'] ) || ! wp_verify_nonce( sanitize_text_field( wp_unslash( $_POST['fabricamos_site_reset_password_nonce'] ) ), 'fabricamos_site_reset_password' ) ) {
+			wp_safe_redirect( add_query_arg( 'password_error', 'nonce', $reset_url ) );
+			exit;
+		}
+
+		$user = $this->validate_public_password_reset_request( $login, $key );
+		if ( is_wp_error( $user ) ) {
+			wp_safe_redirect( add_query_arg( 'password_error', 'invalid_key', $this->site_lost_password_url( $redirect_to ) ) );
+			exit;
+		}
+
+		$password         = isset( $_POST['pass1'] ) ? (string) wp_unslash( $_POST['pass1'] ) : '';
+		$password_confirm = isset( $_POST['pass2'] ) ? (string) wp_unslash( $_POST['pass2'] ) : '';
+
+		if ( '' === $password || '' === $password_confirm ) {
+			wp_safe_redirect( add_query_arg( 'password_error', 'required', $reset_url ) );
+			exit;
+		}
+
+		if ( strlen( $password ) < 8 ) {
+			wp_safe_redirect( add_query_arg( 'password_error', 'password_length', $reset_url ) );
+			exit;
+		}
+
+		if ( $password !== $password_confirm ) {
+			wp_safe_redirect( add_query_arg( 'password_error', 'confirm', $reset_url ) );
+			exit;
+		}
+
+		reset_password( $user, $password );
+
+		wp_safe_redirect(
+			add_query_arg(
+				array(
+					'login_notice' => 'password_reset',
+					'login_hint'   => sanitize_email( (string) $user->user_email ),
+				),
+				$this->site_login_url( $redirect_to )
+			)
+		);
+		exit;
 	}
 
 	protected function build_announce_email_body( $fields ) {
@@ -2898,6 +3117,38 @@ class Fabricamos_Native {
 		}
 
 		return $this->build_redirected_page_url( $base_url, $redirect_to );
+	}
+
+	public function site_lost_password_url( $redirect_to = '' ) {
+		$base_url = $this->get_site_lost_password_page_url();
+		if ( '' === $redirect_to ) {
+			return $base_url;
+		}
+
+		return $this->build_redirected_page_url( $base_url, $redirect_to );
+	}
+
+	public function site_reset_password_url( $login = '', $key = '', $redirect_to = '' ) {
+		$base_url = $this->get_site_reset_password_page_url();
+		$args     = array();
+
+		if ( '' !== $login ) {
+			$args['login'] = $login;
+		}
+
+		if ( '' !== $key ) {
+			$args['key'] = $key;
+		}
+
+		if ( '' !== $redirect_to ) {
+			$args['redirect_to'] = $redirect_to;
+		}
+
+		if ( empty( $args ) ) {
+			return $base_url;
+		}
+
+		return add_query_arg( $args, $base_url );
 	}
 
 	protected function public_post_logout_redirect_url() {

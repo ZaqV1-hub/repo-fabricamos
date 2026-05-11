@@ -14,7 +14,7 @@ $show_user     = false;
 $is_logged_in  = $fabricamos->is_public_site_authenticated();
 $redirect_to   = isset( $_GET['redirect_to'] ) ? esc_url_raw( wp_unslash( $_GET['redirect_to'] ) ) : home_url( '/catalogo/' );
 $register_url  = $fabricamos->site_register_url( $redirect_to );
-$lost_password = wp_lostpassword_url( $fabricamos->site_login_url( $redirect_to ) );
+$lost_password = $fabricamos->site_lost_password_url( $redirect_to );
 
 include __DIR__ . '/partials/page-start.php';
 ?>
@@ -44,6 +44,10 @@ include __DIR__ . '/partials/page-start.php';
 				<?php if ( 'existing_account' === $login_notice ) : ?>
 					<div class="fab-alert fab-alert--success">
 						Ja existe uma conta com este e-mail. Entre com a senha ja cadastrada no Dicionario ou redefina sua senha.
+					</div>
+				<?php elseif ( 'password_reset' === $login_notice ) : ?>
+					<div class="fab-alert fab-alert--success">
+						Senha redefinida com sucesso. Entre com a sua nova senha.
 					</div>
 				<?php endif; ?>
 
