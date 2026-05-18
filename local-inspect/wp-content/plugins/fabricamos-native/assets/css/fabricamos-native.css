@@ -120,6 +120,10 @@ body.fabricamos-native {
 	box-shadow: 0 16px 32px rgba(23, 46, 84, 0.12);
 }
 
+.fab-page .fab-session-chip {
+	display: none;
+}
+
 .fab-session-chip__avatar {
 	flex: 0 0 46px;
 	width: 46px;
