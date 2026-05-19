@@ -3306,7 +3306,15 @@ class Fabricamos_Native {
 	}
 
 	protected function is_manufacturer_area_request() {
+		if ( $this->request_path_matches( array( 'fabricante', 'fabricamos-fabricante', 'meu-fabricante' ) ) ) {
+			return true;
+		}
+
 		if ( is_page( array( 'fabricante', 'fabricamos-fabricante', 'meu-fabricante' ) ) ) {
+			return true;
+		}
+
+		if ( 'fabricante' === $this->get_manufacturer_view_context() ) {
 			return true;
 		}
 
@@ -3314,7 +3322,42 @@ class Fabricamos_Native {
 	}
 
 	protected function is_panel_area_request() {
-		return is_page( 'painel' );
+		return $this->request_path_matches( array( 'painel' ) ) || is_page( 'painel' );
+	}
+
+	protected function request_path_matches( $slugs ) {
+		$path = $this->get_current_request_path();
+		if ( '' === $path ) {
+			return false;
+		}
+
+		foreach ( (array) $slugs as $slug ) {
+			$slug = trim( (string) $slug, " \t\n\r\0\x0B/" );
+			if ( '' === $slug ) {
+				continue;
+			}
+
+			if ( $path === '/' . strtolower( $slug ) ) {
+				return true;
+			}
+		}
+
+		return false;
+	}
+
+	protected function get_current_request_path() {
+		if ( empty( $_SERVER['REQUEST_URI'] ) ) {
+			return '';
+		}
+
+		$path = wp_parse_url( wp_unslash( $_SERVER['REQUEST_URI'] ), PHP_URL_PATH );
+		if ( ! is_string( $path ) || '' === $path ) {
+			return '';
+		}
+
+		$path = '/' . trim( strtolower( $path ), '/' );
+
+		return '/' === $path ? '/' : untrailingslashit( $path );
 	}
 
 	public function render_fabricamos_account_shortcode() {

@@ -154,7 +154,11 @@
 
 	function initHeaderUserMenu() {
 		const menu = document.querySelector(".jupiterx-header .dsf-user-menu");
-		const headerMenu = config.headerMenu || null;
+		let headerMenu = config.headerMenu || null;
+
+		if (!headerMenu || !headerMenu.label || headerMenu.label === "Minha conta") {
+			headerMenu = buildHeaderMenuFromPageContext();
+		}
 
 		if (!menu || !headerMenu || !headerMenu.label) {
 			return;
@@ -194,6 +198,45 @@
 				dropdown.parentNode.removeChild(dropdown);
 			}
 		}
+	}
+
+	function buildHeaderMenuFromPageContext() {
+		const path = (window.location.pathname || "").toLowerCase().replace(/\/+$/, "");
+		const search = new URLSearchParams(window.location.search || "");
+		const logoutLink = document.querySelector(".fab-session-chip__logout");
+		const sessionName = document.querySelector(".fab-session-chip__meta strong");
+
+		const isManufacturerArea =
+			path === "/fabricante" ||
+			path === "/fabricamos-fabricante" ||
+			path === "/meu-fabricante" ||
+			search.get("fab_context") === "fabricante";
+
+		if (isManufacturerArea) {
+			return {
+				label: sessionName ? sessionName.textContent.trim() : "Acesso do fabricante",
+				items: [
+					{
+						title: logoutLink ? "Sair" : "Entrar",
+						url: logoutLink ? logoutLink.href : "/fabricante/",
+					},
+				],
+			};
+		}
+
+		if (path === "/painel") {
+			return {
+				label: sessionName ? sessionName.textContent.trim() : "Painel",
+				items: [
+					{
+						title: logoutLink ? "Sair" : "Entrar",
+						url: logoutLink ? logoutLink.href : "/painel/",
+					},
+				],
+			};
+		}
+
+		return null;
 	}
 
 	function createChip(list, id, title, payload) {
