@@ -9,3 +9,6 @@ vendor/
 .DS_Store
 .env
 tmp/fabricamos-credentials-*.csv
+tmp/
+local-inspect/wp-content/plugins/*.off/
+__pycache__/

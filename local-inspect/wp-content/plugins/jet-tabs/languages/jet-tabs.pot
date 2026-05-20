@@ -1,0 +1,1825 @@
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: JetTabs for Elementor\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-11-26 13:27+0200\n"
+"PO-Revision-Date: 2018-01-03 12:10+0200\n"
+"Last-Translator: \n"
+"Language-Team: Zemez\n"
+"Language: en_US\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Poedit-KeywordsList: __;_e;_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c;"
+"esc_attr__;esc_attr_e;esc_attr_x:1,2c;_ex:1,2c;_n:1,2;_nx:4c,1,2;"
+"_n_noop:1,2;_nx_noop:4c,1,2\n"
+"esc_attr__;_x: 1,2c;_n:1,2\n"
+"X-Poedit-Basepath: ..\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Generator: Poedit 3.4.4\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPathExcluded-0: cherry-framework\n"
+"X-Poedit-SearchPathExcluded-1: node_modules\n"
+
+#: includes/addons/jet-accordion-widget.php:34
+msgid "Classic Accordion"
+msgstr ""
+
+#: includes/addons/jet-accordion-widget.php:66
+#: includes/addons/jet-image-accordion-widget.php:70
+#: includes/addons/jet-switcher-widget.php:60
+#: includes/addons/jet-tabs-widget.php:63
+msgid "Items"
+msgstr ""
+
+#: includes/addons/jet-accordion-widget.php:77
+#: includes/addons/jet-accordion-widget.php:734
+#: includes/addons/jet-image-accordion-widget.php:81
+#: includes/addons/jet-image-accordion-widget.php:475
+#: includes/addons/jet-tabs-widget.php:74
+#: includes/addons/jet-tabs-widget.php:1249
+msgid "Active"
+msgstr ""
+
+#: includes/addons/jet-accordion-widget.php:79
+#: includes/addons/jet-accordion-widget.php:229
+#: includes/addons/jet-image-accordion-widget.php:83
+#: includes/addons/jet-tabs-widget.php:76
+#: includes/addons/jet-tabs-widget.php:88
+#: includes/controls/groups/class-jet-tabs-group-control-box-style.php:254
+msgid "Yes"
+msgstr ""
+
+#: includes/addons/jet-accordion-widget.php:80
+#: includes/addons/jet-accordion-widget.php:230
+#: includes/addons/jet-image-accordion-widget.php:84
+#: includes/addons/jet-tabs-widget.php:77
+#: includes/addons/jet-tabs-widget.php:89
+#: includes/controls/groups/class-jet-tabs-group-control-box-style.php:255
+msgid "No"
+msgstr ""
+
+#: includes/addons/jet-accordion-widget.php:89
+#: includes/addons/jet-accordion-widget.php:634
+#: includes/addons/jet-accordion-widget.php:701
+#: includes/addons/jet-accordion-widget.php:768
+#: includes/addons/jet-tabs-widget.php:98
+msgid "Icon"
+msgstr ""
+
+#: includes/addons/jet-accordion-widget.php:104
+msgid "Active Icon"
+msgstr ""
+
+#: includes/addons/jet-accordion-widget.php:119
+#: includes/addons/jet-switcher-widget.php:76
+#: includes/addons/jet-switcher-widget.php:142
+#: includes/addons/jet-tabs-widget.php:124
+msgid "Label"
+msgstr ""
+
+#: includes/addons/jet-accordion-widget.php:121
+#: includes/addons/jet-tabs-widget.php:126
+msgid "New Tab"
+msgstr ""
+
+#: includes/addons/jet-accordion-widget.php:131
+#: includes/addons/jet-switcher-widget.php:88
+#: includes/addons/jet-switcher-widget.php:154
+#: includes/addons/jet-tabs-widget.php:136
+msgid "Content Type"
+msgstr ""
+
+#: includes/addons/jet-accordion-widget.php:135
+#: includes/addons/jet-switcher-widget.php:92
+#: includes/addons/jet-switcher-widget.php:102
+#: includes/addons/jet-switcher-widget.php:158
+#: includes/addons/jet-switcher-widget.php:168
+#: includes/addons/jet-tabs-widget.php:140
+msgid "Template"
+msgstr ""
+
+#: includes/addons/jet-accordion-widget.php:136
+#: includes/addons/jet-switcher-widget.php:93
+#: includes/addons/jet-switcher-widget.php:159
+#: includes/addons/jet-tabs-widget.php:141
+msgid "Editor"
+msgstr ""
+
+#: includes/addons/jet-accordion-widget.php:145
+#: includes/addons/jet-tabs-widget.php:150
+msgid "Choose Template"
+msgstr ""
+
+#: includes/addons/jet-accordion-widget.php:150
+#: includes/addons/jet-accordion-widget.php:1098
+#: includes/addons/jet-accordion-widget.php:1201
+#: includes/addons/jet-switcher-widget.php:107
+#: includes/addons/jet-switcher-widget.php:173
+#: includes/addons/jet-switcher-widget.php:744
+#: includes/addons/jet-switcher-widget.php:813
+#: includes/addons/jet-tabs-widget.php:155
+#: includes/addons/jet-tabs-widget.php:1697
+#: includes/addons/jet-tabs-widget.php:1955
+msgid "Edit Template"
+msgstr ""
+
+#: includes/addons/jet-accordion-widget.php:161
+#: includes/addons/jet-image-accordion-widget.php:501
+#: includes/addons/jet-switcher-widget.php:118
+#: includes/addons/jet-switcher-widget.php:184
+#: includes/addons/jet-tabs-widget.php:166
+msgid "Content"
+msgstr ""
+
+#: includes/addons/jet-accordion-widget.php:163
+#: includes/addons/jet-switcher-widget.php:120
+#: includes/addons/jet-switcher-widget.php:186
+#: includes/addons/jet-tabs-widget.php:168
+msgid "Tab Item Content"
+msgstr ""
+
+#: includes/addons/jet-accordion-widget.php:176
+#: includes/addons/jet-tabs-widget.php:181
+msgid "Control CSS ID"
+msgstr ""
+
+#: includes/addons/jet-accordion-widget.php:191
+msgid "Toggle #1"
+msgstr ""
+
+#: includes/addons/jet-accordion-widget.php:194
+msgid "Toggle #2"
+msgstr ""
+
+#: includes/addons/jet-accordion-widget.php:197
+msgid "Toggle #3"
+msgstr ""
+
+#: includes/addons/jet-accordion-widget.php:209
+#: includes/addons/jet-image-accordion-widget.php:180
+#: includes/addons/jet-switcher-widget.php:205
+#: includes/addons/jet-tabs-widget.php:214
+#: includes/modules/jet-dashboard/inc/modules/settings/module.php:43
+msgid "Settings"
+msgstr ""
+
+#: includes/addons/jet-accordion-widget.php:216
+msgid "HTML Tag"
+msgstr ""
+
+#: includes/addons/jet-accordion-widget.php:217
+msgid "Select the HTML Tag for the Item's label"
+msgstr ""
+
+#: includes/addons/jet-accordion-widget.php:227
+msgid "Collapsible"
+msgstr ""
+
+#: includes/addons/jet-accordion-widget.php:239
+#: includes/addons/jet-switcher-widget.php:237
+#: includes/addons/jet-tabs-widget.php:248
+msgid "Show Effect"
+msgstr ""
+
+#: includes/addons/jet-accordion-widget.php:243
+#: includes/addons/jet-switcher-widget.php:241
+#: includes/addons/jet-tabs-widget.php:252
+#: includes/controls/groups/class-jet-tabs-group-control-box-style.php:208
+msgid "None"
+msgstr ""
+
+#: includes/addons/jet-accordion-widget.php:244
+#: includes/addons/jet-switcher-widget.php:242
+#: includes/addons/jet-tabs-widget.php:253
+msgid "Fade"
+msgstr ""
+
+#: includes/addons/jet-accordion-widget.php:245
+#: includes/addons/jet-switcher-widget.php:243
+#: includes/addons/jet-tabs-widget.php:254
+msgid "Zoom In"
+msgstr ""
+
+#: includes/addons/jet-accordion-widget.php:246
+#: includes/addons/jet-switcher-widget.php:244
+#: includes/addons/jet-tabs-widget.php:255
+msgid "Zoom Out"
+msgstr ""
+
+#: includes/addons/jet-accordion-widget.php:247
+#: includes/addons/jet-switcher-widget.php:245
+#: includes/addons/jet-tabs-widget.php:256
+msgid "Move Up"
+msgstr ""
+
+#: includes/addons/jet-accordion-widget.php:248
+#: includes/addons/jet-switcher-widget.php:246
+#: includes/addons/jet-tabs-widget.php:257
+msgid "Fall Perspective"
+msgstr ""
+
+#: includes/addons/jet-accordion-widget.php:256
+#: includes/addons/jet-tabs-widget.php:318
+msgid "Use Ajax Loading for Template"
+msgstr ""
+
+#: includes/addons/jet-accordion-widget.php:257
+msgid "Note: Do not use with query or dynamic data"
+msgstr ""
+
+#: includes/addons/jet-accordion-widget.php:259
+#: includes/addons/jet-accordion-widget.php:281
+#: includes/addons/jet-tabs-widget.php:280
+#: includes/addons/jet-tabs-widget.php:307
+#: includes/addons/jet-tabs-widget.php:326
+#: includes/addons/jet-tabs-widget.php:339
+#: includes/addons/jet-tabs-widget.php:373
+#: includes/addons/jet-tabs-widget.php:405
+#: includes/addons/jet-tabs-widget.php:455
+#: includes/addons/jet-tabs-widget.php:472
+#: includes/addons/jet-tabs-widget.php:489
+msgid "On"
+msgstr ""
+
+#: includes/addons/jet-accordion-widget.php:260
+#: includes/addons/jet-accordion-widget.php:282
+#: includes/addons/jet-tabs-widget.php:281
+#: includes/addons/jet-tabs-widget.php:308
+#: includes/addons/jet-tabs-widget.php:327
+#: includes/addons/jet-tabs-widget.php:340
+#: includes/addons/jet-tabs-widget.php:374
+#: includes/addons/jet-tabs-widget.php:406
+#: includes/addons/jet-tabs-widget.php:456
+#: includes/addons/jet-tabs-widget.php:473
+#: includes/addons/jet-tabs-widget.php:490
+msgid "Off"
+msgstr ""
+
+#: includes/addons/jet-accordion-widget.php:269
+msgid "FAQ Schema"
+msgstr ""
+
+#: includes/addons/jet-accordion-widget.php:278
+#: includes/addons/jet-tabs-widget.php:336
+msgid "Scrolling to the Content"
+msgstr ""
+
+#: includes/addons/jet-accordion-widget.php:279
+#: includes/addons/jet-tabs-widget.php:337
+msgid "Scrolling to the Content after Switching Tab Control"
+msgstr ""
+
+#: includes/addons/jet-accordion-widget.php:291
+#: includes/addons/jet-tabs-widget.php:349
+msgid "Scrolling offset (px)"
+msgstr ""
+
+#: includes/addons/jet-accordion-widget.php:312
+msgid "Scroll animation speed (ms)"
+msgstr ""
+
+#: includes/addons/jet-accordion-widget.php:329
+msgid "Accordion Container"
+msgstr ""
+
+#: includes/addons/jet-accordion-widget.php:347
+#: includes/addons/jet-accordion-widget.php:419
+#: includes/addons/jet-accordion-widget.php:803
+#: includes/addons/jet-accordion-widget.php:885
+#: includes/addons/jet-image-accordion-widget.php:546
+#: includes/addons/jet-image-accordion-widget.php:652
+#: includes/addons/jet-image-accordion-widget.php:746
+#: includes/addons/jet-image-accordion-widget.php:840
+#: includes/addons/jet-image-accordion-widget.php:909
+#: includes/addons/jet-switcher-widget.php:582
+#: includes/addons/jet-tabs-widget.php:553
+#: includes/addons/jet-tabs-widget.php:708
+#: includes/addons/jet-tabs-widget.php:1031
+#: includes/addons/jet-tabs-widget.php:1181
+#: includes/addons/jet-tabs-widget.php:1331
+#: includes/addons/jet-tabs-widget.php:1445
+msgid "Padding"
+msgstr ""
+
+#: includes/addons/jet-accordion-widget.php:362
+#: includes/addons/jet-accordion-widget.php:448
+#: includes/addons/jet-accordion-widget.php:654
+#: includes/addons/jet-accordion-widget.php:721
+#: includes/addons/jet-accordion-widget.php:788
+#: includes/addons/jet-accordion-widget.php:914
+#: includes/addons/jet-image-accordion-widget.php:332
+#: includes/addons/jet-image-accordion-widget.php:410
+#: includes/addons/jet-image-accordion-widget.php:986
+#: includes/addons/jet-image-accordion-widget.php:1063
+#: includes/addons/jet-switcher-widget.php:331
+#: includes/addons/jet-switcher-widget.php:597
+#: includes/addons/jet-tabs-widget.php:582
+#: includes/addons/jet-tabs-widget.php:737
+#: includes/addons/jet-tabs-widget.php:1062
+#: includes/addons/jet-tabs-widget.php:1212
+#: includes/addons/jet-tabs-widget.php:1362
+#: includes/addons/jet-tabs-widget.php:1460
+msgid "Border"
+msgstr ""
+
+#: includes/addons/jet-accordion-widget.php:373
+#: includes/addons/jet-accordion-widget.php:457
+#: includes/addons/jet-accordion-widget.php:818
+#: includes/addons/jet-accordion-widget.php:925
+#: includes/addons/jet-image-accordion-widget.php:343
+#: includes/addons/jet-image-accordion-widget.php:421
+#: includes/addons/jet-image-accordion-widget.php:997
+#: includes/addons/jet-image-accordion-widget.php:1074
+#: includes/addons/jet-switcher-widget.php:342
+#: includes/addons/jet-switcher-widget.php:608
+#: includes/addons/jet-tabs-widget.php:593
+#: includes/addons/jet-tabs-widget.php:748
+#: includes/addons/jet-tabs-widget.php:1073
+#: includes/addons/jet-tabs-widget.php:1223
+#: includes/addons/jet-tabs-widget.php:1373
+#: includes/addons/jet-tabs-widget.php:1471
+#: includes/controls/groups/class-jet-tabs-group-control-box-style.php:243
+msgid "Border Radius"
+msgstr ""
+
+#: includes/addons/jet-accordion-widget.php:401
+msgid "Toggle"
+msgstr ""
+
+#: includes/addons/jet-accordion-widget.php:433
+#: includes/addons/jet-accordion-widget.php:525
+#: includes/addons/jet-accordion-widget.php:899
+#: includes/addons/jet-image-accordion-widget.php:666
+#: includes/addons/jet-image-accordion-widget.php:760
+#: includes/addons/jet-image-accordion-widget.php:854
+#: includes/addons/jet-image-accordion-widget.php:923
+#: includes/addons/jet-switcher-widget.php:316
+#: includes/addons/jet-tabs-widget.php:567
+#: includes/addons/jet-tabs-widget.php:722
+#: includes/addons/jet-tabs-widget.php:1046
+#: includes/addons/jet-tabs-widget.php:1196
+#: includes/addons/jet-tabs-widget.php:1346
+msgid "Margin"
+msgstr ""
+
+#: includes/addons/jet-accordion-widget.php:485
+msgid "Toggle Control"
+msgstr ""
+
+#: includes/addons/jet-accordion-widget.php:494
+msgid "Icon "
+msgstr ""
+
+#: includes/addons/jet-accordion-widget.php:503
+#: includes/addons/jet-tabs-widget.php:1584
+msgid "Position"
+msgstr ""
+
+#: includes/addons/jet-accordion-widget.php:507
+#: includes/addons/jet-accordion-widget.php:576
+#: includes/addons/jet-image-accordion-widget.php:579
+#: includes/addons/jet-image-accordion-widget.php:699
+#: includes/addons/jet-image-accordion-widget.php:793
+#: includes/addons/jet-image-accordion-widget.php:887
+#: includes/addons/jet-image-accordion-widget.php:895
+#: includes/addons/jet-tabs-widget.php:235
+#: includes/addons/jet-tabs-widget.php:927
+msgid "Left"
+msgstr ""
+
+#: includes/addons/jet-accordion-widget.php:511
+#: includes/addons/jet-accordion-widget.php:584
+#: includes/addons/jet-image-accordion-widget.php:587
+#: includes/addons/jet-image-accordion-widget.php:707
+#: includes/addons/jet-image-accordion-widget.php:801
+#: includes/addons/jet-image-accordion-widget.php:887
+#: includes/addons/jet-image-accordion-widget.php:895
+#: includes/addons/jet-tabs-widget.php:237
+#: includes/addons/jet-tabs-widget.php:929
+msgid "Right"
+msgstr ""
+
+#: includes/addons/jet-accordion-widget.php:539
+#: includes/addons/jet-image-accordion-widget.php:510
+#: includes/addons/jet-image-accordion-widget.php:694
+#: includes/addons/jet-image-accordion-widget.php:788
+#: includes/addons/jet-image-accordion-widget.php:882
+#: includes/addons/jet-tabs-widget.php:785
+#: includes/addons/jet-tabs-widget.php:823
+msgid "Alignment"
+msgstr ""
+
+#: includes/addons/jet-accordion-widget.php:544
+#: includes/addons/jet-tabs-widget.php:635
+#: includes/addons/jet-tabs-widget.php:643
+#: includes/addons/jet-tabs-widget.php:667
+#: includes/addons/jet-tabs-widget.php:675
+#: includes/addons/jet-tabs-widget.php:791
+#: includes/addons/jet-tabs-widget.php:829
+#: includes/addons/jet-tabs-widget.php:837
+msgid "Start"
+msgstr ""
+
+#: includes/addons/jet-accordion-widget.php:548
+#: includes/addons/jet-accordion-widget.php:580
+#: includes/addons/jet-image-accordion-widget.php:519
+#: includes/addons/jet-image-accordion-widget.php:583
+#: includes/addons/jet-image-accordion-widget.php:610
+#: includes/addons/jet-image-accordion-widget.php:703
+#: includes/addons/jet-image-accordion-widget.php:797
+#: includes/addons/jet-image-accordion-widget.php:891
+#: includes/addons/jet-tabs-widget.php:639
+#: includes/addons/jet-tabs-widget.php:671
+#: includes/addons/jet-tabs-widget.php:795
+#: includes/addons/jet-tabs-widget.php:833
+msgid "Center"
+msgstr ""
+
+#: includes/addons/jet-accordion-widget.php:552
+msgid "Justify"
+msgstr ""
+
+#: includes/addons/jet-accordion-widget.php:556
+#: includes/addons/jet-tabs-widget.php:635
+#: includes/addons/jet-tabs-widget.php:643
+#: includes/addons/jet-tabs-widget.php:667
+#: includes/addons/jet-tabs-widget.php:675
+#: includes/addons/jet-tabs-widget.php:799
+#: includes/addons/jet-tabs-widget.php:829
+#: includes/addons/jet-tabs-widget.php:837
+msgid "End"
+msgstr ""
+
+#: includes/addons/jet-accordion-widget.php:571
+msgid "Text Alignment"
+msgstr ""
+
+#: includes/addons/jet-accordion-widget.php:600
+#: includes/addons/jet-image-accordion-widget.php:456
+#: includes/addons/jet-image-accordion-widget.php:939
+#: includes/addons/jet-tabs-widget.php:949
+#: includes/addons/jet-tabs-widget.php:1606
+msgid "Normal"
+msgstr ""
+
+#: includes/addons/jet-accordion-widget.php:607
+#: includes/addons/jet-accordion-widget.php:674
+#: includes/addons/jet-accordion-widget.php:741
+#: includes/addons/jet-image-accordion-widget.php:946
+#: includes/addons/jet-image-accordion-widget.php:1029
+#: includes/addons/jet-tabs-widget.php:956
+#: includes/addons/jet-tabs-widget.php:1106
+#: includes/addons/jet-tabs-widget.php:1256
+msgid "Text Color"
+msgstr ""
+
+#: includes/addons/jet-accordion-widget.php:667
+#: includes/addons/jet-image-accordion-widget.php:1022
+#: includes/addons/jet-tabs-widget.php:270
+#: includes/addons/jet-tabs-widget.php:1099
+#: includes/addons/jet-tabs-widget.php:1626
+msgid "Hover"
+msgstr ""
+
+#: includes/addons/jet-accordion-widget.php:846
+msgid "Toggle Content"
+msgstr ""
+
+#: includes/addons/jet-accordion-widget.php:864
+#: includes/addons/jet-switcher-widget.php:561
+#: includes/addons/jet-tabs-widget.php:1415
+msgid "Text color"
+msgstr ""
+
+#: includes/addons/jet-accordion-widget.php:948
+#: includes/addons/jet-tabs-widget.php:1494
+msgid "Loader Styles"
+msgstr ""
+
+#: includes/addons/jet-accordion-widget.php:961
+#: includes/addons/jet-tabs-widget.php:1507
+msgid "Loader color"
+msgstr ""
+
+#: includes/addons/jet-accordion-widget.php:1151
+#: includes/addons/jet-switcher-widget.php:763
+#: includes/addons/jet-tabs-widget.php:1905
+msgid "You Haven’t Saved Templates Yet."
+msgstr ""
+
+#: includes/addons/jet-accordion-widget.php:1152
+#: includes/addons/jet-switcher-widget.php:764
+#: includes/addons/jet-tabs-widget.php:1906
+msgid "What is Library?"
+msgstr ""
+
+#: includes/addons/jet-accordion-widget.php:1152
+#: includes/addons/jet-switcher-widget.php:764
+#: includes/addons/jet-tabs-widget.php:1906
+msgid "Read our tutorial on using Library templates."
+msgstr ""
+
+#: includes/addons/jet-accordion-widget.php:1161
+#: includes/addons/jet-switcher-widget.php:773
+#: includes/addons/jet-tabs-widget.php:1915
+msgid "Template is not defined. "
+msgstr ""
+
+#: includes/addons/jet-accordion-widget.php:1173
+#: includes/addons/jet-switcher-widget.php:785
+#: includes/addons/jet-tabs-widget.php:1927
+msgid "Select an existing template or create a "
+msgstr ""
+
+#: includes/addons/jet-accordion-widget.php:1173
+#: includes/addons/jet-switcher-widget.php:785
+#: includes/addons/jet-tabs-widget.php:1927
+msgid "new one"
+msgstr ""
+
+#: includes/addons/jet-accordion-widget.php:1187
+msgid ""
+"The toggles are working. Please, note, that you have to add a template to "
+"the library in order to be able to display it inside the toggles."
+msgstr ""
+
+#: includes/addons/jet-image-accordion-widget.php:28
+msgid "Image Accordion"
+msgstr ""
+
+#: includes/addons/jet-image-accordion-widget.php:93
+#: includes/addons/jet-tabs-widget.php:113
+msgid "Image"
+msgstr ""
+
+#: includes/addons/jet-image-accordion-widget.php:105
+#: includes/addons/jet-image-accordion-widget.php:685
+msgid "Title"
+msgstr ""
+
+#: includes/addons/jet-image-accordion-widget.php:114
+#: includes/addons/jet-image-accordion-widget.php:779
+msgid "Description"
+msgstr ""
+
+#: includes/addons/jet-image-accordion-widget.php:123
+msgid "Button text"
+msgstr ""
+
+#: includes/addons/jet-image-accordion-widget.php:125
+msgid "More"
+msgstr ""
+
+#: includes/addons/jet-image-accordion-widget.php:133
+msgid "Link"
+msgstr ""
+
+#: includes/addons/jet-image-accordion-widget.php:153
+msgid "Item #1"
+msgstr ""
+
+#: includes/addons/jet-image-accordion-widget.php:154
+#: includes/addons/jet-image-accordion-widget.php:161
+#: includes/addons/jet-image-accordion-widget.php:168
+msgid "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+msgstr ""
+
+#: includes/addons/jet-image-accordion-widget.php:160
+msgid "Item #2"
+msgstr ""
+
+#: includes/addons/jet-image-accordion-widget.php:167
+msgid "Item #3"
+msgstr ""
+
+#: includes/addons/jet-image-accordion-widget.php:187
+msgid "Title Display"
+msgstr ""
+
+#: includes/addons/jet-image-accordion-widget.php:190
+msgid "On hover"
+msgstr ""
+
+#: includes/addons/jet-image-accordion-widget.php:191
+msgid "On default state"
+msgstr ""
+
+#: includes/addons/jet-image-accordion-widget.php:192
+msgid "On default state & on hover"
+msgstr ""
+
+#: includes/addons/jet-image-accordion-widget.php:201
+msgid "Title HTML Tag"
+msgstr ""
+
+#: includes/addons/jet-image-accordion-widget.php:202
+msgid "Select the HTML Tag for the Item's title"
+msgstr ""
+
+#: includes/addons/jet-image-accordion-widget.php:213
+msgid "Images Size"
+msgstr ""
+
+#: includes/addons/jet-image-accordion-widget.php:222
+msgid "Orientation"
+msgstr ""
+
+#: includes/addons/jet-image-accordion-widget.php:226
+msgid "Vertical"
+msgstr ""
+
+#: includes/addons/jet-image-accordion-widget.php:227
+msgid "Horizontal"
+msgstr ""
+
+#: includes/addons/jet-image-accordion-widget.php:242
+msgid "Active Size(%)"
+msgstr ""
+
+#: includes/addons/jet-image-accordion-widget.php:260
+msgid "Animation Duration"
+msgstr ""
+
+#: includes/addons/jet-image-accordion-widget.php:272
+msgid "Easing"
+msgstr ""
+
+#: includes/addons/jet-image-accordion-widget.php:276
+msgid "Sine"
+msgstr ""
+
+#: includes/addons/jet-image-accordion-widget.php:277
+msgid "Quint"
+msgstr ""
+
+#: includes/addons/jet-image-accordion-widget.php:278
+msgid "Cubic"
+msgstr ""
+
+#: includes/addons/jet-image-accordion-widget.php:279
+msgid "Expo"
+msgstr ""
+
+#: includes/addons/jet-image-accordion-widget.php:280
+msgid "Circ"
+msgstr ""
+
+#: includes/addons/jet-image-accordion-widget.php:281
+msgid "Back"
+msgstr ""
+
+#: includes/addons/jet-image-accordion-widget.php:291
+msgid "Container"
+msgstr ""
+
+#: includes/addons/jet-image-accordion-widget.php:300
+msgid "Height(px)"
+msgstr ""
+
+#: includes/addons/jet-image-accordion-widget.php:368
+msgid "Item"
+msgstr ""
+
+#: includes/addons/jet-image-accordion-widget.php:377
+msgid "Item Gutter"
+msgstr ""
+
+#: includes/addons/jet-image-accordion-widget.php:444
+msgid "Cover Styles"
+msgstr ""
+
+#: includes/addons/jet-image-accordion-widget.php:515
+#: includes/addons/jet-image-accordion-widget.php:606
+#: includes/addons/jet-tabs-widget.php:236
+#: includes/addons/jet-tabs-widget.php:928
+msgid "Top"
+msgstr ""
+
+#: includes/addons/jet-image-accordion-widget.php:523
+#: includes/addons/jet-image-accordion-widget.php:614
+#: includes/addons/jet-tabs-widget.php:238
+msgid "Bottom"
+msgstr ""
+
+#: includes/addons/jet-image-accordion-widget.php:565
+msgid "Title (Default)"
+msgstr ""
+
+#: includes/addons/jet-image-accordion-widget.php:574
+msgid "Horizontal Alignment"
+msgstr ""
+
+#: includes/addons/jet-image-accordion-widget.php:601
+msgid "Vertical Alignment"
+msgstr ""
+
+#: includes/addons/jet-image-accordion-widget.php:628
+#: includes/addons/jet-image-accordion-widget.php:722
+#: includes/addons/jet-image-accordion-widget.php:816
+#: includes/addons/jet-tabs-widget.php:1613
+#: includes/addons/jet-tabs-widget.php:1633
+#: includes/controls/groups/class-jet-tabs-group-control-box-style.php:27
+msgid "Color"
+msgstr ""
+
+#: includes/addons/jet-image-accordion-widget.php:873
+msgid "Action Button"
+msgstr ""
+
+#: includes/addons/jet-image-accordion-widget.php:958
+#: includes/addons/jet-image-accordion-widget.php:1041
+msgid "Background Color"
+msgstr ""
+
+#: includes/addons/jet-image-accordion-widget.php:1106
+msgid "Content Order and Alignment"
+msgstr ""
+
+#: includes/addons/jet-image-accordion-widget.php:1115
+msgid "Title Order"
+msgstr ""
+
+#: includes/addons/jet-image-accordion-widget.php:1131
+msgid "Description Order"
+msgstr ""
+
+#: includes/addons/jet-image-accordion-widget.php:1147
+msgid "Button Order"
+msgstr ""
+
+#: includes/addons/jet-image-accordion-widget.php:1321
+msgid "Full"
+msgstr ""
+
+#: includes/addons/jet-switcher-widget.php:28
+msgid "Switcher"
+msgstr ""
+
+#: includes/addons/jet-switcher-widget.php:69
+#: includes/addons/jet-switcher-widget.php:78
+#: includes/addons/jet-switcher-widget.php:215
+#: includes/addons/jet-switcher-widget.php:422
+msgid "Disable"
+msgstr ""
+
+#: includes/addons/jet-switcher-widget.php:135
+#: includes/addons/jet-switcher-widget.php:144
+#: includes/addons/jet-switcher-widget.php:214
+#: includes/addons/jet-switcher-widget.php:479
+msgid "Enable"
+msgstr ""
+
+#: includes/addons/jet-switcher-widget.php:212
+msgid "Initial State"
+msgstr ""
+
+#: includes/addons/jet-switcher-widget.php:224
+msgid "Switcher Preset"
+msgstr ""
+
+#: includes/addons/jet-switcher-widget.php:228
+msgid "Preset-1"
+msgstr ""
+
+#: includes/addons/jet-switcher-widget.php:229
+msgid "Preset-2"
+msgstr ""
+
+#: includes/addons/jet-switcher-widget.php:256
+msgid "Switcher Control"
+msgstr ""
+
+#: includes/addons/jet-switcher-widget.php:265
+msgid "Width"
+msgstr ""
+
+#: includes/addons/jet-switcher-widget.php:281
+msgid "Height"
+msgstr ""
+
+#: includes/addons/jet-switcher-widget.php:297
+msgid "Handler Width"
+msgstr ""
+
+#: includes/addons/jet-switcher-widget.php:365
+msgid "Handler"
+msgstr ""
+
+#: includes/addons/jet-switcher-widget.php:375
+msgid "Handler Offset"
+msgstr ""
+
+#: includes/addons/jet-switcher-widget.php:391
+msgid "Typography"
+msgstr ""
+
+#: includes/addons/jet-switcher-widget.php:401
+msgid "Labels"
+msgstr ""
+
+#: includes/addons/jet-switcher-widget.php:411
+msgid "States"
+msgstr ""
+
+#: includes/addons/jet-switcher-widget.php:429
+#: includes/addons/jet-switcher-widget.php:486
+msgid "Control Color"
+msgstr ""
+
+#: includes/addons/jet-switcher-widget.php:441
+#: includes/addons/jet-switcher-widget.php:498
+msgid "Handler Color"
+msgstr ""
+
+#: includes/addons/jet-switcher-widget.php:453
+#: includes/addons/jet-switcher-widget.php:510
+msgid "Disable Label Color"
+msgstr ""
+
+#: includes/addons/jet-switcher-widget.php:465
+#: includes/addons/jet-switcher-widget.php:522
+msgid "Enable Label Color"
+msgstr ""
+
+#: includes/addons/jet-switcher-widget.php:543
+msgid "Switcher Content"
+msgstr ""
+
+#: includes/addons/jet-switcher-widget.php:799
+msgid ""
+"The switcher are working. Please, note, that you have to add a template to "
+"the library in order to be able to display it inside the switcher."
+msgstr ""
+
+#: includes/addons/jet-tabs-widget.php:29
+msgid "Tabs"
+msgstr ""
+
+#: includes/addons/jet-tabs-widget.php:86
+msgid "Use Image?"
+msgstr ""
+
+#: includes/addons/jet-tabs-widget.php:196
+msgid "Tab #1"
+msgstr ""
+
+#: includes/addons/jet-tabs-widget.php:199
+msgid "Tab #2"
+msgstr ""
+
+#: includes/addons/jet-tabs-widget.php:202
+msgid "Tab #3"
+msgstr ""
+
+#: includes/addons/jet-tabs-widget.php:221
+msgid "Item Label HTML Tag"
+msgstr ""
+
+#: includes/addons/jet-tabs-widget.php:231
+msgid "Tabs Position"
+msgstr ""
+
+#: includes/addons/jet-tabs-widget.php:265
+msgid "Tabs Event"
+msgstr ""
+
+#: includes/addons/jet-tabs-widget.php:269
+msgid "Click"
+msgstr ""
+
+#: includes/addons/jet-tabs-widget.php:278
+msgid "Auto Switch"
+msgstr ""
+
+#: includes/addons/jet-tabs-widget.php:290
+msgid "Auto Switch Delay"
+msgstr ""
+
+#: includes/addons/jet-tabs-widget.php:305
+msgid "No Active Tabs"
+msgstr ""
+
+#: includes/addons/jet-tabs-widget.php:321
+#, php-format
+msgid ""
+"If you need to use dynamic data inside the template, please switch <a "
+"href=\"%s\" target=\"_blank\" rel=\"noopener noreferrer\">Ajax Request "
+"Type</a> to Self."
+msgstr ""
+
+#: includes/addons/jet-tabs-widget.php:370
+msgid "Scrolling Tabs Navigation"
+msgstr ""
+
+#: includes/addons/jet-tabs-widget.php:371
+msgid "Scrolling tabs navigation if it does not fit in viewport"
+msgstr ""
+
+#: includes/addons/jet-tabs-widget.php:386
+msgid "Scroll Type"
+msgstr ""
+
+#: includes/addons/jet-tabs-widget.php:390
+msgid "Plain"
+msgstr ""
+
+#: includes/addons/jet-tabs-widget.php:391
+msgid "Slider"
+msgstr ""
+
+#: includes/addons/jet-tabs-widget.php:403
+msgid "Fixed Slide Width"
+msgstr ""
+
+#: includes/addons/jet-tabs-widget.php:420
+msgid "Slide Width"
+msgstr ""
+
+#: includes/addons/jet-tabs-widget.php:453
+msgid "Centered"
+msgstr ""
+
+#: includes/addons/jet-tabs-widget.php:470
+msgid "Looped"
+msgstr ""
+
+#: includes/addons/jet-tabs-widget.php:488
+msgid "Enable Navigation"
+msgstr ""
+
+#: includes/addons/jet-tabs-widget.php:506
+msgid "General"
+msgstr ""
+
+#: includes/addons/jet-tabs-widget.php:515
+msgid "Tabs Control Width"
+msgstr ""
+
+#: includes/addons/jet-tabs-widget.php:516
+msgid "Working with left or right tabs position"
+msgstr ""
+
+#: includes/addons/jet-tabs-widget.php:621
+msgid "Tabs Control"
+msgstr ""
+
+#: includes/addons/jet-tabs-widget.php:630
+msgid "Tabs Container Alignment"
+msgstr ""
+
+#: includes/addons/jet-tabs-widget.php:647
+#: includes/addons/jet-tabs-widget.php:679
+msgid "Stretch"
+msgstr ""
+
+#: includes/addons/jet-tabs-widget.php:662
+msgid "Tabs Alignment"
+msgstr ""
+
+#: includes/addons/jet-tabs-widget.php:776
+msgid "Tabs Control Item"
+msgstr ""
+
+#: includes/addons/jet-tabs-widget.php:786
+msgid ""
+"Working with left or right tabs position and left or right icon position"
+msgstr ""
+
+#: includes/addons/jet-tabs-widget.php:824
+msgid "Working with left or right tabs position and top icon position"
+msgstr ""
+
+#: includes/addons/jet-tabs-widget.php:863
+msgid "Icon Styles"
+msgstr ""
+
+#: includes/addons/jet-tabs-widget.php:871
+msgid "Icon Margin"
+msgstr ""
+
+#: includes/addons/jet-tabs-widget.php:886
+msgid "Image Margin"
+msgstr ""
+
+#: includes/addons/jet-tabs-widget.php:901
+msgid "Image Width"
+msgstr ""
+
+#: includes/addons/jet-tabs-widget.php:923
+msgid "Icon Position"
+msgstr ""
+
+#: includes/addons/jet-tabs-widget.php:938
+msgid "State Styles"
+msgstr ""
+
+#: includes/addons/jet-tabs-widget.php:984
+#: includes/addons/jet-tabs-widget.php:1134
+#: includes/addons/jet-tabs-widget.php:1284
+msgid "Icon Color"
+msgstr ""
+
+#: includes/addons/jet-tabs-widget.php:1000
+#: includes/addons/jet-tabs-widget.php:1150
+#: includes/addons/jet-tabs-widget.php:1300
+#: includes/controls/groups/class-jet-tabs-group-control-box-style.php:169
+msgid "Icon Size"
+msgstr ""
+
+#: includes/addons/jet-tabs-widget.php:1406
+msgid "Tabs Content"
+msgstr ""
+
+#: includes/addons/jet-tabs-widget.php:1527
+msgid "Navigation"
+msgstr ""
+
+#: includes/addons/jet-tabs-widget.php:1541
+msgid "Arrows"
+msgstr ""
+
+#: includes/addons/jet-tabs-widget.php:1556
+msgid "Size"
+msgstr ""
+
+#: includes/addons/jet-tabs-widget.php:1588
+msgid "Inside"
+msgstr ""
+
+#: includes/addons/jet-tabs-widget.php:1589
+msgid "Outside"
+msgstr ""
+
+#: includes/addons/jet-tabs-widget.php:1941
+msgid ""
+"The tabs are working. Please, note, that you have to add a template to the "
+"library in order to be able to display it inside the tabs."
+msgstr ""
+
+#: includes/base/class-jet-tabs-base.php:662
+msgid "H1"
+msgstr ""
+
+#: includes/base/class-jet-tabs-base.php:663
+msgid "H2"
+msgstr ""
+
+#: includes/base/class-jet-tabs-base.php:664
+msgid "H3"
+msgstr ""
+
+#: includes/base/class-jet-tabs-base.php:665
+msgid "H4"
+msgstr ""
+
+#: includes/base/class-jet-tabs-base.php:666
+msgid "H5"
+msgstr ""
+
+#: includes/base/class-jet-tabs-base.php:667
+msgid "H6"
+msgstr ""
+
+#: includes/base/class-jet-tabs-base.php:668
+msgid "div"
+msgstr ""
+
+#: includes/base/class-jet-tabs-base.php:669
+msgid "span"
+msgstr ""
+
+#: includes/base/class-jet-tabs-base.php:670
+msgid "p"
+msgstr ""
+
+#: includes/compatibility/compatibility.php:85
+msgid "Jet Switcher: Disable Label"
+msgstr ""
+
+#: includes/compatibility/compatibility.php:90
+msgid "Jet Switcher: Disable Editor Content"
+msgstr ""
+
+#: includes/compatibility/compatibility.php:95
+msgid "Jet Switcher: Enable Label"
+msgstr ""
+
+#: includes/compatibility/compatibility.php:100
+msgid "Jet Switcher: Enable Editor Content"
+msgstr ""
+
+#: includes/compatibility/wpml-modules/jet-wpml-accordion.php:18
+msgid "Jet Accordion: Item Label"
+msgstr ""
+
+#: includes/compatibility/wpml-modules/jet-wpml-accordion.php:21
+msgid "Jet Accordion: Item Editor Content"
+msgstr ""
+
+#: includes/compatibility/wpml-modules/jet-wpml-image-accordion.php:18
+msgid "Jet Image Accordion: Item Label"
+msgstr ""
+
+#: includes/compatibility/wpml-modules/jet-wpml-image-accordion.php:21
+msgid "Jet Image Accordion: Item Description"
+msgstr ""
+
+#: includes/compatibility/wpml-modules/jet-wpml-image-accordion.php:24
+msgid "Jet Image Accordion: Item Button text"
+msgstr ""
+
+#: includes/compatibility/wpml-modules/jet-wpml-image-accordion.php:27
+msgid "Jet Image Accordion: Item Link"
+msgstr ""
+
+#: includes/compatibility/wpml-modules/jet-wpml-tabs.php:18
+msgid "Jet Tabs: Item Label"
+msgstr ""
+
+#: includes/compatibility/wpml-modules/jet-wpml-tabs.php:21
+msgid "Jet Tabs: Item Editor Content"
+msgstr ""
+
+#: includes/controls/groups/class-jet-tabs-group-control-box-style.php:35
+msgctxt "Background Control"
+msgid "Background Type"
+msgstr ""
+
+#: includes/controls/groups/class-jet-tabs-group-control-box-style.php:39
+msgctxt "Background Control"
+msgid "Classic"
+msgstr ""
+
+#: includes/controls/groups/class-jet-tabs-group-control-box-style.php:43
+msgctxt "Background Control"
+msgid "Gradient"
+msgstr ""
+
+#: includes/controls/groups/class-jet-tabs-group-control-box-style.php:52
+msgctxt "Background Control"
+msgid "Color"
+msgstr ""
+
+#: includes/controls/groups/class-jet-tabs-group-control-box-style.php:55
+msgctxt "Background Control"
+msgid "Background Color"
+msgstr ""
+
+#: includes/controls/groups/class-jet-tabs-group-control-box-style.php:65
+#: includes/controls/groups/class-jet-tabs-group-control-box-style.php:91
+msgctxt "Background Control"
+msgid "Location"
+msgstr ""
+
+#: includes/controls/groups/class-jet-tabs-group-control-box-style.php:80
+msgctxt "Background Control"
+msgid "Second Color"
+msgstr ""
+
+#: includes/controls/groups/class-jet-tabs-group-control-box-style.php:106
+msgctxt "Background Control"
+msgid "Type"
+msgstr ""
+
+#: includes/controls/groups/class-jet-tabs-group-control-box-style.php:109
+msgctxt "Background Control"
+msgid "Linear"
+msgstr ""
+
+#: includes/controls/groups/class-jet-tabs-group-control-box-style.php:110
+msgctxt "Background Control"
+msgid "Radial"
+msgstr ""
+
+#: includes/controls/groups/class-jet-tabs-group-control-box-style.php:121
+msgctxt "Background Control"
+msgid "Angle"
+msgstr ""
+
+#: includes/controls/groups/class-jet-tabs-group-control-box-style.php:144
+msgctxt "Background Control"
+msgid "Position"
+msgstr ""
+
+#: includes/controls/groups/class-jet-tabs-group-control-box-style.php:147
+msgctxt "Background Control"
+msgid "Center Center"
+msgstr ""
+
+#: includes/controls/groups/class-jet-tabs-group-control-box-style.php:148
+msgctxt "Background Control"
+msgid "Center Left"
+msgstr ""
+
+#: includes/controls/groups/class-jet-tabs-group-control-box-style.php:149
+msgctxt "Background Control"
+msgid "Center Right"
+msgstr ""
+
+#: includes/controls/groups/class-jet-tabs-group-control-box-style.php:150
+msgctxt "Background Control"
+msgid "Top Center"
+msgstr ""
+
+#: includes/controls/groups/class-jet-tabs-group-control-box-style.php:151
+msgctxt "Background Control"
+msgid "Top Left"
+msgstr ""
+
+#: includes/controls/groups/class-jet-tabs-group-control-box-style.php:152
+msgctxt "Background Control"
+msgid "Top Right"
+msgstr ""
+
+#: includes/controls/groups/class-jet-tabs-group-control-box-style.php:153
+msgctxt "Background Control"
+msgid "Bottom Center"
+msgstr ""
+
+#: includes/controls/groups/class-jet-tabs-group-control-box-style.php:154
+msgctxt "Background Control"
+msgid "Bottom Left"
+msgstr ""
+
+#: includes/controls/groups/class-jet-tabs-group-control-box-style.php:155
+msgctxt "Background Control"
+msgid "Bottom Right"
+msgstr ""
+
+#: includes/controls/groups/class-jet-tabs-group-control-box-style.php:187
+msgid "Box Size"
+msgstr ""
+
+#: includes/controls/groups/class-jet-tabs-group-control-box-style.php:205
+msgctxt "Border Control"
+msgid "Border Type"
+msgstr ""
+
+#: includes/controls/groups/class-jet-tabs-group-control-box-style.php:209
+msgctxt "Border Control"
+msgid "Solid"
+msgstr ""
+
+#: includes/controls/groups/class-jet-tabs-group-control-box-style.php:210
+msgctxt "Border Control"
+msgid "Double"
+msgstr ""
+
+#: includes/controls/groups/class-jet-tabs-group-control-box-style.php:211
+msgctxt "Border Control"
+msgid "Dotted"
+msgstr ""
+
+#: includes/controls/groups/class-jet-tabs-group-control-box-style.php:212
+msgctxt "Border Control"
+msgid "Dashed"
+msgstr ""
+
+#: includes/controls/groups/class-jet-tabs-group-control-box-style.php:220
+msgctxt "Border Control"
+msgid "Width"
+msgstr ""
+
+#: includes/controls/groups/class-jet-tabs-group-control-box-style.php:231
+msgctxt "Border Control"
+msgid "Color"
+msgstr ""
+
+#: includes/controls/groups/class-jet-tabs-group-control-box-style.php:252
+#: includes/controls/groups/class-jet-tabs-group-control-box-style.php:262
+msgctxt "Box Shadow Control"
+msgid "Box Shadow"
+msgstr ""
+
+#: includes/controls/groups/class-jet-tabs-group-control-box-style.php:273
+msgctxt "Box Shadow Control"
+msgid "Position"
+msgstr ""
+
+#: includes/controls/groups/class-jet-tabs-group-control-box-style.php:276
+msgctxt "Box Shadow Control"
+msgid "Outline"
+msgstr ""
+
+#: includes/controls/groups/class-jet-tabs-group-control-box-style.php:277
+msgctxt "Box Shadow Control"
+msgid "Inset"
+msgstr ""
+
+#: includes/db-upgrader.php:64
+msgid "Start Update"
+msgstr ""
+
+#: includes/db-upgrader.php:65
+msgid "Data Update"
+msgstr ""
+
+#: includes/db-upgrader.php:67
+#, php-format
+msgid ""
+"Module DB Updater init error in %s - version and slug is required arguments"
+msgstr ""
+
+#: includes/db-upgrader.php:68
+msgid "We need to update your database to the latest version."
+msgstr ""
+
+#: includes/db-upgrader.php:69
+msgid "Update complete, thank you for updating to the latest version!"
+msgstr ""
+
+#: includes/integration.php:231 includes/settings/manager.php:68
+msgid "JetTabs"
+msgstr ""
+
+#: includes/modules/jet-dashboard/assets/js/welcome-page.js:46
+msgid "Go to docs"
+msgstr ""
+
+#: includes/modules/jet-dashboard/assets/js/welcome-page.js:329
+#, javascript-format
+msgid "You can update <b>%s plugin</b>"
+msgid_plural "You can update <b>%s plugins</b>"
+msgstr[0] ""
+msgstr[1] ""
+
+#: includes/modules/jet-dashboard/assets/js/welcome-page.js:330
+msgid "All plugins updated"
+msgstr ""
+
+#: includes/modules/jet-dashboard/assets/js/welcome-page.js:334
+msgid "Activate license to update your JetPlugins"
+msgstr ""
+
+#: includes/modules/jet-dashboard/assets/js/welcome-page.js:341
+#, javascript-format
+msgid "You can install <b>%s more Plugin</b> with your licence"
+msgid_plural "You can install <b>%s more Plugins</b>  with your licence"
+msgstr[0] ""
+msgstr[1] ""
+
+#: includes/modules/jet-dashboard/assets/js/welcome-page.js:342
+msgid "All available plugins are already installed"
+msgstr ""
+
+#: includes/modules/jet-dashboard/assets/js/welcome-page.js:372
+#: includes/modules/jet-dashboard/assets/js/welcome-page.js:380
+msgid "Try quickstart installation"
+msgstr ""
+
+#: includes/modules/jet-dashboard/assets/js/welcome-page.js:377
+msgid "Unpack Free All-inclusive items"
+msgstr ""
+
+#: includes/modules/jet-dashboard/assets/js/welcome-page.js:451
+msgid "<b class=\"lifetime\">Lifetime</b>"
+msgstr ""
+
+#: includes/modules/jet-dashboard/assets/js/welcome-page.js:454
+#, javascript-format
+msgid "Licence expires <b class=\"expire-date\">%s</b>"
+msgstr ""
+
+#: includes/modules/jet-dashboard/inc/data-manager.php:212
+#: includes/modules/jet-dashboard/inc/license-manager.php:76
+#: includes/modules/jet-dashboard/inc/plugin-manager.php:577
+msgid "Page has expired. Please reload this page."
+msgstr ""
+
+#: includes/modules/jet-dashboard/inc/data-manager.php:221
+msgid "Sorry, you are not allowed to do that on this site."
+msgstr ""
+
+#: includes/modules/jet-dashboard/inc/license-manager.php:85
+msgid "Sorry, you are not allowed to manage license data on this site."
+msgstr ""
+
+#: includes/modules/jet-dashboard/inc/license-manager.php:292
+msgid "License expires soon!"
+msgstr ""
+
+#: includes/modules/jet-dashboard/inc/license-manager.php:293
+msgid ""
+"Your primary license will expire in 30 days. You can renew you current "
+"licese in your crocoblock account"
+msgstr ""
+
+#: includes/modules/jet-dashboard/inc/license-manager.php:296
+msgid "Go to account"
+msgstr ""
+
+#: includes/modules/jet-dashboard/inc/license-manager.php:486
+msgid "The site is not activated"
+msgstr ""
+
+#: includes/modules/jet-dashboard/inc/license-manager.php:487
+msgid ""
+"Your license key is not activated for this site. Go to the license manager "
+"and activate your key"
+msgstr ""
+
+#: includes/modules/jet-dashboard/inc/license-manager.php:490
+#: includes/modules/jet-dashboard/inc/license-manager.php:517
+msgid "Activate"
+msgstr ""
+
+#: includes/modules/jet-dashboard/inc/license-manager.php:513
+msgid "This site is not activated"
+msgstr ""
+
+#: includes/modules/jet-dashboard/inc/license-manager.php:514
+msgid ""
+"This site is not activated for this license. Go to the license manager "
+"deactivate your license and activate your key again"
+msgstr ""
+
+#: includes/modules/jet-dashboard/inc/modules/license/module.php:37
+msgid "Plugin Manager"
+msgstr ""
+
+#: includes/modules/jet-dashboard/inc/modules/license/module.php:65
+#: includes/modules/jet-dashboard/inc/modules/license/module.php:66
+msgid "Update & Installation"
+msgstr ""
+
+#: includes/modules/jet-dashboard/inc/modules/license/module.php:84
+#: includes/modules/jet-dashboard/inc/modules/license/module.php:85
+msgid "License"
+msgstr ""
+
+#: includes/modules/jet-dashboard/inc/modules/settings/module.php:74
+#: includes/modules/jet-dashboard/inc/modules/settings/module.php:75
+msgid "JetPlugins Settings"
+msgstr ""
+
+#: includes/modules/jet-dashboard/inc/modules/upsale/module.php:49
+#: includes/modules/jet-dashboard/inc/modules/upsale/module.php:176
+#: includes/modules/jet-dashboard/views/upsale/main.php:38
+msgid "Get Crocoblock"
+msgstr ""
+
+#: includes/modules/jet-dashboard/inc/modules/upsale/module.php:97
+#: includes/modules/jet-dashboard/inc/modules/upsale/module.php:98
+#: includes/modules/jet-dashboard/inc/modules/upsale/module.php:170
+msgid "Go Lifetime"
+msgstr ""
+
+#: includes/modules/jet-dashboard/inc/modules/upsale/module.php:115
+#: includes/modules/jet-dashboard/inc/modules/upsale/module.php:116
+#: includes/modules/jet-dashboard/inc/modules/upsale/module.php:173
+msgid "Go All-Inclusive"
+msgstr ""
+
+#: includes/modules/jet-dashboard/inc/modules/welcome/dev-test.php:37
+msgid "Dev Test Page"
+msgstr ""
+
+#: includes/modules/jet-dashboard/inc/modules/welcome/module.php:37
+msgid "Welcome"
+msgstr ""
+
+#: includes/modules/jet-dashboard/inc/notice-manager.php:141
+msgid "Your site."
+msgstr ""
+
+#: includes/modules/jet-dashboard/inc/notice-manager.php:142
+msgid "Your site database needs to be updated to the latest version."
+msgstr ""
+
+#: includes/modules/jet-dashboard/inc/notice-manager.php:145
+#: includes/modules/jet-dashboard/views/welcome/main.php:35
+msgid "Update Now"
+msgstr ""
+
+#: includes/modules/jet-dashboard/inc/notice-manager.php:188
+msgid "Dismiss this notice."
+msgstr ""
+
+#: includes/modules/jet-dashboard/inc/plugin-manager.php:224
+#, php-format
+msgid "More information about %s"
+msgstr ""
+
+#: includes/modules/jet-dashboard/inc/plugin-manager.php:639
+#: includes/settings.php:143
+msgid "Error"
+msgstr ""
+
+#: includes/modules/jet-dashboard/inc/plugin-manager.php:640
+msgid "Server error. Stop cheating!!!"
+msgstr ""
+
+#: includes/modules/jet-dashboard/jet-dashboard.php:253
+#: includes/modules/jet-dashboard/jet-dashboard.php:254
+msgid "Crocoblock"
+msgstr ""
+
+#: includes/modules/jet-dashboard/jet-dashboard.php:266
+#: includes/modules/jet-dashboard/jet-dashboard.php:267
+msgid "Dashboard"
+msgstr ""
+
+#: includes/modules/jet-dashboard/views/common/sidebar.php:28
+msgid "New to Crocoblock?"
+msgstr ""
+
+#: includes/modules/jet-dashboard/views/common/sidebar.php:29
+msgid "Start Here"
+msgstr ""
+
+#: includes/modules/jet-dashboard/views/common/sidebar.php:63
+msgid "Support & Info"
+msgstr ""
+
+#: includes/modules/jet-dashboard/views/common/sidebar.php:64
+msgid "Help Center"
+msgstr ""
+
+#: includes/modules/jet-dashboard/views/license/license-item.php:9
+msgid "JetPlugins License Activation"
+msgstr ""
+
+#: includes/modules/jet-dashboard/views/license/license-item.php:10
+msgid "Congratulations!"
+msgstr ""
+
+#: includes/modules/jet-dashboard/views/license/license-item.php:10
+msgid "Your license has been activated!"
+msgstr ""
+
+#: includes/modules/jet-dashboard/views/license/license-item.php:13
+msgid "Activate license for automatic updates and awesome support"
+msgstr ""
+
+#: includes/modules/jet-dashboard/views/license/license-item.php:32
+#: includes/modules/jet-dashboard/views/license/license-item.php:103
+#: includes/modules/jet-dashboard/views/license/main.php:146
+msgid "Activate License"
+msgstr ""
+
+#: includes/modules/jet-dashboard/views/license/license-item.php:33
+#: includes/modules/jet-dashboard/views/license/license-item.php:104
+msgid "Deactivate License"
+msgstr ""
+
+#: includes/modules/jet-dashboard/views/license/license-item.php:44
+msgid "License Key:"
+msgstr ""
+
+#: includes/modules/jet-dashboard/views/license/license-item.php:48
+msgid "Product Name:"
+msgstr ""
+
+#: includes/modules/jet-dashboard/views/license/license-item.php:52
+msgid "Status:"
+msgstr ""
+
+#: includes/modules/jet-dashboard/views/license/license-item.php:56
+msgid "Type:"
+msgstr ""
+
+#: includes/modules/jet-dashboard/views/license/license-item.php:60
+msgid "Expiration Date:"
+msgstr ""
+
+#: includes/modules/jet-dashboard/views/license/license-item.php:64
+msgid "Included Plugins:"
+msgstr ""
+
+#: includes/modules/jet-dashboard/views/license/license-item.php:84
+msgid ""
+"This license will activate licenses for all plugins included in this set."
+msgstr ""
+
+#: includes/modules/jet-dashboard/views/license/license-item.php:94
+#: includes/modules/jet-dashboard/views/license/main.php:35
+#: includes/modules/jet-dashboard/views/license/main.php:115
+msgid "License Manager"
+msgstr ""
+
+#: includes/modules/jet-dashboard/views/license/main.php:10
+msgid "Your Installed JetPlugins"
+msgstr ""
+
+#: includes/modules/jet-dashboard/views/license/main.php:22
+msgid "Check For Updates"
+msgstr ""
+
+#: includes/modules/jet-dashboard/views/license/main.php:54
+msgid "More included JetPlugins with your licence"
+msgstr ""
+
+#: includes/modules/jet-dashboard/views/license/main.php:70
+#: includes/modules/jet-dashboard/views/welcome/main.php:207
+msgid "Get More Plugins"
+msgstr ""
+
+#: includes/modules/jet-dashboard/views/license/main.php:105
+msgid "JetPlugins License Deactivation"
+msgstr ""
+
+#: includes/modules/jet-dashboard/views/license/main.php:108
+msgid ""
+"Your license includes several plugins within the package. License "
+"deactivation in one plugin disables it in the rest of them. You can manage "
+"it through the License Manager."
+msgstr ""
+
+#: includes/modules/jet-dashboard/views/license/main.php:128
+msgid "JetPlugin’s Update"
+msgstr ""
+
+#: includes/modules/jet-dashboard/views/license/main.php:139
+msgid "Sorry, but you need to activate license to update your JetPlugin"
+msgstr ""
+
+#: includes/modules/jet-dashboard/views/license/main.php:160
+msgid "Your Licenses"
+msgstr ""
+
+#: includes/modules/jet-dashboard/views/license/main.php:169
+msgid "Add New License"
+msgstr ""
+
+#: includes/modules/jet-dashboard/views/license/main.php:174
+msgid ""
+"Add and Activate license for automatic updates, awesome support, useful "
+"features and more"
+msgstr ""
+
+#: includes/modules/jet-dashboard/views/upsale/main.php:12
+msgid "Dynamic"
+msgstr ""
+
+#: includes/modules/jet-dashboard/views/upsale/main.php:18
+msgid "E-commerce"
+msgstr ""
+
+#: includes/modules/jet-dashboard/views/upsale/main.php:24
+msgid "Design"
+msgstr ""
+
+#: includes/modules/jet-dashboard/views/upsale/main.php:27
+msgid "18 Advanced JetPlugins"
+msgstr ""
+
+#: includes/modules/jet-dashboard/views/upsale/main.php:28
+msgid ""
+"Unlock the ultimate website building toolkit for Elementor 150+ widgets "
+"and 50+ templates"
+msgstr ""
+
+#: includes/modules/jet-dashboard/views/welcome/main.php:20
+msgid "Manage plugins"
+msgstr ""
+
+#: includes/modules/jet-dashboard/views/welcome/main.php:21
+msgid "Updates"
+msgstr ""
+
+#: includes/modules/jet-dashboard/views/welcome/main.php:45
+#: includes/modules/jet-dashboard/views/welcome/main.php:95
+msgid "Activate Now"
+msgstr ""
+
+#: includes/modules/jet-dashboard/views/welcome/main.php:60
+msgid "Manage license"
+msgstr ""
+
+#: includes/modules/jet-dashboard/views/welcome/main.php:61
+msgid "Active Licence"
+msgstr ""
+
+#: includes/modules/jet-dashboard/views/welcome/main.php:85
+msgid "License not active"
+msgstr ""
+
+#: includes/modules/jet-dashboard/views/welcome/main.php:94
+msgid "Manage Now"
+msgstr ""
+
+#: includes/modules/jet-dashboard/views/welcome/main.php:109
+msgid "Installed JetPlugins"
+msgstr ""
+
+#: includes/modules/jet-dashboard/views/welcome/main.php:135
+msgid "Install"
+msgstr ""
+
+#: includes/modules/jet-dashboard/views/welcome/main.php:168
+msgid "Install Wizard"
+msgstr ""
+
+#: includes/modules/jet-dashboard/views/welcome/main.php:179
+msgid "Activate Wizard"
+msgstr ""
+
+#: includes/modules/jet-dashboard/views/welcome/main.php:191
+msgid "Enjoy the perks of All-inclusive"
+msgstr ""
+
+#: includes/modules/jet-dashboard/views/welcome/main.php:223
+msgid "Get a JetPlugins bundle"
+msgstr ""
+
+#: includes/modules/jet-dashboard/views/welcome/main.php:224
+msgid "Save up to 60%"
+msgstr ""
+
+#: includes/modules/jet-dashboard/views/welcome/main.php:234
+msgid "See all plans"
+msgstr ""
+
+#: includes/modules/jet-dashboard/views/welcome/main.php:246
+msgid "Hot Deals"
+msgstr ""
+
+#: includes/modules/jet-dashboard/views/welcome/plugin-item-registered.php:29
+msgid "Documentation"
+msgstr ""
+
+#: includes/modules/jet-dashboard/views/welcome/plugin-item-registered.php:55
+msgid "Plugin pages"
+msgstr ""
+
+#: includes/rest-api/endpoints/elementor-template.php:84
+msgid "Template not found."
+msgstr ""
+
+#: includes/rest-api/endpoints/elementor-template.php:144
+msgid "Template ID not provided."
+msgstr ""
+
+#: includes/rest-api/endpoints/plugin-settings.php:44
+msgid "Server Error"
+msgstr ""
+
+#: includes/rest-api/endpoints/plugin-settings.php:57
+msgid "Settings have been saved"
+msgstr ""
+
+#: includes/settings.php:142
+msgid "Saved"
+msgstr ""
+
+#: includes/settings.php:176
+msgid "Default (REST API request)"
+msgstr ""
+
+#: includes/settings.php:180
+msgid "Self (current page)"
+msgstr ""
+
+#: includes/settings/subpage-modules/avaliable-addons.php:36
+msgid "Widgets"
+msgstr ""
+
+#: includes/settings/subpage-modules/general.php:36
+msgid "General Settings"
+msgstr ""
+
+#: jet-tabs.php:141
+msgid "Go to settings"
+msgstr ""
+
+#: jet-tabs.php:233
+msgid "JetTabs requires Elementor to be activated."
+msgstr ""
+
+#: jet-tabs.php:234
+msgid "Activate Elementor Now"
+msgstr ""
+
+#: jet-tabs.php:242
+msgid "JetTabs requires Elementor to be installed."
+msgstr ""
+
+#: jet-tabs.php:243
+msgid "Install Elementor Now"
+msgstr ""
+
+#: templates/admin-templates/avaliable-addons-settings.php:5
+msgid "Avaliable Widgets"
+msgstr ""
+
+#: templates/admin-templates/general-settings.php:6
+msgid "Editor Load Level"
+msgstr ""
+
+#: templates/admin-templates/general-settings.php:7
+msgid ""
+"Choose a certain set of options in the widget’s Style tab by moving the "
+"slider, and improve your Elementor editor performance by selecting "
+"appropriate style settings fill level (from None to Full level)"
+msgstr ""
+
+#: templates/admin-templates/general-settings.php:16
+msgid "Ajax Request Type"
+msgstr ""
+
+#: templates/admin-templates/general-settings.php:17
+msgid "Choose the type of AJAX request."
+msgstr ""

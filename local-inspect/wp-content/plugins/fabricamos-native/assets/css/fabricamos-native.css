@@ -65,6 +65,11 @@ body.fabricamos-native {
 	padding-bottom: 36px;
 }
 
+.fabricamos-native .jupiterx-main-content > .container {
+	width: min(100% - 36px, 1320px);
+	max-width: 1320px;
+}
+
 .fabricamos-native .raven-nav-menu > .menu-item-home > .raven-link-item,
 .fabricamos-native .raven-nav-menu > .menu-item-home > .raven-link-item:hover,
 .fabricamos-native .raven-nav-menu > .menu-item-home > .raven-link-item:focus {
@@ -74,7 +79,7 @@ body.fabricamos-native {
 }
 
 .fab-theme-container.container-fluid {
-	max-width: 90%;
+	max-width: 100%;
 	padding-right: 12px;
 	padding-left: 12px;
 }
@@ -181,7 +186,7 @@ body.fabricamos-native {
 
 .fab-container-wide,
 .fab-container {
-	max-width: 90%;
+	max-width: 100%;
 	margin: 0 auto;
 }
 

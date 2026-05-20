@@ -1,0 +1,3337 @@
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: JetBlog for Elementor\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-08-12 19:56+0300\n"
+"PO-Revision-Date: 2018-08-20 12:01+0200\n"
+"Last-Translator: \n"
+"Language-Team: Zemez\n"
+"Language: en_US\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Poedit-KeywordsList: __;_e;_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c;"
+"esc_attr__;esc_attr_e;esc_attr_x:1,2c;_ex:1,2c;_n:1,2;_nx:4c,1,2;_n_noop:1,2;"
+"_nx_noop:4c,1,2\n"
+"esc_attr__;_x: 1,2c;_n:1,2\n"
+"X-Poedit-Basepath: ..\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Generator: Poedit 3.4.4\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPathExcluded-0: cherry-framework\n"
+"X-Poedit-SearchPathExcluded-1: node_modules\n"
+
+#: includes/addons/jet-blog-posts-navigation.php:29
+msgid "Posts Navigation"
+msgstr ""
+
+#: includes/addons/jet-blog-posts-navigation.php:53
+#: includes/addons/jet-blog-posts-navigation.php:156
+#: includes/addons/jet-blog-posts-pagination.php:55
+#: includes/addons/jet-blog-posts-pagination.php:136
+#: includes/addons/jet-blog-video-playlist.php:101
+msgid "Items"
+msgstr ""
+
+#: includes/addons/jet-blog-posts-navigation.php:61
+#: includes/addons/jet-blog-posts-pagination.php:63
+msgid "Works only with main Query object."
+msgstr ""
+
+#: includes/addons/jet-blog-posts-navigation.php:68
+msgid "Show Post Title"
+msgstr ""
+
+#: includes/addons/jet-blog-posts-navigation.php:70
+#: includes/addons/jet-blog-posts-pagination.php:72
+#: includes/addons/jet-blog-smart-listing.php:127
+#: includes/addons/jet-blog-smart-listing.php:565
+#: includes/addons/jet-blog-smart-listing.php:1013
+#: includes/addons/jet-blog-smart-listing.php:1070
+#: includes/addons/jet-blog-smart-listing.php:1082
+#: includes/addons/jet-blog-smart-listing.php:1404
+#: includes/addons/jet-blog-smart-listing.php:1612
+#: includes/addons/jet-blog-smart-listing.php:3069
+#: includes/addons/jet-blog-smart-listing.php:4635
+#: includes/addons/jet-blog-smart-tiles.php:128
+#: includes/addons/jet-blog-smart-tiles.php:267
+#: includes/addons/jet-blog-smart-tiles.php:349
+#: includes/addons/jet-blog-smart-tiles.php:559
+#: includes/addons/jet-blog-smart-tiles.php:571
+#: includes/addons/jet-blog-smart-tiles.php:845
+#: includes/addons/jet-blog-smart-tiles.php:891
+#: includes/addons/jet-blog-smart-tiles.php:919
+#: includes/addons/jet-blog-smart-tiles.php:1011
+#: includes/addons/jet-blog-text-ticker.php:110
+#: includes/addons/jet-blog-text-ticker.php:122
+#: includes/addons/jet-blog-text-ticker.php:134
+#: includes/addons/jet-blog-text-ticker.php:178
+#: includes/addons/jet-blog-text-ticker.php:193
+#: includes/addons/jet-blog-text-ticker.php:390
+#: includes/addons/jet-blog-text-ticker.php:443
+#: includes/addons/jet-blog-text-ticker.php:474
+#: includes/addons/jet-blog-text-ticker.php:489
+#: includes/addons/jet-blog-text-ticker.php:603
+#: includes/addons/jet-blog-text-ticker.php:618
+#: includes/addons/jet-blog-text-ticker.php:672
+#: includes/addons/jet-blog-text-ticker.php:687
+#: includes/addons/jet-blog-text-ticker.php:752
+#: includes/addons/jet-blog-text-ticker.php:960
+#: includes/addons/jet-blog-video-playlist.php:365
+#: includes/addons/jet-blog-video-playlist.php:435
+#: includes/addons/jet-blog-video-playlist.php:463
+#: includes/addons/jet-blog-video-playlist.php:479
+#: includes/addons/jet-blog-video-playlist.php:509
+#: includes/addons/jet-blog-video-playlist.php:545
+#: includes/addons/jet-blog-video-playlist.php:629
+#: includes/addons/jet-blog-video-playlist.php:644
+#: includes/base/class-jet-blog-base.php:551
+#: includes/base/class-jet-blog-base.php:592
+#: includes/class-jet-blog-query-builder.php:164
+#: includes/controls/groups/class-jet-blog-group-control-box-style.php:256
+msgid "Yes"
+msgstr ""
+
+#: includes/addons/jet-blog-posts-navigation.php:71
+#: includes/addons/jet-blog-posts-pagination.php:73
+#: includes/addons/jet-blog-smart-listing.php:128
+#: includes/addons/jet-blog-smart-listing.php:566
+#: includes/addons/jet-blog-smart-listing.php:1014
+#: includes/addons/jet-blog-smart-listing.php:1071
+#: includes/addons/jet-blog-smart-listing.php:1083
+#: includes/addons/jet-blog-smart-listing.php:1405
+#: includes/addons/jet-blog-smart-listing.php:1613
+#: includes/addons/jet-blog-smart-listing.php:3070
+#: includes/addons/jet-blog-smart-listing.php:4636
+#: includes/addons/jet-blog-smart-tiles.php:129
+#: includes/addons/jet-blog-smart-tiles.php:268
+#: includes/addons/jet-blog-smart-tiles.php:350
+#: includes/addons/jet-blog-smart-tiles.php:560
+#: includes/addons/jet-blog-smart-tiles.php:572
+#: includes/addons/jet-blog-smart-tiles.php:846
+#: includes/addons/jet-blog-smart-tiles.php:892
+#: includes/addons/jet-blog-smart-tiles.php:920
+#: includes/addons/jet-blog-smart-tiles.php:1012
+#: includes/addons/jet-blog-text-ticker.php:111
+#: includes/addons/jet-blog-text-ticker.php:123
+#: includes/addons/jet-blog-text-ticker.php:135
+#: includes/addons/jet-blog-text-ticker.php:179
+#: includes/addons/jet-blog-text-ticker.php:194
+#: includes/addons/jet-blog-text-ticker.php:391
+#: includes/addons/jet-blog-text-ticker.php:444
+#: includes/addons/jet-blog-text-ticker.php:475
+#: includes/addons/jet-blog-text-ticker.php:490
+#: includes/addons/jet-blog-text-ticker.php:604
+#: includes/addons/jet-blog-text-ticker.php:619
+#: includes/addons/jet-blog-text-ticker.php:673
+#: includes/addons/jet-blog-text-ticker.php:688
+#: includes/addons/jet-blog-text-ticker.php:753
+#: includes/addons/jet-blog-text-ticker.php:961
+#: includes/addons/jet-blog-video-playlist.php:366
+#: includes/addons/jet-blog-video-playlist.php:436
+#: includes/addons/jet-blog-video-playlist.php:464
+#: includes/addons/jet-blog-video-playlist.php:480
+#: includes/addons/jet-blog-video-playlist.php:510
+#: includes/addons/jet-blog-video-playlist.php:546
+#: includes/addons/jet-blog-video-playlist.php:630
+#: includes/addons/jet-blog-video-playlist.php:645
+#: includes/base/class-jet-blog-base.php:552
+#: includes/base/class-jet-blog-base.php:593
+#: includes/class-jet-blog-query-builder.php:165
+#: includes/controls/groups/class-jet-blog-group-control-box-style.php:257
+msgid "No"
+msgstr ""
+
+#: includes/addons/jet-blog-posts-navigation.php:80
+#: includes/addons/jet-blog-text-ticker.php:427
+msgid "Post Title Max Length (Words)"
+msgstr ""
+
+#: includes/addons/jet-blog-posts-navigation.php:81
+#: includes/addons/jet-blog-smart-listing.php:271
+#: includes/addons/jet-blog-smart-listing.php:748
+#: includes/addons/jet-blog-smart-tiles.php:311
+#: includes/addons/jet-blog-text-ticker.php:428
+msgid "Set 0 to show full title"
+msgstr ""
+
+#: includes/addons/jet-blog-posts-navigation.php:96
+#: includes/addons/jet-blog-smart-listing.php:774
+#: includes/addons/jet-blog-smart-tiles.php:338
+msgid "Excerpt Trimmed Ending"
+msgstr ""
+
+#: includes/addons/jet-blog-posts-navigation.php:108
+msgid "The older posts link text"
+msgstr ""
+
+#: includes/addons/jet-blog-posts-navigation.php:111
+msgid "Older posts"
+msgstr ""
+
+#: includes/addons/jet-blog-posts-navigation.php:122
+msgid "The older posts link icon"
+msgstr ""
+
+#: includes/addons/jet-blog-posts-navigation.php:131
+msgid "The newer posts text"
+msgstr ""
+
+#: includes/addons/jet-blog-posts-navigation.php:134
+msgid "Newer posts"
+msgstr ""
+
+#: includes/addons/jet-blog-posts-navigation.php:145
+msgid "The newer posts link icon"
+msgstr ""
+
+#: includes/addons/jet-blog-posts-navigation.php:165
+#: includes/addons/jet-blog-posts-pagination.php:145
+#: includes/addons/jet-blog-smart-listing.php:2295
+#: includes/addons/jet-blog-smart-listing.php:2686
+#: includes/addons/jet-blog-smart-listing.php:2765
+#: includes/addons/jet-blog-smart-listing.php:2942
+#: includes/addons/jet-blog-smart-listing.php:3709
+#: includes/addons/jet-blog-smart-listing.php:3978
+#: includes/addons/jet-blog-smart-listing.php:4262
+#: includes/addons/jet-blog-smart-listing.php:4340
+#: includes/addons/jet-blog-smart-listing.php:4511
+#: includes/addons/jet-blog-smart-listing.php:5275
+#: includes/addons/jet-blog-smart-listing.php:5544
+#: includes/addons/jet-blog-smart-tiles.php:1269
+#: includes/addons/jet-blog-smart-tiles.php:1431
+#: includes/addons/jet-blog-smart-tiles.php:1575
+#: includes/base/class-jet-blog-base.php:862
+msgid "Alignment"
+msgstr ""
+
+#: includes/addons/jet-blog-posts-navigation.php:170
+#: includes/addons/jet-blog-posts-navigation.php:178
+#: includes/addons/jet-blog-smart-listing.php:143
+#: includes/addons/jet-blog-smart-listing.php:144
+#: includes/addons/jet-blog-smart-listing.php:225
+#: includes/addons/jet-blog-smart-listing.php:226
+#: includes/addons/jet-blog-smart-listing.php:668
+#: includes/addons/jet-blog-smart-listing.php:669
+#: includes/addons/jet-blog-smart-listing.php:2299
+#: includes/addons/jet-blog-smart-listing.php:2690
+#: includes/addons/jet-blog-smart-listing.php:2769
+#: includes/addons/jet-blog-smart-listing.php:2947
+#: includes/addons/jet-blog-smart-listing.php:3714
+#: includes/addons/jet-blog-smart-listing.php:3722
+#: includes/addons/jet-blog-smart-listing.php:3982
+#: includes/addons/jet-blog-smart-listing.php:4266
+#: includes/addons/jet-blog-smart-listing.php:4344
+#: includes/addons/jet-blog-smart-listing.php:4516
+#: includes/addons/jet-blog-smart-listing.php:5280
+#: includes/addons/jet-blog-smart-listing.php:5288
+#: includes/addons/jet-blog-smart-listing.php:5548
+#: includes/addons/jet-blog-smart-listing.php:5735
+#: includes/addons/jet-blog-smart-listing.php:5893
+#: includes/addons/jet-blog-smart-tiles.php:1274
+#: includes/addons/jet-blog-smart-tiles.php:1436
+#: includes/addons/jet-blog-smart-tiles.php:1580
+#: includes/addons/jet-blog-smart-tiles.php:1935
+#: includes/addons/jet-blog-smart-tiles.php:2125
+#: includes/addons/jet-blog-smart-tiles.php:2283
+#: includes/addons/jet-blog-text-ticker.php:1539
+#: includes/addons/jet-blog-text-ticker.php:1697
+#: includes/addons/jet-blog-video-playlist.php:280
+#: includes/base/class-jet-blog-base.php:866
+msgid "Left"
+msgstr ""
+
+#: includes/addons/jet-blog-posts-navigation.php:170
+#: includes/addons/jet-blog-posts-navigation.php:178
+#: includes/addons/jet-blog-smart-listing.php:143
+#: includes/addons/jet-blog-smart-listing.php:144
+#: includes/addons/jet-blog-smart-listing.php:225
+#: includes/addons/jet-blog-smart-listing.php:226
+#: includes/addons/jet-blog-smart-listing.php:668
+#: includes/addons/jet-blog-smart-listing.php:669
+#: includes/addons/jet-blog-smart-listing.php:2307
+#: includes/addons/jet-blog-smart-listing.php:2698
+#: includes/addons/jet-blog-smart-listing.php:2777
+#: includes/addons/jet-blog-smart-listing.php:2955
+#: includes/addons/jet-blog-smart-listing.php:3714
+#: includes/addons/jet-blog-smart-listing.php:3722
+#: includes/addons/jet-blog-smart-listing.php:3990
+#: includes/addons/jet-blog-smart-listing.php:4274
+#: includes/addons/jet-blog-smart-listing.php:4352
+#: includes/addons/jet-blog-smart-listing.php:4524
+#: includes/addons/jet-blog-smart-listing.php:5280
+#: includes/addons/jet-blog-smart-listing.php:5288
+#: includes/addons/jet-blog-smart-listing.php:5556
+#: includes/addons/jet-blog-smart-listing.php:5736
+#: includes/addons/jet-blog-smart-listing.php:5894
+#: includes/addons/jet-blog-smart-tiles.php:1282
+#: includes/addons/jet-blog-smart-tiles.php:1444
+#: includes/addons/jet-blog-smart-tiles.php:1588
+#: includes/addons/jet-blog-smart-tiles.php:1937
+#: includes/addons/jet-blog-smart-tiles.php:2126
+#: includes/addons/jet-blog-smart-tiles.php:2284
+#: includes/addons/jet-blog-text-ticker.php:1540
+#: includes/addons/jet-blog-text-ticker.php:1698
+#: includes/addons/jet-blog-video-playlist.php:281
+#: includes/base/class-jet-blog-base.php:874
+msgid "Right"
+msgstr ""
+
+#: includes/addons/jet-blog-posts-navigation.php:174
+#: includes/addons/jet-blog-posts-pagination.php:154
+#: includes/addons/jet-blog-smart-listing.php:2303
+#: includes/addons/jet-blog-smart-listing.php:2694
+#: includes/addons/jet-blog-smart-listing.php:2773
+#: includes/addons/jet-blog-smart-listing.php:2951
+#: includes/addons/jet-blog-smart-listing.php:3718
+#: includes/addons/jet-blog-smart-listing.php:3986
+#: includes/addons/jet-blog-smart-listing.php:4270
+#: includes/addons/jet-blog-smart-listing.php:4348
+#: includes/addons/jet-blog-smart-listing.php:4520
+#: includes/addons/jet-blog-smart-listing.php:5284
+#: includes/addons/jet-blog-smart-listing.php:5552
+#: includes/addons/jet-blog-smart-tiles.php:1278
+#: includes/addons/jet-blog-smart-tiles.php:1440
+#: includes/addons/jet-blog-smart-tiles.php:1584
+#: includes/addons/jet-blog-smart-tiles.php:1936
+#: includes/base/class-jet-blog-base.php:870
+msgid "Center"
+msgstr ""
+
+#: includes/addons/jet-blog-posts-navigation.php:182
+#: includes/addons/jet-blog-smart-listing.php:2702
+#: includes/addons/jet-blog-smart-listing.php:2781
+#: includes/addons/jet-blog-smart-listing.php:4278
+#: includes/addons/jet-blog-smart-listing.php:4356
+msgid "Justify"
+msgstr ""
+
+#: includes/addons/jet-blog-posts-navigation.php:198
+#: includes/addons/jet-blog-posts-navigation.php:435
+#: includes/addons/jet-blog-posts-pagination.php:174
+#: includes/addons/jet-blog-posts-pagination.php:434
+#: includes/addons/jet-blog-smart-listing.php:2063
+#: includes/addons/jet-blog-smart-listing.php:2563
+#: includes/addons/jet-blog-smart-listing.php:3167
+#: includes/addons/jet-blog-smart-listing.php:3762
+#: includes/addons/jet-blog-smart-listing.php:4139
+#: includes/addons/jet-blog-smart-listing.php:4733
+#: includes/addons/jet-blog-smart-listing.php:5328
+#: includes/addons/jet-blog-smart-listing.php:5591
+#: includes/addons/jet-blog-smart-tiles.php:1134
+#: includes/addons/jet-blog-smart-tiles.php:1702
+#: includes/addons/jet-blog-smart-tiles.php:1981
+#: includes/addons/jet-blog-text-ticker.php:1395
+#: includes/addons/jet-blog-video-playlist.php:1029
+#: includes/addons/jet-blog-video-playlist.php:1236
+msgid "Normal"
+msgstr ""
+
+#: includes/addons/jet-blog-posts-navigation.php:205
+#: includes/addons/jet-blog-posts-navigation.php:245
+#: includes/addons/jet-blog-posts-navigation.php:442
+#: includes/addons/jet-blog-posts-navigation.php:475
+#: includes/addons/jet-blog-posts-pagination.php:181
+#: includes/addons/jet-blog-posts-pagination.php:218
+#: includes/addons/jet-blog-posts-pagination.php:266
+#: includes/addons/jet-blog-posts-pagination.php:441
+#: includes/addons/jet-blog-posts-pagination.php:474
+#: includes/addons/jet-blog-smart-listing.php:2847
+#: includes/addons/jet-blog-smart-listing.php:3769
+#: includes/addons/jet-blog-smart-listing.php:3775
+#: includes/addons/jet-blog-smart-listing.php:3870
+#: includes/addons/jet-blog-smart-listing.php:3876
+#: includes/addons/jet-blog-smart-listing.php:4422
+#: includes/addons/jet-blog-smart-listing.php:5335
+#: includes/addons/jet-blog-smart-listing.php:5341
+#: includes/addons/jet-blog-smart-listing.php:5436
+#: includes/addons/jet-blog-smart-listing.php:5442
+#: includes/addons/jet-blog-smart-tiles.php:1195
+#: includes/addons/jet-blog-smart-tiles.php:1307
+#: includes/addons/jet-blog-smart-tiles.php:1510
+#: includes/base/class-jet-blog-base.php:712
+msgid "Background Color"
+msgstr ""
+
+#: includes/addons/jet-blog-posts-navigation.php:221
+#: includes/addons/jet-blog-posts-navigation.php:258
+#: includes/addons/jet-blog-posts-pagination.php:196
+#: includes/addons/jet-blog-posts-pagination.php:230
+#: includes/addons/jet-blog-posts-pagination.php:281
+#: includes/addons/jet-blog-smart-listing.php:2859
+#: includes/addons/jet-blog-smart-listing.php:3341
+#: includes/addons/jet-blog-smart-listing.php:3605
+#: includes/addons/jet-blog-smart-listing.php:3786
+#: includes/addons/jet-blog-smart-listing.php:3887
+#: includes/addons/jet-blog-smart-listing.php:4434
+#: includes/addons/jet-blog-smart-listing.php:4907
+#: includes/addons/jet-blog-smart-listing.php:5171
+#: includes/addons/jet-blog-smart-listing.php:5352
+#: includes/addons/jet-blog-smart-listing.php:5453
+#: includes/addons/jet-blog-smart-tiles.php:1522
+#: includes/addons/jet-blog-smart-tiles.php:1726
+#: includes/addons/jet-blog-smart-tiles.php:1827
+msgid "Text Color"
+msgstr ""
+
+#: includes/addons/jet-blog-posts-navigation.php:237
+#: includes/addons/jet-blog-posts-navigation.php:468
+#: includes/addons/jet-blog-posts-pagination.php:211
+#: includes/addons/jet-blog-posts-pagination.php:467
+#: includes/addons/jet-blog-smart-listing.php:2128
+#: includes/addons/jet-blog-smart-listing.php:2582
+#: includes/addons/jet-blog-smart-listing.php:3431
+#: includes/addons/jet-blog-smart-listing.php:3863
+#: includes/addons/jet-blog-smart-listing.php:4158
+#: includes/addons/jet-blog-smart-listing.php:4997
+#: includes/addons/jet-blog-smart-listing.php:5429
+#: includes/addons/jet-blog-smart-listing.php:5618
+#: includes/addons/jet-blog-smart-tiles.php:1153
+#: includes/addons/jet-blog-smart-tiles.php:1803
+#: includes/addons/jet-blog-smart-tiles.php:2008
+#: includes/addons/jet-blog-text-ticker.php:1422
+#: includes/addons/jet-blog-video-playlist.php:1086
+#: includes/addons/jet-blog-video-playlist.php:1269
+msgid "Hover"
+msgstr ""
+
+#: includes/addons/jet-blog-posts-navigation.php:271
+#: includes/addons/jet-blog-posts-navigation.php:499
+#: includes/addons/jet-blog-posts-pagination.php:242
+#: includes/addons/jet-blog-posts-pagination.php:294
+#: includes/addons/jet-blog-posts-pagination.php:498
+msgid "Border Color"
+msgstr ""
+
+#: includes/addons/jet-blog-posts-navigation.php:308
+#: includes/addons/jet-blog-posts-pagination.php:330
+msgid "Item Min Width"
+msgstr ""
+
+#: includes/addons/jet-blog-posts-navigation.php:332
+msgid "Older Link Padding"
+msgstr ""
+
+#: includes/addons/jet-blog-posts-navigation.php:352
+msgid "Newer Link Padding"
+msgstr ""
+
+#: includes/addons/jet-blog-posts-navigation.php:372
+#: includes/addons/jet-blog-posts-pagination.php:373
+msgid "Gap Between Items"
+msgstr ""
+
+#: includes/addons/jet-blog-posts-navigation.php:398
+#: includes/addons/jet-blog-posts-navigation.php:562
+#: includes/addons/jet-blog-posts-pagination.php:398
+#: includes/addons/jet-blog-posts-pagination.php:561
+#: includes/addons/jet-blog-smart-listing.php:1904
+#: includes/addons/jet-blog-smart-listing.php:2093
+#: includes/addons/jet-blog-smart-listing.php:2158
+#: includes/addons/jet-blog-smart-listing.php:2222
+#: includes/addons/jet-blog-smart-listing.php:2411
+#: includes/addons/jet-blog-smart-listing.php:2490
+#: includes/addons/jet-blog-smart-listing.php:3020
+#: includes/addons/jet-blog-smart-listing.php:3409
+#: includes/addons/jet-blog-smart-listing.php:3671
+#: includes/addons/jet-blog-smart-listing.php:3841
+#: includes/addons/jet-blog-smart-listing.php:3940
+#: includes/addons/jet-blog-smart-listing.php:4072
+#: includes/addons/jet-blog-smart-listing.php:4588
+#: includes/addons/jet-blog-smart-listing.php:4975
+#: includes/addons/jet-blog-smart-listing.php:5237
+#: includes/addons/jet-blog-smart-listing.php:5407
+#: includes/addons/jet-blog-smart-listing.php:5506
+#: includes/addons/jet-blog-smart-tiles.php:1090
+#: includes/addons/jet-blog-smart-tiles.php:1652
+#: includes/addons/jet-blog-smart-tiles.php:1781
+#: includes/addons/jet-blog-smart-tiles.php:1880
+#: includes/addons/jet-blog-text-ticker.php:836
+#: includes/addons/jet-blog-text-ticker.php:926
+#: includes/addons/jet-blog-text-ticker.php:1096
+#: includes/addons/jet-blog-text-ticker.php:1189
+#: includes/addons/jet-blog-text-ticker.php:1270
+#: includes/addons/jet-blog-video-playlist.php:892
+msgid "Border"
+msgstr ""
+
+#: includes/addons/jet-blog-posts-navigation.php:408
+#: includes/addons/jet-blog-posts-navigation.php:572
+#: includes/addons/jet-blog-posts-pagination.php:408
+#: includes/addons/jet-blog-posts-pagination.php:571
+#: includes/addons/jet-blog-smart-listing.php:1914
+#: includes/addons/jet-blog-smart-listing.php:2103
+#: includes/addons/jet-blog-smart-listing.php:2168
+#: includes/addons/jet-blog-smart-listing.php:2232
+#: includes/addons/jet-blog-smart-listing.php:2421
+#: includes/addons/jet-blog-smart-listing.php:2500
+#: includes/addons/jet-blog-smart-listing.php:2535
+#: includes/addons/jet-blog-smart-listing.php:3037
+#: includes/addons/jet-blog-smart-listing.php:3395
+#: includes/addons/jet-blog-smart-listing.php:3657
+#: includes/addons/jet-blog-smart-listing.php:3827
+#: includes/addons/jet-blog-smart-listing.php:3926
+#: includes/addons/jet-blog-smart-listing.php:4082
+#: includes/addons/jet-blog-smart-listing.php:4114
+#: includes/addons/jet-blog-smart-listing.php:4604
+#: includes/addons/jet-blog-smart-listing.php:4961
+#: includes/addons/jet-blog-smart-listing.php:5223
+#: includes/addons/jet-blog-smart-listing.php:5393
+#: includes/addons/jet-blog-smart-listing.php:5492
+#: includes/addons/jet-blog-smart-tiles.php:1100
+#: includes/addons/jet-blog-smart-tiles.php:1668
+#: includes/addons/jet-blog-smart-tiles.php:1767
+#: includes/addons/jet-blog-smart-tiles.php:1866
+#: includes/addons/jet-blog-text-ticker.php:846
+#: includes/addons/jet-blog-text-ticker.php:936
+#: includes/addons/jet-blog-text-ticker.php:1106
+#: includes/addons/jet-blog-text-ticker.php:1199
+#: includes/addons/jet-blog-text-ticker.php:1285
+#: includes/base/class-jet-blog-base.php:849
+#: includes/controls/groups/class-jet-blog-group-control-box-style.php:245
+msgid "Border Radius"
+msgstr ""
+
+#: includes/addons/jet-blog-posts-navigation.php:424
+#: includes/addons/jet-blog-posts-pagination.php:423
+msgid "Prev/Next Icons"
+msgstr ""
+
+#: includes/addons/jet-blog-posts-navigation.php:454
+#: includes/addons/jet-blog-posts-navigation.php:487
+#: includes/addons/jet-blog-posts-pagination.php:453
+#: includes/addons/jet-blog-posts-pagination.php:486
+#: includes/addons/jet-blog-smart-listing.php:3134
+#: includes/addons/jet-blog-smart-listing.php:4700
+#: includes/base/class-jet-blog-base.php:915
+msgid "Icon Color"
+msgstr ""
+
+#: includes/addons/jet-blog-posts-navigation.php:518
+#: includes/addons/jet-blog-posts-pagination.php:517
+#: includes/addons/jet-blog-smart-listing.php:3113
+#: includes/addons/jet-blog-smart-listing.php:4679
+#: includes/addons/jet-blog-video-playlist.php:761
+#: includes/base/class-jet-blog-base.php:927
+#: includes/controls/groups/class-jet-blog-group-control-box-style.php:170
+msgid "Icon Size"
+msgstr ""
+
+#: includes/addons/jet-blog-posts-navigation.php:538
+#: includes/addons/jet-blog-posts-pagination.php:537
+msgid "Icon Box Size"
+msgstr ""
+
+#: includes/addons/jet-blog-posts-navigation.php:585
+#: includes/addons/jet-blog-posts-pagination.php:584
+msgid "Gap Between Text and Icon"
+msgstr ""
+
+#: includes/addons/jet-blog-posts-pagination.php:29
+msgid "Posts Pagination"
+msgstr ""
+
+#: includes/addons/jet-blog-posts-pagination.php:50
+#: includes/addons/jet-blog-smart-listing.php:1377
+#: includes/addons/jet-blog-smart-listing.php:3368
+#: includes/addons/jet-blog-smart-listing.php:3630
+#: includes/addons/jet-blog-smart-listing.php:3813
+#: includes/addons/jet-blog-smart-listing.php:3912
+#: includes/addons/jet-blog-smart-listing.php:4934
+#: includes/addons/jet-blog-smart-listing.php:5196
+#: includes/addons/jet-blog-smart-listing.php:5379
+#: includes/addons/jet-blog-smart-listing.php:5478
+#: includes/addons/jet-blog-smart-tiles.php:818
+#: includes/addons/jet-blog-smart-tiles.php:1753
+#: includes/addons/jet-blog-smart-tiles.php:1852
+#: includes/class-jet-blog-tools.php:147
+#: includes/controls/groups/class-jet-blog-group-control-box-style.php:210
+msgid "None"
+msgstr ""
+
+#: includes/addons/jet-blog-posts-pagination.php:70
+msgid "Add the previous and next page links."
+msgstr ""
+
+#: includes/addons/jet-blog-posts-pagination.php:82
+msgid "The previous page link text"
+msgstr ""
+
+#: includes/addons/jet-blog-posts-pagination.php:85
+msgid "Previous"
+msgstr ""
+
+#: includes/addons/jet-blog-posts-pagination.php:96
+#: includes/addons/jet-blog-posts-pagination.php:122
+msgid "The next page link icon"
+msgstr ""
+
+#: includes/addons/jet-blog-posts-pagination.php:108
+msgid "The next page text"
+msgstr ""
+
+#: includes/addons/jet-blog-posts-pagination.php:111
+msgid "Next"
+msgstr ""
+
+#: includes/addons/jet-blog-posts-pagination.php:150
+msgid "Start"
+msgstr ""
+
+#: includes/addons/jet-blog-posts-pagination.php:158
+msgid "End"
+msgstr ""
+
+#: includes/addons/jet-blog-posts-pagination.php:259
+msgid "Current"
+msgstr ""
+
+#: includes/addons/jet-blog-posts-pagination.php:353
+#: includes/addons/jet-blog-smart-listing.php:1936
+#: includes/addons/jet-blog-smart-listing.php:1996
+#: includes/addons/jet-blog-smart-listing.php:2258
+#: includes/addons/jet-blog-smart-listing.php:2388
+#: includes/addons/jet-blog-smart-listing.php:2454
+#: includes/addons/jet-blog-smart-listing.php:2916
+#: includes/addons/jet-blog-smart-listing.php:3382
+#: includes/addons/jet-blog-smart-listing.php:3644
+#: includes/addons/jet-blog-smart-listing.php:3747
+#: includes/addons/jet-blog-smart-listing.php:4023
+#: includes/addons/jet-blog-smart-listing.php:4485
+#: includes/addons/jet-blog-smart-listing.php:4948
+#: includes/addons/jet-blog-smart-listing.php:5210
+#: includes/addons/jet-blog-smart-listing.php:5313
+#: includes/addons/jet-blog-smart-tiles.php:1076
+#: includes/addons/jet-blog-smart-tiles.php:1243
+#: includes/addons/jet-blog-smart-tiles.php:1367
+#: includes/addons/jet-blog-smart-tiles.php:1549
+#: includes/addons/jet-blog-smart-tiles.php:1904
+#: includes/addons/jet-blog-text-ticker.php:822
+#: includes/addons/jet-blog-text-ticker.php:912
+#: includes/addons/jet-blog-text-ticker.php:1082
+#: includes/addons/jet-blog-text-ticker.php:1139
+#: includes/addons/jet-blog-video-playlist.php:944
+#: includes/addons/jet-blog-video-playlist.php:979
+#: includes/addons/jet-blog-video-playlist.php:1014
+#: includes/base/class-jet-blog-base.php:836
+msgid "Padding"
+msgstr ""
+
+#: includes/addons/jet-blog-smart-listing.php:37
+msgid "Smart Posts List"
+msgstr ""
+
+#: includes/addons/jet-blog-smart-listing.php:90
+#: includes/addons/jet-blog-smart-tiles.php:93
+#: includes/addons/jet-blog-text-ticker.php:74
+msgid "General"
+msgstr ""
+
+#: includes/addons/jet-blog-smart-listing.php:97
+#: includes/addons/jet-blog-text-ticker.php:81
+#: includes/addons/jet-blog-text-ticker.php:870
+msgid "Widget Title"
+msgstr ""
+
+#: includes/addons/jet-blog-smart-listing.php:106
+#: includes/addons/jet-blog-text-ticker.php:90
+msgid "Title Tag"
+msgstr ""
+
+#: includes/addons/jet-blog-smart-listing.php:110
+#: includes/addons/jet-blog-text-ticker.php:94
+msgid "H1"
+msgstr ""
+
+#: includes/addons/jet-blog-smart-listing.php:111
+#: includes/addons/jet-blog-text-ticker.php:95
+msgid "H2"
+msgstr ""
+
+#: includes/addons/jet-blog-smart-listing.php:112
+#: includes/addons/jet-blog-text-ticker.php:96
+msgid "H3"
+msgstr ""
+
+#: includes/addons/jet-blog-smart-listing.php:113
+#: includes/addons/jet-blog-text-ticker.php:97
+msgid "H4"
+msgstr ""
+
+#: includes/addons/jet-blog-smart-listing.php:114
+#: includes/addons/jet-blog-text-ticker.php:98
+msgid "H5"
+msgstr ""
+
+#: includes/addons/jet-blog-smart-listing.php:115
+#: includes/addons/jet-blog-text-ticker.php:99
+msgid "H6"
+msgstr ""
+
+#: includes/addons/jet-blog-smart-listing.php:116
+#: includes/addons/jet-blog-text-ticker.php:100
+msgid "DIV"
+msgstr ""
+
+#: includes/addons/jet-blog-smart-listing.php:125
+msgid "Mark First Post as Featured"
+msgstr ""
+
+#: includes/addons/jet-blog-smart-listing.php:137
+msgid "Featured Post Position"
+msgstr ""
+
+#: includes/addons/jet-blog-smart-listing.php:142
+#: includes/addons/jet-blog-smart-listing.php:224
+#: includes/addons/jet-blog-smart-listing.php:667
+#: includes/addons/jet-blog-smart-listing.php:5661
+#: includes/addons/jet-blog-smart-listing.php:5819
+#: includes/addons/jet-blog-smart-tiles.php:1955
+#: includes/addons/jet-blog-smart-tiles.php:2051
+#: includes/addons/jet-blog-smart-tiles.php:2209
+#: includes/addons/jet-blog-text-ticker.php:1465
+#: includes/addons/jet-blog-text-ticker.php:1623
+#: includes/addons/jet-blog-video-playlist.php:296
+#: includes/class-jet-blog-tools.php:182
+msgid "Top"
+msgstr ""
+
+#: includes/addons/jet-blog-smart-listing.php:155
+msgid "Featured Post Max Width"
+msgstr ""
+
+#: includes/addons/jet-blog-smart-listing.php:188
+msgid "Featured Post Layout"
+msgstr ""
+
+#: includes/addons/jet-blog-smart-listing.php:193
+msgid "Simple"
+msgstr ""
+
+#: includes/addons/jet-blog-smart-listing.php:194
+msgid "Boxed"
+msgstr ""
+
+#: includes/addons/jet-blog-smart-listing.php:205
+msgid "Featured Post Image Size"
+msgstr ""
+
+#: includes/addons/jet-blog-smart-listing.php:219
+msgid "Featured Post Image Position"
+msgstr ""
+
+#: includes/addons/jet-blog-smart-listing.php:238
+msgid "Featured Post Image Max Width"
+msgstr ""
+
+#: includes/addons/jet-blog-smart-listing.php:270
+msgid "Featured Post Title Max Length (Words)"
+msgstr ""
+
+#: includes/addons/jet-blog-smart-listing.php:287
+msgid "Featured Post Excerpt Length"
+msgstr ""
+
+#: includes/addons/jet-blog-smart-listing.php:288
+#: includes/addons/jet-blog-smart-listing.php:762
+#: includes/addons/jet-blog-smart-tiles.php:325
+msgid "Set 0 to hide excerpt or -1 to show full excerpt"
+msgstr ""
+
+#: includes/addons/jet-blog-smart-listing.php:303
+msgid "Featured Excerpt Trimmed Ending"
+msgstr ""
+
+#: includes/addons/jet-blog-smart-listing.php:315
+msgid "Featured Post Read More Button"
+msgstr ""
+
+#: includes/addons/jet-blog-smart-listing.php:317
+#: includes/addons/jet-blog-smart-listing.php:347
+#: includes/addons/jet-blog-smart-listing.php:381
+#: includes/addons/jet-blog-smart-listing.php:397
+#: includes/addons/jet-blog-smart-listing.php:493
+#: includes/addons/jet-blog-smart-listing.php:529
+#: includes/addons/jet-blog-smart-listing.php:640
+#: includes/addons/jet-blog-smart-listing.php:785
+#: includes/addons/jet-blog-smart-listing.php:809
+#: includes/addons/jet-blog-smart-listing.php:839
+#: includes/addons/jet-blog-smart-listing.php:854
+#: includes/addons/jet-blog-smart-listing.php:945
+#: includes/addons/jet-blog-smart-listing.php:979
+#: includes/addons/jet-blog-smart-listing.php:1452
+#: includes/addons/jet-blog-smart-listing.php:1531
+#: includes/addons/jet-blog-smart-listing.php:1724
+#: includes/addons/jet-blog-smart-tiles.php:362
+#: includes/addons/jet-blog-smart-tiles.php:375
+#: includes/addons/jet-blog-smart-tiles.php:390
+#: includes/addons/jet-blog-smart-tiles.php:481
+#: includes/addons/jet-blog-smart-tiles.php:515
+#: includes/addons/jet-blog-smart-tiles.php:979
+#: includes/addons/jet-blog-text-ticker.php:504
+#: includes/addons/jet-blog-text-ticker.php:517
+#: includes/addons/jet-blog-text-ticker.php:633
+#: includes/addons/jet-blog-text-ticker.php:711
+#: includes/addons/jet-blog-text-ticker.php:776
+msgid "Show"
+msgstr ""
+
+#: includes/addons/jet-blog-smart-listing.php:318
+#: includes/addons/jet-blog-smart-listing.php:348
+#: includes/addons/jet-blog-smart-listing.php:382
+#: includes/addons/jet-blog-smart-listing.php:398
+#: includes/addons/jet-blog-smart-listing.php:494
+#: includes/addons/jet-blog-smart-listing.php:530
+#: includes/addons/jet-blog-smart-listing.php:641
+#: includes/addons/jet-blog-smart-listing.php:786
+#: includes/addons/jet-blog-smart-listing.php:810
+#: includes/addons/jet-blog-smart-listing.php:840
+#: includes/addons/jet-blog-smart-listing.php:855
+#: includes/addons/jet-blog-smart-listing.php:946
+#: includes/addons/jet-blog-smart-listing.php:980
+#: includes/addons/jet-blog-smart-listing.php:1453
+#: includes/addons/jet-blog-smart-listing.php:1532
+#: includes/addons/jet-blog-smart-listing.php:1725
+#: includes/addons/jet-blog-smart-tiles.php:363
+#: includes/addons/jet-blog-smart-tiles.php:376
+#: includes/addons/jet-blog-smart-tiles.php:391
+#: includes/addons/jet-blog-smart-tiles.php:482
+#: includes/addons/jet-blog-smart-tiles.php:516
+#: includes/addons/jet-blog-smart-tiles.php:980
+#: includes/addons/jet-blog-text-ticker.php:505
+#: includes/addons/jet-blog-text-ticker.php:518
+#: includes/addons/jet-blog-text-ticker.php:634
+#: includes/addons/jet-blog-text-ticker.php:712
+#: includes/addons/jet-blog-text-ticker.php:777
+msgid "Hide"
+msgstr ""
+
+#: includes/addons/jet-blog-smart-listing.php:331
+#: includes/addons/jet-blog-smart-listing.php:795
+msgid "Read More Button Label"
+msgstr ""
+
+#: includes/addons/jet-blog-smart-listing.php:333
+#: includes/addons/jet-blog-smart-listing.php:797
+msgid "Read More"
+msgstr ""
+
+#: includes/addons/jet-blog-smart-listing.php:345
+#: includes/addons/jet-blog-smart-listing.php:2798
+msgid "Featured Post Meta"
+msgstr ""
+
+#: includes/addons/jet-blog-smart-listing.php:360
+msgid "Featured Meta Position"
+msgstr ""
+
+#: includes/addons/jet-blog-smart-listing.php:365
+#: includes/addons/jet-blog-smart-listing.php:824
+msgid "Before Title"
+msgstr ""
+
+#: includes/addons/jet-blog-smart-listing.php:366
+#: includes/addons/jet-blog-smart-listing.php:825
+msgid "After Title"
+msgstr ""
+
+#: includes/addons/jet-blog-smart-listing.php:367
+#: includes/addons/jet-blog-smart-listing.php:826
+msgid "After Excerpt"
+msgstr ""
+
+#: includes/addons/jet-blog-smart-listing.php:379
+#: includes/addons/jet-blog-smart-listing.php:837
+#: includes/addons/jet-blog-smart-tiles.php:373
+#: includes/addons/jet-blog-text-ticker.php:502
+msgid "Show Post Author"
+msgstr ""
+
+#: includes/addons/jet-blog-smart-listing.php:395
+#: includes/addons/jet-blog-smart-listing.php:852
+#: includes/addons/jet-blog-smart-tiles.php:388
+#: includes/addons/jet-blog-text-ticker.php:515
+msgid "Show Author Avatar"
+msgstr ""
+
+#: includes/addons/jet-blog-smart-listing.php:412
+#: includes/addons/jet-blog-smart-listing.php:868
+#: includes/addons/jet-blog-smart-tiles.php:404
+#: includes/addons/jet-blog-text-ticker.php:530
+msgid "Get Avatar From"
+msgstr ""
+
+#: includes/addons/jet-blog-smart-listing.php:415
+#: includes/addons/jet-blog-smart-listing.php:871
+#: includes/addons/jet-blog-smart-tiles.php:407
+#: includes/addons/jet-blog-text-ticker.php:533
+msgid "Default Avatar"
+msgstr ""
+
+#: includes/addons/jet-blog-smart-listing.php:416
+#: includes/addons/jet-blog-smart-listing.php:872
+#: includes/addons/jet-blog-smart-tiles.php:408
+#: includes/addons/jet-blog-text-ticker.php:534
+msgid "Get from Custom Field"
+msgstr ""
+
+#: includes/addons/jet-blog-smart-listing.php:431
+#: includes/addons/jet-blog-smart-listing.php:886
+#: includes/addons/jet-blog-smart-tiles.php:422
+#: includes/addons/jet-blog-text-ticker.php:547
+msgid "Field Name"
+msgstr ""
+
+#: includes/addons/jet-blog-smart-listing.php:446
+#: includes/addons/jet-blog-smart-listing.php:900
+#: includes/addons/jet-blog-smart-tiles.php:436
+#: includes/addons/jet-blog-text-ticker.php:560
+msgid "Avatar Size"
+msgstr ""
+
+#: includes/addons/jet-blog-smart-listing.php:471
+#: includes/addons/jet-blog-smart-listing.php:924
+#: includes/addons/jet-blog-smart-tiles.php:460
+#: includes/addons/jet-blog-text-ticker.php:583
+msgid "Author Icon"
+msgstr ""
+
+#: includes/addons/jet-blog-smart-listing.php:491
+#: includes/addons/jet-blog-smart-listing.php:943
+#: includes/addons/jet-blog-smart-tiles.php:479
+#: includes/addons/jet-blog-text-ticker.php:631
+msgid "Show Post Date"
+msgstr ""
+
+#: includes/addons/jet-blog-smart-listing.php:508
+#: includes/addons/jet-blog-smart-listing.php:959
+#: includes/addons/jet-blog-smart-tiles.php:495
+#: includes/addons/jet-blog-text-ticker.php:159
+#: includes/addons/jet-blog-text-ticker.php:657
+msgid "Date Icon"
+msgstr ""
+
+#: includes/addons/jet-blog-smart-listing.php:527
+#: includes/addons/jet-blog-smart-listing.php:977
+#: includes/addons/jet-blog-smart-tiles.php:513
+msgid "Show Post Comments"
+msgstr ""
+
+#: includes/addons/jet-blog-smart-listing.php:544
+#: includes/addons/jet-blog-smart-listing.php:993
+#: includes/addons/jet-blog-smart-tiles.php:529
+msgid "Comments Icon"
+msgstr ""
+
+#: includes/addons/jet-blog-smart-listing.php:563
+#: includes/addons/jet-blog-smart-listing.php:1011
+#: includes/addons/jet-blog-smart-tiles.php:265
+msgid "Show Post Terms"
+msgstr ""
+
+#: includes/addons/jet-blog-smart-listing.php:579
+#: includes/addons/jet-blog-smart-listing.php:1024
+#: includes/addons/jet-blog-smart-tiles.php:278
+msgid "Show Terms From"
+msgstr ""
+
+#: includes/addons/jet-blog-smart-listing.php:593
+#: includes/addons/jet-blog-smart-listing.php:1037
+#: includes/addons/jet-blog-smart-tiles.php:291
+msgid "Max Terms to Show"
+msgstr ""
+
+#: includes/addons/jet-blog-smart-listing.php:597
+#: includes/addons/jet-blog-smart-listing.php:1041
+#: includes/addons/jet-blog-smart-listing.php:1135
+#: includes/addons/jet-blog-smart-listing.php:1199
+#: includes/addons/jet-blog-smart-listing.php:1573
+#: includes/addons/jet-blog-smart-tiles.php:295
+#: includes/addons/jet-blog-smart-tiles.php:624
+#: includes/addons/jet-blog-smart-tiles.php:688
+#: includes/addons/jet-blog-text-ticker.php:238
+#: includes/addons/jet-blog-text-ticker.php:283
+msgid "All"
+msgstr ""
+
+#: includes/addons/jet-blog-smart-listing.php:612
+msgid "Columns Number"
+msgstr ""
+
+#: includes/addons/jet-blog-smart-listing.php:627
+#: includes/addons/jet-blog-smart-tiles.php:113
+msgid "Rows Number"
+msgstr ""
+
+#: includes/addons/jet-blog-smart-listing.php:638
+msgid "Post Thumbnail"
+msgstr ""
+
+#: includes/addons/jet-blog-smart-listing.php:650
+msgid "Post Image Size"
+msgstr ""
+
+#: includes/addons/jet-blog-smart-listing.php:663
+msgid "Post Image Position"
+msgstr ""
+
+#: includes/addons/jet-blog-smart-listing.php:688
+msgid "Post Image Max Width"
+msgstr ""
+
+#: includes/addons/jet-blog-smart-listing.php:719
+msgid "Post Image Max Width (Top Position)"
+msgstr ""
+
+#: includes/addons/jet-blog-smart-listing.php:747
+#: includes/addons/jet-blog-smart-tiles.php:310
+msgid "Title Max Length (Words)"
+msgstr ""
+
+#: includes/addons/jet-blog-smart-listing.php:761
+#: includes/addons/jet-blog-smart-tiles.php:324
+msgid "Excerpt Length"
+msgstr ""
+
+#: includes/addons/jet-blog-smart-listing.php:783
+msgid "Read More Button"
+msgstr ""
+
+#: includes/addons/jet-blog-smart-listing.php:807
+#: includes/addons/jet-blog-smart-listing.php:4373
+#: includes/addons/jet-blog-smart-tiles.php:360
+msgid "Post Meta"
+msgstr ""
+
+#: includes/addons/jet-blog-smart-listing.php:819
+msgid "Meta Position"
+msgstr ""
+
+#: includes/addons/jet-blog-smart-listing.php:1058
+#: includes/addons/jet-blog-smart-tiles.php:549
+msgid "Query & Controls"
+msgstr ""
+
+#: includes/addons/jet-blog-smart-listing.php:1067
+#: includes/addons/jet-blog-smart-tiles.php:556
+msgid "Use as Archive Template"
+msgstr ""
+
+#: includes/addons/jet-blog-smart-listing.php:1080
+#: includes/addons/jet-blog-smart-tiles.php:569
+#: includes/class-jet-blog-query-builder.php:162
+msgid "Use Custom Query"
+msgstr ""
+
+#: includes/addons/jet-blog-smart-listing.php:1094
+#: includes/addons/jet-blog-smart-tiles.php:583
+msgid "Generate custom query"
+msgstr ""
+
+#: includes/addons/jet-blog-smart-listing.php:1101
+#: includes/addons/jet-blog-smart-tiles.php:590
+msgid "Set custom query"
+msgstr ""
+
+#: includes/addons/jet-blog-smart-listing.php:1116
+#: includes/addons/jet-blog-smart-tiles.php:605
+#: includes/addons/jet-blog-text-ticker.php:222
+msgid "Post Type"
+msgstr ""
+
+#: includes/addons/jet-blog-smart-listing.php:1131
+#: includes/addons/jet-blog-smart-tiles.php:620
+#: includes/addons/jet-blog-text-ticker.php:234
+msgid "Query Custom Posts By"
+msgstr ""
+
+#: includes/addons/jet-blog-smart-listing.php:1136
+#: includes/addons/jet-blog-smart-listing.php:1202
+#: includes/addons/jet-blog-smart-tiles.php:625
+#: includes/addons/jet-blog-smart-tiles.php:691
+#: includes/addons/jet-blog-text-ticker.php:239
+#: includes/addons/jet-blog-text-ticker.php:287
+msgid "IDs"
+msgstr ""
+
+#: includes/addons/jet-blog-smart-listing.php:1137
+#: includes/addons/jet-blog-smart-tiles.php:626
+msgid "Terms"
+msgstr ""
+
+#: includes/addons/jet-blog-smart-listing.php:1150
+#: includes/addons/jet-blog-smart-tiles.php:639
+msgid "Get custom posts from terms:"
+msgstr ""
+
+#: includes/addons/jet-blog-smart-listing.php:1151
+#: includes/addons/jet-blog-smart-tiles.php:640
+msgid "Set comma separated terms IDs list (10, 22, 19 etc.)"
+msgstr ""
+
+#: includes/addons/jet-blog-smart-listing.php:1174
+#: includes/addons/jet-blog-smart-listing.php:1285
+#: includes/addons/jet-blog-smart-tiles.php:663
+#: includes/addons/jet-blog-smart-tiles.php:739
+msgid "Set comma separated IDs list (10, 22, 19 etc.)"
+msgstr ""
+
+#: includes/addons/jet-blog-smart-listing.php:1195
+#: includes/addons/jet-blog-smart-tiles.php:684
+#: includes/addons/jet-blog-text-ticker.php:279
+msgid "Query Posts By"
+msgstr ""
+
+#: includes/addons/jet-blog-smart-listing.php:1200
+#: includes/addons/jet-blog-smart-tiles.php:689
+#: includes/addons/jet-blog-text-ticker.php:285
+msgid "Categories"
+msgstr ""
+
+#: includes/addons/jet-blog-smart-listing.php:1201
+#: includes/addons/jet-blog-smart-tiles.php:690
+#: includes/addons/jet-blog-text-ticker.php:286
+msgid "Tags"
+msgstr ""
+
+#: includes/addons/jet-blog-smart-listing.php:1224
+#: includes/addons/jet-blog-smart-tiles.php:704
+#: includes/addons/jet-blog-text-ticker.php:298
+msgid "Get posts from categories:"
+msgstr ""
+
+#: includes/addons/jet-blog-smart-listing.php:1254
+#: includes/addons/jet-blog-smart-tiles.php:721
+#: includes/addons/jet-blog-text-ticker.php:313
+msgid "Get posts from tags:"
+msgstr ""
+
+#: includes/addons/jet-blog-smart-listing.php:1321
+#: includes/addons/jet-blog-smart-tiles.php:762
+msgid ""
+"If this is used with query posts by ID, it will be ignored. Note: use the "
+"%current_id% macros to exclude the current post."
+msgstr ""
+
+#: includes/addons/jet-blog-smart-listing.php:1322
+#: includes/addons/jet-blog-smart-tiles.php:763
+#: includes/addons/jet-blog-text-ticker.php:357
+msgid "Exclude posts by IDs (eg. 10, 22, 19 etc.)"
+msgstr ""
+
+#: includes/addons/jet-blog-smart-listing.php:1340
+#: includes/addons/jet-blog-smart-tiles.php:781
+#: includes/addons/jet-blog-text-ticker.php:375
+msgid "Posts Offset"
+msgstr ""
+
+#: includes/addons/jet-blog-smart-listing.php:1356
+#: includes/addons/jet-blog-smart-tiles.php:797
+msgid "Order"
+msgstr ""
+
+#: includes/addons/jet-blog-smart-listing.php:1360
+#: includes/addons/jet-blog-smart-tiles.php:801
+msgid "ASC"
+msgstr ""
+
+#: includes/addons/jet-blog-smart-listing.php:1361
+#: includes/addons/jet-blog-smart-tiles.php:802
+msgid "DESC"
+msgstr ""
+
+#: includes/addons/jet-blog-smart-listing.php:1373
+#: includes/addons/jet-blog-smart-tiles.php:814
+msgid "Order by"
+msgstr ""
+
+#: includes/addons/jet-blog-smart-listing.php:1378
+#: includes/addons/jet-blog-smart-tiles.php:819
+#: includes/class-jet-blog-tools.php:148
+msgid "ID"
+msgstr ""
+
+#: includes/addons/jet-blog-smart-listing.php:1379
+#: includes/addons/jet-blog-smart-tiles.php:820
+#: includes/addons/jet-blog-text-ticker.php:1221
+#: includes/class-jet-blog-tools.php:149
+msgid "Author"
+msgstr ""
+
+#: includes/addons/jet-blog-smart-listing.php:1380
+#: includes/addons/jet-blog-smart-listing.php:1962
+#: includes/addons/jet-blog-smart-tiles.php:821
+#: includes/addons/jet-blog-smart-tiles.php:1185
+#: includes/addons/jet-blog-video-playlist.php:135
+#: includes/addons/jet-blog-video-playlist.php:922
+#: includes/class-jet-blog-tools.php:150
+msgid "Title"
+msgstr ""
+
+#: includes/addons/jet-blog-smart-listing.php:1381
+#: includes/addons/jet-blog-smart-tiles.php:822
+msgid "Name"
+msgstr ""
+
+#: includes/addons/jet-blog-smart-listing.php:1382
+#: includes/addons/jet-blog-smart-tiles.php:823
+msgid "Type"
+msgstr ""
+
+#: includes/addons/jet-blog-smart-listing.php:1383
+#: includes/addons/jet-blog-smart-tiles.php:824
+#: includes/addons/jet-blog-text-ticker.php:1302
+#: includes/class-jet-blog-tools.php:152
+msgid "Date"
+msgstr ""
+
+#: includes/addons/jet-blog-smart-listing.php:1384
+#: includes/addons/jet-blog-smart-tiles.php:825
+#: includes/class-jet-blog-tools.php:153
+msgid "Modified"
+msgstr ""
+
+#: includes/addons/jet-blog-smart-listing.php:1385
+#: includes/addons/jet-blog-smart-tiles.php:826
+msgid "Parent"
+msgstr ""
+
+#: includes/addons/jet-blog-smart-listing.php:1386
+#: includes/addons/jet-blog-smart-tiles.php:827
+#: includes/class-jet-blog-tools.php:154
+msgid "Rand"
+msgstr ""
+
+#: includes/addons/jet-blog-smart-listing.php:1387
+#: includes/addons/jet-blog-smart-tiles.php:828
+msgid "Comment count"
+msgstr ""
+
+#: includes/addons/jet-blog-smart-listing.php:1388
+#: includes/addons/jet-blog-smart-tiles.php:829
+msgid "Relevance"
+msgstr ""
+
+#: includes/addons/jet-blog-smart-listing.php:1389
+#: includes/addons/jet-blog-smart-tiles.php:830
+msgid "Menu order"
+msgstr ""
+
+#: includes/addons/jet-blog-smart-listing.php:1390
+#: includes/addons/jet-blog-smart-tiles.php:831
+msgid "Preserve post ID order given in the \"Include posts by IDs\" option"
+msgstr ""
+
+#: includes/addons/jet-blog-smart-listing.php:1402
+#: includes/addons/jet-blog-smart-tiles.php:843
+#: includes/addons/jet-blog-text-ticker.php:388
+msgid "Filter by Custom Field"
+msgstr ""
+
+#: includes/addons/jet-blog-smart-listing.php:1421
+#: includes/addons/jet-blog-smart-tiles.php:861
+#: includes/addons/jet-blog-text-ticker.php:403
+msgid "Custom Field Key"
+msgstr ""
+
+#: includes/addons/jet-blog-smart-listing.php:1437
+#: includes/addons/jet-blog-smart-tiles.php:876
+#: includes/addons/jet-blog-text-ticker.php:416
+msgid "Custom Field Value"
+msgstr ""
+
+#: includes/addons/jet-blog-smart-listing.php:1450
+msgid "Show Filter by Terms"
+msgstr ""
+
+#: includes/addons/jet-blog-smart-listing.php:1488
+msgid "Select Terms Type for Filter"
+msgstr ""
+
+#: includes/addons/jet-blog-smart-listing.php:1529
+msgid "Show \"All\" Button in Start of Filter"
+msgstr ""
+
+#: includes/addons/jet-blog-smart-listing.php:1571
+msgid "\"All\" Button Label"
+msgstr ""
+
+#: includes/addons/jet-blog-smart-listing.php:1610
+msgid "RollUp Extra Terms"
+msgstr ""
+
+#: includes/addons/jet-blog-smart-listing.php:1615
+msgid ""
+"Enable this option in order to reduce the terms filter size by grouping "
+"extra terms items and hiding them under the suspension dots."
+msgstr ""
+
+#: includes/addons/jet-blog-smart-listing.php:1655
+msgid "More Terms Icon"
+msgstr ""
+
+#: includes/addons/jet-blog-smart-listing.php:1704
+msgid "Hide Filter by Terms On"
+msgstr ""
+
+#: includes/addons/jet-blog-smart-listing.php:1722
+msgid "Show Paging Control"
+msgstr ""
+
+#: includes/addons/jet-blog-smart-listing.php:1738
+#: includes/addons/jet-blog-smart-tiles.php:993
+#: includes/addons/jet-blog-text-ticker.php:787
+msgid "Select Control Arrows Type"
+msgstr ""
+
+#: includes/addons/jet-blog-smart-listing.php:1753
+msgid "To Top"
+msgstr ""
+
+#: includes/addons/jet-blog-smart-listing.php:1754
+msgid "Scrolling to the top of the widget after a click on pagination arrow"
+msgstr ""
+
+#: includes/addons/jet-blog-smart-listing.php:1769
+msgid "Hide Paging Control On"
+msgstr ""
+
+#: includes/addons/jet-blog-smart-listing.php:1789
+#: includes/addons/jet-blog-smart-listing.php:5965
+#: includes/addons/jet-blog-smart-tiles.php:1028
+#: includes/addons/jet-blog-smart-tiles.php:2355
+msgid "Custom Fields"
+msgstr ""
+
+#: includes/addons/jet-blog-smart-listing.php:1793
+#: includes/addons/jet-blog-smart-listing.php:5973
+#: includes/addons/jet-blog-smart-tiles.php:1032
+#: includes/addons/jet-blog-smart-tiles.php:2363
+msgid "Before/After Title"
+msgstr ""
+
+#: includes/addons/jet-blog-smart-listing.php:1795
+#: includes/addons/jet-blog-smart-listing.php:5979
+#: includes/addons/jet-blog-smart-tiles.php:1034
+#: includes/addons/jet-blog-smart-tiles.php:2369
+msgid "Before/After Content"
+msgstr ""
+
+#: includes/addons/jet-blog-smart-listing.php:1802
+msgid "Posts Wrapper"
+msgstr ""
+
+#: includes/addons/jet-blog-smart-listing.php:1811
+msgid "Global Wrapper Margin"
+msgstr ""
+
+#: includes/addons/jet-blog-smart-listing.php:1832
+msgid "Featured Post Margin"
+msgstr ""
+
+#: includes/addons/jet-blog-smart-listing.php:1853
+msgid "Posts List Margin"
+msgstr ""
+
+#: includes/addons/jet-blog-smart-listing.php:1876
+msgid "Heading"
+msgstr ""
+
+#: includes/addons/jet-blog-smart-listing.php:1885
+msgid "Heading Box"
+msgstr ""
+
+#: includes/addons/jet-blog-smart-listing.php:1949
+#: includes/addons/jet-blog-smart-listing.php:2017
+#: includes/addons/jet-blog-smart-listing.php:2273
+#: includes/addons/jet-blog-smart-listing.php:2673
+#: includes/addons/jet-blog-smart-listing.php:2752
+#: includes/addons/jet-blog-smart-listing.php:2929
+#: includes/addons/jet-blog-smart-listing.php:3695
+#: includes/addons/jet-blog-smart-listing.php:3964
+#: includes/addons/jet-blog-smart-listing.php:4036
+#: includes/addons/jet-blog-smart-listing.php:4249
+#: includes/addons/jet-blog-smart-listing.php:4327
+#: includes/addons/jet-blog-smart-listing.php:4498
+#: includes/addons/jet-blog-smart-listing.php:5261
+#: includes/addons/jet-blog-smart-listing.php:5530
+#: includes/addons/jet-blog-smart-tiles.php:1256
+#: includes/addons/jet-blog-smart-tiles.php:1418
+#: includes/addons/jet-blog-smart-tiles.php:1562
+#: includes/addons/jet-blog-smart-tiles.php:1918
+#: includes/addons/jet-blog-text-ticker.php:1152
+#: includes/addons/jet-blog-text-ticker.php:1175
+#: includes/addons/jet-blog-video-playlist.php:1221
+#: includes/base/class-jet-blog-base.php:822
+msgid "Margin"
+msgstr ""
+
+#: includes/addons/jet-blog-smart-listing.php:1972
+#: includes/addons/jet-blog-video-playlist.php:1036
+#: includes/addons/jet-blog-video-playlist.php:1094
+#: includes/addons/jet-blog-video-playlist.php:1149
+msgid "Title Color"
+msgstr ""
+
+#: includes/addons/jet-blog-smart-listing.php:2040
+msgid "Filter"
+msgstr ""
+
+#: includes/addons/jet-blog-smart-listing.php:2070
+#: includes/addons/jet-blog-smart-listing.php:2135
+#: includes/addons/jet-blog-smart-listing.php:2200
+#: includes/addons/jet-blog-smart-listing.php:2363
+#: includes/addons/jet-blog-smart-listing.php:2613
+#: includes/addons/jet-blog-smart-listing.php:2727
+#: includes/addons/jet-blog-smart-listing.php:4189
+#: includes/addons/jet-blog-smart-listing.php:4303
+#: includes/addons/jet-blog-smart-tiles.php:1207
+#: includes/addons/jet-blog-smart-tiles.php:1323
+#: includes/addons/jet-blog-smart-tiles.php:1394
+#: includes/addons/jet-blog-text-ticker.php:879
+#: includes/addons/jet-blog-text-ticker.php:1049
+#: includes/addons/jet-blog-text-ticker.php:1231
+#: includes/addons/jet-blog-text-ticker.php:1312
+#: includes/addons/jet-blog-text-ticker.php:1346
+#: includes/addons/jet-blog-video-playlist.php:748
+#: includes/addons/jet-blog-video-playlist.php:807
+#: includes/addons/jet-blog-video-playlist.php:842
+#: includes/base/class-jet-blog-base.php:734
+#: includes/base/class-jet-blog-base.php:801
+#: includes/controls/groups/class-jet-blog-group-control-box-style.php:27
+msgid "Color"
+msgstr ""
+
+#: includes/addons/jet-blog-smart-listing.php:2193
+#: includes/addons/jet-blog-video-playlist.php:1141
+#: includes/addons/jet-blog-video-playlist.php:1295
+msgid "Active"
+msgstr ""
+
+#: includes/addons/jet-blog-smart-listing.php:2322
+msgid "Hidden Terms Box"
+msgstr ""
+
+#: includes/addons/jet-blog-smart-listing.php:2332
+msgid "Hidden Terms Icon Size"
+msgstr ""
+
+#: includes/addons/jet-blog-smart-listing.php:2375
+msgid "Hover/Active Color"
+msgstr ""
+
+#: includes/addons/jet-blog-smart-listing.php:2445
+msgid "Featured"
+msgstr ""
+
+#: includes/addons/jet-blog-smart-listing.php:2467
+#: includes/addons/jet-blog-smart-listing.php:4049
+msgid "Inner Content Margin"
+msgstr ""
+
+#: includes/addons/jet-blog-smart-listing.php:2522
+#: includes/addons/jet-blog-smart-listing.php:4104
+msgid "Post Image"
+msgstr ""
+
+#: includes/addons/jet-blog-smart-listing.php:2551
+#: includes/addons/jet-blog-smart-listing.php:4127
+msgid "Post Image Overlay"
+msgstr ""
+
+#: includes/addons/jet-blog-smart-listing.php:2603
+#: includes/addons/jet-blog-smart-listing.php:4179
+msgid "Post Title"
+msgstr ""
+
+#: includes/addons/jet-blog-smart-listing.php:2626
+#: includes/addons/jet-blog-smart-listing.php:4202
+#: includes/addons/jet-blog-smart-tiles.php:1219
+#: includes/addons/jet-blog-smart-tiles.php:1339
+#: includes/addons/jet-blog-text-ticker.php:1358
+msgid "Color Hover"
+msgstr ""
+
+#: includes/addons/jet-blog-smart-listing.php:2651
+#: includes/addons/jet-blog-smart-listing.php:4227
+msgid "Text Decoration Hover"
+msgstr ""
+
+#: includes/addons/jet-blog-smart-listing.php:2656
+#: includes/addons/jet-blog-smart-listing.php:4232
+msgid "Default"
+msgstr ""
+
+#: includes/addons/jet-blog-smart-listing.php:2657
+#: includes/addons/jet-blog-smart-listing.php:4233
+msgctxt "Typography Control"
+msgid "Underline"
+msgstr ""
+
+#: includes/addons/jet-blog-smart-listing.php:2658
+#: includes/addons/jet-blog-smart-listing.php:4234
+msgctxt "Typography Control"
+msgid "Overline"
+msgstr ""
+
+#: includes/addons/jet-blog-smart-listing.php:2659
+#: includes/addons/jet-blog-smart-listing.php:4235
+msgctxt "Typography Control"
+msgid "Line Through"
+msgstr ""
+
+#: includes/addons/jet-blog-smart-listing.php:2660
+#: includes/addons/jet-blog-smart-listing.php:4236
+msgctxt "Typography Control"
+msgid "None"
+msgstr ""
+
+#: includes/addons/jet-blog-smart-listing.php:2717
+#: includes/addons/jet-blog-smart-listing.php:4293
+#: includes/addons/jet-blog-smart-tiles.php:1384
+msgid "Post Text"
+msgstr ""
+
+#: includes/addons/jet-blog-smart-listing.php:2807
+#: includes/addons/jet-blog-smart-listing.php:4382
+#: includes/addons/jet-blog-smart-tiles.php:1470
+msgid "Meta Icon Size"
+msgstr ""
+
+#: includes/addons/jet-blog-smart-listing.php:2826
+#: includes/addons/jet-blog-smart-listing.php:4401
+#: includes/addons/jet-blog-smart-tiles.php:1489
+msgid "Meta Icon Gap"
+msgstr ""
+
+#: includes/addons/jet-blog-smart-listing.php:2874
+#: includes/addons/jet-blog-smart-listing.php:4449
+msgid "Links Color"
+msgstr ""
+
+#: includes/addons/jet-blog-smart-listing.php:2889
+#: includes/addons/jet-blog-smart-listing.php:4461
+msgid "Links Hover Color"
+msgstr ""
+
+#: includes/addons/jet-blog-smart-listing.php:2971
+#: includes/addons/jet-blog-smart-listing.php:4540
+#: includes/addons/jet-blog-smart-tiles.php:1604
+msgid "Meta Divider"
+msgstr ""
+
+#: includes/addons/jet-blog-smart-listing.php:2984
+#: includes/addons/jet-blog-smart-listing.php:4553
+#: includes/addons/jet-blog-smart-tiles.php:1617
+msgid "Divider Gap"
+msgstr ""
+
+#: includes/addons/jet-blog-smart-listing.php:3003
+#: includes/addons/jet-blog-smart-listing.php:4572
+#: includes/addons/jet-blog-smart-tiles.php:1636
+#: includes/addons/jet-blog-text-ticker.php:1255
+msgid "Author Avatar"
+msgstr ""
+
+#: includes/addons/jet-blog-smart-listing.php:3058
+msgid "Featured Read More Button"
+msgstr ""
+
+#: includes/addons/jet-blog-smart-listing.php:3067
+#: includes/addons/jet-blog-smart-listing.php:4633
+msgid "Customize Icon"
+msgstr ""
+
+#: includes/addons/jet-blog-smart-listing.php:3080
+#: includes/addons/jet-blog-smart-listing.php:4646
+msgid "Read More Button Icon"
+msgstr ""
+
+#: includes/addons/jet-blog-smart-listing.php:3093
+#: includes/addons/jet-blog-smart-listing.php:4659
+msgid "Icon Position"
+msgstr ""
+
+#: includes/addons/jet-blog-smart-listing.php:3096
+#: includes/addons/jet-blog-smart-listing.php:4662
+msgid "Before Text"
+msgstr ""
+
+#: includes/addons/jet-blog-smart-listing.php:3097
+#: includes/addons/jet-blog-smart-listing.php:4663
+msgid "After Text"
+msgstr ""
+
+#: includes/addons/jet-blog-smart-listing.php:3149
+#: includes/addons/jet-blog-smart-listing.php:4715
+#: includes/base/class-jet-blog-base.php:902
+msgid "Icon Margin"
+msgstr ""
+
+#: includes/addons/jet-blog-smart-listing.php:3174
+#: includes/addons/jet-blog-smart-listing.php:3438
+#: includes/addons/jet-blog-smart-listing.php:4740
+#: includes/addons/jet-blog-smart-listing.php:5004
+#: includes/controls/groups/class-jet-blog-group-control-box-style.php:36
+msgctxt "Background Control"
+msgid "Background Type"
+msgstr ""
+
+#: includes/addons/jet-blog-smart-listing.php:3178
+#: includes/addons/jet-blog-smart-listing.php:3442
+#: includes/addons/jet-blog-smart-listing.php:4744
+#: includes/addons/jet-blog-smart-listing.php:5008
+#: includes/controls/groups/class-jet-blog-group-control-box-style.php:40
+msgctxt "Background Control"
+msgid "Classic"
+msgstr ""
+
+#: includes/addons/jet-blog-smart-listing.php:3182
+#: includes/addons/jet-blog-smart-listing.php:3446
+#: includes/addons/jet-blog-smart-listing.php:4748
+#: includes/addons/jet-blog-smart-listing.php:5012
+#: includes/controls/groups/class-jet-blog-group-control-box-style.php:44
+msgctxt "Background Control"
+msgid "Gradient"
+msgstr ""
+
+#: includes/addons/jet-blog-smart-listing.php:3196
+#: includes/addons/jet-blog-smart-listing.php:3460
+#: includes/addons/jet-blog-smart-listing.php:4762
+#: includes/addons/jet-blog-smart-listing.php:5026
+#: includes/addons/jet-blog-smart-tiles.php:1709
+#: includes/addons/jet-blog-smart-tiles.php:1810
+#: includes/controls/groups/class-jet-blog-group-control-box-style.php:53
+msgctxt "Background Control"
+msgid "Color"
+msgstr ""
+
+#: includes/addons/jet-blog-smart-listing.php:3202
+#: includes/addons/jet-blog-smart-listing.php:3466
+#: includes/addons/jet-blog-smart-listing.php:4768
+#: includes/addons/jet-blog-smart-listing.php:5032
+#: includes/addons/jet-blog-smart-tiles.php:1715
+#: includes/addons/jet-blog-smart-tiles.php:1816
+#: includes/controls/groups/class-jet-blog-group-control-box-style.php:56
+msgctxt "Background Control"
+msgid "Background Color"
+msgstr ""
+
+#: includes/addons/jet-blog-smart-listing.php:3213
+#: includes/addons/jet-blog-smart-listing.php:3247
+#: includes/addons/jet-blog-smart-listing.php:3477
+#: includes/addons/jet-blog-smart-listing.php:3511
+#: includes/addons/jet-blog-smart-listing.php:4779
+#: includes/addons/jet-blog-smart-listing.php:4813
+#: includes/addons/jet-blog-smart-listing.php:5043
+#: includes/addons/jet-blog-smart-listing.php:5077
+#: includes/controls/groups/class-jet-blog-group-control-box-style.php:66
+#: includes/controls/groups/class-jet-blog-group-control-box-style.php:92
+msgctxt "Background Control"
+msgid "Location"
+msgstr ""
+
+#: includes/addons/jet-blog-smart-listing.php:3232
+#: includes/addons/jet-blog-smart-listing.php:3496
+#: includes/addons/jet-blog-smart-listing.php:4798
+#: includes/addons/jet-blog-smart-listing.php:5062
+#: includes/controls/groups/class-jet-blog-group-control-box-style.php:81
+msgctxt "Background Control"
+msgid "Second Color"
+msgstr ""
+
+#: includes/addons/jet-blog-smart-listing.php:3266
+#: includes/addons/jet-blog-smart-listing.php:3530
+#: includes/addons/jet-blog-smart-listing.php:4832
+#: includes/addons/jet-blog-smart-listing.php:5096
+#: includes/controls/groups/class-jet-blog-group-control-box-style.php:107
+msgctxt "Background Control"
+msgid "Type"
+msgstr ""
+
+#: includes/addons/jet-blog-smart-listing.php:3269
+#: includes/addons/jet-blog-smart-listing.php:3533
+#: includes/addons/jet-blog-smart-listing.php:4835
+#: includes/addons/jet-blog-smart-listing.php:5099
+#: includes/controls/groups/class-jet-blog-group-control-box-style.php:110
+msgctxt "Background Control"
+msgid "Linear"
+msgstr ""
+
+#: includes/addons/jet-blog-smart-listing.php:3270
+#: includes/addons/jet-blog-smart-listing.php:3534
+#: includes/addons/jet-blog-smart-listing.php:4836
+#: includes/addons/jet-blog-smart-listing.php:5100
+#: includes/controls/groups/class-jet-blog-group-control-box-style.php:111
+msgctxt "Background Control"
+msgid "Radial"
+msgstr ""
+
+#: includes/addons/jet-blog-smart-listing.php:3285
+#: includes/addons/jet-blog-smart-listing.php:3549
+#: includes/addons/jet-blog-smart-listing.php:4851
+#: includes/addons/jet-blog-smart-listing.php:5115
+#: includes/controls/groups/class-jet-blog-group-control-box-style.php:122
+msgctxt "Background Control"
+msgid "Angle"
+msgstr ""
+
+#: includes/addons/jet-blog-smart-listing.php:3312
+#: includes/addons/jet-blog-smart-listing.php:3576
+#: includes/addons/jet-blog-smart-listing.php:4878
+#: includes/addons/jet-blog-smart-listing.php:5142
+#: includes/controls/groups/class-jet-blog-group-control-box-style.php:145
+msgctxt "Background Control"
+msgid "Position"
+msgstr ""
+
+#: includes/addons/jet-blog-smart-listing.php:3315
+#: includes/addons/jet-blog-smart-listing.php:3579
+#: includes/addons/jet-blog-smart-listing.php:4881
+#: includes/addons/jet-blog-smart-listing.php:5145
+#: includes/controls/groups/class-jet-blog-group-control-box-style.php:148
+msgctxt "Background Control"
+msgid "Center Center"
+msgstr ""
+
+#: includes/addons/jet-blog-smart-listing.php:3316
+#: includes/addons/jet-blog-smart-listing.php:3580
+#: includes/addons/jet-blog-smart-listing.php:4882
+#: includes/addons/jet-blog-smart-listing.php:5146
+#: includes/controls/groups/class-jet-blog-group-control-box-style.php:149
+msgctxt "Background Control"
+msgid "Center Left"
+msgstr ""
+
+#: includes/addons/jet-blog-smart-listing.php:3317
+#: includes/addons/jet-blog-smart-listing.php:3581
+#: includes/addons/jet-blog-smart-listing.php:4883
+#: includes/addons/jet-blog-smart-listing.php:5147
+#: includes/controls/groups/class-jet-blog-group-control-box-style.php:150
+msgctxt "Background Control"
+msgid "Center Right"
+msgstr ""
+
+#: includes/addons/jet-blog-smart-listing.php:3318
+#: includes/addons/jet-blog-smart-listing.php:3582
+#: includes/addons/jet-blog-smart-listing.php:4884
+#: includes/addons/jet-blog-smart-listing.php:5148
+#: includes/controls/groups/class-jet-blog-group-control-box-style.php:151
+msgctxt "Background Control"
+msgid "Top Center"
+msgstr ""
+
+#: includes/addons/jet-blog-smart-listing.php:3319
+#: includes/addons/jet-blog-smart-listing.php:3583
+#: includes/addons/jet-blog-smart-listing.php:4885
+#: includes/addons/jet-blog-smart-listing.php:5149
+#: includes/controls/groups/class-jet-blog-group-control-box-style.php:152
+msgctxt "Background Control"
+msgid "Top Left"
+msgstr ""
+
+#: includes/addons/jet-blog-smart-listing.php:3320
+#: includes/addons/jet-blog-smart-listing.php:3584
+#: includes/addons/jet-blog-smart-listing.php:4886
+#: includes/addons/jet-blog-smart-listing.php:5150
+#: includes/controls/groups/class-jet-blog-group-control-box-style.php:153
+msgctxt "Background Control"
+msgid "Top Right"
+msgstr ""
+
+#: includes/addons/jet-blog-smart-listing.php:3321
+#: includes/addons/jet-blog-smart-listing.php:3585
+#: includes/addons/jet-blog-smart-listing.php:4887
+#: includes/addons/jet-blog-smart-listing.php:5151
+#: includes/controls/groups/class-jet-blog-group-control-box-style.php:154
+msgctxt "Background Control"
+msgid "Bottom Center"
+msgstr ""
+
+#: includes/addons/jet-blog-smart-listing.php:3322
+#: includes/addons/jet-blog-smart-listing.php:3586
+#: includes/addons/jet-blog-smart-listing.php:4888
+#: includes/addons/jet-blog-smart-listing.php:5152
+#: includes/controls/groups/class-jet-blog-group-control-box-style.php:155
+msgctxt "Background Control"
+msgid "Bottom Left"
+msgstr ""
+
+#: includes/addons/jet-blog-smart-listing.php:3323
+#: includes/addons/jet-blog-smart-listing.php:3587
+#: includes/addons/jet-blog-smart-listing.php:4889
+#: includes/addons/jet-blog-smart-listing.php:5153
+#: includes/controls/groups/class-jet-blog-group-control-box-style.php:156
+msgctxt "Background Control"
+msgid "Bottom Right"
+msgstr ""
+
+#: includes/addons/jet-blog-smart-listing.php:3365
+#: includes/addons/jet-blog-smart-listing.php:3627
+#: includes/addons/jet-blog-smart-listing.php:3810
+#: includes/addons/jet-blog-smart-listing.php:3909
+#: includes/addons/jet-blog-smart-listing.php:4931
+#: includes/addons/jet-blog-smart-listing.php:5193
+#: includes/addons/jet-blog-smart-listing.php:5376
+#: includes/addons/jet-blog-smart-listing.php:5475
+#: includes/addons/jet-blog-smart-tiles.php:1750
+#: includes/addons/jet-blog-smart-tiles.php:1849
+msgid "Text Decoration"
+msgstr ""
+
+#: includes/addons/jet-blog-smart-listing.php:3369
+#: includes/addons/jet-blog-smart-listing.php:3631
+#: includes/addons/jet-blog-smart-listing.php:3814
+#: includes/addons/jet-blog-smart-listing.php:3913
+#: includes/addons/jet-blog-smart-listing.php:4935
+#: includes/addons/jet-blog-smart-listing.php:5197
+#: includes/addons/jet-blog-smart-listing.php:5380
+#: includes/addons/jet-blog-smart-listing.php:5479
+#: includes/addons/jet-blog-smart-tiles.php:1754
+#: includes/addons/jet-blog-smart-tiles.php:1853
+msgid "Underline"
+msgstr ""
+
+#: includes/addons/jet-blog-smart-listing.php:3618
+#: includes/addons/jet-blog-smart-listing.php:3900
+#: includes/addons/jet-blog-smart-listing.php:5184
+#: includes/addons/jet-blog-smart-listing.php:5466
+#: includes/addons/jet-blog-smart-tiles.php:1840
+msgid "Typography"
+msgstr ""
+
+#: includes/addons/jet-blog-smart-listing.php:3738
+msgid "Featured Terms Links"
+msgstr ""
+
+#: includes/addons/jet-blog-smart-listing.php:4014
+msgid "Post"
+msgstr ""
+
+#: includes/addons/jet-blog-smart-listing.php:4624
+msgid "Post Read More Button"
+msgstr ""
+
+#: includes/addons/jet-blog-smart-listing.php:5304
+#: includes/addons/jet-blog-smart-tiles.php:1688
+msgid "Terms Links"
+msgstr ""
+
+#: includes/addons/jet-blog-smart-listing.php:5580
+#: includes/addons/jet-blog-smart-tiles.php:1970
+#: includes/addons/jet-blog-text-ticker.php:1384
+msgid "Paging Arrows"
+msgstr ""
+
+#: includes/addons/jet-blog-smart-listing.php:5600
+#: includes/addons/jet-blog-smart-listing.php:5627
+#: includes/addons/jet-blog-smart-tiles.php:1990
+#: includes/addons/jet-blog-smart-tiles.php:2017
+#: includes/addons/jet-blog-text-ticker.php:1404
+#: includes/addons/jet-blog-text-ticker.php:1431
+msgid "Arrows Style"
+msgstr ""
+
+#: includes/addons/jet-blog-smart-listing.php:5647
+#: includes/addons/jet-blog-smart-tiles.php:2037
+#: includes/addons/jet-blog-text-ticker.php:1451
+msgid "Prev Arrow Position"
+msgstr ""
+
+#: includes/addons/jet-blog-smart-listing.php:5657
+#: includes/addons/jet-blog-smart-listing.php:5815
+msgid "Vertical Position by"
+msgstr ""
+
+#: includes/addons/jet-blog-smart-listing.php:5662
+#: includes/addons/jet-blog-smart-listing.php:5820
+#: includes/addons/jet-blog-smart-tiles.php:1956
+#: includes/addons/jet-blog-smart-tiles.php:2052
+#: includes/addons/jet-blog-smart-tiles.php:2210
+#: includes/addons/jet-blog-text-ticker.php:1466
+#: includes/addons/jet-blog-text-ticker.php:1624
+#: includes/addons/jet-blog-video-playlist.php:297
+#: includes/class-jet-blog-tools.php:184
+msgid "Bottom"
+msgstr ""
+
+#: includes/addons/jet-blog-smart-listing.php:5671
+#: includes/addons/jet-blog-smart-listing.php:5829
+#: includes/addons/jet-blog-smart-tiles.php:2061
+#: includes/addons/jet-blog-smart-tiles.php:2219
+#: includes/addons/jet-blog-text-ticker.php:1475
+#: includes/addons/jet-blog-text-ticker.php:1633
+msgid "Top Indent"
+msgstr ""
+
+#: includes/addons/jet-blog-smart-listing.php:5701
+#: includes/addons/jet-blog-smart-listing.php:5859
+#: includes/addons/jet-blog-smart-tiles.php:2091
+#: includes/addons/jet-blog-smart-tiles.php:2249
+#: includes/addons/jet-blog-text-ticker.php:1505
+#: includes/addons/jet-blog-text-ticker.php:1663
+msgid "Bottom Indent"
+msgstr ""
+
+#: includes/addons/jet-blog-smart-listing.php:5731
+#: includes/addons/jet-blog-smart-listing.php:5889
+msgid "Horizontal Position by"
+msgstr ""
+
+#: includes/addons/jet-blog-smart-listing.php:5745
+#: includes/addons/jet-blog-smart-listing.php:5903
+#: includes/addons/jet-blog-smart-tiles.php:2135
+#: includes/addons/jet-blog-smart-tiles.php:2293
+#: includes/addons/jet-blog-text-ticker.php:1549
+#: includes/addons/jet-blog-text-ticker.php:1707
+msgid "Left Indent"
+msgstr ""
+
+#: includes/addons/jet-blog-smart-listing.php:5775
+#: includes/addons/jet-blog-smart-listing.php:5933
+#: includes/addons/jet-blog-smart-tiles.php:2165
+#: includes/addons/jet-blog-smart-tiles.php:2323
+#: includes/addons/jet-blog-text-ticker.php:1579
+#: includes/addons/jet-blog-text-ticker.php:1737
+msgid "Right Indent"
+msgstr ""
+
+#: includes/addons/jet-blog-smart-listing.php:5805
+#: includes/addons/jet-blog-smart-tiles.php:2195
+#: includes/addons/jet-blog-text-ticker.php:1609
+msgid "Next Arrow Position"
+msgstr ""
+
+#: includes/addons/jet-blog-smart-listing.php:5988
+msgid "Loader Styles"
+msgstr ""
+
+#: includes/addons/jet-blog-smart-listing.php:5997
+msgid "Loader Opacity"
+msgstr ""
+
+#: includes/addons/jet-blog-smart-listing.php:6022
+msgid "Loader Dash Color"
+msgstr ""
+
+#: includes/addons/jet-blog-smart-listing.php:6035
+msgid "Loader Track Color"
+msgstr ""
+
+#: includes/addons/jet-blog-smart-tiles.php:33
+msgid "Smart Posts Tiles"
+msgstr ""
+
+#: includes/addons/jet-blog-smart-tiles.php:100
+msgid "Layout"
+msgstr ""
+
+#: includes/addons/jet-blog-smart-tiles.php:126
+msgid "Use Scroll Slider For Mobile"
+msgstr ""
+
+#: includes/addons/jet-blog-smart-tiles.php:142
+msgid ""
+"The Scroll Slider For Mobile option is not allowed when the Carousel is "
+"enabled."
+msgstr ""
+
+#: includes/addons/jet-blog-smart-tiles.php:152
+msgid "Mobile Rows Number"
+msgstr ""
+
+#: includes/addons/jet-blog-smart-tiles.php:165
+msgid "Mobile Column Width ( px )"
+msgstr ""
+
+#: includes/addons/jet-blog-smart-tiles.php:188
+msgid "Min Height"
+msgstr ""
+
+#: includes/addons/jet-blog-smart-tiles.php:229
+msgid "Main Box Width ( % )"
+msgstr ""
+
+#: includes/addons/jet-blog-smart-tiles.php:255
+msgid "Image Size"
+msgstr ""
+
+#: includes/addons/jet-blog-smart-tiles.php:347
+msgid "Show Excerpt on Small Boxes Only on Hover"
+msgstr ""
+
+#: includes/addons/jet-blog-smart-tiles.php:889
+msgid "Enable Carousel"
+msgstr ""
+
+#: includes/addons/jet-blog-smart-tiles.php:907
+msgid ""
+"The Carousel option is not allowed when the Scroll Slider For Mobile is "
+"enabled."
+msgstr ""
+
+#: includes/addons/jet-blog-smart-tiles.php:917
+msgid "Hide unfilled slider"
+msgstr ""
+
+#: includes/addons/jet-blog-smart-tiles.php:933
+msgid "Number of Slides"
+msgstr ""
+
+#: includes/addons/jet-blog-smart-tiles.php:950
+msgid "Autoplay"
+msgstr ""
+
+#: includes/addons/jet-blog-smart-tiles.php:963
+#: includes/addons/jet-blog-text-ticker.php:762
+msgid "Autoplay Speed"
+msgstr ""
+
+#: includes/addons/jet-blog-smart-tiles.php:977
+#: includes/addons/jet-blog-text-ticker.php:774
+msgid "Show Controls Arrows"
+msgstr ""
+
+#: includes/addons/jet-blog-smart-tiles.php:1009
+msgid "Show Arrows Only on Hover"
+msgstr ""
+
+#: includes/addons/jet-blog-smart-tiles.php:1041
+msgid "Box"
+msgstr ""
+
+#: includes/addons/jet-blog-smart-tiles.php:1050
+msgid "Gap Between Boxes"
+msgstr ""
+
+#: includes/addons/jet-blog-smart-tiles.php:1122
+msgid "Box Overlay"
+msgstr ""
+
+#: includes/addons/jet-blog-smart-tiles.php:1176
+msgid "Content"
+msgstr ""
+
+#: includes/addons/jet-blog-smart-tiles.php:1297
+msgid "Main Box Title"
+msgstr ""
+
+#: includes/addons/jet-blog-smart-tiles.php:1461
+msgid "Meta"
+msgstr ""
+
+#: includes/addons/jet-blog-smart-tiles.php:1931
+msgid "Horizontal Alignment"
+msgstr ""
+
+#: includes/addons/jet-blog-smart-tiles.php:1951
+msgid "Vertical Alignment"
+msgstr ""
+
+#: includes/addons/jet-blog-smart-tiles.php:2047
+#: includes/addons/jet-blog-smart-tiles.php:2205
+#: includes/addons/jet-blog-text-ticker.php:1461
+#: includes/addons/jet-blog-text-ticker.php:1619
+msgid "Vertical Postition by"
+msgstr ""
+
+#: includes/addons/jet-blog-smart-tiles.php:2121
+#: includes/addons/jet-blog-smart-tiles.php:2279
+#: includes/addons/jet-blog-text-ticker.php:1535
+#: includes/addons/jet-blog-text-ticker.php:1693
+msgid "Horizontal Postition by"
+msgstr ""
+
+#: includes/addons/jet-blog-smart-tiles.php:2386
+msgid "Layout 1 (5 posts)"
+msgstr ""
+
+#: includes/addons/jet-blog-smart-tiles.php:2392
+msgid "Layout 2 (4 posts)"
+msgstr ""
+
+#: includes/addons/jet-blog-smart-tiles.php:2398
+msgid "Layout 3 (4 posts)"
+msgstr ""
+
+#: includes/addons/jet-blog-smart-tiles.php:2404
+msgid "Layout 4 (3 posts)"
+msgstr ""
+
+#: includes/addons/jet-blog-smart-tiles.php:2410
+msgid "Layout 5 (5 posts)"
+msgstr ""
+
+#: includes/addons/jet-blog-smart-tiles.php:2416
+msgid "Layout 6 (5 posts)"
+msgstr ""
+
+#: includes/addons/jet-blog-smart-tiles.php:2422
+msgid "Layout 7 (2, 4, 6 posts)"
+msgstr ""
+
+#: includes/addons/jet-blog-smart-tiles.php:2428
+msgid "Layout 8 (3, 6, 9 posts)"
+msgstr ""
+
+#: includes/addons/jet-blog-smart-tiles.php:2434
+msgid "Layout 9 (4, 8, 12 posts)"
+msgstr ""
+
+#: includes/addons/jet-blog-text-ticker.php:30
+msgid "Text Ticker"
+msgstr ""
+
+#: includes/addons/jet-blog-text-ticker.php:108
+msgid "Hide Title On Tablets"
+msgstr ""
+
+#: includes/addons/jet-blog-text-ticker.php:120
+msgid "Hide Title On Mobile"
+msgstr ""
+
+#: includes/addons/jet-blog-text-ticker.php:132
+msgid "Show Current Date"
+msgstr ""
+
+#: includes/addons/jet-blog-text-ticker.php:145
+#: includes/addons/jet-blog-video-playlist.php:492
+msgid "Date Format"
+msgstr ""
+
+#: includes/addons/jet-blog-text-ticker.php:148
+#: includes/addons/jet-blog-text-ticker.php:646
+#: includes/addons/jet-blog-video-playlist.php:495
+#: includes/base/class-jet-blog-base.php:663
+msgid "Documentation on date and time formatting"
+msgstr ""
+
+#: includes/addons/jet-blog-text-ticker.php:176
+#: includes/addons/jet-blog-text-ticker.php:670
+msgid "Hide Date On Tablets"
+msgstr ""
+
+#: includes/addons/jet-blog-text-ticker.php:191
+#: includes/addons/jet-blog-text-ticker.php:685
+msgid "Hide Date On Mobile"
+msgstr ""
+
+#: includes/addons/jet-blog-text-ticker.php:208
+msgid "Posts Number to Show"
+msgstr ""
+
+#: includes/addons/jet-blog-text-ticker.php:250
+#: includes/addons/jet-blog-text-ticker.php:328
+msgid "Include posts by IDs (10, 22, 19 etc.)"
+msgstr ""
+
+#: includes/addons/jet-blog-text-ticker.php:284
+msgid "Sticky Posts"
+msgstr ""
+
+#: includes/addons/jet-blog-text-ticker.php:358
+msgid ""
+"If this is used with query posts by sticky, it will be ignored. Note: use "
+"the %current_id% macros to exclude the current post."
+msgstr ""
+
+#: includes/addons/jet-blog-text-ticker.php:441
+msgid "Show Post Thumbnail"
+msgstr ""
+
+#: includes/addons/jet-blog-text-ticker.php:454
+#: includes/addons/jet-blog-video-playlist.php:174
+msgid "Thumbnail Size"
+msgstr ""
+
+#: includes/addons/jet-blog-text-ticker.php:472
+msgid "Hide Thumbnail On Tablets"
+msgstr ""
+
+#: includes/addons/jet-blog-text-ticker.php:487
+msgid "Hide Thumbnail On Mobile"
+msgstr ""
+
+#: includes/addons/jet-blog-text-ticker.php:601
+msgid "Hide Author On Tablets"
+msgstr ""
+
+#: includes/addons/jet-blog-text-ticker.php:616
+msgid "Hide Author On Mobile"
+msgstr ""
+
+#: includes/addons/jet-blog-text-ticker.php:643
+msgid "Post Date Format"
+msgstr ""
+
+#: includes/addons/jet-blog-text-ticker.php:702
+msgid "Slider Settings"
+msgstr ""
+
+#: includes/addons/jet-blog-text-ticker.php:709
+msgid "Typing Effect"
+msgstr ""
+
+#: includes/addons/jet-blog-text-ticker.php:721
+msgid "Typing Cursor Char"
+msgstr ""
+
+#: includes/addons/jet-blog-text-ticker.php:737
+msgid "Multiline Typing"
+msgstr ""
+
+#: includes/addons/jet-blog-text-ticker.php:750
+msgid "Autoplay Posts"
+msgstr ""
+
+#: includes/addons/jet-blog-text-ticker.php:803
+msgid "Container"
+msgstr ""
+
+#: includes/addons/jet-blog-text-ticker.php:958
+msgid "Show Title Pointer"
+msgstr ""
+
+#: includes/addons/jet-blog-text-ticker.php:972
+msgid "Pointer Color"
+msgstr ""
+
+#: includes/addons/jet-blog-text-ticker.php:986
+msgid "Pointer Height"
+msgstr ""
+
+#: includes/addons/jet-blog-text-ticker.php:1010
+msgid "Pointer Width"
+msgstr ""
+
+#: includes/addons/jet-blog-text-ticker.php:1040
+msgid "Current Date"
+msgstr ""
+
+#: includes/addons/jet-blog-text-ticker.php:1130
+msgid "Posts"
+msgstr ""
+
+#: includes/addons/jet-blog-text-ticker.php:1165
+msgid "Thumbnail"
+msgstr ""
+
+#: includes/addons/jet-blog-text-ticker.php:1336
+msgid "Link"
+msgstr ""
+
+#: includes/addons/jet-blog-video-playlist.php:29
+#: includes/addons/jet-blog-video-playlist.php:405
+msgid "Video Playlist"
+msgstr ""
+
+#: includes/addons/jet-blog-video-playlist.php:110
+#, php-format
+msgid ""
+"Please set Google API key to correctly get data for YouTube videos. You can "
+"create own API key  %1$s. Paste created key on %2$s"
+msgstr ""
+
+#: includes/addons/jet-blog-video-playlist.php:111
+#: includes/addons/jet-blog-video-playlist.php:469
+#: includes/class-jet-blog-tools.php:469
+msgid "here"
+msgstr ""
+
+#: includes/addons/jet-blog-video-playlist.php:112
+#: includes/addons/jet-blog-video-playlist.php:470
+msgid "settings page"
+msgstr ""
+
+#: includes/addons/jet-blog-video-playlist.php:120
+msgid "Source"
+msgstr ""
+
+#: includes/addons/jet-blog-video-playlist.php:124
+msgid "Custom Video List"
+msgstr ""
+
+#: includes/addons/jet-blog-video-playlist.php:125
+msgid "YouTube Channel or Playlist"
+msgstr ""
+
+#: includes/addons/jet-blog-video-playlist.php:138
+msgid "Leave empty to automatically get title from video"
+msgstr ""
+
+#: includes/addons/jet-blog-video-playlist.php:146
+msgid "URL"
+msgstr ""
+
+#: includes/addons/jet-blog-video-playlist.php:149
+msgid "YouTube or Vimeo video URL"
+msgstr ""
+
+#: includes/addons/jet-blog-video-playlist.php:157
+msgid "Start Time (in seconds)"
+msgstr ""
+
+#: includes/addons/jet-blog-video-playlist.php:165
+msgid "Custom Thumbnail"
+msgstr ""
+
+#: includes/addons/jet-blog-video-playlist.php:206
+msgid "Source URL"
+msgstr ""
+
+#: includes/addons/jet-blog-video-playlist.php:209
+msgid "YouTube Channel or Playlist URL"
+msgstr ""
+
+#: includes/addons/jet-blog-video-playlist.php:220
+msgid "Number of videos"
+msgstr ""
+
+#: includes/addons/jet-blog-video-playlist.php:236
+#: includes/modules/jet-dashboard/inc/modules/settings/module.php:43
+msgid "Settings"
+msgstr ""
+
+#: includes/addons/jet-blog-video-playlist.php:243
+msgid "Playlist Height"
+msgstr ""
+
+#: includes/addons/jet-blog-video-playlist.php:244
+#: includes/addons/jet-blog-video-playlist.php:309
+msgid "Option for non-mobile devices"
+msgstr ""
+
+#: includes/addons/jet-blog-video-playlist.php:263
+msgid "Thumbnails Orientation"
+msgstr ""
+
+#: includes/addons/jet-blog-video-playlist.php:267
+msgid "Vertical"
+msgstr ""
+
+#: includes/addons/jet-blog-video-playlist.php:268
+msgid "Horizontal"
+msgstr ""
+
+#: includes/addons/jet-blog-video-playlist.php:276
+#: includes/addons/jet-blog-video-playlist.php:292
+msgid "Thumbnails Position"
+msgstr ""
+
+#: includes/addons/jet-blog-video-playlist.php:308
+msgid "Thumbnails List Width (%)"
+msgstr ""
+
+#: includes/addons/jet-blog-video-playlist.php:337
+msgid "Thumbnail Column Width (in pixels)"
+msgstr ""
+
+#: includes/addons/jet-blog-video-playlist.php:363
+msgid "Show Thumbnails Heading"
+msgstr ""
+
+#: includes/addons/jet-blog-video-playlist.php:376
+msgid "Heading Column Width (in pixels)"
+msgstr ""
+
+#: includes/addons/jet-blog-video-playlist.php:403
+msgid "Heading Text"
+msgstr ""
+
+#: includes/addons/jet-blog-video-playlist.php:416
+#: includes/addons/jet-blog-video-playlist.php:738
+msgid "Heading Icon"
+msgstr ""
+
+#: includes/addons/jet-blog-video-playlist.php:433
+msgid "Show Videos Counter"
+msgstr ""
+
+#: includes/addons/jet-blog-video-playlist.php:448
+msgid "Counter Suffix"
+msgstr ""
+
+#: includes/addons/jet-blog-video-playlist.php:450
+msgid "videos"
+msgstr ""
+
+#: includes/addons/jet-blog-video-playlist.php:461
+msgid "Show Video Publication Date"
+msgstr ""
+
+#: includes/addons/jet-blog-video-playlist.php:468
+#, php-format
+msgid "You can create own API key %1$s. Then paste created key on the %2$s"
+msgstr ""
+
+#: includes/addons/jet-blog-video-playlist.php:477
+msgid "Human Readable Date Diff"
+msgstr ""
+
+#: includes/addons/jet-blog-video-playlist.php:496
+msgid "Enter date format"
+msgstr ""
+
+#: includes/addons/jet-blog-video-playlist.php:507
+msgid "Show Item Number and Status"
+msgstr ""
+
+#: includes/addons/jet-blog-video-playlist.php:520
+msgid "Hide Index On Device"
+msgstr ""
+
+#: includes/addons/jet-blog-video-playlist.php:543
+msgid "Show Item Duration"
+msgstr ""
+
+#: includes/addons/jet-blog-video-playlist.php:556
+msgid "Hide Duration On Device"
+msgstr ""
+
+#: includes/addons/jet-blog-video-playlist.php:591
+msgid "Hide Thumbnail Image On Device"
+msgstr ""
+
+#: includes/addons/jet-blog-video-playlist.php:627
+msgid "Show Scroll Only on Hover"
+msgstr ""
+
+#: includes/addons/jet-blog-video-playlist.php:642
+msgid "Disable Caching"
+msgstr ""
+
+#: includes/addons/jet-blog-video-playlist.php:648
+msgid ""
+"Force getting videos data from API on each widget refresh. Not recommended, "
+"only for debugging."
+msgstr ""
+
+#: includes/addons/jet-blog-video-playlist.php:658
+msgid "General Styles"
+msgstr ""
+
+#: includes/addons/jet-blog-video-playlist.php:667
+msgid "Canvas Background"
+msgstr ""
+
+#: includes/addons/jet-blog-video-playlist.php:682
+msgid "Thumbnails Background"
+msgstr ""
+
+#: includes/addons/jet-blog-video-playlist.php:697
+msgid "Heading Background"
+msgstr ""
+
+#: includes/addons/jet-blog-video-playlist.php:712
+msgid "Wrapper Border Radius"
+msgstr ""
+
+#: includes/addons/jet-blog-video-playlist.php:725
+msgid "Heading Padding"
+msgstr ""
+
+#: includes/addons/jet-blog-video-playlist.php:784
+msgid "Icon Padding"
+msgstr ""
+
+#: includes/addons/jet-blog-video-playlist.php:797
+msgid "Heading Title"
+msgstr ""
+
+#: includes/addons/jet-blog-video-playlist.php:832
+msgid "Heading Counter"
+msgstr ""
+
+#: includes/addons/jet-blog-video-playlist.php:869
+msgid "Thumbnail Styles"
+msgstr ""
+
+#: includes/addons/jet-blog-video-playlist.php:878
+msgid "Thumbnail Row Padding"
+msgstr ""
+
+#: includes/addons/jet-blog-video-playlist.php:902
+msgid "Thumbnail Image Gap"
+msgstr ""
+
+#: includes/addons/jet-blog-video-playlist.php:957
+msgid "Publication Date"
+msgstr ""
+
+#: includes/addons/jet-blog-video-playlist.php:992
+msgid "Duration"
+msgstr ""
+
+#: includes/addons/jet-blog-video-playlist.php:1049
+#: includes/addons/jet-blog-video-playlist.php:1106
+#: includes/addons/jet-blog-video-playlist.php:1161
+msgid "Publication Date Color"
+msgstr ""
+
+#: includes/addons/jet-blog-video-playlist.php:1062
+#: includes/addons/jet-blog-video-playlist.php:1118
+#: includes/addons/jet-blog-video-playlist.php:1173
+msgid "Duration Color"
+msgstr ""
+
+#: includes/addons/jet-blog-video-playlist.php:1200
+msgid "Thumbnails Numbers and Status Icons"
+msgstr ""
+
+#: includes/addons/jet-blog-video-playlist.php:1244
+#: includes/addons/jet-blog-video-playlist.php:1277
+#: includes/addons/jet-blog-video-playlist.php:1303
+msgid "Thumb Style"
+msgstr ""
+
+#: includes/addons/jet-blog-video-playlist.php:1325
+msgid "Scrollbar Styles"
+msgstr ""
+
+#: includes/addons/jet-blog-video-playlist.php:1335
+msgid "Currently works only in -webkit- browsers"
+msgstr ""
+
+#: includes/addons/jet-blog-video-playlist.php:1343
+msgid "Scrollbar Thumb"
+msgstr ""
+
+#: includes/addons/jet-blog-video-playlist.php:1355
+msgid "Scrollbar Track"
+msgstr ""
+
+#: includes/addons/jet-blog-video-playlist.php:1535
+msgid " ago"
+msgstr ""
+
+#: includes/base/class-jet-blog-base.php:549
+#, php-format
+msgid "Show Meta %s"
+msgstr ""
+
+#: includes/base/class-jet-blog-base.php:562
+msgid "Meta Fields Position"
+msgstr ""
+
+#: includes/base/class-jet-blog-base.php:566
+msgid "Before"
+msgstr ""
+
+#: includes/base/class-jet-blog-base.php:567
+msgid "After"
+msgstr ""
+
+#: includes/base/class-jet-blog-base.php:580
+msgid "Key"
+msgstr ""
+
+#: includes/base/class-jet-blog-base.php:581
+msgid "Meta key from postmeta table in database"
+msgstr ""
+
+#: includes/base/class-jet-blog-base.php:590
+msgid "Use Image?"
+msgstr ""
+
+#: includes/base/class-jet-blog-base.php:602
+msgid "Icon"
+msgstr ""
+
+#: includes/base/class-jet-blog-base.php:617
+msgid "Image"
+msgstr ""
+
+#: includes/base/class-jet-blog-base.php:631
+#: includes/base/class-jet-blog-base.php:678
+msgid "Label"
+msgstr ""
+
+#: includes/base/class-jet-blog-base.php:640
+msgid "Value Format"
+msgstr ""
+
+#: includes/base/class-jet-blog-base.php:641
+#, php-format
+msgid "Value format string, accepts HTML markup. %s - is meta value"
+msgstr ""
+
+#: includes/base/class-jet-blog-base.php:650
+msgid "Prepare meta value with callback"
+msgstr ""
+
+#: includes/base/class-jet-blog-base.php:660
+msgid "Format"
+msgstr ""
+
+#: includes/base/class-jet-blog-base.php:703
+#, php-format
+msgid "Meta Styles %s"
+msgstr ""
+
+#: includes/base/class-jet-blog-base.php:724
+msgid "Meta Label"
+msgstr ""
+
+#: includes/base/class-jet-blog-base.php:756
+msgid "Display Meta Label and Value"
+msgstr ""
+
+#: includes/base/class-jet-blog-base.php:760
+msgid "Inline"
+msgstr ""
+
+#: includes/base/class-jet-blog-base.php:761
+msgid "As Blocks"
+msgstr ""
+
+#: includes/base/class-jet-blog-base.php:774
+msgid "Horizontal Gap Between Label and Value"
+msgstr ""
+
+#: includes/base/class-jet-blog-base.php:791
+msgid "Meta Value"
+msgstr ""
+
+#: includes/base/class-jet-blog-base.php:878
+msgid "Justified"
+msgstr ""
+
+#: includes/base/class-jet-blog-base.php:893
+msgid "Meta Icon"
+msgstr ""
+
+#: includes/base/class-jet-blog-base.php:949
+msgid "Image Margin"
+msgstr ""
+
+#: includes/base/class-jet-blog-base.php:962
+msgid "Image Width"
+msgstr ""
+
+#: includes/class-jet-blog-db-upgrader.php:60
+msgid "Start Update"
+msgstr ""
+
+#: includes/class-jet-blog-db-upgrader.php:61
+msgid "Data Update"
+msgstr ""
+
+#: includes/class-jet-blog-db-upgrader.php:63
+#, php-format
+msgid ""
+"Module DB Updater init error in %s - version and slug is required arguments"
+msgstr ""
+
+#: includes/class-jet-blog-db-upgrader.php:64
+msgid "We need to update your database to the latest version."
+msgstr ""
+
+#: includes/class-jet-blog-db-upgrader.php:65
+msgid "Update complete, thank you for updating to the latest version!"
+msgstr ""
+
+#: includes/class-jet-blog-integration.php:325
+msgid "JetElements"
+msgstr ""
+
+#: includes/class-jet-blog-query-builder.php:115
+msgid "Select query..."
+msgstr ""
+
+#: includes/class-jet-blog-query-builder.php:140
+#, php-format
+msgid "You not have any Posts queries, create new here - %s"
+msgstr ""
+
+#: includes/class-jet-blog-query-builder.php:144
+msgid "Create new Posts Query with Query builder"
+msgstr ""
+
+#: includes/class-jet-blog-query-builder.php:147
+msgid ""
+"Select query from JetEngine query builder to use as source. Supports only "
+"Posts queries"
+msgstr ""
+
+#: includes/class-jet-blog-query-builder.php:156
+msgid "Or use JetEngine Query Builder"
+msgstr ""
+
+#: includes/class-jet-blog-query-builder.php:158
+msgid "Select query from JetEngine Query Builder"
+msgstr ""
+
+#: includes/class-jet-blog-settings.php:119
+msgid "Saved"
+msgstr ""
+
+#: includes/class-jet-blog-settings.php:120
+#: includes/modules/jet-dashboard/inc/plugin-manager.php:639
+msgid "Error"
+msgstr ""
+
+#: includes/class-jet-blog-tools.php:96
+msgid "Full"
+msgstr ""
+
+#: includes/class-jet-blog-tools.php:151
+msgid "Name (slug)"
+msgstr ""
+
+#: includes/class-jet-blog-tools.php:155
+msgid "Comment Count"
+msgstr ""
+
+#: includes/class-jet-blog-tools.php:156
+msgid "Menu Order"
+msgstr ""
+
+#: includes/class-jet-blog-tools.php:168
+msgid "Descending"
+msgstr ""
+
+#: includes/class-jet-blog-tools.php:169
+msgid "Ascending"
+msgstr ""
+
+#: includes/class-jet-blog-tools.php:181
+msgid "Baseline"
+msgstr ""
+
+#: includes/class-jet-blog-tools.php:183
+msgid "Middle"
+msgstr ""
+
+#: includes/class-jet-blog-tools.php:185
+msgid "Sub"
+msgstr ""
+
+#: includes/class-jet-blog-tools.php:186
+msgid "Super"
+msgstr ""
+
+#: includes/class-jet-blog-tools.php:187
+msgid "Text Top"
+msgstr ""
+
+#: includes/class-jet-blog-tools.php:188
+msgid "Text Bottom"
+msgstr ""
+
+#: includes/class-jet-blog-tools.php:358
+msgid "Angle"
+msgstr ""
+
+#: includes/class-jet-blog-tools.php:359
+msgid "Chevron"
+msgstr ""
+
+#: includes/class-jet-blog-tools.php:360
+msgid "Angle Double"
+msgstr ""
+
+#: includes/class-jet-blog-tools.php:361
+msgid "Arrow"
+msgstr ""
+
+#: includes/class-jet-blog-tools.php:362
+msgid "Caret"
+msgstr ""
+
+#: includes/class-jet-blog-tools.php:363
+msgid "Long Arrow"
+msgstr ""
+
+#: includes/class-jet-blog-tools.php:364
+msgid "Arrow Circle"
+msgstr ""
+
+#: includes/class-jet-blog-tools.php:365
+msgid "Chevron Circle"
+msgstr ""
+
+#: includes/class-jet-blog-tools.php:366
+msgid "Caret Square"
+msgstr ""
+
+#: includes/class-jet-blog-tools.php:428
+msgid "From All"
+msgstr ""
+
+#: includes/class-jet-blog-tools.php:472
+#, php-format
+msgid ""
+"Note: posts number per page will be inherited from Reading Settings. You can "
+"change it %s"
+msgstr ""
+
+#: includes/class-jet-blog-tools.php:538
+msgid "Clean"
+msgstr ""
+
+#: includes/class-jet-blog-tools.php:543
+msgid "Format date"
+msgstr ""
+
+#: includes/class-jet-blog-tools.php:544
+msgid "Format date (localized)"
+msgstr ""
+
+#: includes/controls/groups/class-jet-blog-group-control-box-style.php:189
+msgid "Box Size"
+msgstr ""
+
+#: includes/controls/groups/class-jet-blog-group-control-box-style.php:207
+msgctxt "Border Control"
+msgid "Border Type"
+msgstr ""
+
+#: includes/controls/groups/class-jet-blog-group-control-box-style.php:211
+msgctxt "Border Control"
+msgid "Solid"
+msgstr ""
+
+#: includes/controls/groups/class-jet-blog-group-control-box-style.php:212
+msgctxt "Border Control"
+msgid "Double"
+msgstr ""
+
+#: includes/controls/groups/class-jet-blog-group-control-box-style.php:213
+msgctxt "Border Control"
+msgid "Dotted"
+msgstr ""
+
+#: includes/controls/groups/class-jet-blog-group-control-box-style.php:214
+msgctxt "Border Control"
+msgid "Dashed"
+msgstr ""
+
+#: includes/controls/groups/class-jet-blog-group-control-box-style.php:222
+msgctxt "Border Control"
+msgid "Width"
+msgstr ""
+
+#: includes/controls/groups/class-jet-blog-group-control-box-style.php:233
+msgctxt "Border Control"
+msgid "Color"
+msgstr ""
+
+#: includes/controls/groups/class-jet-blog-group-control-box-style.php:254
+#: includes/controls/groups/class-jet-blog-group-control-box-style.php:264
+msgctxt "Box Shadow Control"
+msgid "Box Shadow"
+msgstr ""
+
+#: includes/controls/groups/class-jet-blog-group-control-box-style.php:275
+msgctxt "Box Shadow Control"
+msgid "Position"
+msgstr ""
+
+#: includes/controls/groups/class-jet-blog-group-control-box-style.php:278
+msgctxt "Box Shadow Control"
+msgid "Outline"
+msgstr ""
+
+#: includes/controls/groups/class-jet-blog-group-control-box-style.php:279
+msgctxt "Box Shadow Control"
+msgid "Inset"
+msgstr ""
+
+#: includes/modules/jet-dashboard/assets/js/welcome-page.js:46
+msgid "Go to docs"
+msgstr ""
+
+#: includes/modules/jet-dashboard/assets/js/welcome-page.js:329
+#, javascript-format
+msgid "You can update <b>%s plugin</b>"
+msgid_plural "You can update <b>%s plugins</b>"
+msgstr[0] ""
+msgstr[1] ""
+
+#: includes/modules/jet-dashboard/assets/js/welcome-page.js:330
+msgid "All plugins updated"
+msgstr ""
+
+#: includes/modules/jet-dashboard/assets/js/welcome-page.js:334
+msgid "Activate license to update your JetPlugins"
+msgstr ""
+
+#: includes/modules/jet-dashboard/assets/js/welcome-page.js:341
+#, javascript-format
+msgid "You can install <b>%s more Plugin</b> with your licence"
+msgid_plural "You can install <b>%s more Plugins</b>  with your licence"
+msgstr[0] ""
+msgstr[1] ""
+
+#: includes/modules/jet-dashboard/assets/js/welcome-page.js:342
+msgid "All available plugins are already installed"
+msgstr ""
+
+#: includes/modules/jet-dashboard/assets/js/welcome-page.js:372
+#: includes/modules/jet-dashboard/assets/js/welcome-page.js:380
+msgid "Try quickstart installation"
+msgstr ""
+
+#: includes/modules/jet-dashboard/assets/js/welcome-page.js:377
+msgid "Unpack Free All-inclusive items"
+msgstr ""
+
+#: includes/modules/jet-dashboard/assets/js/welcome-page.js:451
+msgid "<b class=\"lifetime\">Lifetime</b>"
+msgstr ""
+
+#: includes/modules/jet-dashboard/assets/js/welcome-page.js:454
+#, javascript-format
+msgid "Licence expires <b class=\"expire-date\">%s</b>"
+msgstr ""
+
+#: includes/modules/jet-dashboard/inc/data-manager.php:212
+#: includes/modules/jet-dashboard/inc/license-manager.php:76
+#: includes/modules/jet-dashboard/inc/plugin-manager.php:577
+msgid "Page has expired. Please reload this page."
+msgstr ""
+
+#: includes/modules/jet-dashboard/inc/data-manager.php:221
+msgid "Sorry, you are not allowed to do that on this site."
+msgstr ""
+
+#: includes/modules/jet-dashboard/inc/license-manager.php:85
+msgid "Sorry, you are not allowed to manage license data on this site."
+msgstr ""
+
+#: includes/modules/jet-dashboard/inc/license-manager.php:292
+msgid "License expires soon!"
+msgstr ""
+
+#: includes/modules/jet-dashboard/inc/license-manager.php:293
+msgid ""
+"Your primary license will expire in 30 days. You can renew you current "
+"licese in your crocoblock account"
+msgstr ""
+
+#: includes/modules/jet-dashboard/inc/license-manager.php:296
+msgid "Go to account"
+msgstr ""
+
+#: includes/modules/jet-dashboard/inc/license-manager.php:486
+msgid "The site is not activated"
+msgstr ""
+
+#: includes/modules/jet-dashboard/inc/license-manager.php:487
+msgid ""
+"Your license key is not activated for this site. Go to the license manager "
+"and activate your key"
+msgstr ""
+
+#: includes/modules/jet-dashboard/inc/license-manager.php:490
+#: includes/modules/jet-dashboard/inc/license-manager.php:517
+msgid "Activate"
+msgstr ""
+
+#: includes/modules/jet-dashboard/inc/license-manager.php:513
+msgid "This site is not activated"
+msgstr ""
+
+#: includes/modules/jet-dashboard/inc/license-manager.php:514
+msgid ""
+"This site is not activated for this license. Go to the license manager "
+"deactivate your license and activate your key again"
+msgstr ""
+
+#: includes/modules/jet-dashboard/inc/modules/license/module.php:37
+msgid "Plugin Manager"
+msgstr ""
+
+#: includes/modules/jet-dashboard/inc/modules/license/module.php:65
+#: includes/modules/jet-dashboard/inc/modules/license/module.php:66
+msgid "Update & Installation"
+msgstr ""
+
+#: includes/modules/jet-dashboard/inc/modules/license/module.php:84
+#: includes/modules/jet-dashboard/inc/modules/license/module.php:85
+msgid "License"
+msgstr ""
+
+#: includes/modules/jet-dashboard/inc/modules/settings/module.php:74
+#: includes/modules/jet-dashboard/inc/modules/settings/module.php:75
+msgid "JetPlugins Settings"
+msgstr ""
+
+#: includes/modules/jet-dashboard/inc/modules/upsale/module.php:49
+#: includes/modules/jet-dashboard/inc/modules/upsale/module.php:176
+#: includes/modules/jet-dashboard/views/upsale/main.php:38
+msgid "Get Crocoblock"
+msgstr ""
+
+#: includes/modules/jet-dashboard/inc/modules/upsale/module.php:97
+#: includes/modules/jet-dashboard/inc/modules/upsale/module.php:98
+#: includes/modules/jet-dashboard/inc/modules/upsale/module.php:170
+msgid "Go Lifetime"
+msgstr ""
+
+#: includes/modules/jet-dashboard/inc/modules/upsale/module.php:115
+#: includes/modules/jet-dashboard/inc/modules/upsale/module.php:116
+#: includes/modules/jet-dashboard/inc/modules/upsale/module.php:173
+msgid "Go All-Inclusive"
+msgstr ""
+
+#: includes/modules/jet-dashboard/inc/modules/welcome/dev-test.php:37
+msgid "Dev Test Page"
+msgstr ""
+
+#: includes/modules/jet-dashboard/inc/modules/welcome/module.php:37
+msgid "Welcome"
+msgstr ""
+
+#: includes/modules/jet-dashboard/inc/notice-manager.php:141
+msgid "Your site."
+msgstr ""
+
+#: includes/modules/jet-dashboard/inc/notice-manager.php:142
+msgid "Your site database needs to be updated to the latest version."
+msgstr ""
+
+#: includes/modules/jet-dashboard/inc/notice-manager.php:145
+#: includes/modules/jet-dashboard/views/welcome/main.php:35
+msgid "Update Now"
+msgstr ""
+
+#: includes/modules/jet-dashboard/inc/notice-manager.php:188
+msgid "Dismiss this notice."
+msgstr ""
+
+#: includes/modules/jet-dashboard/inc/plugin-manager.php:224
+#, php-format
+msgid "More information about %s"
+msgstr ""
+
+#: includes/modules/jet-dashboard/inc/plugin-manager.php:640
+msgid "Server error. Stop cheating!!!"
+msgstr ""
+
+#: includes/modules/jet-dashboard/jet-dashboard.php:253
+#: includes/modules/jet-dashboard/jet-dashboard.php:254
+msgid "Crocoblock"
+msgstr ""
+
+#: includes/modules/jet-dashboard/jet-dashboard.php:266
+#: includes/modules/jet-dashboard/jet-dashboard.php:267
+msgid "Dashboard"
+msgstr ""
+
+#: includes/modules/jet-dashboard/views/common/sidebar.php:28
+msgid "New to Crocoblock?"
+msgstr ""
+
+#: includes/modules/jet-dashboard/views/common/sidebar.php:29
+msgid "Start Here"
+msgstr ""
+
+#: includes/modules/jet-dashboard/views/common/sidebar.php:63
+msgid "Support & Info"
+msgstr ""
+
+#: includes/modules/jet-dashboard/views/common/sidebar.php:64
+msgid "Help Center"
+msgstr ""
+
+#: includes/modules/jet-dashboard/views/license/license-item.php:9
+msgid "JetPlugins License Activation"
+msgstr ""
+
+#: includes/modules/jet-dashboard/views/license/license-item.php:10
+msgid "Congratulations!"
+msgstr ""
+
+#: includes/modules/jet-dashboard/views/license/license-item.php:10
+msgid "Your license has been activated!"
+msgstr ""
+
+#: includes/modules/jet-dashboard/views/license/license-item.php:13
+msgid "Activate license for automatic updates and awesome support"
+msgstr ""
+
+#: includes/modules/jet-dashboard/views/license/license-item.php:32
+#: includes/modules/jet-dashboard/views/license/license-item.php:103
+#: includes/modules/jet-dashboard/views/license/main.php:146
+msgid "Activate License"
+msgstr ""
+
+#: includes/modules/jet-dashboard/views/license/license-item.php:33
+#: includes/modules/jet-dashboard/views/license/license-item.php:104
+msgid "Deactivate License"
+msgstr ""
+
+#: includes/modules/jet-dashboard/views/license/license-item.php:44
+msgid "License Key:"
+msgstr ""
+
+#: includes/modules/jet-dashboard/views/license/license-item.php:48
+msgid "Product Name:"
+msgstr ""
+
+#: includes/modules/jet-dashboard/views/license/license-item.php:52
+msgid "Status:"
+msgstr ""
+
+#: includes/modules/jet-dashboard/views/license/license-item.php:56
+msgid "Type:"
+msgstr ""
+
+#: includes/modules/jet-dashboard/views/license/license-item.php:60
+msgid "Expiration Date:"
+msgstr ""
+
+#: includes/modules/jet-dashboard/views/license/license-item.php:64
+msgid "Included Plugins:"
+msgstr ""
+
+#: includes/modules/jet-dashboard/views/license/license-item.php:84
+msgid ""
+"This license will activate licenses for all plugins included in this set."
+msgstr ""
+
+#: includes/modules/jet-dashboard/views/license/license-item.php:94
+#: includes/modules/jet-dashboard/views/license/main.php:35
+#: includes/modules/jet-dashboard/views/license/main.php:115
+msgid "License Manager"
+msgstr ""
+
+#: includes/modules/jet-dashboard/views/license/main.php:10
+msgid "Your Installed JetPlugins"
+msgstr ""
+
+#: includes/modules/jet-dashboard/views/license/main.php:22
+msgid "Check For Updates"
+msgstr ""
+
+#: includes/modules/jet-dashboard/views/license/main.php:54
+msgid "More included JetPlugins with your licence"
+msgstr ""
+
+#: includes/modules/jet-dashboard/views/license/main.php:70
+#: includes/modules/jet-dashboard/views/welcome/main.php:207
+msgid "Get More Plugins"
+msgstr ""
+
+#: includes/modules/jet-dashboard/views/license/main.php:105
+msgid "JetPlugins License Deactivation"
+msgstr ""
+
+#: includes/modules/jet-dashboard/views/license/main.php:108
+msgid ""
+"Your license includes several plugins within the package. License "
+"deactivation in one plugin disables it in the rest of them. You can manage "
+"it through the License Manager."
+msgstr ""
+
+#: includes/modules/jet-dashboard/views/license/main.php:128
+msgid "JetPlugin’s Update"
+msgstr ""
+
+#: includes/modules/jet-dashboard/views/license/main.php:139
+msgid "Sorry, but you need to activate license to update your JetPlugin"
+msgstr ""
+
+#: includes/modules/jet-dashboard/views/license/main.php:160
+msgid "Your Licenses"
+msgstr ""
+
+#: includes/modules/jet-dashboard/views/license/main.php:169
+msgid "Add New License"
+msgstr ""
+
+#: includes/modules/jet-dashboard/views/license/main.php:174
+msgid ""
+"Add and Activate license for automatic updates, awesome support, useful "
+"features and more"
+msgstr ""
+
+#: includes/modules/jet-dashboard/views/upsale/main.php:12
+msgid "Dynamic"
+msgstr ""
+
+#: includes/modules/jet-dashboard/views/upsale/main.php:18
+msgid "E-commerce"
+msgstr ""
+
+#: includes/modules/jet-dashboard/views/upsale/main.php:24
+msgid "Design"
+msgstr ""
+
+#: includes/modules/jet-dashboard/views/upsale/main.php:27
+msgid "18 Advanced JetPlugins"
+msgstr ""
+
+#: includes/modules/jet-dashboard/views/upsale/main.php:28
+msgid ""
+"Unlock the ultimate website building toolkit for Elementor 150+ widgets and "
+"50+ templates"
+msgstr ""
+
+#: includes/modules/jet-dashboard/views/welcome/main.php:20
+msgid "Manage plugins"
+msgstr ""
+
+#: includes/modules/jet-dashboard/views/welcome/main.php:21
+msgid "Updates"
+msgstr ""
+
+#: includes/modules/jet-dashboard/views/welcome/main.php:45
+#: includes/modules/jet-dashboard/views/welcome/main.php:95
+msgid "Activate Now"
+msgstr ""
+
+#: includes/modules/jet-dashboard/views/welcome/main.php:60
+msgid "Manage license"
+msgstr ""
+
+#: includes/modules/jet-dashboard/views/welcome/main.php:61
+msgid "Active Licence"
+msgstr ""
+
+#: includes/modules/jet-dashboard/views/welcome/main.php:85
+msgid "License not active"
+msgstr ""
+
+#: includes/modules/jet-dashboard/views/welcome/main.php:94
+msgid "Manage Now"
+msgstr ""
+
+#: includes/modules/jet-dashboard/views/welcome/main.php:109
+msgid "Installed JetPlugins"
+msgstr ""
+
+#: includes/modules/jet-dashboard/views/welcome/main.php:135
+msgid "Install"
+msgstr ""
+
+#: includes/modules/jet-dashboard/views/welcome/main.php:168
+msgid "Install Wizard"
+msgstr ""
+
+#: includes/modules/jet-dashboard/views/welcome/main.php:179
+msgid "Activate Wizard"
+msgstr ""
+
+#: includes/modules/jet-dashboard/views/welcome/main.php:191
+msgid "Enjoy the perks of All-inclusive"
+msgstr ""
+
+#: includes/modules/jet-dashboard/views/welcome/main.php:223
+msgid "Get a JetPlugins bundle"
+msgstr ""
+
+#: includes/modules/jet-dashboard/views/welcome/main.php:224
+msgid "Save up to 60%"
+msgstr ""
+
+#: includes/modules/jet-dashboard/views/welcome/main.php:234
+msgid "See all plans"
+msgstr ""
+
+#: includes/modules/jet-dashboard/views/welcome/main.php:246
+msgid "Hot Deals"
+msgstr ""
+
+#: includes/modules/jet-dashboard/views/welcome/plugin-item-registered.php:29
+msgid "Documentation"
+msgstr ""
+
+#: includes/modules/jet-dashboard/views/welcome/plugin-item-registered.php:55
+msgid "Plugin pages"
+msgstr ""
+
+#: includes/rest-api/endpoints/plugin-settings.php:44
+msgid "Server Error"
+msgstr ""
+
+#: includes/rest-api/endpoints/plugin-settings.php:56
+msgid "Settings have been saved"
+msgstr ""
+
+#: includes/settings/manager.php:68
+msgid "JetBlog"
+msgstr ""
+
+#: includes/settings/subpage-modules/available-widgets.php:36
+#: templates/admin-templates/settings-page.php:56
+msgid "Available Widgets"
+msgstr ""
+
+#: includes/settings/subpage-modules/general.php:36
+msgid "General Settings"
+msgstr ""
+
+#: jet-blog.php:231
+msgid "JetBlog requires Elementor to be activated."
+msgstr ""
+
+#: jet-blog.php:232
+msgid "Activate Elementor Now"
+msgstr ""
+
+#: jet-blog.php:240
+msgid "JetBlog requires Elementor to be installed."
+msgstr ""
+
+#: jet-blog.php:241
+msgid "Install Elementor Now"
+msgstr ""
+
+#: templates/admin-templates/general-settings.php:4
+#: templates/admin-templates/settings-page.php:23
+msgid "Editor Load Level"
+msgstr ""
+
+#: templates/admin-templates/general-settings.php:5
+#: templates/admin-templates/settings-page.php:24
+msgid ""
+"Choose a certain set of options in the widget’s Style tab by moving the "
+"slider, and improve your Elementor editor performance by selecting "
+"appropriate style settings fill level (from None to Full level)"
+msgstr ""
+
+#: templates/admin-templates/general-settings.php:14
+#: templates/admin-templates/settings-page.php:33
+msgid "YouTube API Key"
+msgstr ""
+
+#: templates/admin-templates/general-settings.php:15
+#: templates/admin-templates/settings-page.php:34
+#, php-format
+msgid "Create own API key %s"
+msgstr ""
+
+#: templates/admin-templates/general-settings.php:23
+#: templates/admin-templates/settings-page.php:42
+msgid "Smart Posts List: allow filters for post types"
+msgstr ""
+
+#: templates/admin-templates/general-settings.php:24
+#: templates/admin-templates/settings-page.php:43
+msgid "Select post types supports Filter by Terms feature"
+msgstr ""
+
+#: templates/admin-templates/general-settings.php:27
+#: templates/admin-templates/settings-page.php:46
+msgid "Select types..."
+msgstr ""
+
+#: templates/admin-templates/settings-page.php:7
+msgid "JetBlog Settings"
+msgstr ""
+
+#: templates/admin-templates/settings-page.php:18
+msgid "General settings"
+msgstr ""
+
+#: templates/admin-templates/settings-page.php:61
+msgid "Disable All Widgets"
+msgstr ""
+
+#: templates/admin-templates/settings-page.php:62
+msgid "Enable All Widgets"
+msgstr ""
