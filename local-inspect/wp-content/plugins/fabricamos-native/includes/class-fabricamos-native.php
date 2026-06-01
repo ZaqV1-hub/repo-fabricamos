@@ -3791,7 +3791,7 @@ class Fabricamos_Native {
 
 			$items[] = array(
 				'id'      => 'catalog-' . $post_id . '-' . $index,
-				'title'   => $title,
+				'title'   => $this->format_substance_display_name( $title ),
 				'summary' => $this->format_substance_summary( $meta ),
 				'meta'    => $meta,
 			);
@@ -3825,6 +3825,21 @@ class Fabricamos_Native {
 		}
 
 		return '';
+	}
+
+	protected function format_substance_display_name( $value ) {
+		$value = trim( (string) $value );
+		if ( '' === $value ) {
+			return '';
+		}
+
+		if ( function_exists( 'mb_substr' ) && function_exists( 'mb_strtoupper' ) && function_exists( 'mb_strtolower' ) ) {
+			$first = mb_strtoupper( mb_substr( $value, 0, 1, 'UTF-8' ), 'UTF-8' );
+			$rest  = mb_strtolower( mb_substr( $value, 1, null, 'UTF-8' ), 'UTF-8' );
+			return $first . $rest;
+		}
+
+		return ucfirst( strtolower( $value ) );
 	}
 
 	protected function should_prefer_short_catalog_name( $insumo, $candidate ) {
@@ -3887,7 +3902,7 @@ class Fabricamos_Native {
 				foreach ( $this->get_manufacturer_compiled_substances( $post_id ) as $index => $compiled_name ) {
 					$local_items[] = array(
 						'id'      => 'compiled-' . $post_id . '-' . $index,
-						'title'   => $compiled_name,
+						'title'   => $this->format_substance_display_name( $compiled_name ),
 						'summary' => '',
 						'meta'    => array(
 							'insumo'   => '',
@@ -3952,7 +3967,7 @@ class Fabricamos_Native {
 			foreach ( $compiled as $index => $compiled_name ) {
 				$items[] = array(
 					'id'      => 'compiled-' . $post_id . '-' . $index,
-					'title'   => $compiled_name,
+					'title'   => $this->format_substance_display_name( $compiled_name ),
 					'summary' => '',
 					'meta'    => array(
 						'insumo'   => '',
@@ -4757,7 +4772,7 @@ class Fabricamos_Native {
 			foreach ( $compiled as $index => $compiled_name ) {
 				$items[] = array(
 					'id'      => 'compiled-' . $post_id . '-' . $index,
-					'title'   => $compiled_name,
+					'title'   => $this->format_substance_display_name( $compiled_name ),
 					'summary' => '',
 					'meta'    => array(
 						'insumo'   => '',
@@ -4785,7 +4800,7 @@ class Fabricamos_Native {
 			$parsed = $this->parse_dsf_post( $post );
 			$items[] = array(
 				'id'      => (int) $post->ID,
-				'title'   => $post->post_title,
+				'title'   => $this->format_substance_display_name( $post->post_title ),
 				'summary' => $this->format_substance_summary( $parsed ),
 				'meta'    => $parsed,
 			);
