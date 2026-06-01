@@ -2313,7 +2313,15 @@ class Abiquifi_Public_SSO {
 	}
 
 	public function public_account_url() {
-		return $this->is_authority_site() ? home_url( '/account/' ) : 'https://dicionario.abiquifi.questione.ai/account/';
+		if ( $this->is_authority_site() ) {
+			return home_url( '/account/' );
+		}
+
+		if ( $this->is_fabricamos_site() ) {
+			return $this->fabricamos_url( 'account' );
+		}
+
+		return 'https://dicionario.abiquifi.questione.ai/account/';
 	}
 
 	public function public_login_url( $redirect_to = '' ) {
@@ -2991,7 +2999,8 @@ class Abiquifi_Public_SSO {
 	}
 
 	protected function public_frontend_url( $path, $redirect_to = '' ) {
-		$url = trailingslashit( $this->authority_url() ) . trim( $path, '/' ) . '/';
+		$base_url = $this->is_fabricamos_site() ? $this->fabricamos_url() : $this->authority_url();
+		$url      = trailingslashit( $base_url ) . trim( $path, '/' ) . '/';
 
 		if ( '' !== $redirect_to ) {
 			$url = add_query_arg( 'redirect_to', $redirect_to, $url );
