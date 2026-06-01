@@ -440,6 +440,10 @@ class Fabricamos_Native {
 		return home_url( '/catalogo/' );
 	}
 
+	protected function public_home_url() {
+		return $this->normalize_public_site_url( home_url( '/' ) );
+	}
+
 	protected function get_site_login_page_url() {
 		foreach ( array( 'login', 'log-in', 'entrar' ) as $slug ) {
 			$page = get_page_by_path( $slug, OBJECT, 'page' );
@@ -3277,7 +3281,7 @@ class Fabricamos_Native {
 
 			$items[] = array(
 				'title' => 'Minha conta',
-				'url'   => home_url( '/account/' ),
+				'url'   => $this->public_home_url(),
 			);
 			$items[] = array(
 				'title' => 'Sair',
@@ -3295,11 +3299,11 @@ class Fabricamos_Native {
 			'items' => array(
 				array(
 					'title' => 'Criar conta',
-					'url'   => $this->site_register_url( $this->public_current_request_url() ),
+					'url'   => $this->public_home_url(),
 				),
 				array(
 					'title' => 'Entrar',
-					'url'   => $this->site_login_url( $this->public_current_request_url() ),
+					'url'   => $this->public_home_url(),
 				),
 			),
 		);
