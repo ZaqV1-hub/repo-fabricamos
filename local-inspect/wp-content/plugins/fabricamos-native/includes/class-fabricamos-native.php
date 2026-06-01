@@ -444,6 +444,14 @@ class Fabricamos_Native {
 		return $this->normalize_public_site_url( home_url( '/' ) );
 	}
 
+	protected function public_login_page_url() {
+		return $this->normalize_public_site_url( home_url( '/login/' ) );
+	}
+
+	protected function public_register_page_url() {
+		return $this->normalize_public_site_url( home_url( '/cadastro/' ) );
+	}
+
 	protected function get_site_login_page_url() {
 		foreach ( array( 'login', 'log-in', 'entrar' ) as $slug ) {
 			$page = get_page_by_path( $slug, OBJECT, 'page' );
@@ -3299,11 +3307,11 @@ class Fabricamos_Native {
 			'items' => array(
 				array(
 					'title' => 'Criar conta',
-					'url'   => $this->public_home_url(),
+					'url'   => $this->public_register_page_url(),
 				),
 				array(
 					'title' => 'Entrar',
-					'url'   => $this->public_home_url(),
+					'url'   => $this->public_login_page_url(),
 				),
 			),
 		);
