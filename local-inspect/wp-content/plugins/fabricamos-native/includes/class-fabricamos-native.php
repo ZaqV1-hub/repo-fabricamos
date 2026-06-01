@@ -3454,7 +3454,7 @@ class Fabricamos_Native {
 	}
 
 	public function site_login_url( $redirect_to = '' ) {
-		$base_url = $this->get_site_login_page_url();
+		$base_url = $this->normalize_public_site_url( $this->get_site_login_page_url() );
 		if ( '' === $redirect_to ) {
 			return $base_url;
 		}
@@ -3463,7 +3463,7 @@ class Fabricamos_Native {
 	}
 
 	public function site_register_url( $redirect_to = '' ) {
-		$base_url = $this->get_site_register_url();
+		$base_url = $this->normalize_public_site_url( $this->get_site_register_url() );
 		if ( '' === $redirect_to ) {
 			return $base_url;
 		}
@@ -3472,7 +3472,7 @@ class Fabricamos_Native {
 	}
 
 	public function site_lost_password_url( $redirect_to = '' ) {
-		$base_url = $this->get_site_lost_password_page_url();
+		$base_url = $this->normalize_public_site_url( $this->get_site_lost_password_page_url() );
 		if ( '' === $redirect_to ) {
 			return $base_url;
 		}
@@ -3481,7 +3481,7 @@ class Fabricamos_Native {
 	}
 
 	public function site_reset_password_url( $login = '', $key = '', $redirect_to = '' ) {
-		$base_url = $this->get_site_reset_password_page_url();
+		$base_url = $this->normalize_public_site_url( $this->get_site_reset_password_page_url() );
 		$args     = array();
 
 		if ( '' !== $login ) {
@@ -3501,6 +3501,44 @@ class Fabricamos_Native {
 		}
 
 		return add_query_arg( $args, $base_url );
+	}
+
+	protected function normalize_public_site_url( $url ) {
+		$url = (string) $url;
+		if ( '' === $url ) {
+			return '';
+		}
+
+		$reference_url = $this->public_catalog_url();
+		$reference     = wp_parse_url( $reference_url );
+		$target        = wp_parse_url( $url );
+
+		if ( empty( $reference['host'] ) || empty( $target['host'] ) ) {
+			return $url;
+		}
+
+		if ( 0 === strcasecmp( $reference['host'], $target['host'] ) ) {
+			return $url;
+		}
+
+		$normalized = isset( $reference['scheme'] ) ? $reference['scheme'] . '://' : 'https://';
+		$normalized .= $reference['host'];
+
+		if ( ! empty( $reference['port'] ) ) {
+			$normalized .= ':' . $reference['port'];
+		}
+
+		$normalized .= isset( $target['path'] ) ? $target['path'] : '/';
+
+		if ( ! empty( $target['query'] ) ) {
+			$normalized .= '?' . $target['query'];
+		}
+
+		if ( ! empty( $target['fragment'] ) ) {
+			$normalized .= '#' . $target['fragment'];
+		}
+
+		return $normalized;
 	}
 
 	protected function public_post_logout_redirect_url() {
@@ -4484,10 +4522,6 @@ class Fabricamos_Native {
 			'order'          => 'ASC',
 		);
 
-		if ( ! empty( $filters['company'] ) ) {
-			$args['s'] = $filters['company'];
-		}
-
 		$posts   = get_posts( $args );
 		$groups  = array();
 		$matches = array();
@@ -4530,6 +4564,10 @@ class Fabricamos_Native {
 				}
 			}
 
+			if ( ! $this->manufacturer_group_matches_company_filter( $posts_by_company, $filters['company'] ) ) {
+				continue;
+			}
+
 			if ( ! $this->manufacturer_group_matches_process_filter( $posts_by_company, $filters['process'] ) ) {
 				continue;
 			}
@@ -4542,6 +4580,26 @@ class Fabricamos_Native {
 		}
 
 		return $matches;
+	}
+
+	protected function manufacturer_group_matches_company_filter( $posts, $search ) {
+		$normalized_search = $this->normalize_lookup_value( $search );
+		if ( '' === $normalized_search ) {
+			return true;
+		}
+
+		foreach ( $posts as $post ) {
+			if ( ! $post instanceof WP_Post ) {
+				continue;
+			}
+
+			$title = $this->normalize_lookup_value( $this->get_manufacturer_display_title( $post ) );
+			if ( '' !== $title && false !== strpos( $title, $normalized_search ) ) {
+				return true;
+			}
+		}
+
+		return false;
 	}
 
 	protected function manufacturer_group_matches_process_filter( $posts, $search ) {
