@@ -3806,6 +3806,14 @@ class Fabricamos_Native {
 		$dcb          = isset( $item['dcb'] ) ? $this->clean_catalog_value( $item['dcb'] ) : '';
 		$inn          = isset( $item['inn'] ) ? $this->clean_catalog_value( $item['inn'] ) : '';
 
+		if ( '' !== $inn && $this->should_prefer_short_catalog_name( $insumo, $inn ) ) {
+			return $inn;
+		}
+
+		if ( '' !== $display_name && $this->should_prefer_short_catalog_name( $insumo, $display_name ) ) {
+			return $display_name;
+		}
+
 		if ( '' !== $insumo && ! $this->is_compound_catalog_blob( $insumo ) ) {
 			return $insumo;
 		}
@@ -3817,6 +3825,33 @@ class Fabricamos_Native {
 		}
 
 		return '';
+	}
+
+	protected function should_prefer_short_catalog_name( $insumo, $candidate ) {
+		$insumo    = trim( (string) $insumo );
+		$candidate = trim( (string) $candidate );
+
+		if ( '' === $insumo || '' === $candidate ) {
+			return false;
+		}
+
+		$normalized_insumo    = $this->normalize_lookup_value( $insumo );
+		$normalized_candidate = $this->normalize_lookup_value( $candidate );
+
+		if ( '' === $normalized_insumo || '' === $normalized_candidate ) {
+			return false;
+		}
+
+		if ( $normalized_insumo === $normalized_candidate ) {
+			return false;
+		}
+
+		if ( $this->is_compound_catalog_blob( $insumo ) ) {
+			return true;
+		}
+
+		$word_count = preg_match_all( '/[\p{L}\p{N}-]+/u', $insumo, $matches );
+		return $word_count >= 6 && false !== strpos( $normalized_insumo, $normalized_candidate );
 	}
 
 	protected function is_compound_catalog_blob( $value ) {
