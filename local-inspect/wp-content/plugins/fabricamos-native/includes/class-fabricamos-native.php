@@ -3670,7 +3670,12 @@ class Fabricamos_Native {
 		);
 
 		$items = array();
+		$seen  = array();
 		foreach ( $posts as $post_id ) {
+			if ( ! $this->is_associated_manufacturer( $post_id ) ) {
+				continue;
+			}
+
 			$value = $this->get_manufacturer_meta_text( $post_id, 'fab_processo' );
 			if ( '' === $value ) {
 				continue;
@@ -3683,13 +3688,14 @@ class Fabricamos_Native {
 
 			foreach ( $parts as $part ) {
 				$part = trim( (string) $part );
-				if ( '' !== $part ) {
-					$items[] = $part;
+				$key  = $this->normalize_lookup_value( $part );
+				if ( '' !== $part && '' !== $key && ! isset( $seen[ $key ] ) ) {
+					$seen[ $key ] = true;
+					$items[]      = $part;
 				}
 			}
 		}
 
-		$items = array_values( array_unique( $items ) );
 		natcasesort( $items );
 		return array_values( $items );
 	}
@@ -3767,15 +3773,7 @@ class Fabricamos_Native {
 				continue;
 			}
 
-			$title = '';
-			foreach ( array( 'insumo', 'display_name', 'dcb', 'inn' ) as $candidate ) {
-				if ( ! empty( $item[ $candidate ] ) ) {
-					$title = $this->clean_catalog_value( $item[ $candidate ] );
-					if ( '' !== $title ) {
-						break;
-					}
-				}
-			}
+			$title = $this->resolve_catalog_item_title( $item );
 
 			if ( '' === $title ) {
 				continue;
@@ -3800,6 +3798,35 @@ class Fabricamos_Native {
 		}
 
 		return $items;
+	}
+
+	protected function resolve_catalog_item_title( $item ) {
+		$insumo       = isset( $item['insumo'] ) ? $this->clean_catalog_value( $item['insumo'] ) : '';
+		$display_name = isset( $item['display_name'] ) ? $this->clean_catalog_value( $item['display_name'] ) : '';
+		$dcb          = isset( $item['dcb'] ) ? $this->clean_catalog_value( $item['dcb'] ) : '';
+		$inn          = isset( $item['inn'] ) ? $this->clean_catalog_value( $item['inn'] ) : '';
+
+		if ( '' !== $insumo && ! $this->is_compound_catalog_blob( $insumo ) ) {
+			return $insumo;
+		}
+
+		foreach ( array( $display_name, $inn, $dcb, $insumo ) as $candidate ) {
+			if ( '' !== $candidate ) {
+				return $candidate;
+			}
+		}
+
+		return '';
+	}
+
+	protected function is_compound_catalog_blob( $value ) {
+		$value = trim( (string) $value );
+		if ( '' === $value ) {
+			return false;
+		}
+
+		$word_count = preg_match_all( '/[\p{L}\p{N}-]+/u', $value, $matches );
+		return strlen( $value ) >= 90 || $word_count >= 12;
 	}
 
 	protected function get_local_substance_library( $search = '', $limit = 6 ) {
@@ -4091,7 +4118,20 @@ class Fabricamos_Native {
 			$title = get_the_title( $post );
 		}
 
-		return $this->canonical_manufacturer_alias( $this->repair_mojibake_text( $title ) );
+		return $this->format_manufacturer_display_name( $this->canonical_manufacturer_alias( $this->repair_mojibake_text( $title ) ) );
+	}
+
+	protected function format_manufacturer_display_name( $value ) {
+		$value = trim( (string) $value );
+		if ( '' === $value ) {
+			return '';
+		}
+
+		if ( function_exists( 'mb_convert_case' ) ) {
+			return mb_convert_case( mb_strtolower( $value, 'UTF-8' ), MB_CASE_TITLE, 'UTF-8' );
+		}
+
+		return ucwords( strtolower( $value ) );
 	}
 
 	protected function get_preferred_manufacturer_post( $post ) {
@@ -4388,8 +4428,7 @@ class Fabricamos_Native {
 	protected function search_manufacturer_ids( $filters ) {
 		$args = array(
 			'post_type'      => 'fabricante',
-			'post_status'    => 'publish',
-			'fields'         => 'ids',
+			'post_status'    => array( 'publish', 'draft', 'pending', 'private' ),
 			'posts_per_page' => -1,
 			'orderby'        => 'title',
 			'order'          => 'ASC',
@@ -4399,37 +4438,106 @@ class Fabricamos_Native {
 			$args['s'] = $filters['company'];
 		}
 
-		if ( ! empty( $filters['process'] ) ) {
-			$args['meta_query'] = array(
-				array(
-					'key'     => 'fab_processo',
-					'value'   => $filters['process'],
-					'compare' => 'LIKE',
-				),
+		$posts   = get_posts( $args );
+		$groups  = array();
+		$matches = array();
+
+		foreach ( $posts as $post ) {
+			if ( ! $post instanceof WP_Post || ! $this->is_associated_manufacturer( $post->ID ) ) {
+				continue;
+			}
+
+			$key = $this->normalize_lookup_value( $this->get_manufacturer_display_title( $post ) );
+			if ( '' === $key ) {
+				continue;
+			}
+
+			if ( ! isset( $groups[ $key ] ) ) {
+				$groups[ $key ] = array();
+			}
+
+			$groups[ $key ][] = $post;
+		}
+
+		foreach ( $groups as $posts_by_company ) {
+			$publish_candidates = array_values(
+				array_filter(
+					$posts_by_company,
+					static function ( $post ) {
+						return $post instanceof WP_Post && 'publish' === $post->post_status;
+					}
+				)
 			);
-		}
 
-		$ids = array_values(
-			array_filter(
-				get_posts( $args ),
-				function ( $post_id ) {
-					return $this->is_associated_manufacturer( $post_id );
+			if ( empty( $publish_candidates ) ) {
+				continue;
+			}
+
+			$display_post = $publish_candidates[0];
+			foreach ( $publish_candidates as $candidate ) {
+				if ( $this->get_manufacturer_preference_score( $candidate ) > $this->get_manufacturer_preference_score( $display_post ) ) {
+					$display_post = $candidate;
 				}
-			)
-		);
+			}
 
-		if ( empty( $filters['substance'] ) ) {
-			return $ids;
+			if ( ! $this->manufacturer_group_matches_process_filter( $posts_by_company, $filters['process'] ) ) {
+				continue;
+			}
+
+			if ( ! $this->manufacturer_group_matches_substance_filter( $posts_by_company, $filters['substance'] ) ) {
+				continue;
+			}
+
+			$matches[] = (int) $display_post->ID;
 		}
 
-		$matched = array();
-		foreach ( $ids as $post_id ) {
-			if ( $this->manufacturer_matches_substance_filter( $post_id, $filters['substance'] ) ) {
-				$matched[] = $post_id;
+		return $matches;
+	}
+
+	protected function manufacturer_group_matches_process_filter( $posts, $search ) {
+		$normalized_search = $this->normalize_lookup_value( $search );
+		if ( '' === $normalized_search ) {
+			return true;
+		}
+
+		foreach ( $posts as $post ) {
+			if ( ! $post instanceof WP_Post ) {
+				continue;
+			}
+
+			$value = $this->get_manufacturer_meta_text( $post->ID, 'fab_processo' );
+			if ( '' === $value ) {
+				continue;
+			}
+
+			$parts = preg_split( '/\s*\/\s*/', $value );
+			if ( ! is_array( $parts ) ) {
+				$parts = array( $value );
+			}
+
+			foreach ( $parts as $part ) {
+				if ( $this->normalize_lookup_value( $part ) === $normalized_search ) {
+					return true;
+				}
 			}
 		}
 
-		return $matched;
+		return false;
+	}
+
+	protected function manufacturer_group_matches_substance_filter( $posts, $search ) {
+		$normalized_search = $this->normalize_lookup_value( $search );
+		if ( '' === $normalized_search ) {
+			return true;
+		}
+
+		foreach ( $posts as $post ) {
+			if ( $post instanceof WP_Post && $this->manufacturer_matches_substance_filter( $post->ID, $search ) ) {
+				return true;
+			}
+		}
+
+		return false;
 	}
 
 	protected function manufacturer_matches_substance_filter( $post_id, $search ) {
