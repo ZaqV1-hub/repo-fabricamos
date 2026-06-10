@@ -1461,6 +1461,16 @@ class Fabricamos_Native {
 			}
 		}
 
+		if ( '' !== $details['email'] && '' === $details['password_raw'] ) {
+			$password = wp_generate_password( 12, true, true );
+			foreach ( $group_ids as $group_id ) {
+				$this->save_manufacturer_login_credentials( $group_id, $details['email'], $password );
+			}
+
+			$details['has_password'] = true;
+			$details['password_raw'] = $password;
+		}
+
 		return $details;
 	}
 
