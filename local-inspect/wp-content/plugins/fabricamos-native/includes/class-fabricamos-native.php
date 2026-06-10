@@ -1332,7 +1332,7 @@ class Fabricamos_Native {
 
 		update_post_meta( $manufacturer_id, 'fab_login_email', $email );
 
-		if ( '' === trim( $password ) && '' !== $email && ! $this->manufacturer_has_login_password( $manufacturer_id ) ) {
+		if ( '' === trim( $password ) && '' !== $email && '' === $this->get_manufacturer_login_plain_password( $manufacturer_id ) ) {
 			$password = wp_generate_password( 12, true, true );
 		}
 
