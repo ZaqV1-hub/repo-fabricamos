@@ -1324,6 +1324,7 @@ class Fabricamos_Native {
 	protected function save_manufacturer_login_credentials( $manufacturer_id, $email, $password ) {
 		$email = sanitize_email( (string) $email );
 		$manufacturer_id = absint( $manufacturer_id );
+		$password = (string) $password;
 
 		if ( ! $manufacturer_id ) {
 			return true;
@@ -1331,9 +1332,13 @@ class Fabricamos_Native {
 
 		update_post_meta( $manufacturer_id, 'fab_login_email', $email );
 
-		if ( '' !== (string) $password ) {
-			update_post_meta( $manufacturer_id, 'fab_login_password_hash', wp_hash_password( (string) $password ) );
-			update_post_meta( $manufacturer_id, 'fab_login_password_plain', (string) $password );
+		if ( '' === trim( $password ) && '' !== $email && ! $this->manufacturer_has_login_password( $manufacturer_id ) ) {
+			$password = wp_generate_password( 12, true, true );
+		}
+
+		if ( '' !== $password ) {
+			update_post_meta( $manufacturer_id, 'fab_login_password_hash', wp_hash_password( $password ) );
+			update_post_meta( $manufacturer_id, 'fab_login_password_plain', $password );
 		}
 
 		return true;
@@ -1404,6 +1409,21 @@ class Fabricamos_Native {
 	protected function sync_manufacturer_editor_group( $manufacturer_ids, $editor_name, $editor_phone, $editor_email, $login_email, $login_password ) {
 		$manufacturer_ids = array_values( array_unique( array_map( 'absint', (array) $manufacturer_ids ) ) );
 		$login_email      = sanitize_email( '' !== trim( (string) $editor_email ) ? (string) $editor_email : (string) $login_email );
+		$login_password   = trim( (string) $login_password );
+
+		if ( '' !== $login_email && '' === $login_password ) {
+			foreach ( $manufacturer_ids as $manufacturer_id ) {
+				$existing_password = $this->get_manufacturer_login_plain_password( $manufacturer_id );
+				if ( '' !== $existing_password ) {
+					$login_password = $existing_password;
+					break;
+				}
+			}
+
+			if ( '' === $login_password ) {
+				$login_password = wp_generate_password( 12, true, true );
+			}
+		}
 
 		foreach ( $manufacturer_ids as $manufacturer_id ) {
 			if ( ! $manufacturer_id ) {
