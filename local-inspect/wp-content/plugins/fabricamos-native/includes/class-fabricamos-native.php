@@ -1403,7 +1403,7 @@ class Fabricamos_Native {
 
 	protected function sync_manufacturer_editor_group( $manufacturer_ids, $editor_name, $editor_phone, $editor_email, $login_email, $login_password ) {
 		$manufacturer_ids = array_values( array_unique( array_map( 'absint', (array) $manufacturer_ids ) ) );
-		$login_email      = sanitize_email( (string) $login_email );
+		$login_email      = sanitize_email( '' !== trim( (string) $editor_email ) ? (string) $editor_email : (string) $login_email );
 
 		foreach ( $manufacturer_ids as $manufacturer_id ) {
 			if ( ! $manufacturer_id ) {
@@ -1415,6 +1415,33 @@ class Fabricamos_Native {
 			update_post_meta( $manufacturer_id, 'fab_responsavel_email', $editor_email );
 			$this->save_manufacturer_login_credentials( $manufacturer_id, $login_email, $login_password );
 		}
+	}
+
+	protected function get_manufacturer_group_login_details( $manufacturer_id, $company_name = '' ) {
+		$group_ids = $this->get_manufacturer_company_group_ids( $manufacturer_id, $company_name );
+		$details   = array(
+			'email'        => '',
+			'has_password' => false,
+			'password_raw' => '',
+		);
+
+		foreach ( $group_ids as $group_id ) {
+			$email = $this->get_manufacturer_login_email( $group_id );
+			if ( '' !== $email && '' === $details['email'] ) {
+				$details['email'] = $email;
+			}
+
+			$password_raw = $this->get_manufacturer_login_plain_password( $group_id );
+			if ( '' !== $password_raw && '' === $details['password_raw'] ) {
+				$details['password_raw'] = $password_raw;
+			}
+
+			if ( $this->manufacturer_has_login_password( $group_id ) ) {
+				$details['has_password'] = true;
+			}
+		}
+
+		return $details;
 	}
 
 	protected function get_manufacturers_by_login( $login ) {
@@ -2995,7 +3022,7 @@ class Fabricamos_Native {
 		$substance_submission = $this->extract_substance_submission();
 		$login_email     = isset( $_POST['panel_login_email'] ) ? sanitize_email( wp_unslash( $_POST['panel_login_email'] ) ) : '';
 		$login_password  = isset( $_POST['panel_login_password'] ) ? (string) wp_unslash( $_POST['panel_login_password'] ) : '';
-		$login_email     = $login_email ? $login_email : $editor_email;
+		$login_email     = $editor_email ? $editor_email : $login_email;
 
 		if (
 			'' === $title ||
@@ -3755,9 +3782,10 @@ class Fabricamos_Native {
 			$process      = $this->get_manufacturer_meta_text( $manufacturer->ID, 'fab_processo' );
 			$origin       = $this->get_manufacturer_meta_text( $manufacturer->ID, 'fab_origem' );
 			$display_rows = $this->get_manufacturer_panel_substances( $manufacturer->ID );
-			$login_email  = $this->get_manufacturer_login_email( $manufacturer->ID );
-			$has_password = $this->manufacturer_has_login_password( $manufacturer->ID );
-			$password_raw = $this->get_manufacturer_login_plain_password( $manufacturer->ID );
+			$group_login  = $this->get_manufacturer_group_login_details( $manufacturer->ID, $detail['title'] );
+			$login_email  = $group_login['email'];
+			$has_password = $group_login['has_password'];
+			$password_raw = $group_login['password_raw'];
 
 			foreach ( $display_rows as $substance ) {
 				$rows[] = array(
@@ -4467,6 +4495,12 @@ class Fabricamos_Native {
 		);
 		$placeholder  = $this->editor_placeholder_image_url();
 
+		$group_login = $manufacturer instanceof WP_Post ? $this->get_manufacturer_group_login_details( $manufacturer->ID, $this->get_manufacturer_display_title( $manufacturer ) ) : array(
+			'email'        => '',
+			'has_password' => false,
+			'password_raw' => '',
+		);
+
 		return array(
 			'id'             => $manufacturer instanceof WP_Post ? (int) $manufacturer->ID : 0,
 			'title'          => $manufacturer instanceof WP_Post ? $this->get_manufacturer_display_title( $manufacturer ) : '',
@@ -4485,7 +4519,7 @@ class Fabricamos_Native {
 			'has_image'      => $detail ? $detail['has_hero_image'] : false,
 			'placeholder'    => $placeholder,
 			'substances'     => $detail ? $detail['substances'] : array(),
-			'login_email'    => $manufacturer instanceof WP_Post ? ( $this->get_manufacturer_login_email( $manufacturer->ID ) ? $this->get_manufacturer_login_email( $manufacturer->ID ) : $editor['email'] ) : '',
+			'login_email'    => $manufacturer instanceof WP_Post ? ( $group_login['email'] ? $group_login['email'] : $editor['email'] ) : '',
 			'login_password' => '',
 			'is_edit'        => $manufacturer instanceof WP_Post,
 			'processes'      => $this->get_available_processes(),
