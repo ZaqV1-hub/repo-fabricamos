@@ -1339,6 +1339,84 @@ class Fabricamos_Native {
 		return true;
 	}
 
+	protected function get_manufacturer_company_group_ids( $manufacturer_id, $company_name = '' ) {
+		$manufacturer_id = absint( $manufacturer_id );
+		$normalized_company = $this->normalize_lookup_value( $company_name );
+
+		if ( '' === $normalized_company && $manufacturer_id ) {
+			$post = get_post( $manufacturer_id );
+			if ( $post instanceof WP_Post ) {
+				$normalized_company = $this->normalize_lookup_value( $this->get_manufacturer_display_title( $post ) );
+			}
+		}
+
+		$group_ids = array();
+		if ( $manufacturer_id ) {
+			$group_ids[] = $manufacturer_id;
+		}
+
+		if ( '' === $normalized_company ) {
+			return array_values( array_unique( array_map( 'absint', $group_ids ) ) );
+		}
+
+		$posts = get_posts(
+			array(
+				'post_type'      => 'fabricante',
+				'post_status'    => array( 'publish', 'draft', 'pending', 'private' ),
+				'posts_per_page' => -1,
+			)
+		);
+
+		foreach ( $posts as $post ) {
+			if ( ! $post instanceof WP_Post ) {
+				continue;
+			}
+
+			if ( $this->normalize_lookup_value( $this->get_manufacturer_display_title( $post ) ) !== $normalized_company ) {
+				continue;
+			}
+
+			$group_ids[] = (int) $post->ID;
+		}
+
+		$group_ids = array_values( array_unique( array_map( 'absint', $group_ids ) ) );
+		sort( $group_ids );
+
+		return $group_ids;
+	}
+
+	protected function get_manufacturer_group_login_password( $manufacturer_ids, $submitted_password = '' ) {
+		$submitted_password = trim( (string) $submitted_password );
+		if ( '' !== $submitted_password ) {
+			return $submitted_password;
+		}
+
+		foreach ( (array) $manufacturer_ids as $manufacturer_id ) {
+			$password = $this->get_manufacturer_login_plain_password( $manufacturer_id );
+			if ( '' !== $password ) {
+				return $password;
+			}
+		}
+
+		return wp_generate_password( 12, true, true );
+	}
+
+	protected function sync_manufacturer_editor_group( $manufacturer_ids, $editor_name, $editor_phone, $editor_email, $login_email, $login_password ) {
+		$manufacturer_ids = array_values( array_unique( array_map( 'absint', (array) $manufacturer_ids ) ) );
+		$login_email      = sanitize_email( (string) $login_email );
+
+		foreach ( $manufacturer_ids as $manufacturer_id ) {
+			if ( ! $manufacturer_id ) {
+				continue;
+			}
+
+			update_post_meta( $manufacturer_id, 'fab_responsavel_nome', $editor_name );
+			update_post_meta( $manufacturer_id, 'fab_responsavel_telefone', $editor_phone );
+			update_post_meta( $manufacturer_id, 'fab_responsavel_email', $editor_email );
+			$this->save_manufacturer_login_credentials( $manufacturer_id, $login_email, $login_password );
+		}
+	}
+
 	protected function get_manufacturers_by_login( $login ) {
 		$login = trim( (string) $login );
 		if ( '' === $login ) {
@@ -2917,6 +2995,7 @@ class Fabricamos_Native {
 		$substance_submission = $this->extract_substance_submission();
 		$login_email     = isset( $_POST['panel_login_email'] ) ? sanitize_email( wp_unslash( $_POST['panel_login_email'] ) ) : '';
 		$login_password  = isset( $_POST['panel_login_password'] ) ? (string) wp_unslash( $_POST['panel_login_password'] ) : '';
+		$login_email     = $login_email ? $login_email : $editor_email;
 
 		if (
 			'' === $title ||
@@ -2924,7 +3003,7 @@ class Fabricamos_Native {
 			'' === $editor_name ||
 			'' === $editor_phone ||
 			'' === $login_email ||
-			( ! $manufacturer_id && '' === $login_password )
+			( ! $manufacturer_id && '' === $editor_email )
 		) {
 			wp_safe_redirect( add_query_arg( self::QUERY_SUCCESS, 'required_fields', $this->panel_form_url( $manufacturer_id ) ) );
 			exit;
@@ -2949,8 +3028,9 @@ class Fabricamos_Native {
 		}
 
 		if ( '' !== $login_email ) {
+			$company_group_ids      = $this->get_manufacturer_company_group_ids( $manufacturer_id, $title );
 			$existing_manufacturer = $this->get_manufacturer_by_login( $login_email );
-			if ( $existing_manufacturer instanceof WP_Post && (int) $existing_manufacturer->ID !== (int) $manufacturer_id ) {
+			if ( $existing_manufacturer instanceof WP_Post && ! in_array( (int) $existing_manufacturer->ID, $company_group_ids, true ) ) {
 				wp_safe_redirect( add_query_arg( self::QUERY_SUCCESS, 'panel_user_taken', $this->panel_form_url( $manufacturer_id ) ) );
 				exit;
 			}
@@ -2976,9 +3056,6 @@ class Fabricamos_Native {
 		}
 
 		$this->update_manufacturer_field( $manufacturer_id, 'field_fab_description', 'fab_description', $description );
-		update_post_meta( $manufacturer_id, 'fab_responsavel_nome', $editor_name );
-		update_post_meta( $manufacturer_id, 'fab_responsavel_telefone', $editor_phone );
-		update_post_meta( $manufacturer_id, 'fab_responsavel_email', $editor_email );
 		$this->update_manufacturer_field( $manufacturer_id, 'field_fab_contact_name', 'fab_contact_name', $name );
 		$this->update_manufacturer_field( $manufacturer_id, 'field_fab_phone', 'fab_phone', $phone );
 		$this->update_manufacturer_field( $manufacturer_id, 'field_fab_email', 'fab_email', $email );
@@ -3012,7 +3089,9 @@ class Fabricamos_Native {
 
 		$this->sync_manufacturer_images( $manufacturer_id );
 
-		$this->save_manufacturer_login_credentials( $manufacturer_id, $login_email, $login_password );
+		$company_group_ids = $this->get_manufacturer_company_group_ids( $manufacturer_id, $title );
+		$login_password    = $this->get_manufacturer_group_login_password( $company_group_ids, $login_password );
+		$this->sync_manufacturer_editor_group( $company_group_ids, $editor_name, $editor_phone, $editor_email, $login_email, $login_password );
 
 		wp_safe_redirect( add_query_arg( self::QUERY_SUCCESS, 'panel_saved', home_url( '/painel/' ) ) );
 		exit;

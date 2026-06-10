@@ -183,11 +183,11 @@ include __DIR__ . '/partials/page-start.php';
 					<div class="fab-two-cols">
 						<div class="fab-form-stack">
 							<label class="fab-label-strong" for="panel-login-email">Login de edição</label>
-							<input id="panel-login-email" class="fab-input" name="panel_login_email" type="email" value="<?php echo esc_attr( $context['login_email'] ); ?>" required />
+							<input id="panel-login-email" class="fab-input" name="panel_login_email" type="email" value="<?php echo esc_attr( $context['login_email'] ); ?>" placeholder="Se ficar em branco, usa o e-mail do responsável" />
 						</div>
 						<div class="fab-form-stack">
 							<label class="fab-label-strong" for="panel-login-password">Senha de edição</label>
-							<input id="panel-login-password" class="fab-input" name="panel_login_password" type="text" value="" placeholder="<?php echo esc_attr( $context['is_edit'] ? 'Deixe em branco para manter' : 'Defina uma senha' ); ?>" <?php echo $context['is_edit'] ? '' : 'required'; ?> />
+							<input id="panel-login-password" class="fab-input" name="panel_login_password" type="text" value="" placeholder="<?php echo esc_attr( $context['is_edit'] ? 'Deixe em branco para manter ou gerar automaticamente' : 'Deixe em branco para gerar automaticamente' ); ?>" />
 						</div>
 					</div>
 				</div>
