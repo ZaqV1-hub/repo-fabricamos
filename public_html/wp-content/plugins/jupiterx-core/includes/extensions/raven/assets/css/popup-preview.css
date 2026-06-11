@@ -1,0 +1,132 @@
+html:root {
+  margin-top: 0 !important;
+}
+
+.single-jupiterx-popups {
+  height: 100vh;
+  background-image: url("../img/square.jpg");
+  background-repeat: repeat;
+  overflow: hidden;
+}
+
+.single-jupiterx-popups .jupiterx-popup-preview-mode {
+  height: 100%;
+}
+
+.single-jupiterx-popups .jupiterx-popup-preview-mode.jupiterx-popup-frontend {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: fixed;
+  top: 0;
+  left: 0;
+  -webkit-box-align: stretch;
+  -ms-flex-align: stretch;
+  align-items: stretch;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  z-index: 999;
+}
+
+.single-jupiterx-popups .jupiterx-popup-preview-mode .jupiterx-popup__container-overlay {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1;
+}
+
+.single-jupiterx-popups .jupiterx-popup-preview-mode .jupiterx-popup__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  -webkit-box-align: stretch;
+  -ms-flex-align: stretch;
+  align-items: stretch;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  width: 600px;
+  height: auto;
+  max-height: 98%;
+  -webkit-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+  z-index: 2;
+}
+
+.single-jupiterx-popups .jupiterx-popup-preview-mode .jupiterx-popup__inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+}
+
+.single-jupiterx-popups .jupiterx-popup-preview-mode .jupiterx-popup__container-inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-flow: column nowrap;
+  flex-flow: column nowrap;
+  -webkit-box-align: stretch;
+  -ms-flex-align: stretch;
+  align-items: stretch;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  width: 100%;
+  padding: 20px;
+  background-color: white;
+  z-index: 1;
+  overflow-y: auto;
+}
+
+.single-jupiterx-popups .jupiterx-popup-preview-mode .jupiterx-popup__overlay {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1;
+}
+
+.single-jupiterx-popups .jupiterx-popup-preview-mode .jupiterx-popup__close-button {
+  display: none;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  width: 30px;
+  height: 30px;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+  background-color: #6ec1e4;
+  color: #fff;
+  font-size: 20px;
+  cursor: pointer;
+  z-index: 2;
+}

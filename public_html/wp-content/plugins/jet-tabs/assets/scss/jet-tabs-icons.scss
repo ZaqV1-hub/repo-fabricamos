@@ -1,0 +1,50 @@
+@font-face {
+	font-family: 'JetTabs-widget';
+	src:  url('fonts/JetTabs-widget.eot?y0k706');
+	src:  url('fonts/JetTabs-widget.eot?y0k706#iefix') format('embedded-opentype'),
+	  url('fonts/JetTabs-widget.ttf?y0k706') format('truetype'),
+	  url('fonts/JetTabs-widget.woff?y0k706') format('woff'),
+	  url('fonts/JetTabs-widget.svg?y0k706#JetTabs-widget') format('svg');
+	font-weight: normal;
+	font-style: normal;
+	font-display: block;
+  }
+
+  [class^="jet-tabs-icon-"], [class*=" jet-tabs-icon-"] {
+	/* use !important to prevent issues with browser extensions that change fonts */
+	font-family: 'JetTabs-widget' !important;
+	speak: never;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+
+	display: block;
+
+	.elementor-panel &,
+	.elementor-sortable-helper & {
+		font-size: 38px;
+		margin-bottom: calc( 28px - 1em );
+	}
+
+	.elementor-navigator__item & {
+		font-size: 16px;
+	}
+}
+
+.jet-tabs-icon-tabs:before {
+	content: "\e903";
+}
+
+.jet-tabs-icon-accordion:before {
+	content: "\e901";
+}
+
+.jet-tabs-icon-switcher:before {
+	content: "\e902";
+}
+
+.jet-tabs-icon-image-accordion:before {
+	content: "\e900";
+}

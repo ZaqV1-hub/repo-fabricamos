@@ -1,0 +1,1 @@
+import{s as n}from"./default-i18n.65d58dd6.js";window.aioseoTranslations?(n(window.aioseoTranslations.translations,"all-in-one-seo-pack"),window.aioseoTranslationsPro&&window.aioseoTranslationsPro.translationsPro&&n(window.aioseoTranslationsPro.translationsPro,"aioseo-pro")):window.aioseo&&console.warn("AIOSEO translations couldn't be loaded.");
