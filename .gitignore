@@ -11,4 +11,6 @@ vendor/
 tmp/fabricamos-credentials-*.csv
 tmp/
 local-inspect/wp-content/plugins/*.off/
+local-inspect/wp-content/plugins/*_backup/
+public_html/wp-content/plugins/*_backup/
 __pycache__/
