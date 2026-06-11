@@ -74,6 +74,10 @@ foreach ($companies as $item) {
     $responsibleName = normalize_text((string) array_get($item, 'responsible_name', ''));
     $responsiblePhone = normalize_text((string) array_get($item, 'responsible_phone', ''));
     $responsibleEmail = normalize_text((string) array_get($item, 'responsible_email', ''));
+    $publicName = normalize_text((string) array_get($item, 'public_name', ''));
+    $publicPhone = normalize_text((string) array_get($item, 'public_phone', ''));
+    $publicEmail = normalize_text((string) array_get($item, 'public_email', ''));
+    $publicSite = normalize_text((string) array_get($item, 'public_site', ''));
     $sourceWorkbook = normalize_text((string) array_get($item, 'source_workbook', ''));
     $sourceSheet = normalize_text((string) array_get($item, 'source_sheet', ''));
     $sourceUpdatedLabel = normalize_text((string) array_get($item, 'source_updated_label', ''));
@@ -131,13 +135,13 @@ foreach ($companies as $item) {
     update_post_meta($manufacturerId, 'fab_origem', implode(' / ', $origins));
     update_post_meta($manufacturerId, 'fab_compiled_substances', array_values(array_unique($compiledSubstances)));
     update_post_meta($manufacturerId, 'fab_catalog_items', $catalogItems);
-    sync_post_meta_text($manufacturerId, 'fab_responsavel_nome', $responsibleName);
-    sync_post_meta_text($manufacturerId, 'fab_responsavel_telefone', $responsiblePhone);
-    sync_post_meta_text($manufacturerId, 'fab_responsavel_email', $responsibleEmail);
-    sync_post_meta_text($manufacturerId, 'fab_contact_name', '');
-    sync_post_meta_text($manufacturerId, 'fab_phone', '');
-    sync_post_meta_text($manufacturerId, 'fab_email', '');
-    sync_post_meta_text($manufacturerId, 'fab_site', '');
+    sync_post_meta_text_if_not_empty($manufacturerId, 'fab_responsavel_nome', $responsibleName);
+    sync_post_meta_text_if_not_empty($manufacturerId, 'fab_responsavel_telefone', $responsiblePhone);
+    sync_post_meta_text_if_not_empty($manufacturerId, 'fab_responsavel_email', $responsibleEmail);
+    sync_post_meta_text_if_not_empty($manufacturerId, 'fab_contact_name', $publicName);
+    sync_post_meta_text_if_not_empty($manufacturerId, 'fab_phone', $publicPhone);
+    sync_post_meta_text_if_not_empty($manufacturerId, 'fab_email', $publicEmail);
+    sync_post_meta_text_if_not_empty($manufacturerId, 'fab_site', $publicSite);
     sync_post_meta_text($manufacturerId, 'fab_source_workbook', $sourceWorkbook);
     sync_post_meta_text($manufacturerId, 'fab_source_sheet', $sourceSheet);
     sync_post_meta_text($manufacturerId, 'fab_source_updated_label', $sourceUpdatedLabel);
@@ -938,6 +942,15 @@ function sync_post_meta_text($postId, $metaKey, $value)
 {
     if ($value === '') {
         delete_post_meta($postId, $metaKey);
+        return;
+    }
+
+    update_post_meta($postId, $metaKey, $value);
+}
+
+function sync_post_meta_text_if_not_empty($postId, $metaKey, $value)
+{
+    if ($value === '') {
         return;
     }
 

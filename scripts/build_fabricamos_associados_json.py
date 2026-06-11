@@ -184,6 +184,10 @@ def main() -> None:
                 "responsible_name": "",
                 "responsible_phone": "",
                 "responsible_email": "",
+                "public_name": "",
+                "public_phone": "",
+                "public_email": "",
+                "public_site": "",
                 "source_sheet": args.sheet,
                 "source_workbook": input_path.name,
                 "source_updated_label": raw_update_label,
@@ -202,6 +206,10 @@ def main() -> None:
         responsible_name = clean_scalar(row["responsavel"])
         responsible_phone = clean_scalar(row["telefone"])
         responsible_email = clean_scalar(row["email"])
+        public_name = clean_scalar(row["nome_depto"])
+        public_phone = clean_scalar(row["telefone2"])
+        public_email = clean_scalar(row["email_site"])
+        public_site = clean_scalar(row["site"])
         display_name = preferred_substance_name(insumo, inn, dcb)
 
         if associate and not item["associate"]:
@@ -216,6 +224,14 @@ def main() -> None:
             item["responsible_phone"] = responsible_phone
         if responsible_email and not item["responsible_email"]:
             item["responsible_email"] = responsible_email
+        if public_name and not item["public_name"]:
+            item["public_name"] = public_name
+        if public_phone and not item["public_phone"]:
+            item["public_phone"] = public_phone
+        if public_email and not item["public_email"]:
+            item["public_email"] = public_email
+        if public_site and not item["public_site"]:
+            item["public_site"] = public_site
 
         catalog_item = {
             "insumo": insumo,
