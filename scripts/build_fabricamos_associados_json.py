@@ -34,6 +34,11 @@ PLACEHOLDER_VALUES = {
 }
 COMPANY_REPLACEMENTS = {
     "cristalia produtos quimicos farmaceutico ltda.": "CRISTALIA PRODUTOS QUIMICOS FARMACEUTICOS Ltda.",
+    "cristalia produtos quimicos farmaceuticos ltda.": "CRISTALIA PRODUTOS QUIMICOS FARMACEUTICOS Ltda.",
+    "libbs farmaceutica ltda.": "LIBBS FARMACEUTICA Ltda.",
+    "libbs farmaceutica": "LIBBS FARMACEUTICA Ltda.",
+    "microbiologica quimica e fcta ltda.": "MICROBIOLOGICA QUIMICA e Fcta Ltda.",
+    "microbiologica quimica e farmaceutica": "MICROBIOLOGICA QUIMICA e Fcta Ltda.",
 }
 SPREADSHEET_RANGE_ARTIFACT_RE = re.compile(r"\+[A-Z]{1,3}\d+:[A-Z]{1,3}\d+")
 
@@ -91,6 +96,19 @@ def clean_catalog_value(value: object) -> str:
     return "" if is_placeholder(text) else text
 
 
+def normalize_substance_name(value: str) -> str:
+    text = clean_scalar(value)
+    if not text or is_placeholder(text):
+        return ""
+
+    text = re.sub(r"\s*-\s*", "-", text)
+    text = re.sub(r"\s*/\s*", " / ", text)
+    text = re.sub(r"\s*;\s*", "; ", text)
+    text = re.sub(r"\s+", " ", text).strip()
+
+    return text[:1].upper() + text[1:].lower()
+
+
 def is_associated_status(value: str) -> bool:
     normalized = normalize_key(value)
     return bool(normalized) and normalized.startswith("associado")
@@ -103,11 +121,11 @@ def append_unique(target: list[str], value: str) -> None:
 
 def preferred_substance_name(insumo: str, inn: str, dcb: str) -> str:
     if insumo and not is_placeholder(insumo):
-        return insumo
+        return normalize_substance_name(insumo)
     if dcb and not is_placeholder(dcb):
-        return dcb
+        return normalize_substance_name(dcb)
     if inn and not is_placeholder(inn):
-        return inn
+        return normalize_substance_name(inn)
     return ""
 
 
@@ -174,9 +192,9 @@ def main() -> None:
 
         process = clean_scalar(row["processo"])
         origin = clean_scalar(row["origem"])
-        insumo = clean_catalog_value(row["insumo"])
-        dcb = clean_catalog_value(row["dcb"])
-        inn = clean_catalog_value(row["inn"])
+        insumo = normalize_substance_name(clean_catalog_value(row["insumo"]))
+        dcb = normalize_substance_name(clean_catalog_value(row["dcb"]))
+        inn = normalize_substance_name(clean_catalog_value(row["inn"]))
         cas = clean_catalog_value(row["cas"])
         ncm = clean_catalog_value(row["ncm"])
         cbpf = clean_catalog_value(row["cbpf"])
