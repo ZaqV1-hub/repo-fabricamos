@@ -61,7 +61,7 @@ body.fabricamos-native {
 }
 
 .fabricamos-native .jupiterx-main-content {
-	padding-top: 88px;
+	padding-top: 112px;
 	padding-bottom: 36px;
 }
 
@@ -178,11 +178,15 @@ body.fabricamos-native {
 }
 
 .fab-page--catalog {
-	padding-top: 18px;
+	padding-top: 42px;
 }
 
 .fab-page--narrow {
-	padding-top: 26px;
+	padding-top: 52px;
+}
+
+.fab-page--panel {
+	padding-top: 52px;
 }
 
 .fab-container-wide,
@@ -1371,23 +1375,23 @@ script[src*="/plugins/gtranslate/"] {
 }
 
 .fab-site-footer {
-	margin-top: 40px;
-	padding: 0 0 18px;
+	margin-top: 32px;
+	padding: 0;
+	background: #b8c8fa;
 }
 
 .fab-site-footer__inner {
-	width: min(100% - 36px, 1320px);
-	margin: 0 auto;
-	padding: 18px 20px;
-	background: #d7e3ff;
-	border-radius: 18px;
+	width: 100%;
+	max-width: 100%;
+	margin: 0;
+	padding: 14px 24px;
 	text-align: center;
 }
 
 .fab-site-footer__copy {
 	margin: 0;
 	color: var(--fab-ink-strong);
-	font-size: 14px;
+	font-size: 13px;
 	line-height: 1.5;
 }
 
@@ -2059,12 +2063,13 @@ script[src*="/plugins/gtranslate/"] {
 	}
 
 	.fabricamos-native .jupiterx-main-content {
-		padding-top: 64px;
+		padding-top: 88px;
 	}
 
 	.fab-page--catalog,
-	.fab-page--narrow {
-		padding-top: 12px;
+	.fab-page--narrow,
+	.fab-page--panel {
+		padding-top: 28px;
 	}
 
 	.fab-static-content {
