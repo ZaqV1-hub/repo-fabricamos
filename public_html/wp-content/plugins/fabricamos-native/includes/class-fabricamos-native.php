@@ -3319,9 +3319,7 @@ class Fabricamos_Native {
 					<div class="fab-topbar__brand">
 						<img src="<?php echo esc_url( $this->asset_url( 'img/brand-logo.png' ) ); ?>" alt="Abiquifi" class="fab-brand-strip" />
 					</div>
-					<div class="fab-site-header__flags">
-						<img src="<?php echo esc_url( $this->asset_url( 'img/flags-strip-clean.png' ) ); ?>" alt="Idiomas" class="fab-flags-strip" />
-					</div>
+					<div class="fab-site-header__spacer" aria-hidden="true"></div>
 				</div>
 				<div class="fab-site-header__navrow">
 					<nav class="fab-navpills" aria-label="Menu principal">

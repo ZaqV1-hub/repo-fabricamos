@@ -61,7 +61,7 @@ body.fabricamos-native {
 }
 
 .fabricamos-native .jupiterx-main-content {
-	padding-top: 40px;
+	padding-top: 72px;
 	padding-bottom: 36px;
 }
 
@@ -1192,7 +1192,7 @@ select.is-invalid {
 }
 
 .fabricamos-native .jupiterx-main-content {
-	padding-top: 44px;
+	padding-top: 72px;
 }
 
 .fabricamos-native .jupiterx-header .dsf-user-menu {
@@ -1315,6 +1315,22 @@ select.is-invalid {
 	opacity: 1;
 	visibility: visible;
 	transform: translateY(0);
+}
+
+.fab-site-header__flags,
+.gtranslate_wrapper,
+[id^="gt-wrapper"],
+script[src*="/plugins/gtranslate/"] {
+	display: none !important;
+}
+
+.elementor-53 .elementor-element.elementor-element-8fb8f28,
+.elementor-53 .elementor-element.elementor-element-e31c066 {
+	display: none !important;
+}
+
+.elementor-53 .elementor-element.elementor-element-954cb69 {
+	min-height: 0 !important;
 }
 
 @media (min-width: 1025px) {
@@ -1974,7 +1990,7 @@ select.is-invalid {
 	}
 
 	.fabricamos-native .jupiterx-main-content {
-		padding-top: 28px;
+		padding-top: 48px;
 	}
 
 	.fabricamos-native .elementor-33108 .elementor-element.elementor-element-c22735b {
