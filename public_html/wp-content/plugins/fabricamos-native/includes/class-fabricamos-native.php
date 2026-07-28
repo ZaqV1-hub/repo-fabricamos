@@ -45,6 +45,9 @@ class Fabricamos_Native {
 		'fabricamos-login'      => 'login',
 		'meu-fabricante'        => 'profile',
 		'painel'                => 'panel',
+		'sobre-o-dicionario-de-substancias-farmaceuticas-dsf' => 'static',
+		'metodologia-dsf'       => 'static',
+		'como-consultar'        => 'static',
 	);
 
 	public static function instance() {
@@ -250,6 +253,18 @@ class Fabricamos_Native {
 			'painel' => array(
 				'title'   => 'Painel',
 				'content' => 'Painel administrativo do Fabricamos.',
+			),
+			'sobre-o-dicionario-de-substancias-farmaceuticas-dsf' => array(
+				'title'   => 'Sobre o Fabricamos',
+				'content' => '<h2>Sobre o Fabricamos</h2><p>O Fabricamos reúne fabricantes do ecossistema ABIQUIFI em um ambiente único de consulta, descoberta e conexão profissional.</p><p>A plataforma foi estruturada para facilitar a busca por empresas, processos e substâncias, com navegação objetiva e foco no uso institucional.</p>',
+			),
+			'metodologia-dsf' => array(
+				'title'   => 'Metodologia',
+				'content' => '<h2>Metodologia</h2><p>O Fabricamos organiza as informações publicadas pelos fabricantes em uma estrutura padronizada, priorizando clareza, atualização e consistência para consulta pública.</p><p>Os dados exibidos são apresentados conforme o cadastro mantido na plataforma e devem ser validados internamente pela empresa responsável sempre que necessário.</p>',
+			),
+			'como-consultar' => array(
+				'title'   => 'Como consultar',
+				'content' => '<h2>Como consultar</h2><p>Use os filtros de empresa, processo e substância para localizar fabricantes com mais precisão.</p><p>Ao acessar um fabricante, você pode visualizar os dados públicos de contato, descrição e substâncias vinculadas ao cadastro.</p>',
 			),
 			'detalhes-do-fabricante' => array(
 				'title'   => 'Detalhes do Fabricante',
@@ -1570,6 +1585,20 @@ class Fabricamos_Native {
 	}
 
 	public function handle_legacy_routes() {
+		$request_uri = isset( $_SERVER['REQUEST_URI'] ) ? (string) wp_unslash( $_SERVER['REQUEST_URI'] ) : '';
+		$request_path = $request_uri ? wp_parse_url( $request_uri, PHP_URL_PATH ) : '';
+		$legacy_paths = array(
+			'/v2/sobre-o-dicionario-de-substancias-farmaceuticas-dsf/' => home_url( '/sobre-o-dicionario-de-substancias-farmaceuticas-dsf/' ),
+			'/v2/metodologia-dsf/' => home_url( '/metodologia-dsf/' ),
+			'/v2/como-consultar/' => home_url( '/como-consultar/' ),
+			'/v2/cadastro/' => home_url( '/cadastro/' ),
+		);
+
+		if ( $request_path && isset( $legacy_paths[ trailingslashit( $request_path ) ] ) ) {
+			wp_safe_redirect( $legacy_paths[ trailingslashit( $request_path ) ], 301 );
+			exit;
+		}
+
 		if ( is_page( 'detalhes-do-fabricante' ) ) {
 			wp_safe_redirect( $this->public_catalog_url(), 301 );
 			exit;

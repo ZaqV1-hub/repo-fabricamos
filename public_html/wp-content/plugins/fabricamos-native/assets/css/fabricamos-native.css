@@ -61,7 +61,7 @@ body.fabricamos-native {
 }
 
 .fabricamos-native .jupiterx-main-content {
-	padding-top: 72px;
+	padding-top: 88px;
 	padding-bottom: 36px;
 }
 
@@ -175,6 +175,14 @@ body.fabricamos-native {
 .fab-page--narrow .fab-container {
 	max-width: 1040px;
 	margin: 0 auto;
+}
+
+.fab-page--catalog {
+	padding-top: 18px;
+}
+
+.fab-page--narrow {
+	padding-top: 26px;
 }
 
 .fab-container-wide,
@@ -785,6 +793,31 @@ body.fabricamos-native {
 	line-height: 1;
 }
 
+.fab-page--static .fab-container {
+	max-width: 1040px;
+	margin: 0 auto;
+}
+
+.fab-static-content {
+	padding: 36px 40px;
+	background: var(--fab-surface);
+	border: 1px solid var(--fab-border-soft);
+	border-radius: var(--fab-radius-xl);
+	box-shadow: var(--fab-shadow);
+	color: var(--fab-ink);
+}
+
+.fab-static-content h1,
+.fab-static-content h2,
+.fab-static-content h3 {
+	margin-top: 0;
+	color: var(--fab-ink-strong);
+}
+
+.fab-static-content p:last-child {
+	margin-bottom: 0;
+}
+
 .fab-hero-card {
 	padding: 16px;
 	margin-bottom: 18px;
@@ -1331,6 +1364,42 @@ script[src*="/plugins/gtranslate/"] {
 
 .elementor-53 .elementor-element.elementor-element-954cb69 {
 	min-height: 0 !important;
+}
+
+.fabricamos-native .jupiterx-footer {
+	display: none !important;
+}
+
+.fab-site-footer {
+	margin-top: 40px;
+	padding: 0 0 18px;
+}
+
+.fab-site-footer__inner {
+	width: min(100% - 36px, 1320px);
+	margin: 0 auto;
+	padding: 18px 20px;
+	background: #d7e3ff;
+	border-radius: 18px;
+	text-align: center;
+}
+
+.fab-site-footer__copy {
+	margin: 0;
+	color: var(--fab-ink-strong);
+	font-size: 14px;
+	line-height: 1.5;
+}
+
+.fab-site-footer__copy a {
+	color: var(--fab-ink-strong);
+	font-weight: 700;
+	text-decoration: none;
+}
+
+.fab-site-footer__copy a:hover,
+.fab-site-footer__copy a:focus {
+	text-decoration: underline;
 }
 
 @media (min-width: 1025px) {
@@ -1990,7 +2059,16 @@ script[src*="/plugins/gtranslate/"] {
 	}
 
 	.fabricamos-native .jupiterx-main-content {
-		padding-top: 48px;
+		padding-top: 64px;
+	}
+
+	.fab-page--catalog,
+	.fab-page--narrow {
+		padding-top: 12px;
+	}
+
+	.fab-static-content {
+		padding: 28px 24px;
 	}
 
 	.fabricamos-native .elementor-33108 .elementor-element.elementor-element-c22735b {

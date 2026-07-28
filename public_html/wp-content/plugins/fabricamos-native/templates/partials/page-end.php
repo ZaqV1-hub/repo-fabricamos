@@ -11,4 +11,5 @@ if ( ! defined( 'ABSPATH' ) ) {
 		</div>
 	</div>
 </div>
+<?php include __DIR__ . '/site-footer.php'; ?>
 <?php get_footer(); ?>
