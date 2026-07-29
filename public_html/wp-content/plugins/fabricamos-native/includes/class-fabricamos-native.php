@@ -3241,12 +3241,12 @@ class Fabricamos_Native {
 			exit;
 		}
 
-		if ( ! isset( $_GET['fabricamos_panel_export_nonce'] ) || ! wp_verify_nonce( sanitize_text_field( wp_unslash( $_GET['fabricamos_panel_export_nonce'] ) ), 'fabricamos_panel_export' ) ) {
+		if ( ! isset( $_REQUEST['fabricamos_panel_export_nonce'] ) || ! wp_verify_nonce( sanitize_text_field( wp_unslash( $_REQUEST['fabricamos_panel_export_nonce'] ) ), 'fabricamos_panel_export' ) ) {
 			wp_safe_redirect( add_query_arg( self::QUERY_SUCCESS, 'error', home_url( '/painel/' ) ) );
 			exit;
 		}
 
-		$search = isset( $_GET['empresa'] ) ? sanitize_text_field( wp_unslash( $_GET['empresa'] ) ) : '';
+		$search = isset( $_REQUEST['empresa'] ) ? sanitize_text_field( wp_unslash( $_REQUEST['empresa'] ) ) : '';
 		$rows   = $this->get_panel_export_rows( $search );
 		$file   = 'fabricamos-painel-' . gmdate( 'Y-m-d-His' ) . '.xls';
 		$range  = 'R1C1:R' . max( 1, count( $rows ) + 1 ) . 'C10';
@@ -3833,6 +3833,8 @@ class Fabricamos_Native {
 			'per_page'     => $per_page,
 			'create_url'   => $this->panel_form_url(),
 			'base_url'     => home_url( '/painel/' ),
+			'export_action_url' => admin_url( 'admin-post.php' ),
+			'export_nonce' => wp_create_nonce( 'fabricamos_panel_export' ),
 			'export_url'   => wp_nonce_url(
 				add_query_arg(
 					array_filter(

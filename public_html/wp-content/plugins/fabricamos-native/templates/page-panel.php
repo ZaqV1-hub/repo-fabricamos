@@ -256,10 +256,18 @@ include __DIR__ . '/partials/page-start.php';
 
 					<div class="fab-panel-toolbar__actions">
 						<a class="fab-button fab-button--primary" href="<?php echo esc_url( $context['create_url'] ); ?>">Criar fabricante</a>
-						<a class="fab-button fab-button--primary" href="<?php echo esc_url( $context['export_url'] ); ?>">Exportar Excel</a>
+						<form method="post" action="<?php echo esc_url( $context['export_action_url'] ); ?>" target="fab-panel-export-frame" class="fab-panel-export-form">
+							<input type="hidden" name="action" value="fabricamos_panel_export" />
+							<input type="hidden" name="fabricamos_panel_export_nonce" value="<?php echo esc_attr( $context['export_nonce'] ); ?>" />
+							<?php if ( '' !== $context['search'] ) : ?>
+								<input type="hidden" name="empresa" value="<?php echo esc_attr( $context['search'] ); ?>" />
+							<?php endif; ?>
+							<button class="fab-button fab-button--primary" type="submit">Exportar Excel</button>
+						</form>
 						<a class="fab-button fab-button--ghost" href="<?php echo esc_url( $panel_url ); ?>">Limpar filtros</a>
 					</div>
 				</div>
+				<iframe name="fab-panel-export-frame" style="display:none;" aria-hidden="true"></iframe>
 
 				<div class="fab-table-wrap fab-table-wrap--panel-summary">
 					<table class="fab-panel-table fab-panel-table--summary">
