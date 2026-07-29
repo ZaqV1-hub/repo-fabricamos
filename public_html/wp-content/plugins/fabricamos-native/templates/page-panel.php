@@ -266,8 +266,7 @@ include __DIR__ . '/partials/page-start.php';
 						<thead>
 							<tr>
 								<th>Empresa</th>
-								<th class="fab-panel-table__email-col">E-mail de edi&ccedil;&atilde;o</th>
-								<th class="fab-panel-table__email-col">E-mail de login</th>
+								<th class="fab-panel-table__email-col">E-mail</th>
 								<th class="fab-panel-table__password-col">Senha</th>
 								<th>A&ccedil;&otilde;es</th>
 							</tr>
@@ -276,14 +275,6 @@ include __DIR__ . '/partials/page-start.php';
 							<?php foreach ( $context['rows'] as $row ) : ?>
 								<tr>
 									<td><?php echo esc_html( $row['company'] ); ?></td>
-									<td class="fab-panel-table__email-col">
-										<div class="fab-email-field">
-											<span class="fab-email-field__value"><?php echo esc_html( $row['editor_email'] ); ?></span>
-											<?php if ( '-' !== $row['editor_email'] ) : ?>
-												<button class="fab-email-field__copy" type="button" data-fab-copy-text="<?php echo esc_attr( $row['editor_email'] ); ?>">Copiar</button>
-											<?php endif; ?>
-										</div>
-									</td>
 									<td class="fab-panel-table__email-col">
 										<div class="fab-email-field">
 											<span class="fab-email-field__value"><?php echo esc_html( $row['email'] ); ?></span>
@@ -315,7 +306,6 @@ include __DIR__ . '/partials/page-start.php';
 
 							<?php for ( $i = 0; $i < (int) $context['blank_rows']; $i++ ) : ?>
 								<tr class="fab-panel-table__blank" aria-hidden="true">
-									<td>&nbsp;</td>
 									<td>&nbsp;</td>
 									<td>&nbsp;</td>
 									<td>&nbsp;</td>

@@ -1628,26 +1628,24 @@ script[src*="/plugins/gtranslate/"] {
 
 .fab-panel-table th:nth-child(1),
 .fab-panel-table td:nth-child(1) {
-	width: 30%;
+	width: 44%;
 	white-space: normal;
 }
 
 .fab-panel-table th:nth-child(2),
-.fab-panel-table td:nth-child(2),
+.fab-panel-table td:nth-child(2) {
+	width: 30%;
+	white-space: normal;
+}
+
 .fab-panel-table th:nth-child(3),
 .fab-panel-table td:nth-child(3) {
-	width: 24%;
-	white-space: normal;
+	width: 16%;
 }
 
 .fab-panel-table th:nth-child(4),
 .fab-panel-table td:nth-child(4) {
-	width: 14%;
-}
-
-.fab-panel-table th:nth-child(5),
-.fab-panel-table td:nth-child(5) {
-	width: 8%;
+	width: 10%;
 }
 
 .fab-email-field {
@@ -1727,18 +1725,19 @@ script[src*="/plugins/gtranslate/"] {
 	display: inline-flex;
 	align-items: center;
 	justify-content: center;
-	min-width: 74px;
-	height: 32px;
-	padding: 0 12px;
-	border: 1px solid #cfd8e5;
+	min-width: 68px;
+	height: 30px;
+	padding: 0 14px;
+	border: 1px solid transparent;
 	border-radius: 999px;
-	background: #ffffff;
+	background: #f5f7fb;
 	color: var(--fab-ink-strong);
 	text-decoration: none;
 	font-size: 12px;
 	font-weight: 700;
 	line-height: 1;
 	cursor: pointer;
+	transition: background-color 0.2s ease, border-color 0.2s ease, color 0.2s ease;
 }
 
 .fab-table-action:hover,
@@ -1749,13 +1748,13 @@ script[src*="/plugins/gtranslate/"] {
 
 .fab-table-action--edit {
 	background: #eef3ff;
-	border-color: #bfd0f5;
+	border-color: #c7d6f7;
 	color: var(--fab-header);
 }
 
 .fab-table-action--delete {
-	background: #fff4f5;
-	border-color: #f3c2c7;
+	background: #fff2f3;
+	border-color: #f6c7cc;
 	color: #b44943;
 }
 
