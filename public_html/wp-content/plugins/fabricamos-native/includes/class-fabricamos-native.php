@@ -3247,9 +3247,13 @@ class Fabricamos_Native {
 		}
 
 		$search = isset( $_GET['empresa'] ) ? sanitize_text_field( wp_unslash( $_GET['empresa'] ) ) : '';
-		$rows   = $this->get_panel_rows( $search );
+		$rows   = $this->get_panel_export_rows( $search );
 		$file   = 'fabricamos-painel-' . gmdate( 'Y-m-d-His' ) . '.xls';
 		$range  = 'R1C1:R' . max( 1, count( $rows ) + 1 ) . 'C10';
+
+		while ( ob_get_level() > 0 ) {
+			ob_end_clean();
+		}
 
 		nocache_headers();
 		header( 'Content-Type: application/vnd.ms-excel; charset=UTF-8' );
@@ -3886,6 +3890,52 @@ class Fabricamos_Native {
 				'edit_url'      => $this->panel_form_url( $manufacturer->ID ),
 				'delete_target' => $this->get_manufacturer_display_title( $manufacturer ),
 			);
+		}
+
+		return $rows;
+	}
+
+	protected function get_panel_export_rows( $search = '' ) {
+		$query_args  = array(
+			'post_type'      => 'fabricante',
+			'post_status'    => array( 'publish', 'draft' ),
+			'posts_per_page' => -1,
+			'orderby'        => 'title',
+			'order'          => 'ASC',
+		);
+
+		if ( '' !== $search ) {
+			$query_args['s'] = $search;
+		}
+
+		$manufacturers = get_posts( $query_args );
+		$rows          = array();
+
+		foreach ( $manufacturers as $manufacturer ) {
+			if ( ! $this->is_associated_manufacturer( $manufacturer->ID ) ) {
+				continue;
+			}
+
+			$detail       = $this->get_manufacturer_detail( $manufacturer );
+			$associate    = $this->get_manufacturer_meta_text( $manufacturer->ID, 'fab_associate_status' );
+			$process      = $this->get_manufacturer_meta_text( $manufacturer->ID, 'fab_processo' );
+			$origin       = $this->get_manufacturer_meta_text( $manufacturer->ID, 'fab_origem' );
+			$display_rows = $this->get_manufacturer_panel_substances( $manufacturer->ID );
+
+			foreach ( $display_rows as $substance ) {
+				$rows[] = array(
+					'company'     => $detail['title'],
+					'associate'   => $associate ? $associate : '-',
+					'process'     => $process ? $process : '-',
+					'origin'      => $origin ? $origin : '-',
+					'substance'   => $substance ? $this->panel_catalog_value( $substance['title'] ) : '-',
+					'dcb'         => $substance ? $this->panel_catalog_value( isset( $substance['meta']['dcb'] ) ? $substance['meta']['dcb'] : '' ) : '-',
+					'inn'         => $substance ? $this->panel_catalog_value( isset( $substance['meta']['inn'] ) ? $substance['meta']['inn'] : '' ) : '-',
+					'cas'         => $substance ? $this->panel_catalog_value( isset( $substance['meta']['cas'] ) ? $substance['meta']['cas'] : '' ) : '-',
+					'ncm'         => $substance ? $this->panel_catalog_value( isset( $substance['meta']['ncm'] ) ? $substance['meta']['ncm'] : '' ) : '-',
+					'certificate' => $substance ? $this->panel_catalog_value( isset( $substance['meta']['cbpf'] ) ? $substance['meta']['cbpf'] : '' ) : '-',
+				);
+			}
 		}
 
 		return $rows;
