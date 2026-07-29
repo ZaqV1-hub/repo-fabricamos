@@ -288,6 +288,7 @@ include __DIR__ . '/partials/page-start.php';
 											<span class="fab-password-field__value">-</span>
 										<?php else : ?>
 											<div class="fab-password-field">
+												<button class="fab-email-field__copy" type="button" data-fab-copy-text="<?php echo esc_attr( $row['password_raw'] ); ?>">Copiar</button>
 												<span class="fab-password-field__value" data-fab-password-value data-masked="******" data-plain="<?php echo esc_attr( $row['password_raw'] ); ?>">******</span>
 												<?php if ( '' !== $row['password_raw'] ) : ?>
 													<button class="fab-password-field__toggle" type="button" data-fab-password-toggle>Exibir</button>
