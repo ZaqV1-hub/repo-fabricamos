@@ -568,6 +568,43 @@
 		});
 	}
 
+	
+	function initPanelCopyButtons() {
+		const copyButtons = document.querySelectorAll("[data-fab-copy-text]");
+		if (!copyButtons.length) {
+			return;
+		}
+
+		copyButtons.forEach(function (button) {
+			button.addEventListener("click", function () {
+				const text = button.getAttribute("data-fab-copy-text") || "";
+				if (!text) {
+					return;
+				}
+
+				const label = button.textContent;
+				const finish = function () {
+					button.textContent = "Copiado";
+					window.setTimeout(function () {
+						button.textContent = label;
+					}, 1200);
+				};
+
+				if (navigator.clipboard && navigator.clipboard.writeText) {
+					navigator.clipboard.writeText(text).then(finish);
+					return;
+				}
+
+				const tempInput = document.createElement("input");
+				tempInput.value = text;
+				document.body.appendChild(tempInput);
+				tempInput.select();
+				document.execCommand("copy");
+				document.body.removeChild(tempInput);
+				finish();
+			});
+		});
+	}
 	function initPanelFormValidation() {
 		const form = document.querySelector(".fab-panel-form");
 		if (!form) {
@@ -807,6 +844,9 @@
 		initProfileImageEditors();
 		initDeleteModal();
 		initPanelPasswordToggles();
+		initPanelCopyButtons();
 		initPanelFormValidation();
 	});
 })();
+
+

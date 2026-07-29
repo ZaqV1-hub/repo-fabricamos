@@ -1130,8 +1130,40 @@ class Fabricamos_Native {
 			return;
 		}
 
+		$this->reset_public_translation_state();
 		remove_action( 'template_redirect', 'wp_redirect_admin_locations', 1000 );
 		$this->ensure_front_page_template();
+	}
+
+	protected function reset_public_translation_state() {
+		$query_keys = array( 'lang', 'language', 'gtranslate', 'gt_switcher', 'gt-lang' );
+
+		foreach ( $query_keys as $key ) {
+			if ( isset( $_GET[ $key ] ) ) {
+				wp_safe_redirect( remove_query_arg( $query_keys, $this->current_request_url() ), 301 );
+				exit;
+			}
+		}
+
+		$cookie_names = array(
+			'googtrans',
+			'googtransopt',
+			'gt_auto_switch',
+			'gtranslate-settings',
+			'gt-current-lang',
+			'wp-wpml_current_language',
+			'pll_language',
+		);
+
+		foreach ( $cookie_names as $cookie_name ) {
+			if ( empty( $_COOKIE[ $cookie_name ] ) ) {
+				continue;
+			}
+
+			setcookie( $cookie_name, '', time() - HOUR_IN_SECONDS, '/', $this->get_cookie_domain(), is_ssl(), false );
+			setcookie( $cookie_name, '', time() - HOUR_IN_SECONDS, $this->get_cookie_path(), $this->get_cookie_domain(), is_ssl(), false );
+			unset( $_COOKIE[ $cookie_name ] );
+		}
 	}
 
 	protected function enforce_public_catalog_auth() {
@@ -3859,6 +3891,7 @@ class Fabricamos_Native {
 					'certificate'   => $substance ? $this->panel_catalog_value( isset( $substance['meta']['cbpf'] ) ? $substance['meta']['cbpf'] : '' ) : '-',
 					'contact_name'  => $editor['name'] ? $editor['name'] : '-',
 					'phone'         => $editor['phone'] ? $editor['phone'] : '-',
+					'editor_email'  => $editor['email'] ? $editor['email'] : '-',
 					'email'         => $login_email ? $login_email : '-',
 					'password'      => $has_password ? '••••••' : '-',
 					'password_raw'  => $password_raw,
@@ -5690,3 +5723,4 @@ SVG;
 		return array_values( array_filter( array_map( 'absint', $raw ) ) );
 	}
 }
+
