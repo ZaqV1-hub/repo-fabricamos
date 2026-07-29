@@ -3914,10 +3914,6 @@ class Fabricamos_Native {
 		$rows          = array();
 
 		foreach ( $manufacturers as $manufacturer ) {
-			if ( ! $this->is_associated_manufacturer( $manufacturer->ID ) ) {
-				continue;
-			}
-
 			$detail       = $this->get_manufacturer_detail( $manufacturer );
 			$associate    = $this->get_manufacturer_meta_text( $manufacturer->ID, 'fab_associate_status' );
 			$process      = $this->get_manufacturer_meta_text( $manufacturer->ID, 'fab_processo' );
