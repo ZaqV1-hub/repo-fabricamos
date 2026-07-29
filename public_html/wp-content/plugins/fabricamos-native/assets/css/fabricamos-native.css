@@ -1569,6 +1569,7 @@ script[src*="/plugins/gtranslate/"] {
 
 .fab-table-wrap--panel-summary {
 	overflow-x: hidden;
+	border-radius: 22px;
 }
 
 .fab-panel-table {
@@ -1726,24 +1727,36 @@ script[src*="/plugins/gtranslate/"] {
 	display: inline-flex;
 	align-items: center;
 	justify-content: center;
-	width: 28px;
-	height: 28px;
-	border: 0;
+	min-width: 74px;
+	height: 32px;
+	padding: 0 12px;
+	border: 1px solid #cfd8e5;
 	border-radius: 999px;
+	background: #ffffff;
+	color: var(--fab-ink-strong);
 	text-decoration: none;
-	font-size: 15px;
+	font-size: 12px;
+	font-weight: 700;
 	line-height: 1;
 	cursor: pointer;
 }
 
+.fab-table-action:hover,
+.fab-table-action:focus {
+	border-color: var(--fab-header);
+	color: var(--fab-header);
+}
+
 .fab-table-action--edit {
-	background: #98a3b5;
-	color: #ffffff;
+	background: #eef3ff;
+	border-color: #bfd0f5;
+	color: var(--fab-header);
 }
 
 .fab-table-action--delete {
-	background: #ef7b84;
-	color: #ffffff;
+	background: #fff4f5;
+	border-color: #f3c2c7;
+	color: #b44943;
 }
 
 .fab-panel-footer {
@@ -2066,4 +2079,7 @@ script[src*="/plugins/gtranslate/"] {
 		max-width: calc(100vw - 20px) !important;
 	}
 }
+
+
+
 

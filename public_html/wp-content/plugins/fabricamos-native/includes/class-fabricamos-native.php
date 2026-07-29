@@ -3865,40 +3865,27 @@ class Fabricamos_Native {
 		$rows          = array();
 
 		foreach ( $manufacturers as $manufacturer ) {
+			if ( ! $this->is_associated_manufacturer( $manufacturer->ID ) ) {
+				continue;
+			}
+
 			$detail       = $this->get_manufacturer_detail( $manufacturer );
 			$editor       = $this->get_manufacturer_editor_detail( $manufacturer->ID );
-			$associate    = $this->get_manufacturer_meta_text( $manufacturer->ID, 'fab_associate_status' );
-			$process      = $this->get_manufacturer_meta_text( $manufacturer->ID, 'fab_processo' );
-			$origin       = $this->get_manufacturer_meta_text( $manufacturer->ID, 'fab_origem' );
-			$display_rows = $this->get_manufacturer_panel_substances( $manufacturer->ID );
 			$group_login  = $this->get_manufacturer_group_login_details( $manufacturer->ID, $detail['title'] );
 			$login_email  = $group_login['email'];
 			$has_password = $group_login['has_password'];
 			$password_raw = $group_login['password_raw'];
 
-			foreach ( $display_rows as $substance ) {
-				$rows[] = array(
-					'id'            => (int) $manufacturer->ID,
-					'company'       => $detail['title'],
-					'associate'     => $associate ? $associate : '-',
-					'process'       => $process ? $process : '-',
-					'origin'        => $origin ? $origin : '-',
-					'substance'     => $substance ? $this->panel_catalog_value( $substance['title'] ) : '-',
-					'dcb'           => $substance ? $this->panel_catalog_value( isset( $substance['meta']['dcb'] ) ? $substance['meta']['dcb'] : '' ) : '-',
-					'inn'           => $substance ? $this->panel_catalog_value( isset( $substance['meta']['inn'] ) ? $substance['meta']['inn'] : '' ) : '-',
-					'cas'           => $substance ? $this->panel_catalog_value( isset( $substance['meta']['cas'] ) ? $substance['meta']['cas'] : '' ) : '-',
-					'ncm'           => $substance ? $this->panel_catalog_value( isset( $substance['meta']['ncm'] ) ? $substance['meta']['ncm'] : '' ) : '-',
-					'certificate'   => $substance ? $this->panel_catalog_value( isset( $substance['meta']['cbpf'] ) ? $substance['meta']['cbpf'] : '' ) : '-',
-					'contact_name'  => $editor['name'] ? $editor['name'] : '-',
-					'phone'         => $editor['phone'] ? $editor['phone'] : '-',
-					'editor_email'  => $editor['email'] ? $editor['email'] : '-',
-					'email'         => $login_email ? $login_email : '-',
-					'password'      => $has_password ? '••••••' : '-',
-					'password_raw'  => $password_raw,
-					'edit_url'      => $this->panel_form_url( $manufacturer->ID ),
-					'delete_target' => $this->get_manufacturer_display_title( $manufacturer ),
-				);
-			}
+			$rows[] = array(
+				'id'            => (int) $manufacturer->ID,
+				'company'       => $detail['title'],
+				'editor_email'  => $editor['email'] ? $editor['email'] : '-',
+				'email'         => $login_email ? $login_email : '-',
+				'password'      => $has_password ? '******' : '-',
+				'password_raw'  => $password_raw,
+				'edit_url'      => $this->panel_form_url( $manufacturer->ID ),
+				'delete_target' => $this->get_manufacturer_display_title( $manufacturer ),
+			);
 		}
 
 		return $rows;
@@ -5723,4 +5710,6 @@ SVG;
 		return array_values( array_filter( array_map( 'absint', $raw ) ) );
 	}
 }
+
+
 

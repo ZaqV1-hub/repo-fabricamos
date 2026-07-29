@@ -261,41 +261,19 @@ include __DIR__ . '/partials/page-start.php';
 					</div>
 				</div>
 
-				<?php
-				$summary_rows = array();
-				foreach ( $context['rows'] as $row ) {
-					$key = isset( $row['id'] ) ? (string) $row['id'] : (string) $row['edit_url'];
-					if ( isset( $summary_rows[ $key ] ) ) {
-						continue;
-					}
-
-					$summary_rows[ $key ] = array(
-						'id'            => $row['id'],
-						'company'       => $row['company'],
-						'editor_email'  => isset( $row['editor_email'] ) && '-' !== $row['editor_email'] ? $row['editor_email'] : '-',
-						'login_email'   => $row['email'],
-						'password'      => $row['password'],
-						'password_raw'  => $row['password_raw'],
-						'edit_url'      => $row['edit_url'],
-						'delete_target' => $row['delete_target'],
-					);
-				}
-				$summary_rows = array_values( $summary_rows );
-				$blank_summary_rows = max( 0, (int) $context['per_page'] - count( $summary_rows ) );
-				?>
 				<div class="fab-table-wrap fab-table-wrap--panel-summary">
 					<table class="fab-panel-table fab-panel-table--summary">
 						<thead>
 							<tr>
 								<th>Empresa</th>
-								<th class="fab-panel-table__email-col">E-mail de edição</th>
+								<th class="fab-panel-table__email-col">E-mail de edi&ccedil;&atilde;o</th>
 								<th class="fab-panel-table__email-col">E-mail de login</th>
 								<th class="fab-panel-table__password-col">Senha</th>
-								<th>Ações</th>
+								<th>A&ccedil;&otilde;es</th>
 							</tr>
 						</thead>
 						<tbody>
-							<?php foreach ( $summary_rows as $row ) : ?>
+							<?php foreach ( $context['rows'] as $row ) : ?>
 								<tr>
 									<td><?php echo esc_html( $row['company'] ); ?></td>
 									<td class="fab-panel-table__email-col">
@@ -308,9 +286,9 @@ include __DIR__ . '/partials/page-start.php';
 									</td>
 									<td class="fab-panel-table__email-col">
 										<div class="fab-email-field">
-											<span class="fab-email-field__value"><?php echo esc_html( $row['login_email'] ); ?></span>
-											<?php if ( '-' !== $row['login_email'] ) : ?>
-												<button class="fab-email-field__copy" type="button" data-fab-copy-text="<?php echo esc_attr( $row['login_email'] ); ?>">Copiar</button>
+											<span class="fab-email-field__value"><?php echo esc_html( $row['email'] ); ?></span>
+											<?php if ( '-' !== $row['email'] ) : ?>
+												<button class="fab-email-field__copy" type="button" data-fab-copy-text="<?php echo esc_attr( $row['email'] ); ?>">Copiar</button>
 											<?php endif; ?>
 										</div>
 									</td>
@@ -319,7 +297,7 @@ include __DIR__ . '/partials/page-start.php';
 											<span class="fab-password-field__value">-</span>
 										<?php else : ?>
 											<div class="fab-password-field">
-												<span class="fab-password-field__value" data-fab-password-value data-masked="<?php echo esc_attr( $row['password'] ); ?>" data-plain="<?php echo esc_attr( $row['password_raw'] ); ?>"><?php echo esc_html( $row['password'] ); ?></span>
+												<span class="fab-password-field__value" data-fab-password-value data-masked="******" data-plain="<?php echo esc_attr( $row['password_raw'] ); ?>">******</span>
 												<?php if ( '' !== $row['password_raw'] ) : ?>
 													<button class="fab-password-field__toggle" type="button" data-fab-password-toggle>Exibir</button>
 												<?php endif; ?>
@@ -329,13 +307,13 @@ include __DIR__ . '/partials/page-start.php';
 									<td>
 										<div class="fab-table-actions">
 											<a class="fab-table-action fab-table-action--edit" href="<?php echo esc_url( $row['edit_url'] ); ?>" aria-label="Editar fabricante">Editar</a>
-											<button class="fab-table-action fab-table-action--delete" type="button" aria-label="Excluir fabricante" data-fab-delete-open data-manufacturer-id="<?php echo esc_attr( $row['id'] ); ?>" data-manufacturer-name="<?php echo esc_attr( $row['delete_target'] ); ?>">×</button>
+											<button class="fab-table-action fab-table-action--delete" type="button" aria-label="Excluir fabricante" data-fab-delete-open data-manufacturer-id="<?php echo esc_attr( $row['id'] ); ?>" data-manufacturer-name="<?php echo esc_attr( $row['delete_target'] ); ?>">Excluir</button>
 										</div>
 									</td>
 								</tr>
 							<?php endforeach; ?>
 
-							<?php for ( $i = 0; $i < $blank_summary_rows; $i++ ) : ?>
+							<?php for ( $i = 0; $i < (int) $context['blank_rows']; $i++ ) : ?>
 								<tr class="fab-panel-table__blank" aria-hidden="true">
 									<td>&nbsp;</td>
 									<td>&nbsp;</td>
@@ -429,4 +407,6 @@ include __DIR__ . '/partials/page-start.php';
 	</div>
 </section>
 <?php include __DIR__ . '/partials/page-end.php'; ?>
+
+
 
