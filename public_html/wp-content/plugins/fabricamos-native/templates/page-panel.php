@@ -277,10 +277,10 @@ include __DIR__ . '/partials/page-start.php';
 									<td><?php echo esc_html( $row['company'] ); ?></td>
 									<td class="fab-panel-table__email-col">
 										<div class="fab-email-field">
-											<span class="fab-email-field__value"><?php echo esc_html( $row['email'] ); ?></span>
 											<?php if ( '-' !== $row['email'] ) : ?>
 												<button class="fab-email-field__copy" type="button" data-fab-copy-text="<?php echo esc_attr( $row['email'] ); ?>">Copiar</button>
 											<?php endif; ?>
+											<span class="fab-email-field__value"><?php echo esc_html( $row['email'] ); ?></span>
 										</div>
 									</td>
 									<td class="fab-panel-table__password-col">
