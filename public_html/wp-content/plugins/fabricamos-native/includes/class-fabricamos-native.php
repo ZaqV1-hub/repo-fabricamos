@@ -5545,6 +5545,10 @@ SVG;
 				}
 			}
 
+			if ( $this->looks_like_local_upload_url( $value ) ) {
+				return array();
+			}
+
 			return array(
 				'url' => $value,
 			);
@@ -5617,6 +5621,19 @@ SVG;
 		return $resolved ? absint( $resolved ) : 0;
 	}
 
+	protected function looks_like_local_upload_url( $value ) {
+		if ( ! is_string( $value ) || '' === trim( $value ) ) {
+			return false;
+		}
+
+		$path = wp_parse_url( trim( $value ), PHP_URL_PATH );
+		if ( ! is_string( $path ) || '' === $path ) {
+			return false;
+		}
+
+		return false !== strpos( $path, '/wp-content/uploads/' );
+	}
+
 	protected function normalize_manufacturer_image_value( $value ) {
 		if ( is_array( $value ) ) {
 			if ( ! empty( $value['ID'] ) ) {
@@ -5651,14 +5668,23 @@ SVG;
 
 		delete_post_meta( $post_id, $field_name );
 		delete_post_meta( $post_id, '_' . $field_name );
+
+		if ( 'fab_hero_image' === $field_name ) {
+			delete_post_thumbnail( $post_id );
+		}
+
 		clean_post_cache( $post_id );
 	}
 
 	protected function sync_manufacturer_images( $post_id ) {
-		$hero_value = $this->normalize_manufacturer_image_value( get_post_meta( $post_id, 'fab_hero_image', true ) );
+		$hero_value = $this->normalize_manufacturer_image_value( $this->get_manufacturer_field( $post_id, 'fab_hero_image' ) );
 
 		if ( $hero_value ) {
+			update_post_meta( $post_id, 'fab_hero_image', $hero_value );
+			update_post_meta( $post_id, '_fab_hero_image', 'field_fab_hero_image' );
 			$this->update_manufacturer_field( $post_id, 'field_fab_logo', 'fab_logo', $hero_value );
+			update_post_meta( $post_id, 'fab_logo', $hero_value );
+			update_post_meta( $post_id, '_fab_logo', 'field_fab_logo' );
 			$attachment_id = $this->resolve_attachment_id_from_image_value( $hero_value );
 			if ( $attachment_id ) {
 				set_post_thumbnail( $post_id, $attachment_id );
@@ -5816,6 +5842,13 @@ SVG;
 		}
 
 		$this->update_manufacturer_field( $post_id, $field_key, $field_name, (int) $attachment_id );
+		update_post_meta( $post_id, $field_name, (int) $attachment_id );
+		update_post_meta( $post_id, '_' . $field_name, $field_key );
+
+		if ( 'fab_hero_image' === $field_name ) {
+			set_post_thumbnail( $post_id, (int) $attachment_id );
+		}
+
 		return true;
 	}
 
