@@ -5523,12 +5523,98 @@ SVG;
 		}
 
 		if ( is_string( $value ) && '' !== $value ) {
+			$attachment_id = $this->resolve_attachment_id_from_image_value( $value );
+			if ( $attachment_id ) {
+				$image_url = wp_get_attachment_image_url( $attachment_id, 'full' );
+				if ( $image_url ) {
+					return array(
+						'ID'  => $attachment_id,
+						'url' => $image_url,
+					);
+				}
+			}
+
+			$thumbnail_id = get_post_thumbnail_id( $post_id );
+			if ( $thumbnail_id ) {
+				$image_url = wp_get_attachment_image_url( $thumbnail_id, 'full' );
+				if ( $image_url ) {
+					return array(
+						'ID'  => (int) $thumbnail_id,
+						'url' => $image_url,
+					);
+				}
+			}
+
 			return array(
 				'url' => $value,
 			);
 		}
 
+		$thumbnail_id = get_post_thumbnail_id( $post_id );
+		if ( $thumbnail_id ) {
+			$image_url = wp_get_attachment_image_url( $thumbnail_id, 'full' );
+			if ( $image_url ) {
+				return array(
+					'ID'  => (int) $thumbnail_id,
+					'url' => $image_url,
+				);
+			}
+		}
+
 		return array();
+	}
+
+	protected function resolve_attachment_id_from_image_value( $value ) {
+		global $wpdb;
+
+		if ( is_array( $value ) ) {
+			if ( ! empty( $value['ID'] ) ) {
+				return absint( $value['ID'] );
+			}
+
+			if ( ! empty( $value['id'] ) ) {
+				return absint( $value['id'] );
+			}
+
+			if ( ! empty( $value['url'] ) ) {
+				$value = $value['url'];
+			} else {
+				return 0;
+			}
+		}
+
+		if ( is_numeric( $value ) ) {
+			return absint( $value );
+		}
+
+		if ( ! is_string( $value ) || '' === trim( $value ) ) {
+			return 0;
+		}
+
+		$url           = trim( $value );
+		$attachment_id = attachment_url_to_postid( $url );
+		if ( $attachment_id ) {
+			return (int) $attachment_id;
+		}
+
+		$path = wp_parse_url( $url, PHP_URL_PATH );
+		if ( ! is_string( $path ) || '' === $path ) {
+			return 0;
+		}
+
+		$filename = wp_basename( $path );
+		if ( '' === $filename ) {
+			return 0;
+		}
+
+		$like = '%' . $wpdb->esc_like( $filename );
+		$query = $wpdb->prepare(
+			"SELECT post_id FROM {$wpdb->postmeta} WHERE meta_key = '_wp_attached_file' AND meta_value LIKE %s ORDER BY post_id DESC LIMIT 1",
+			$like
+		);
+		$resolved = $wpdb->get_var( $query );
+
+		return $resolved ? absint( $resolved ) : 0;
 	}
 
 	protected function normalize_manufacturer_image_value( $value ) {
@@ -5573,6 +5659,10 @@ SVG;
 
 		if ( $hero_value ) {
 			$this->update_manufacturer_field( $post_id, 'field_fab_logo', 'fab_logo', $hero_value );
+			$attachment_id = $this->resolve_attachment_id_from_image_value( $hero_value );
+			if ( $attachment_id ) {
+				set_post_thumbnail( $post_id, $attachment_id );
+			}
 			clean_post_cache( $post_id );
 			return;
 		}
