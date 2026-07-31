@@ -5677,7 +5677,8 @@ SVG;
 	}
 
 	protected function sync_manufacturer_images( $post_id ) {
-		$hero_value = $this->normalize_manufacturer_image_value( $this->get_manufacturer_field( $post_id, 'fab_hero_image' ) );
+		$hero_raw   = get_post_meta( $post_id, 'fab_hero_image', true );
+		$hero_value = $this->normalize_manufacturer_image_value( $hero_raw );
 
 		if ( $hero_value ) {
 			update_post_meta( $post_id, 'fab_hero_image', $hero_value );
