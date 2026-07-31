@@ -5837,7 +5837,19 @@ SVG;
 		require_once ABSPATH . 'wp-admin/includes/media.php';
 		require_once ABSPATH . 'wp-admin/includes/image.php';
 
+		$filename_filter = function ( $file ) {
+			if ( empty( $file['name'] ) || ! is_string( $file['name'] ) ) {
+				return $file;
+			}
+
+			$file['name'] = $this->normalize_uploaded_image_filename( $file['name'] );
+			return $file;
+		};
+
+		add_filter( 'wp_handle_upload_prefilter', $filename_filter );
 		$attachment_id = media_handle_upload( $file_key, $post_id );
+		remove_filter( 'wp_handle_upload_prefilter', $filename_filter );
+
 		if ( is_wp_error( $attachment_id ) ) {
 			return $attachment_id;
 		}
@@ -5851,6 +5863,23 @@ SVG;
 		}
 
 		return true;
+	}
+
+	protected function normalize_uploaded_image_filename( $filename ) {
+		$info      = pathinfo( (string) $filename );
+		$basename  = isset( $info['filename'] ) ? (string) $info['filename'] : 'imagem';
+		$extension = isset( $info['extension'] ) ? strtolower( (string) $info['extension'] ) : '';
+
+		$basename = remove_accents( $basename );
+		$basename = strtolower( $basename );
+		$basename = preg_replace( '/[^a-z0-9]+/', '-', $basename );
+		$basename = trim( (string) $basename, '-' );
+
+		if ( '' === $basename ) {
+			$basename = 'imagem';
+		}
+
+		return $extension ? $basename . '.' . $extension : $basename;
 	}
 
 	/**
