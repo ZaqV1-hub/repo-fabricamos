@@ -149,9 +149,6 @@ def main() -> None:
             continue
 
         associate = clean_scalar(row["associado"])
-        if not is_associated_status(associate):
-            continue
-
         company_key = normalize_key(company)
         item = companies.setdefault(
             company_key,

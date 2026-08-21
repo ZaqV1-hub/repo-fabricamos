@@ -134,10 +134,6 @@ foreach ($companies as $item) {
     sync_post_meta_text($manufacturerId, 'fab_responsavel_nome', $responsibleName);
     sync_post_meta_text($manufacturerId, 'fab_responsavel_telefone', $responsiblePhone);
     sync_post_meta_text($manufacturerId, 'fab_responsavel_email', $responsibleEmail);
-    sync_post_meta_text($manufacturerId, 'fab_contact_name', '');
-    sync_post_meta_text($manufacturerId, 'fab_phone', '');
-    sync_post_meta_text($manufacturerId, 'fab_email', '');
-    sync_post_meta_text($manufacturerId, 'fab_site', '');
     sync_post_meta_text($manufacturerId, 'fab_source_workbook', $sourceWorkbook);
     sync_post_meta_text($manufacturerId, 'fab_source_sheet', $sourceSheet);
     sync_post_meta_text($manufacturerId, 'fab_source_updated_label', $sourceUpdatedLabel);
@@ -284,6 +280,14 @@ function manufacturer_title_aliases($title)
     $canonical = canonical_company_name($title);
     $aliases = array($canonical);
     $canonical_key = normalize_title_lookup($canonical);
+
+    // A empresa passou a usar Semeya como marca, mantendo o cadastro e a
+    // descrição histórica do Grupo Ease Labs no mesmo fabricante.
+    if (strpos($canonical_key, 'semeya') !== false || strpos($canonical_key, 'ease labs') !== false) {
+        $aliases[] = 'Semeya';
+        $aliases[] = 'Grupo Ease Labs';
+        $aliases[] = 'Ease Labs';
+    }
 
     if ($canonical_key === 'cristalia produtos quimicos farmaceuticos ltda.') {
         $aliases[] = 'CRISTÁLIA PRODUTOS QUÍMICOS FARMACĘUTICO Ltda.';
@@ -622,6 +626,46 @@ function merge_manufacturer_visual_assets($primaryId, $duplicateId)
 
     manufacturer_copy_meta_if_empty($primaryId, $duplicateId, 'fab_logo');
     manufacturer_copy_meta_if_empty($primaryId, $duplicateId, 'fab_hero_image');
+
+    foreach (array(
+        'fab_description',
+        'fab_contact_name',
+        'fab_phone',
+        'fab_email',
+        'fab_site',
+        'fab_login_email',
+        'fab_login_password_hash',
+        'fab_login_password_plain',
+        'fab_editor_user_id',
+        'fab_editor_username',
+        'fab_editor_email',
+        'fab_responsavel_nome',
+        'fab_responsavel_telefone',
+        'fab_responsavel_email',
+    ) as $metaKey) {
+        $targetValue = get_post_meta($primaryId, $metaKey, true);
+        $sourceValue = get_post_meta($duplicateId, $metaKey, true);
+
+        if ((is_string($targetValue) && trim($targetValue) === '') || $targetValue === null || $targetValue === false) {
+            if (!((is_string($sourceValue) && trim($sourceValue) === '') || $sourceValue === null || $sourceValue === false)) {
+                update_post_meta($primaryId, $metaKey, $sourceValue);
+            }
+        }
+    }
+
+    $primaryPost = get_post($primaryId);
+    $duplicatePost = get_post($duplicateId);
+    if (
+        $primaryPost instanceof WP_Post &&
+        $duplicatePost instanceof WP_Post &&
+        trim((string) $primaryPost->post_content) === '' &&
+        trim((string) $duplicatePost->post_content) !== ''
+    ) {
+        wp_update_post(array(
+            'ID' => $primaryId,
+            'post_content' => $duplicatePost->post_content,
+        ));
+    }
 
     if ((int) get_post_thumbnail_id($primaryId) <= 0) {
         $duplicateThumbnailId = (int) get_post_thumbnail_id($duplicateId);
