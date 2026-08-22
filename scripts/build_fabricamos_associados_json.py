@@ -66,6 +66,7 @@ def clean_scalar(value: object) -> str:
         return value.isoformat()
 
     text = html.unescape(str(value))
+    text = re.sub(r"&amp;", "&", text, flags=re.IGNORECASE)
     text = text.replace("\r", " ").replace("\n", " ")
     text = SPREADSHEET_RANGE_ARTIFACT_RE.sub("", text)
     text = re.sub(r"\s+", " ", text).strip()

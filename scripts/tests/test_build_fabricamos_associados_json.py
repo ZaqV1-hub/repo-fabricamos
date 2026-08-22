@@ -43,6 +43,7 @@ class CleanScalarTest(unittest.TestCase):
 
     def test_decodes_html_entities_in_company_names(self) -> None:
         self.assertEqual('Buschle & Lepper S/A', clean_scalar('Buschle &amp; Lepper S/A'))
+        self.assertEqual('H & N Homeopatia', clean_scalar('H &Amp; N Homeopatia'))
 
 
 if __name__ == "__main__":
