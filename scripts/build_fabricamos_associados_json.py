@@ -3,6 +3,7 @@
 from __future__ import annotations
 
 import argparse
+import html
 import json
 import math
 import re
@@ -64,7 +65,7 @@ def clean_scalar(value: object) -> str:
     if isinstance(value, date):
         return value.isoformat()
 
-    text = str(value)
+    text = html.unescape(str(value))
     text = text.replace("\r", " ").replace("\n", " ")
     text = SPREADSHEET_RANGE_ARTIFACT_RE.sub("", text)
     text = re.sub(r"\s+", " ", text).strip()
@@ -96,6 +97,54 @@ def is_associated_status(value: str) -> bool:
     return bool(normalized) and normalized.startswith("associado")
 
 
+def normalize_header(value: object) -> str:
+    text = normalize_key(clean_scalar(value))
+    return re.sub(r"[^a-z0-9]+", " ", text).strip()
+
+
+def find_header_row(dataframe: pd.DataFrame) -> int:
+    for index in range(len(dataframe.index)):
+        headers = {normalize_header(value) for value in dataframe.iloc[index].tolist()}
+        if "empresa" in headers and "insumo" in headers:
+            return index
+    raise ValueError("Nao foi encontrada uma linha de cabecalho com Empresa e Insumo.")
+
+
+def resolve_column_indexes(header_row: pd.Series) -> dict[str, int]:
+    aliases = {
+        "empresa": {"empresa"},
+        "associado": {"associado"},
+        "processo": {"processo"},
+        "origem": {"origem"},
+        "insumo": {"insumo"},
+        "dcb": {"dcb"},
+        "inn": {"inn"},
+        "cas": {"cas"},
+        "ncm": {"ncm"},
+        "cbpf": {"cbpf", "certificado cbpf"},
+        "validade": {"validade", "validade cbpf"},
+        "responsavel": {"responsavel"},
+        "telefone": {"telefone"},
+        "email": {"email"},
+    }
+    normalized_headers = [normalize_header(value) for value in header_row.tolist()]
+    indexes: dict[str, int] = {}
+    for field, candidates in aliases.items():
+        for index, header in enumerate(normalized_headers):
+            if header in candidates:
+                indexes[field] = index
+                break
+    for required in ("empresa", "associado", "processo", "origem", "insumo"):
+        if required not in indexes:
+            raise ValueError(f"Coluna obrigatoria ausente: {required}.")
+    return indexes
+
+
+def row_value(row: pd.Series, indexes: dict[str, int], field: str) -> object:
+    index = indexes.get(field)
+    return "" if index is None else row.iloc[index]
+
+
 def append_unique(target: list[str], value: str) -> None:
     if value and value not in target:
         target.append(value)
@@ -116,39 +165,25 @@ def main() -> None:
     input_path = Path(args.input)
     output_path = Path(args.output)
 
-    df = pd.read_excel(input_path, sheet_name=args.sheet, header=None)
-    raw_update_label = clean_scalar(df.iat[5, 11]) if df.shape[0] > 5 and df.shape[1] > 11 else ""
+    with pd.ExcelFile(input_path) as workbook:
+        sheet_name = args.sheet if args.sheet in workbook.sheet_names else workbook.sheet_names[0]
+        df = pd.read_excel(workbook, sheet_name=sheet_name, header=None)
+    header_index = find_header_row(df)
+    column_indexes = resolve_column_indexes(df.iloc[header_index])
+    raw_update_label = ""
+    if df.shape[1] > 11:
+        raw_update_label = clean_scalar(df.iat[header_index, df.shape[1] - 1])
 
-    rows = df.iloc[9:].copy()
-    rows.columns = [
-        "empresa",
-        "associado",
-        "processo",
-        "origem",
-        "insumo",
-        "dcb",
-        "inn",
-        "cas",
-        "ncm",
-        "cbpf",
-        "validade",
-        "responsavel",
-        "telefone",
-        "email",
-        "nome_depto",
-        "telefone2",
-        "email_site",
-        "site",
-    ]
+    rows = df.iloc[header_index + 1 :].copy()
 
     companies: OrderedDict[str, dict[str, object]] = OrderedDict()
 
     for _, row in rows.iterrows():
-        company = normalize_company_name(clean_scalar(row["empresa"]))
+        company = normalize_company_name(clean_scalar(row_value(row, column_indexes, "empresa")))
         if not company or company in LEGEND_COMPANIES:
             continue
 
-        associate = clean_scalar(row["associado"])
+        associate = clean_scalar(row_value(row, column_indexes, "associado"))
         company_key = normalize_key(company)
         item = companies.setdefault(
             company_key,
@@ -169,18 +204,18 @@ def main() -> None:
             },
         )
 
-        process = clean_scalar(row["processo"])
-        origin = clean_scalar(row["origem"])
-        insumo = clean_catalog_value(row["insumo"])
-        dcb = clean_catalog_value(row["dcb"])
-        inn = clean_catalog_value(row["inn"])
-        cas = clean_catalog_value(row["cas"])
-        ncm = clean_catalog_value(row["ncm"])
-        cbpf = clean_catalog_value(row["cbpf"])
-        validade = clean_catalog_value(row["validade"])
-        responsible_name = clean_scalar(row["responsavel"])
-        responsible_phone = clean_scalar(row["telefone"])
-        responsible_email = clean_scalar(row["email"])
+        process = clean_scalar(row_value(row, column_indexes, "processo"))
+        origin = clean_scalar(row_value(row, column_indexes, "origem"))
+        insumo = clean_catalog_value(row_value(row, column_indexes, "insumo"))
+        dcb = clean_catalog_value(row_value(row, column_indexes, "dcb"))
+        inn = clean_catalog_value(row_value(row, column_indexes, "inn"))
+        cas = clean_catalog_value(row_value(row, column_indexes, "cas"))
+        ncm = clean_catalog_value(row_value(row, column_indexes, "ncm"))
+        cbpf = clean_catalog_value(row_value(row, column_indexes, "cbpf"))
+        validade = clean_catalog_value(row_value(row, column_indexes, "validade"))
+        responsible_name = clean_scalar(row_value(row, column_indexes, "responsavel"))
+        responsible_phone = clean_scalar(row_value(row, column_indexes, "telefone"))
+        responsible_email = clean_scalar(row_value(row, column_indexes, "email"))
         display_name = preferred_substance_name(insumo, inn, dcb)
 
         if associate and not item["associate"]:

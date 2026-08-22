@@ -1,0 +1,4845 @@
+[
+  {
+    "company": "Abbott Laboratórios Do Brasil Ltda",
+    "associate": "Não Associado",
+    "processes": [
+      "Base Biológica"
+    ],
+    "origins": [
+      "Nacional"
+    ],
+    "substances": [
+      "Colagenase"
+    ],
+    "catalog_items": [
+      {
+        "insumo": "Colagenase",
+        "dcb": "-",
+        "inn": "-",
+        "cas": "-",
+        "ncm": "-",
+        "cbpf": "1635625246",
+        "validade": "",
+        "display_name": "Colagenase"
+      }
+    ],
+    "responsible_name": "",
+    "responsible_phone": "",
+    "responsible_email": "",
+    "source_sheet": "Fabricamos",
+    "source_workbook": "Fabricamos_18_08_26.xlsx",
+    "source_updated_label": "OBSERVAÇÃO 31/07/2026"
+  },
+  {
+    "company": "Adeste Indústria De Produtos Animais Ltda.",
+    "associate": "Associado",
+    "processes": [
+      "Extração Animal"
+    ],
+    "origins": [
+      "Nacional"
+    ],
+    "substances": [
+      "Heparinóides",
+      "Heparina sódica bovina",
+      "Sulfato de condroitina"
+    ],
+    "catalog_items": [
+      {
+        "insumo": "Heparinóides",
+        "dcb": "-",
+        "inn": "Heparinoid",
+        "cas": "-",
+        "ncm": "3001.90.10",
+        "cbpf": "1527762254",
+        "validade": "2028-07-01",
+        "display_name": "Heparinóides"
+      },
+      {
+        "insumo": "Heparina sódica bovina",
+        "dcb": "10807",
+        "inn": "Heparin Sodium Bovine",
+        "cas": "9041-08-1",
+        "ncm": "3001.90.10",
+        "cbpf": "1527762254",
+        "validade": "2028-07-01",
+        "display_name": "Heparina sódica bovina"
+      },
+      {
+        "insumo": "Sulfato de condroitina",
+        "dcb": "02597",
+        "inn": "Chondroitin Sulfate",
+        "cas": "9007-28-7",
+        "ncm": "3913.90.60",
+        "cbpf": "1527762254",
+        "validade": "2028-07-01",
+        "display_name": "Sulfato de condroitina"
+      }
+    ],
+    "responsible_name": "",
+    "responsible_phone": "",
+    "responsible_email": "",
+    "source_sheet": "Fabricamos",
+    "source_workbook": "Fabricamos_18_08_26.xlsx",
+    "source_updated_label": "OBSERVAÇÃO 31/07/2026"
+  },
+  {
+    "company": "Ajinomoto Do Brasil Indústria E Comércio De Alimentos Ltda.",
+    "associate": "Associado",
+    "processes": [
+      "Base Semissintética"
+    ],
+    "origins": [
+      "Nacional"
+    ],
+    "substances": [
+      "L-glutamina",
+      "L- isoleucina"
+    ],
+    "catalog_items": [
+      {
+        "insumo": "L-glutamina",
+        "dcb": "04518",
+        "inn": "Glutamine",
+        "cas": "56-85-9",
+        "ncm": "2922.49.90",
+        "cbpf": "0893265250",
+        "validade": "2028-01-08",
+        "display_name": "L-glutamina"
+      },
+      {
+        "insumo": "L- isoleucina",
+        "dcb": "05083",
+        "inn": "Isoleucine",
+        "cas": "73-32-5",
+        "ncm": "2924.19.99",
+        "cbpf": "0893265250",
+        "validade": "2028-01-08",
+        "display_name": "L- isoleucina"
+      }
+    ],
+    "responsible_name": "",
+    "responsible_phone": "",
+    "responsible_email": "",
+    "source_sheet": "Fabricamos",
+    "source_workbook": "Fabricamos_18_08_26.xlsx",
+    "source_updated_label": "OBSERVAÇÃO 31/07/2026"
+  },
+  {
+    "company": "Anidro Do Brasil Extrações S/A / Centroflora",
+    "associate": "Associado",
+    "processes": [
+      "Extração Vegetal",
+      "ExtraçãoVegetal"
+    ],
+    "origins": [
+      "Nacional"
+    ],
+    "substances": [
+      "Açaí extrato seco",
+      "Água de coco desidratada",
+      "Alcachofra extrato seco",
+      "Alcaçuz extrato fluido / extrato seco",
+      "Aroeira extrato seco",
+      "Barbatimão extrato seco",
+      "Beladona extrato seco",
+      "Boldo extrato fluido / extrato mole",
+      "Camomila hidrolato / extrato concentrado",
+      "Cascara sagrada extrato líquido alcoólico",
+      "Cássia Fistula extrato seco",
+      "Cloridrato de pilocarpina",
+      "Comfrey extrato fluido",
+      "Crataegus extrato seco",
+      "Erva Mate extrato seco",
+      "Espinheira santa extrato fluido / extrato seco",
+      "Extrato de guaraná",
+      "Extrato de jambu",
+      "Extrato de silimarina",
+      "Extrato seco de harpagophytum",
+      "Genciana extrato mole",
+      "Ginkgo Biloba extrato seco",
+      "Guaco extrato fluido",
+      "Hamamélis hidrolato / extrato fluido / extrato mole",
+      "Hedera helix extrato seco / extrato fluido",
+      "Laranja amarga extrato fluido",
+      "Passiflora incarnata extrato seco / extrato fluido / extrato mole",
+      "Pelargonium extrato fluido / extrato seco",
+      "Plumeria lancifolia tintura",
+      "Red clover extrato seco",
+      "Ruibarbo extrato mole / extrato líquido alcoólico",
+      "Salix alba extrato seco",
+      "Sene extrato seco",
+      "Suco desidratada de limão",
+      "Suco desidratado de açaí",
+      "Suco desidratado de acerola",
+      "Suco desidratado de camu",
+      "Suco desidratado de jabuticaba",
+      "Suco desidratado de maracujá",
+      "Tamarindo extrato seco"
+    ],
+    "catalog_items": [
+      {
+        "insumo": "Açaí extrato seco",
+        "dcb": "-",
+        "inn": "Euterpe oleracea Mart",
+        "cas": "",
+        "ncm": "1302.19.99",
+        "cbpf": "_",
+        "validade": "_",
+        "display_name": "Açaí extrato seco"
+      },
+      {
+        "insumo": "Água de coco desidratada",
+        "dcb": "-",
+        "inn": "Cocos nucifera",
+        "cas": "-",
+        "ncm": "2106.90.90",
+        "cbpf": "_",
+        "validade": "_",
+        "display_name": "Água de coco desidratada"
+      },
+      {
+        "insumo": "Alcachofra extrato seco",
+        "dcb": "09904",
+        "inn": "Cynara scolymus L.",
+        "cas": "-",
+        "ncm": "1302.19.99",
+        "cbpf": "968272258",
+        "validade": "2028-02-14",
+        "display_name": "Alcachofra extrato seco"
+      },
+      {
+        "insumo": "Alcaçuz extrato fluido / extrato seco",
+        "dcb": "09907",
+        "inn": "Glycyrrhiza glabra",
+        "cas": "",
+        "ncm": "1302.19.99",
+        "cbpf": "_",
+        "validade": "_",
+        "display_name": "Alcaçuz extrato fluido / extrato seco"
+      },
+      {
+        "insumo": "Aroeira extrato seco",
+        "dcb": "10752",
+        "inn": "Schinus terebinthifolia Raddi",
+        "cas": "",
+        "ncm": "1302.19.99",
+        "cbpf": "0968272/25-8",
+        "validade": "2028-02-14",
+        "display_name": "Aroeira extrato seco"
+      },
+      {
+        "insumo": "Barbatimão extrato seco",
+        "dcb": "09927",
+        "inn": "Stryphnodendron adstringens",
+        "cas": "",
+        "ncm": "1302.19.99",
+        "cbpf": "0968272/25-8",
+        "validade": "2028-02-14",
+        "display_name": "Barbatimão extrato seco"
+      },
+      {
+        "insumo": "Beladona extrato seco",
+        "dcb": "09895",
+        "inn": "Atropa belladonna",
+        "cas": "",
+        "ncm": "1302.19.99",
+        "cbpf": "0968272/25-8",
+        "validade": "2028-02-14",
+        "display_name": "Beladona extrato seco"
+      },
+      {
+        "insumo": "Boldo extrato fluido / extrato mole",
+        "dcb": "09918",
+        "inn": "Peumus boldus Molina",
+        "cas": "",
+        "ncm": "1302.19.99",
+        "cbpf": "0968272/25-8",
+        "validade": "2028-02-14",
+        "display_name": "Boldo extrato fluido / extrato mole"
+      },
+      {
+        "insumo": "Camomila hidrolato / extrato concentrado",
+        "dcb": "10832",
+        "inn": "Matricaria chamomilla L",
+        "cas": "",
+        "ncm": "1302.19.99",
+        "cbpf": "0968272/25-8",
+        "validade": "2028-02-14",
+        "display_name": "Camomila hidrolato / extrato concentrado"
+      },
+      {
+        "insumo": "Cascara sagrada extrato líquido alcoólico",
+        "dcb": "10501",
+        "inn": "Rhamnus purshiana DC.",
+        "cas": "",
+        "ncm": "1302.19.99",
+        "cbpf": "0968272/25-8",
+        "validade": "2028-02-14",
+        "display_name": "Cascara sagrada extrato líquido alcoólico"
+      },
+      {
+        "insumo": "Cássia Fistula extrato seco",
+        "dcb": "10704",
+        "inn": "Cassia fistula Linné",
+        "cas": "",
+        "ncm": "1302.19.99",
+        "cbpf": "0968272/25-8",
+        "validade": "2028-02-14",
+        "display_name": "Cássia Fistula extrato seco"
+      },
+      {
+        "insumo": "Cloridrato de pilocarpina",
+        "dcb": "07050",
+        "inn": "Pilocarpine Hydrochloride",
+        "cas": "54-71-7",
+        "ncm": "2939.79.31",
+        "cbpf": "0697150/25-9",
+        "validade": "2027-12-04",
+        "display_name": "Cloridrato de pilocarpina"
+      },
+      {
+        "insumo": "Comfrey extrato fluido",
+        "dcb": "10757",
+        "inn": "Symphytum officinale",
+        "cas": "",
+        "ncm": "1302.19.99",
+        "cbpf": "0968272/25-8",
+        "validade": "2028-02-14",
+        "display_name": "Comfrey extrato fluido"
+      },
+      {
+        "insumo": "Crataegus extrato seco",
+        "dcb": "10711",
+        "inn": "Crataegus rhipidophylla Gand.",
+        "cas": "",
+        "ncm": "1302.19.99",
+        "cbpf": "0968272/25-8",
+        "validade": "2028-02-14",
+        "display_name": "Crataegus extrato seco"
+      },
+      {
+        "insumo": "Erva Mate extrato seco",
+        "dcb": "11681",
+        "inn": "Ilex paraguariensis",
+        "cas": "",
+        "ncm": "1302.19.99",
+        "cbpf": "0968272/25-8",
+        "validade": "2028-02-14",
+        "display_name": "Erva Mate extrato seco"
+      },
+      {
+        "insumo": "Espinheira santa extrato fluido / extrato seco",
+        "dcb": "11003",
+        "inn": "Maytenus ilicifolia",
+        "cas": "",
+        "ncm": "1302.19.99",
+        "cbpf": "0968272/25-8",
+        "validade": "2028-02-14",
+        "display_name": "Espinheira santa extrato fluido / extrato seco"
+      },
+      {
+        "insumo": "Extrato de guaraná",
+        "dcb": "09917",
+        "inn": "Paullinia cupana",
+        "cas": "",
+        "ncm": "1302.19.99",
+        "cbpf": "_",
+        "validade": "_",
+        "display_name": "Extrato de guaraná"
+      },
+      {
+        "insumo": "Extrato de jambu",
+        "dcb": "12289",
+        "inn": "Spilanthes oleracea L.",
+        "cas": "",
+        "ncm": "1302.19.99",
+        "cbpf": "_",
+        "validade": "_",
+        "display_name": "Extrato de jambu"
+      },
+      {
+        "insumo": "Extrato de silimarina",
+        "dcb": "10755",
+        "inn": "Sylibum marianum",
+        "cas": "",
+        "ncm": "1302.19.60",
+        "cbpf": "0968272/25-8",
+        "validade": "2028-02-14",
+        "display_name": "Extrato de silimarina"
+      },
+      {
+        "insumo": "Extrato seco de harpagophytum",
+        "dcb": "10721",
+        "inn": "Harpagophytum procumbens",
+        "cas": "",
+        "ncm": "1302.19.99",
+        "cbpf": "0968272/25-8",
+        "validade": "2028-02-14",
+        "display_name": "Extrato seco de harpagophytum"
+      },
+      {
+        "insumo": "Genciana extrato mole",
+        "dcb": "09906",
+        "inn": "Gentiana lutea",
+        "cas": "",
+        "ncm": "1302.19.99",
+        "cbpf": "0968272/25-8",
+        "validade": "2028-02-14",
+        "display_name": "Genciana extrato mole"
+      },
+      {
+        "insumo": "Ginkgo Biloba extrato seco",
+        "dcb": "10719",
+        "inn": "Ginkgo biloba L.",
+        "cas": "",
+        "ncm": "1302.19.30",
+        "cbpf": "0968272/25-8",
+        "validade": "2028-02-14",
+        "display_name": "Ginkgo Biloba extrato seco"
+      },
+      {
+        "insumo": "Guaco extrato fluido",
+        "dcb": "10729",
+        "inn": "Mikania glomerata",
+        "cas": "",
+        "ncm": "1302.19.99",
+        "cbpf": "0968272/25-8",
+        "validade": "2028-02-14",
+        "display_name": "Guaco extrato fluido"
+      },
+      {
+        "insumo": "Hamamélis hidrolato / extrato fluido / extrato mole",
+        "dcb": "09908",
+        "inn": "Hamamelis virginiana",
+        "cas": "",
+        "ncm": "1302.19.99",
+        "cbpf": "0968272/25-8",
+        "validade": "2028-02-14",
+        "display_name": "Hamamélis hidrolato / extrato fluido / extrato mole"
+      },
+      {
+        "insumo": "Hedera helix extrato seco / extrato fluido",
+        "dcb": "10722",
+        "inn": "Hedera helix",
+        "cas": "",
+        "ncm": "1302.19.99",
+        "cbpf": "0968272/25-8",
+        "validade": "2028-02-14",
+        "display_name": "Hedera helix extrato seco / extrato fluido"
+      },
+      {
+        "insumo": "Laranja amarga extrato fluido",
+        "dcb": "10820",
+        "inn": "Citrus aurantium",
+        "cas": "",
+        "ncm": "1302.19.99",
+        "cbpf": "0968272/25-8",
+        "validade": "2028-02-14",
+        "display_name": "Laranja amarga extrato fluido"
+      },
+      {
+        "insumo": "Passiflora incarnata extrato seco / extrato fluido / extrato mole",
+        "dcb": "10879",
+        "inn": "Passiflora incarnata",
+        "cas": "",
+        "ncm": "1302.19.99",
+        "cbpf": "0968272/25-8",
+        "validade": "2028-02-14",
+        "display_name": "Passiflora incarnata extrato seco / extrato fluido / extrato mole"
+      },
+      {
+        "insumo": "Pelargonium extrato fluido / extrato seco",
+        "dcb": "10736",
+        "inn": "Pelargonium sidoides",
+        "cas": "",
+        "ncm": "1302.19.99",
+        "cbpf": "0968272/25-8",
+        "validade": "2028-02-14",
+        "display_name": "Pelargonium extrato fluido / extrato seco"
+      },
+      {
+        "insumo": "Plumeria lancifolia tintura",
+        "dcb": "12469",
+        "inn": "Himatanthus lancifolius",
+        "cas": "",
+        "ncm": "1302.19.99",
+        "cbpf": "0968272/25-8",
+        "validade": "2028-02-14",
+        "display_name": "Plumeria lancifolia tintura"
+      },
+      {
+        "insumo": "Red clover extrato seco",
+        "dcb": "10764",
+        "inn": "Trifolium pratense",
+        "cas": "",
+        "ncm": "1302.19.99",
+        "cbpf": "0968272/25-8",
+        "validade": "2028-02-14",
+        "display_name": "Red clover extrato seco"
+      },
+      {
+        "insumo": "Ruibarbo extrato mole / extrato líquido alcoólico",
+        "dcb": "",
+        "inn": "Rheum rhabarbarum",
+        "cas": "",
+        "ncm": "1302.19.99",
+        "cbpf": "0968272/25-8",
+        "validade": "2028-02-14",
+        "display_name": "Ruibarbo extrato mole / extrato líquido alcoólico"
+      },
+      {
+        "insumo": "Salix alba extrato seco",
+        "dcb": "09925",
+        "inn": "Salix Alba",
+        "cas": "",
+        "ncm": "1302.19.99",
+        "cbpf": "0968272/25-8",
+        "validade": "2028-02-14",
+        "display_name": "Salix alba extrato seco"
+      },
+      {
+        "insumo": "Sene extrato seco",
+        "dcb": "07641",
+        "inn": "Senna alexandrina Mill",
+        "cas": "",
+        "ncm": "1302.19.99",
+        "cbpf": "0968272/25-8",
+        "validade": "2028-02-14",
+        "display_name": "Sene extrato seco"
+      },
+      {
+        "insumo": "Suco desidratada de limão",
+        "dcb": "",
+        "inn": "Citrus lemon",
+        "cas": "",
+        "ncm": "2106.90.90",
+        "cbpf": "_",
+        "validade": "_",
+        "display_name": "Suco desidratada de limão"
+      },
+      {
+        "insumo": "Suco desidratado de açaí",
+        "dcb": "",
+        "inn": "Euterpe oleracea",
+        "cas": "",
+        "ncm": "2106.90.90",
+        "cbpf": "_",
+        "validade": "_",
+        "display_name": "Suco desidratado de açaí"
+      },
+      {
+        "insumo": "Suco desidratado de acerola",
+        "dcb": "",
+        "inn": "Malpighia emarginata",
+        "cas": "",
+        "ncm": "2106.90.90",
+        "cbpf": "_",
+        "validade": "_",
+        "display_name": "Suco desidratado de acerola"
+      },
+      {
+        "insumo": "Suco desidratado de camu",
+        "dcb": "",
+        "inn": "Myrciaria dubia",
+        "cas": "",
+        "ncm": "2106.90.90",
+        "cbpf": "_",
+        "validade": "_",
+        "display_name": "Suco desidratado de camu"
+      },
+      {
+        "insumo": "Suco desidratado de jabuticaba",
+        "dcb": "",
+        "inn": "Myrciaria cauliflora",
+        "cas": "",
+        "ncm": "2106.90.90",
+        "cbpf": "_",
+        "validade": "_",
+        "display_name": "Suco desidratado de jabuticaba"
+      },
+      {
+        "insumo": "Suco desidratado de maracujá",
+        "dcb": "10735",
+        "inn": "Passiflora edulis L.",
+        "cas": "",
+        "ncm": "2106.90.90",
+        "cbpf": "_",
+        "validade": "_",
+        "display_name": "Suco desidratado de maracujá"
+      },
+      {
+        "insumo": "Tamarindo extrato seco",
+        "dcb": "10760",
+        "inn": "Tamarindus indica L.",
+        "cas": "",
+        "ncm": "1302.19.99",
+        "cbpf": "_",
+        "validade": "_",
+        "display_name": "Tamarindo extrato seco"
+      }
+    ],
+    "responsible_name": "",
+    "responsible_phone": "",
+    "responsible_email": "",
+    "source_sheet": "Fabricamos",
+    "source_workbook": "Fabricamos_18_08_26.xlsx",
+    "source_updated_label": "OBSERVAÇÃO 31/07/2026"
+  },
+  {
+    "company": "Apsen Farmacêutica S/A.",
+    "associate": "Não Associado",
+    "processes": [
+      "Base Biológica"
+    ],
+    "origins": [
+      "Nacional"
+    ],
+    "substances": [
+      "Hialuronidase"
+    ],
+    "catalog_items": [
+      {
+        "insumo": "Hialuronidase",
+        "dcb": "-",
+        "inn": "-",
+        "cas": "-",
+        "ncm": "-",
+        "cbpf": "700808256",
+        "validade": "",
+        "display_name": "Hialuronidase"
+      }
+    ],
+    "responsible_name": "",
+    "responsible_phone": "",
+    "responsible_email": "",
+    "source_sheet": "Fabricamos",
+    "source_workbook": "Fabricamos_18_08_26.xlsx",
+    "source_updated_label": "OBSERVAÇÃO 31/07/2026"
+  },
+  {
+    "company": "As Ervas Curam Indústria Farmacêutica",
+    "associate": "Não Associado",
+    "processes": [
+      "Base Vegetal"
+    ],
+    "origins": [
+      "Nacional"
+    ],
+    "substances": [
+      "Aesculus hippocastanum",
+      "Passiflora incarnata",
+      "Solidago microglossa"
+    ],
+    "catalog_items": [
+      {
+        "insumo": "Aesculus hippocastanum",
+        "dcb": "-",
+        "inn": "-",
+        "cas": "-",
+        "ncm": "-",
+        "cbpf": "-",
+        "validade": "",
+        "display_name": "Aesculus hippocastanum"
+      },
+      {
+        "insumo": "Passiflora incarnata",
+        "dcb": "-",
+        "inn": "-",
+        "cas": "-",
+        "ncm": "-",
+        "cbpf": "-",
+        "validade": "",
+        "display_name": "Passiflora incarnata"
+      },
+      {
+        "insumo": "Solidago microglossa",
+        "dcb": "-",
+        "inn": "-",
+        "cas": "-",
+        "ncm": "-",
+        "cbpf": "-",
+        "validade": "",
+        "display_name": "Solidago microglossa"
+      }
+    ],
+    "responsible_name": "",
+    "responsible_phone": "",
+    "responsible_email": "",
+    "source_sheet": "Fabricamos",
+    "source_workbook": "Fabricamos_18_08_26.xlsx",
+    "source_updated_label": "OBSERVAÇÃO 31/07/2026"
+  },
+  {
+    "company": "Atina Ativos Naturais",
+    "associate": "Não Associado",
+    "processes": [
+      "Base Vegetal"
+    ],
+    "origins": [
+      "Nacional"
+    ],
+    "substances": [
+      "Alfa bisobolol",
+      "Aloe vera"
+    ],
+    "catalog_items": [
+      {
+        "insumo": "Alfa bisobolol",
+        "dcb": "-",
+        "inn": "-",
+        "cas": "-",
+        "ncm": "-",
+        "cbpf": "-",
+        "validade": "",
+        "display_name": "Alfa bisobolol"
+      },
+      {
+        "insumo": "Aloe vera",
+        "dcb": "-",
+        "inn": "-",
+        "cas": "-",
+        "ncm": "-",
+        "cbpf": "-",
+        "validade": "",
+        "display_name": "Aloe vera"
+      }
+    ],
+    "responsible_name": "",
+    "responsible_phone": "",
+    "responsible_email": "",
+    "source_sheet": "Fabricamos",
+    "source_workbook": "Fabricamos_18_08_26.xlsx",
+    "source_updated_label": "OBSERVAÇÃO 31/07/2026"
+  },
+  {
+    "company": "Bionovis S.a. - Companhia Brasileira De Biotecnologia Farmaceutica",
+    "associate": "Associado",
+    "processes": [
+      "Base Biológica"
+    ],
+    "origins": [
+      "Nacional"
+    ],
+    "substances": [
+      "Infliximabe"
+    ],
+    "catalog_items": [
+      {
+        "insumo": "Infliximabe",
+        "dcb": "04899",
+        "inn": "Infliximab",
+        "cas": "170277-31-3",
+        "ncm": "3002.13.00",
+        "cbpf": "1007979259",
+        "validade": "2028-02-19",
+        "display_name": "Infliximabe"
+      }
+    ],
+    "responsible_name": "",
+    "responsible_phone": "",
+    "responsible_email": "",
+    "source_sheet": "Fabricamos",
+    "source_workbook": "Fabricamos_18_08_26.xlsx",
+    "source_updated_label": "OBSERVAÇÃO 31/07/2026"
+  },
+  {
+    "company": "Blau Farmacêutica S.a.",
+    "associate": "Associado",
+    "processes": [
+      "Base Biológica"
+    ],
+    "origins": [
+      "Nacional"
+    ],
+    "substances": [
+      "Alfaepoetina",
+      "Filgrastim",
+      "Pegfilgrastim",
+      "Pembrolizumabe"
+    ],
+    "catalog_items": [
+      {
+        "insumo": "Alfaepoetina",
+        "dcb": "00508",
+        "inn": "Epoetin Alfa",
+        "cas": "113427-24-0",
+        "ncm": "3002.12.39",
+        "cbpf": "0981466/24-9",
+        "validade": "2027-02-03",
+        "display_name": "Alfaepoetina"
+      },
+      {
+        "insumo": "Filgrastim",
+        "dcb": "04052",
+        "inn": "Filgastrim",
+        "cas": "121181-53-1",
+        "ncm": "3002.13.00",
+        "cbpf": "0981466/24-9",
+        "validade": "2027-02-03",
+        "display_name": "Filgrastim"
+      },
+      {
+        "insumo": "Pegfilgrastim",
+        "dcb": "06881",
+        "inn": "Pegfilgrastim",
+        "cas": "208265-92-3",
+        "ncm": "3002.13.00",
+        "cbpf": "0981466/24-9",
+        "validade": "2027-02-03",
+        "display_name": "Pegfilgrastim"
+      },
+      {
+        "insumo": "Pembrolizumabe",
+        "dcb": "11292",
+        "inn": "Pembrolizumabe",
+        "cas": "1374853-91-4",
+        "ncm": "3002.12.39",
+        "cbpf": "0785297/25-1",
+        "validade": "2027-12-19",
+        "display_name": "Pembrolizumabe"
+      }
+    ],
+    "responsible_name": "",
+    "responsible_phone": "",
+    "responsible_email": "",
+    "source_sheet": "Fabricamos",
+    "source_workbook": "Fabricamos_18_08_26.xlsx",
+    "source_updated_label": "OBSERVAÇÃO 31/07/2026"
+  },
+  {
+    "company": "Buschle &Amp; Lepper S/A",
+    "associate": "Não Associado",
+    "processes": [
+      "Base Sintética"
+    ],
+    "origins": [
+      "Nacional"
+    ],
+    "substances": [
+      "Doxazosina mesilato"
+    ],
+    "catalog_items": [
+      {
+        "insumo": "Doxazosina mesilato",
+        "dcb": "-",
+        "inn": "-",
+        "cas": "-",
+        "ncm": "-",
+        "cbpf": "-",
+        "validade": "",
+        "display_name": "Doxazosina mesilato"
+      }
+    ],
+    "responsible_name": "",
+    "responsible_phone": "",
+    "responsible_email": "",
+    "source_sheet": "Fabricamos",
+    "source_workbook": "Fabricamos_18_08_26.xlsx",
+    "source_updated_label": "OBSERVAÇÃO 31/07/2026"
+  },
+  {
+    "company": "Carbonor S/A",
+    "associate": "Não Associado",
+    "processes": [
+      "Base Sintética"
+    ],
+    "origins": [
+      "Nacional"
+    ],
+    "substances": [
+      "Bicarbonato de sódio"
+    ],
+    "catalog_items": [
+      {
+        "insumo": "Bicarbonato de sódio",
+        "dcb": "-",
+        "inn": "-",
+        "cas": "-",
+        "ncm": "-",
+        "cbpf": "1547197242",
+        "validade": "",
+        "display_name": "Bicarbonato de sódio"
+      }
+    ],
+    "responsible_name": "",
+    "responsible_phone": "",
+    "responsible_email": "",
+    "source_sheet": "Fabricamos",
+    "source_workbook": "Fabricamos_18_08_26.xlsx",
+    "source_updated_label": "OBSERVAÇÃO 31/07/2026"
+  },
+  {
+    "company": "Cartibrás Beneficiadora De Produtos Animais Ltda.",
+    "associate": "Não Associado",
+    "processes": [
+      "Extração Animal"
+    ],
+    "origins": [
+      "Nacional"
+    ],
+    "substances": [
+      "Sulfato de condroitina"
+    ],
+    "catalog_items": [
+      {
+        "insumo": "Sulfato de condroitina",
+        "dcb": "-",
+        "inn": "-",
+        "cas": "-",
+        "ncm": "-",
+        "cbpf": "-",
+        "validade": "",
+        "display_name": "Sulfato de condroitina"
+      }
+    ],
+    "responsible_name": "",
+    "responsible_phone": "",
+    "responsible_email": "",
+    "source_sheet": "Fabricamos",
+    "source_workbook": "Fabricamos_18_08_26.xlsx",
+    "source_updated_label": "OBSERVAÇÃO 31/07/2026"
+  },
+  {
+    "company": "Cristália Produtos Químicos Farmaceuticos Ltda.",
+    "associate": "Associado",
+    "processes": [
+      "Base Sintética",
+      "Base sintética",
+      "Base Biológica"
+    ],
+    "origins": [
+      "Nacional"
+    ],
+    "substances": [
+      "Ácido zoledrônico monoidratado",
+      "Azacitidina",
+      "Cabergolina",
+      "Citrato de fentanila",
+      "Citrato de sufentanila",
+      "Cloridrato de alfentanila monoidratada",
+      "Cloridrato de petidina",
+      "Cloridrato de escetamina",
+      "Cloridrato de remifentanila",
+      "Carbonato de Lodenafila",
+      "Cloridrato de levobupivacaína",
+      "Cloridrato de dextrobupivacaína",
+      "Cloridrato de Ropivacaína monoidratado",
+      "Clozapina",
+      "Dantroleno sódico hemieptaidratado",
+      "Decanoato de haloperidol",
+      "Dolutegravir Sódico",
+      "Droperidol",
+      "Efavirenz",
+      "Enantato de flufenazina",
+      "Etomidato",
+      "Fentanila",
+      "Fumarato de Tenofovir Desoproxila",
+      "Hemifumarato de quetiapina",
+      "Lactato de biperideno",
+      "Lamivudina",
+      "Leflunomida",
+      "Mesilato de imatinibe",
+      "Olanzapina",
+      "Pamidronato Dissódico Pentaidratado",
+      "Ritonavir",
+      "Riluzol",
+      "Saquinavir",
+      "Sevoflurano",
+      "Zidovudina",
+      "Bortezomibe",
+      "Tetracaína",
+      "Cloridrato de levomepromazina",
+      "Anastrozol",
+      "Temozolomida",
+      "Colagenase",
+      "Somatropina"
+    ],
+    "catalog_items": [
+      {
+        "insumo": "Ácido zoledrônico monoidratado",
+        "dcb": "10708",
+        "inn": "Zoledronic acid",
+        "cas": "165800-06-6",
+        "ncm": "2933.29.99",
+        "cbpf": "1016736240",
+        "validade": "2026-12-09",
+        "display_name": "Ácido zoledrônico monoidratado"
+      },
+      {
+        "insumo": "Azacitidina",
+        "dcb": "00958",
+        "inn": "Azacitidine",
+        "cas": "320-67-2",
+        "ncm": "2934.99.99",
+        "cbpf": "1016736240",
+        "validade": "2026-12-09",
+        "display_name": "Azacitidina"
+      },
+      {
+        "insumo": "Cabergolina",
+        "dcb": "01633",
+        "inn": "Cabergoline",
+        "cas": "81409-90-7",
+        "ncm": "2939.69.90",
+        "cbpf": "1016736240",
+        "validade": "2026-12-09",
+        "display_name": "Cabergolina"
+      },
+      {
+        "insumo": "Citrato de fentanila",
+        "dcb": "04005",
+        "inn": "Fentanyl",
+        "cas": "990-73-8",
+        "ncm": "2933.33.69",
+        "cbpf": "1016736240",
+        "validade": "2026-12-09",
+        "display_name": "Citrato de fentanila"
+      },
+      {
+        "insumo": "Citrato de sufentanila",
+        "dcb": "08085",
+        "inn": "Sufentanil",
+        "cas": "60561-17-3",
+        "ncm": "2934.91.70",
+        "cbpf": "1016736240",
+        "validade": "2026-12-09",
+        "display_name": "Citrato de sufentanila"
+      },
+      {
+        "insumo": "Cloridrato de alfentanila monoidratada",
+        "dcb": "09638",
+        "inn": "Alfentanil",
+        "cas": "70879-28-6",
+        "ncm": "2933.33.11",
+        "cbpf": "1016736240",
+        "validade": "2026-12-09",
+        "display_name": "Cloridrato de alfentanila monoidratada"
+      },
+      {
+        "insumo": "Cloridrato de petidina",
+        "dcb": "07008",
+        "inn": "Pethidine",
+        "cas": "50-13-5",
+        "ncm": "2933.33.84",
+        "cbpf": "1016736240",
+        "validade": "2026-12-09",
+        "display_name": "Cloridrato de petidina"
+      },
+      {
+        "insumo": "Cloridrato de escetamina",
+        "dcb": "11146",
+        "inn": "Esketamine",
+        "cas": "33643-47-9",
+        "ncm": "2922.39.90",
+        "cbpf": "1016736240",
+        "validade": "2026-12-09",
+        "display_name": "Cloridrato de escetamina"
+      },
+      {
+        "insumo": "Cloridrato de remifentanila",
+        "dcb": "07664",
+        "inn": "Remifentanil",
+        "cas": "132539-07-2",
+        "ncm": "2933.39.99",
+        "cbpf": "1016736240",
+        "validade": "2026-12-09",
+        "display_name": "Cloridrato de remifentanila"
+      },
+      {
+        "insumo": "Carbonato de Lodenafila",
+        "dcb": "09594",
+        "inn": "Lodenafil Carbonate",
+        "cas": "398507-55-6",
+        "ncm": "2935.90.99",
+        "cbpf": "1016736240",
+        "validade": "2026-12-09",
+        "display_name": "Carbonato de Lodenafila"
+      },
+      {
+        "insumo": "Cloridrato de levobupivacaína",
+        "dcb": "02458",
+        "inn": "Levobupivacaine",
+        "cas": "27262-48-2",
+        "ncm": "2933.39.89",
+        "cbpf": "1016736240",
+        "validade": "2026-12-09",
+        "display_name": "Cloridrato de levobupivacaína"
+      },
+      {
+        "insumo": "Cloridrato de dextrobupivacaína",
+        "dcb": "09640",
+        "inn": "Bupivacaine",
+        "cas": "27262-46-0",
+        "ncm": "2933.39.89",
+        "cbpf": "1016736240",
+        "validade": "2026-12-09",
+        "display_name": "Cloridrato de dextrobupivacaína"
+      },
+      {
+        "insumo": "Cloridrato de Ropivacaína monoidratado",
+        "dcb": "11691",
+        "inn": "Ropivacaine",
+        "cas": "132112-35-7",
+        "ncm": "2933.39.89",
+        "cbpf": "1016736240",
+        "validade": "2026-12-09",
+        "display_name": "Cloridrato de Ropivacaína monoidratado"
+      },
+      {
+        "insumo": "Clozapina",
+        "dcb": "02540",
+        "inn": "Clozapine",
+        "cas": "5786-21-0",
+        "ncm": "2933.99.39",
+        "cbpf": "1016736240",
+        "validade": "2026-12-09",
+        "display_name": "Clozapina"
+      },
+      {
+        "insumo": "Dantroleno sódico hemieptaidratado",
+        "dcb": "09632",
+        "inn": "dantrolene",
+        "cas": "24868-20-0",
+        "ncm": "2934.99.99",
+        "cbpf": "1016736240",
+        "validade": "2026-12-09",
+        "display_name": "Dantroleno sódico hemieptaidratado"
+      },
+      {
+        "insumo": "Decanoato de haloperidol",
+        "dcb": "04591",
+        "inn": "Haloperidol",
+        "cas": "74050-97-8",
+        "ncm": "2933.39.19",
+        "cbpf": "1016736240",
+        "validade": "2026-12-09",
+        "display_name": "Decanoato de haloperidol"
+      },
+      {
+        "insumo": "Dolutegravir Sódico",
+        "dcb": "10685",
+        "inn": "Dolutegravir",
+        "cas": "1051375-19-9",
+        "ncm": "2934.99.99",
+        "cbpf": "1016736240",
+        "validade": "2026-12-09",
+        "display_name": "Dolutegravir Sódico"
+      },
+      {
+        "insumo": "Droperidol",
+        "dcb": "03246",
+        "inn": "Droperidol",
+        "cas": "548-73-2",
+        "ncm": "2933.39.12",
+        "cbpf": "1016736240",
+        "validade": "2026-12-09",
+        "display_name": "Droperidol"
+      },
+      {
+        "insumo": "Efavirenz",
+        "dcb": "03308",
+        "inn": "Efavirenz",
+        "cas": "154598-52-4",
+        "ncm": "2933.39.99",
+        "cbpf": "1016736240",
+        "validade": "2026-12-09",
+        "display_name": "Efavirenz"
+      },
+      {
+        "insumo": "Enantato de flufenazina",
+        "dcb": "04126",
+        "inn": "Fluphenazine",
+        "cas": "2746-81-8",
+        "ncm": "2934.30.20",
+        "cbpf": "1016736240",
+        "validade": "2026-12-09",
+        "display_name": "Enantato de flufenazina"
+      },
+      {
+        "insumo": "Etomidato",
+        "dcb": "3731",
+        "inn": "Etomidate",
+        "cas": "33125-97-2",
+        "ncm": "2933.21.90",
+        "cbpf": "1016736240",
+        "validade": "2026-12-09",
+        "display_name": "Etomidato"
+      },
+      {
+        "insumo": "Fentanila",
+        "dcb": "04004",
+        "inn": "Fentanyl",
+        "cas": "437-38-7",
+        "ncm": "2933.33.63",
+        "cbpf": "1016736240",
+        "validade": "2026-12-09",
+        "display_name": "Fentanila"
+      },
+      {
+        "insumo": "Fumarato de Tenofovir Desoproxila",
+        "dcb": "08389",
+        "inn": "Tenofovir Disoproxil",
+        "cas": "202138-50-9",
+        "ncm": "2933.59.49",
+        "cbpf": "1016736240",
+        "validade": "2026-12-09",
+        "display_name": "Fumarato de Tenofovir Desoproxila"
+      },
+      {
+        "insumo": "Hemifumarato de quetiapina",
+        "dcb": "07539",
+        "inn": "Quetiapine hemifumarate",
+        "cas": "111974-72-2",
+        "ncm": "2933.99.39",
+        "cbpf": "1016736240",
+        "validade": "2026-12-09",
+        "display_name": "Hemifumarato de quetiapina"
+      },
+      {
+        "insumo": "Lactato de biperideno",
+        "dcb": "01284",
+        "inn": "Biperiden",
+        "cas": "7085-45-2",
+        "ncm": "2933.39.32",
+        "cbpf": "1016736240",
+        "validade": "2026-12-09",
+        "display_name": "Lactato de biperideno"
+      },
+      {
+        "insumo": "Lamivudina",
+        "dcb": "05152",
+        "inn": "Lamivudine",
+        "cas": "134678-17-4",
+        "ncm": "2934.99.93",
+        "cbpf": "1016736240",
+        "validade": "2026-12-09",
+        "display_name": "Lamivudina"
+      },
+      {
+        "insumo": "Leflunomida",
+        "dcb": "05192",
+        "inn": "Leflunomide",
+        "cas": "75706-12-6",
+        "ncm": "2934.99.99",
+        "cbpf": "1016736240",
+        "validade": "2026-12-09",
+        "display_name": "Leflunomida"
+      },
+      {
+        "insumo": "Mesilato de imatinibe",
+        "dcb": "04821",
+        "inn": "Imatinib",
+        "cas": "220127-57-1",
+        "ncm": "2933.59.19",
+        "cbpf": "1016736240",
+        "validade": "2026-12-09",
+        "display_name": "Mesilato de imatinibe"
+      },
+      {
+        "insumo": "Olanzapina",
+        "dcb": "06580",
+        "inn": "Olanzapine",
+        "cas": "132539-06-1",
+        "ncm": "2934.99.69",
+        "cbpf": "1016736240",
+        "validade": "2026-12-09",
+        "display_name": "Olanzapina"
+      },
+      {
+        "insumo": "Pamidronato Dissódico Pentaidratado",
+        "dcb": "11475",
+        "inn": "Pamidronate disodium",
+        "cas": "109552-15-0",
+        "ncm": "2937.22.90",
+        "cbpf": "16736240",
+        "validade": "2026-12-09",
+        "display_name": "Pamidronato Dissódico Pentaidratado"
+      },
+      {
+        "insumo": "Ritonavir",
+        "dcb": "07756",
+        "inn": "Ritonavir",
+        "cas": "155213-67-5",
+        "ncm": "2934.99.99",
+        "cbpf": "1016736240",
+        "validade": "2026-12-09",
+        "display_name": "Ritonavir"
+      },
+      {
+        "insumo": "Riluzol",
+        "dcb": "07729",
+        "inn": "Riluzole",
+        "cas": "1744-22-5",
+        "ncm": "2934.20.90",
+        "cbpf": "1016736240",
+        "validade": "2026-12-09",
+        "display_name": "Riluzol"
+      },
+      {
+        "insumo": "Saquinavir",
+        "dcb": "07892",
+        "inn": "Saquinavir",
+        "cas": "127779-20-8",
+        "ncm": "2934.99.99",
+        "cbpf": "1016736240",
+        "validade": "2026-12-09",
+        "display_name": "Saquinavir"
+      },
+      {
+        "insumo": "Sevoflurano",
+        "dcb": "07975",
+        "inn": "Sevoflurane",
+        "cas": "28523-86-6",
+        "ncm": "2909.19.20",
+        "cbpf": "1016736240",
+        "validade": "2026-12-09",
+        "display_name": "Sevoflurano"
+      },
+      {
+        "insumo": "Zidovudina",
+        "dcb": "09256",
+        "inn": "Zidovudine",
+        "cas": "30516-87-1",
+        "ncm": "2934.99.22",
+        "cbpf": "1016736240",
+        "validade": "2026-12-09",
+        "display_name": "Zidovudina"
+      },
+      {
+        "insumo": "Bortezomibe",
+        "dcb": "01335",
+        "inn": "Bortezomib",
+        "cas": "179324-69-7",
+        "ncm": "2933.99.99",
+        "cbpf": "1016736240",
+        "validade": "2026-12-09",
+        "display_name": "Bortezomibe"
+      },
+      {
+        "insumo": "Tetracaína",
+        "dcb": "08462",
+        "inn": "Tetracaine",
+        "cas": "94-24-6",
+        "ncm": "2922.49.90",
+        "cbpf": "1016736240",
+        "validade": "2026-12-09",
+        "display_name": "Tetracaína"
+      },
+      {
+        "insumo": "Cloridrato de levomepromazina",
+        "dcb": "05264",
+        "inn": "Levomepromazine",
+        "cas": "1236-99-3",
+        "ncm": "2934.30.90",
+        "cbpf": "1016736240",
+        "validade": "2026-12-09",
+        "display_name": "Cloridrato de levomepromazina"
+      },
+      {
+        "insumo": "Anastrozol",
+        "dcb": "00755",
+        "inn": "Anastrozole",
+        "cas": "120511-73-1",
+        "ncm": "2933.99.69",
+        "cbpf": "1016736240",
+        "validade": "2026-12-09",
+        "display_name": "Anastrozol"
+      },
+      {
+        "insumo": "Temozolomida",
+        "dcb": "08370",
+        "inn": "Termozolomide",
+        "cas": "85622-93-1",
+        "ncm": "2933.99.99",
+        "cbpf": "1016736240",
+        "validade": "2026-12-09",
+        "display_name": "Temozolomida"
+      },
+      {
+        "insumo": "Colagenase",
+        "dcb": "02565",
+        "inn": "Collagenase",
+        "cas": "9001-12-1",
+        "ncm": "3507.90.29",
+        "cbpf": "1202171249",
+        "validade": "2027-03-05",
+        "display_name": "Colagenase"
+      },
+      {
+        "insumo": "Somatropina",
+        "dcb": "08047",
+        "inn": "Somatropin",
+        "cas": "12629-01-5",
+        "ncm": "2937.11.00",
+        "cbpf": "1202171249",
+        "validade": "2027-03-05",
+        "display_name": "Somatropina"
+      }
+    ],
+    "responsible_name": "",
+    "responsible_phone": "",
+    "responsible_email": "",
+    "source_sheet": "Fabricamos",
+    "source_workbook": "Fabricamos_18_08_26.xlsx",
+    "source_updated_label": "OBSERVAÇÃO 31/07/2026"
+  },
+  {
+    "company": "Cyg Biotech Químca E Farmacêutica Ltda. (Blanver)",
+    "associate": "Associado",
+    "processes": [
+      "Base Sintética"
+    ],
+    "origins": [
+      "Nacional"
+    ],
+    "substances": [
+      "Carbonato de lítio",
+      "Cilostazol",
+      "Fumarato de tenofovir desoproxila",
+      "Lamivudina"
+    ],
+    "catalog_items": [
+      {
+        "insumo": "Carbonato de lítio",
+        "dcb": "01749",
+        "inn": "Lithium Carbonate",
+        "cas": "554-13-2",
+        "ncm": "2836.91.00",
+        "cbpf": "1592924247",
+        "validade": "2027-06-12",
+        "display_name": "Carbonato de lítio"
+      },
+      {
+        "insumo": "Cilostazol",
+        "dcb": "02067",
+        "inn": "Cilostazol",
+        "cas": "73963-72-1",
+        "ncm": "2933.79.90",
+        "cbpf": "1592924247",
+        "validade": "2027-06-12",
+        "display_name": "Cilostazol"
+      },
+      {
+        "insumo": "Fumarato de tenofovir desoproxila",
+        "dcb": "08389",
+        "inn": "Tenofovir Disoproxil Fumarate",
+        "cas": "202138-50-9",
+        "ncm": "2933.59.49",
+        "cbpf": "1592924247",
+        "validade": "2027-06-12",
+        "display_name": "Fumarato de tenofovir desoproxila"
+      },
+      {
+        "insumo": "Lamivudina",
+        "dcb": "05152",
+        "inn": "Lamivudine",
+        "cas": "134678-17-4",
+        "ncm": "2934.99.93",
+        "cbpf": "1592924247",
+        "validade": "2027-06-12",
+        "display_name": "Lamivudina"
+      }
+    ],
+    "responsible_name": "",
+    "responsible_phone": "",
+    "responsible_email": "",
+    "source_sheet": "Fabricamos",
+    "source_workbook": "Fabricamos_18_08_26.xlsx",
+    "source_updated_label": "OBSERVAÇÃO 31/07/2026"
+  },
+  {
+    "company": "Ecadil Industria Quimica S/A",
+    "associate": "Não Associado",
+    "processes": [
+      "Base Sintética"
+    ],
+    "origins": [
+      "Nacional"
+    ],
+    "substances": [
+      "Aciclovir",
+      "Alfametildopa",
+      "Amoxicilina",
+      "Azitromicina",
+      "Cloreto de benzethônio",
+      "Benzipen",
+      "Hidrato de betaína",
+      "Bromoprida",
+      "Captopril",
+      "Carbidopa",
+      "Clordiazepóxido",
+      "Clorexidina",
+      "Diazepam",
+      "Dietilpropiona",
+      "Enalapril",
+      "Eritromicina",
+      "Etambutol",
+      "Etionamida",
+      "Famciclovir",
+      "Ganciclovir",
+      "Glibenclamida",
+      "Isoniazida",
+      "Lamivudina",
+      "Levodopa",
+      "Lisdex",
+      "Mazindol",
+      "Metoclorpramida",
+      "Nevirapina",
+      "Penciclovir",
+      "Prometazina",
+      "Propanol",
+      "Pirazinamida",
+      "Rifanpicina",
+      "Semaglutida",
+      "Estavudina",
+      "Talidomida",
+      "Valaciclovir",
+      "Zidovudina"
+    ],
+    "catalog_items": [
+      {
+        "insumo": "Aciclovir",
+        "dcb": "-",
+        "inn": "-",
+        "cas": "-",
+        "ncm": "-",
+        "cbpf": "-",
+        "validade": "",
+        "display_name": "Aciclovir"
+      },
+      {
+        "insumo": "Alfametildopa",
+        "dcb": "-",
+        "inn": "-",
+        "cas": "-",
+        "ncm": "-",
+        "cbpf": "-",
+        "validade": "",
+        "display_name": "Alfametildopa"
+      },
+      {
+        "insumo": "Amoxicilina",
+        "dcb": "-",
+        "inn": "-",
+        "cas": "-",
+        "ncm": "-",
+        "cbpf": "-",
+        "validade": "",
+        "display_name": "Amoxicilina"
+      },
+      {
+        "insumo": "Azitromicina",
+        "dcb": "-",
+        "inn": "-",
+        "cas": "-",
+        "ncm": "-",
+        "cbpf": "-",
+        "validade": "",
+        "display_name": "Azitromicina"
+      },
+      {
+        "insumo": "Cloreto de benzethônio",
+        "dcb": "-",
+        "inn": "-",
+        "cas": "-",
+        "ncm": "-",
+        "cbpf": "-",
+        "validade": "",
+        "display_name": "Cloreto de benzethônio"
+      },
+      {
+        "insumo": "Benzipen",
+        "dcb": "-",
+        "inn": "-",
+        "cas": "-",
+        "ncm": "-",
+        "cbpf": "-",
+        "validade": "",
+        "display_name": "Benzipen"
+      },
+      {
+        "insumo": "Hidrato de betaína",
+        "dcb": "-",
+        "inn": "-",
+        "cas": "-",
+        "ncm": "-",
+        "cbpf": "-",
+        "validade": "",
+        "display_name": "Hidrato de betaína"
+      },
+      {
+        "insumo": "Bromoprida",
+        "dcb": "-",
+        "inn": "-",
+        "cas": "-",
+        "ncm": "-",
+        "cbpf": "-",
+        "validade": "",
+        "display_name": "Bromoprida"
+      },
+      {
+        "insumo": "Captopril",
+        "dcb": "-",
+        "inn": "-",
+        "cas": "-",
+        "ncm": "-",
+        "cbpf": "-",
+        "validade": "",
+        "display_name": "Captopril"
+      },
+      {
+        "insumo": "Carbidopa",
+        "dcb": "-",
+        "inn": "-",
+        "cas": "-",
+        "ncm": "-",
+        "cbpf": "-",
+        "validade": "",
+        "display_name": "Carbidopa"
+      },
+      {
+        "insumo": "Clordiazepóxido",
+        "dcb": "-",
+        "inn": "-",
+        "cas": "-",
+        "ncm": "-",
+        "cbpf": "-",
+        "validade": "",
+        "display_name": "Clordiazepóxido"
+      },
+      {
+        "insumo": "Clorexidina",
+        "dcb": "-",
+        "inn": "-",
+        "cas": "-",
+        "ncm": "-",
+        "cbpf": "-",
+        "validade": "",
+        "display_name": "Clorexidina"
+      },
+      {
+        "insumo": "Diazepam",
+        "dcb": "-",
+        "inn": "-",
+        "cas": "-",
+        "ncm": "-",
+        "cbpf": "-",
+        "validade": "",
+        "display_name": "Diazepam"
+      },
+      {
+        "insumo": "Dietilpropiona",
+        "dcb": "-",
+        "inn": "-",
+        "cas": "-",
+        "ncm": "-",
+        "cbpf": "-",
+        "validade": "",
+        "display_name": "Dietilpropiona"
+      },
+      {
+        "insumo": "Enalapril",
+        "dcb": "-",
+        "inn": "-",
+        "cas": "-",
+        "ncm": "-",
+        "cbpf": "-",
+        "validade": "",
+        "display_name": "Enalapril"
+      },
+      {
+        "insumo": "Eritromicina",
+        "dcb": "-",
+        "inn": "-",
+        "cas": "-",
+        "ncm": "-",
+        "cbpf": "-",
+        "validade": "",
+        "display_name": "Eritromicina"
+      },
+      {
+        "insumo": "Etambutol",
+        "dcb": "-",
+        "inn": "-",
+        "cas": "-",
+        "ncm": "-",
+        "cbpf": "-",
+        "validade": "",
+        "display_name": "Etambutol"
+      },
+      {
+        "insumo": "Etionamida",
+        "dcb": "-",
+        "inn": "-",
+        "cas": "-",
+        "ncm": "-",
+        "cbpf": "-",
+        "validade": "",
+        "display_name": "Etionamida"
+      },
+      {
+        "insumo": "Famciclovir",
+        "dcb": "-",
+        "inn": "-",
+        "cas": "-",
+        "ncm": "-",
+        "cbpf": "-",
+        "validade": "",
+        "display_name": "Famciclovir"
+      },
+      {
+        "insumo": "Ganciclovir",
+        "dcb": "-",
+        "inn": "-",
+        "cas": "-",
+        "ncm": "-",
+        "cbpf": "-",
+        "validade": "",
+        "display_name": "Ganciclovir"
+      },
+      {
+        "insumo": "Glibenclamida",
+        "dcb": "-",
+        "inn": "-",
+        "cas": "-",
+        "ncm": "-",
+        "cbpf": "-",
+        "validade": "",
+        "display_name": "Glibenclamida"
+      },
+      {
+        "insumo": "Isoniazida",
+        "dcb": "-",
+        "inn": "-",
+        "cas": "-",
+        "ncm": "-",
+        "cbpf": "-",
+        "validade": "",
+        "display_name": "Isoniazida"
+      },
+      {
+        "insumo": "Lamivudina",
+        "dcb": "-",
+        "inn": "-",
+        "cas": "-",
+        "ncm": "-",
+        "cbpf": "-",
+        "validade": "",
+        "display_name": "Lamivudina"
+      },
+      {
+        "insumo": "Levodopa",
+        "dcb": "-",
+        "inn": "-",
+        "cas": "-",
+        "ncm": "-",
+        "cbpf": "-",
+        "validade": "",
+        "display_name": "Levodopa"
+      },
+      {
+        "insumo": "Lisdex",
+        "dcb": "-",
+        "inn": "-",
+        "cas": "-",
+        "ncm": "-",
+        "cbpf": "-",
+        "validade": "",
+        "display_name": "Lisdex"
+      },
+      {
+        "insumo": "Mazindol",
+        "dcb": "-",
+        "inn": "-",
+        "cas": "-",
+        "ncm": "-",
+        "cbpf": "-",
+        "validade": "",
+        "display_name": "Mazindol"
+      },
+      {
+        "insumo": "Metoclorpramida",
+        "dcb": "-",
+        "inn": "-",
+        "cas": "-",
+        "ncm": "-",
+        "cbpf": "-",
+        "validade": "",
+        "display_name": "Metoclorpramida"
+      },
+      {
+        "insumo": "Nevirapina",
+        "dcb": "-",
+        "inn": "-",
+        "cas": "-",
+        "ncm": "-",
+        "cbpf": "-",
+        "validade": "",
+        "display_name": "Nevirapina"
+      },
+      {
+        "insumo": "Penciclovir",
+        "dcb": "-",
+        "inn": "-",
+        "cas": "-",
+        "ncm": "-",
+        "cbpf": "-",
+        "validade": "",
+        "display_name": "Penciclovir"
+      },
+      {
+        "insumo": "Prometazina",
+        "dcb": "-",
+        "inn": "-",
+        "cas": "-",
+        "ncm": "-",
+        "cbpf": "-",
+        "validade": "",
+        "display_name": "Prometazina"
+      },
+      {
+        "insumo": "Propanol",
+        "dcb": "-",
+        "inn": "-",
+        "cas": "-",
+        "ncm": "-",
+        "cbpf": "-",
+        "validade": "",
+        "display_name": "Propanol"
+      },
+      {
+        "insumo": "Pirazinamida",
+        "dcb": "-",
+        "inn": "-",
+        "cas": "-",
+        "ncm": "-",
+        "cbpf": "-",
+        "validade": "",
+        "display_name": "Pirazinamida"
+      },
+      {
+        "insumo": "Rifanpicina",
+        "dcb": "-",
+        "inn": "-",
+        "cas": "-",
+        "ncm": "-",
+        "cbpf": "-",
+        "validade": "",
+        "display_name": "Rifanpicina"
+      },
+      {
+        "insumo": "Semaglutida",
+        "dcb": "-",
+        "inn": "-",
+        "cas": "-",
+        "ncm": "-",
+        "cbpf": "-",
+        "validade": "",
+        "display_name": "Semaglutida"
+      },
+      {
+        "insumo": "Estavudina",
+        "dcb": "-",
+        "inn": "-",
+        "cas": "-",
+        "ncm": "-",
+        "cbpf": "-",
+        "validade": "",
+        "display_name": "Estavudina"
+      },
+      {
+        "insumo": "Talidomida",
+        "dcb": "-",
+        "inn": "-",
+        "cas": "-",
+        "ncm": "-",
+        "cbpf": "-",
+        "validade": "",
+        "display_name": "Talidomida"
+      },
+      {
+        "insumo": "Valaciclovir",
+        "dcb": "-",
+        "inn": "-",
+        "cas": "-",
+        "ncm": "-",
+        "cbpf": "-",
+        "validade": "",
+        "display_name": "Valaciclovir"
+      },
+      {
+        "insumo": "Zidovudina",
+        "dcb": "-",
+        "inn": "-",
+        "cas": "-",
+        "ncm": "-",
+        "cbpf": "-",
+        "validade": "",
+        "display_name": "Zidovudina"
+      }
+    ],
+    "responsible_name": "",
+    "responsible_phone": "",
+    "responsible_email": "",
+    "source_sheet": "Fabricamos",
+    "source_workbook": "Fabricamos_18_08_26.xlsx",
+    "source_updated_label": "OBSERVAÇÃO 31/07/2026"
+  },
+  {
+    "company": "Semeya (Grupo Ease Labs)",
+    "associate": "Associado",
+    "processes": [
+      "Extração Vegetal"
+    ],
+    "origins": [
+      "Nacional"
+    ],
+    "substances": [
+      "Extrato hidroalcoolico de castanha da índia",
+      "Canabidiol"
+    ],
+    "catalog_items": [
+      {
+        "insumo": "Extrato hidroalcoolico de castanha da índia",
+        "dcb": "",
+        "inn": "",
+        "cas": "8053-39-2",
+        "ncm": "1302.19.99",
+        "cbpf": "98027255",
+        "validade": "2028-06-01",
+        "display_name": "Extrato hidroalcoolico de castanha da índia"
+      },
+      {
+        "insumo": "Canabidiol",
+        "dcb": "11101",
+        "inn": "Cannabidiol",
+        "cas": "13956-29-1",
+        "ncm": "2907.29.00",
+        "cbpf": "98027255",
+        "validade": "2028-06-01",
+        "display_name": "Canabidiol"
+      }
+    ],
+    "responsible_name": "",
+    "responsible_phone": "",
+    "responsible_email": "",
+    "source_sheet": "Fabricamos",
+    "source_workbook": "Fabricamos_18_08_26.xlsx",
+    "source_updated_label": "OBSERVAÇÃO 31/07/2026"
+  },
+  {
+    "company": "Eurofarma Laboratórios Ltda.",
+    "associate": "Associado",
+    "processes": [
+      "Base Biológica"
+    ],
+    "origins": [
+      "Nacional"
+    ],
+    "substances": [
+      "Filgrastim"
+    ],
+    "catalog_items": [
+      {
+        "insumo": "Filgrastim",
+        "dcb": "04052",
+        "inn": "Filgastrim",
+        "cas": "121181-53-1",
+        "ncm": "3002.13.00",
+        "cbpf": "848094239",
+        "validade": "2026-10-07",
+        "display_name": "Filgrastim"
+      }
+    ],
+    "responsible_name": "",
+    "responsible_phone": "",
+    "responsible_email": "",
+    "source_sheet": "Fabricamos",
+    "source_workbook": "Fabricamos_18_08_26.xlsx",
+    "source_updated_label": "OBSERVAÇÃO 31/07/2026"
+  },
+  {
+    "company": "Farmausa Life Science Ltda.",
+    "associate": "Associado",
+    "processes": [
+      "Base Vegetal"
+    ],
+    "origins": [
+      "Nacional"
+    ],
+    "substances": [
+      "Canabidiol"
+    ],
+    "catalog_items": [
+      {
+        "insumo": "Canabidiol",
+        "dcb": "11101",
+        "inn": "Cannabidiol",
+        "cas": "13956-29-1",
+        "ncm": "2907.29.00",
+        "cbpf": "1315868245",
+        "validade": "2027-07-21",
+        "display_name": "Canabidiol"
+      }
+    ],
+    "responsible_name": "",
+    "responsible_phone": "",
+    "responsible_email": "",
+    "source_sheet": "Fabricamos",
+    "source_workbook": "Fabricamos_18_08_26.xlsx",
+    "source_updated_label": "OBSERVAÇÃO 31/07/2026"
+  },
+  {
+    "company": "Fda Allergenic Laboratórios De Formulações Especiais Ltda.",
+    "associate": "Não Associado",
+    "processes": [
+      "Base Biológica"
+    ],
+    "origins": [
+      "Nacional"
+    ],
+    "substances": [
+      "Extratos alergênicos"
+    ],
+    "catalog_items": [
+      {
+        "insumo": "Extratos alergênicos",
+        "dcb": "-",
+        "inn": "-",
+        "cas": "-",
+        "ncm": "-",
+        "cbpf": "-",
+        "validade": "",
+        "display_name": "Extratos alergênicos"
+      }
+    ],
+    "responsible_name": "",
+    "responsible_phone": "",
+    "responsible_email": "",
+    "source_sheet": "Fabricamos",
+    "source_workbook": "Fabricamos_18_08_26.xlsx",
+    "source_updated_label": "OBSERVAÇÃO 31/07/2026"
+  },
+  {
+    "company": "Floraervas Comercial Ltda.",
+    "associate": "Não Associado",
+    "processes": [
+      "Base Vegetal"
+    ],
+    "origins": [
+      "Nacional"
+    ],
+    "substances": [
+      "Extratos secos e alcóolicos"
+    ],
+    "catalog_items": [
+      {
+        "insumo": "Extratos secos e alcóolicos",
+        "dcb": "-",
+        "inn": "-",
+        "cas": "-",
+        "ncm": "-",
+        "cbpf": "-",
+        "validade": "",
+        "display_name": "Extratos secos e alcóolicos"
+      }
+    ],
+    "responsible_name": "",
+    "responsible_phone": "",
+    "responsible_email": "",
+    "source_sheet": "Fabricamos",
+    "source_workbook": "Fabricamos_18_08_26.xlsx",
+    "source_updated_label": "OBSERVAÇÃO 31/07/2026"
+  },
+  {
+    "company": "Formil Química Ltda.",
+    "associate": "Associado",
+    "processes": [
+      "Base Sintética",
+      "Base sintética"
+    ],
+    "origins": [
+      "Nacional"
+    ],
+    "substances": [
+      "Ácido gama-aminobutírico tartarato monoidratado",
+      "Albendazol",
+      "Bromazepam",
+      "Carbonato de lítio",
+      "Citrato de fentanila",
+      "Cloridrato de Femproporex (Exclusivamente Exportação)",
+      "Cloridrato de midazolam",
+      "Dimesilato de Lisdexanfetamina",
+      "Flumazenil",
+      "Lorazepam",
+      "Midazolam (base)",
+      "Nitrato de miconazol",
+      "Miconazol (base)",
+      "Zolpidem Hemitartarato – Polimorfo A"
+    ],
+    "catalog_items": [
+      {
+        "insumo": "Ácido gama-aminobutírico tartarato monoidratado",
+        "dcb": "00099",
+        "inn": "Gamma-Aminobutyric Acid",
+        "cas": "56-12-2",
+        "ncm": "2922.49.90",
+        "cbpf": "1482836254",
+        "validade": "2028-04-29",
+        "display_name": "Ácido gama-aminobutírico tartarato monoidratado"
+      },
+      {
+        "insumo": "Albendazol",
+        "dcb": "00458",
+        "inn": "Albendazole",
+        "cas": "54965-21-8",
+        "ncm": "2933.99.53",
+        "cbpf": "1482836254",
+        "validade": "2028-04-29",
+        "display_name": "Albendazol"
+      },
+      {
+        "insumo": "Bromazepam",
+        "dcb": "01366",
+        "inn": "Bromazepam",
+        "cas": "1812-30-2",
+        "ncm": "2933.33.22",
+        "cbpf": "1482836254",
+        "validade": "2028-04-29",
+        "display_name": "Bromazepam"
+      },
+      {
+        "insumo": "Carbonato de lítio",
+        "dcb": "01749",
+        "inn": "Lithium Carbonate",
+        "cas": "554-13-2",
+        "ncm": "2836.91.00",
+        "cbpf": "1482836254",
+        "validade": "2028-04-29",
+        "display_name": "Carbonato de lítio"
+      },
+      {
+        "insumo": "Citrato de fentanila",
+        "dcb": "4005",
+        "inn": "Fentanyl",
+        "cas": "990-73-8",
+        "ncm": "2933.33.69",
+        "cbpf": "1482836254",
+        "validade": "2028-04-29",
+        "display_name": "Citrato de fentanila"
+      },
+      {
+        "insumo": "Cloridrato de Femproporex (Exclusivamente Exportação)",
+        "dcb": "03849",
+        "inn": "Fenproporex hydrochloride",
+        "cas": "18305-29-8",
+        "ncm": "2926.30.12",
+        "cbpf": "1482836254",
+        "validade": "2028-04-29",
+        "display_name": "Cloridrato de Femproporex (Exclusivamente Exportação)"
+      },
+      {
+        "insumo": "Cloridrato de midazolam",
+        "dcb": "05938",
+        "inn": "Midazolam Hydrochloride",
+        "cas": "59467-96-8",
+        "ncm": "2933.91.53",
+        "cbpf": "1482836254",
+        "validade": "2028-04-29",
+        "display_name": "Cloridrato de midazolam"
+      },
+      {
+        "insumo": "Dimesilato de Lisdexanfetamina",
+        "dcb": "09708",
+        "inn": "Lisdexamfetamine dimesylate",
+        "cas": "608137-33-3",
+        "ncm": "3004.90.49",
+        "cbpf": "1482836254",
+        "validade": "2028-04-29",
+        "display_name": "Dimesilato de Lisdexanfetamina"
+      },
+      {
+        "insumo": "Flumazenil",
+        "dcb": "04134",
+        "inn": "Flumazenil",
+        "cas": "78755-81-4",
+        "ncm": "2933.99.20",
+        "cbpf": "1482836254",
+        "validade": "2028-04-29",
+        "display_name": "Flumazenil"
+      },
+      {
+        "insumo": "Lorazepam",
+        "dcb": "5417",
+        "inn": "Lorazepam",
+        "cas": "846-49-1",
+        "ncm": "2933.91.42",
+        "cbpf": "1482836254",
+        "validade": "2028-04-29",
+        "display_name": "Lorazepam"
+      },
+      {
+        "insumo": "Midazolam (base)",
+        "dcb": "05937",
+        "inn": "midazolam",
+        "cas": "59467-70-8",
+        "ncm": "2933.91.53",
+        "cbpf": "1482836254",
+        "validade": "2028-04-29",
+        "display_name": "Midazolam (base)"
+      },
+      {
+        "insumo": "Nitrato de miconazol",
+        "dcb": "05929",
+        "inn": "Miconazole Nitrate",
+        "cas": "22832-87-7",
+        "ncm": "2933.29.22",
+        "cbpf": "1482836254",
+        "validade": "2028-04-29",
+        "display_name": "Nitrato de miconazol"
+      },
+      {
+        "insumo": "Miconazol (base)",
+        "dcb": "5928",
+        "inn": "Miconazole",
+        "cas": "22916-47-8",
+        "ncm": "2933.29.22",
+        "cbpf": "1482836254",
+        "validade": "2028-04-29",
+        "display_name": "Miconazol (base)"
+      },
+      {
+        "insumo": "Zolpidem Hemitartarato – Polimorfo A",
+        "dcb": "09296",
+        "inn": "Zolpidem Tartrate",
+        "cas": "99294-93-6",
+        "ncm": "3003.90.79",
+        "cbpf": "1482836254",
+        "validade": "2028-04-29",
+        "display_name": "Zolpidem Hemitartarato – Polimorfo A"
+      }
+    ],
+    "responsible_name": "",
+    "responsible_phone": "",
+    "responsible_email": "",
+    "source_sheet": "Fabricamos",
+    "source_workbook": "Fabricamos_18_08_26.xlsx",
+    "source_updated_label": "OBSERVAÇÃO 31/07/2026"
+  },
+  {
+    "company": "Fundação Oswaldo Cruz - Instituto De Tecnologia Em Imunobiológicos - Bio-Manguinhos",
+    "associate": "Associado",
+    "processes": [
+      "Base Biológica"
+    ],
+    "origins": [
+      "Nacional (Estatal)"
+    ],
+    "substances": [
+      "Alfaepoetina",
+      "Polissacarideo de haemophilus influenzae tipo b",
+      "Vetor adenovírus recombinante de chimpanzé deficiente para replicação, para expressão da glicoproteína spike (s) do vírus sars-cov-2;",
+      "Vírus 17dd da febre amarela",
+      "Vírus atenuado da caxumba (cepa rit 4385)",
+      "Vírus atenuado da rubéola (cepa wistar ra27/3).",
+      "Vírus atenuado do sarampo (cepa schwarz)"
+    ],
+    "catalog_items": [
+      {
+        "insumo": "Alfaepoetina",
+        "dcb": "00508",
+        "inn": "Epoetin Alfa",
+        "cas": "113427-24-0",
+        "ncm": "3002.13.00",
+        "cbpf": "1443319244",
+        "validade": "2027-05-12",
+        "display_name": "Alfaepoetina"
+      },
+      {
+        "insumo": "Polissacarideo de haemophilus influenzae tipo b",
+        "dcb": "-",
+        "inn": "-",
+        "cas": "-",
+        "ncm": "-",
+        "cbpf": "1443319244",
+        "validade": "2027-05-12",
+        "display_name": "Polissacarideo de haemophilus influenzae tipo b"
+      },
+      {
+        "insumo": "Vetor adenovírus recombinante de chimpanzé deficiente para replicação, para expressão da glicoproteína spike (s) do vírus sars-cov-2;",
+        "dcb": "-",
+        "inn": "-",
+        "cas": "-",
+        "ncm": "-",
+        "cbpf": "1443319244",
+        "validade": "2027-05-12",
+        "display_name": "Vetor adenovírus recombinante de chimpanzé deficiente para replicação, para expressão da glicoproteína spike (s) do vírus sars-cov-2;"
+      },
+      {
+        "insumo": "Vírus 17dd da febre amarela",
+        "dcb": "-",
+        "inn": "-",
+        "cas": "-",
+        "ncm": "-",
+        "cbpf": "1443319244",
+        "validade": "2027-05-12",
+        "display_name": "Vírus 17dd da febre amarela"
+      },
+      {
+        "insumo": "Vírus atenuado da caxumba (cepa rit 4385)",
+        "dcb": "-",
+        "inn": "-",
+        "cas": "-",
+        "ncm": "-",
+        "cbpf": "1443319244",
+        "validade": "2027-05-12",
+        "display_name": "Vírus atenuado da caxumba (cepa rit 4385)"
+      },
+      {
+        "insumo": "Vírus atenuado da rubéola (cepa wistar ra27/3).",
+        "dcb": "-",
+        "inn": "-",
+        "cas": "-",
+        "ncm": "-",
+        "cbpf": "1443319244",
+        "validade": "2027-05-12",
+        "display_name": "Vírus atenuado da rubéola (cepa wistar ra27/3)."
+      },
+      {
+        "insumo": "Vírus atenuado do sarampo (cepa schwarz)",
+        "dcb": "-",
+        "inn": "-",
+        "cas": "-",
+        "ncm": "-",
+        "cbpf": "1443319244",
+        "validade": "2027-05-12",
+        "display_name": "Vírus atenuado do sarampo (cepa schwarz)"
+      }
+    ],
+    "responsible_name": "",
+    "responsible_phone": "",
+    "responsible_email": "",
+    "source_sheet": "Fabricamos",
+    "source_workbook": "Fabricamos_18_08_26.xlsx",
+    "source_updated_label": "OBSERVAÇÃO 31/07/2026"
+  },
+  {
+    "company": "Fundação Ataulpho De Paiva",
+    "associate": "Não Associado",
+    "processes": [
+      "Base Biológica"
+    ],
+    "origins": [
+      "Nacional"
+    ],
+    "substances": [
+      "Bacilo de calmette-guérin – vacina bcg"
+    ],
+    "catalog_items": [
+      {
+        "insumo": "Bacilo de calmette-guérin – vacina bcg",
+        "dcb": "-",
+        "inn": "-",
+        "cas": "-",
+        "ncm": "-",
+        "cbpf": "-",
+        "validade": "",
+        "display_name": "Bacilo de calmette-guérin – vacina bcg"
+      }
+    ],
+    "responsible_name": "",
+    "responsible_phone": "",
+    "responsible_email": "",
+    "source_sheet": "Fabricamos",
+    "source_workbook": "Fabricamos_18_08_26.xlsx",
+    "source_updated_label": "OBSERVAÇÃO 31/07/2026"
+  },
+  {
+    "company": "Funed",
+    "associate": "Não Associado",
+    "processes": [
+      "Base Biológica"
+    ],
+    "origins": [
+      "Nacional"
+    ],
+    "substances": [
+      "Imunoglobulinas"
+    ],
+    "catalog_items": [
+      {
+        "insumo": "Imunoglobulinas",
+        "dcb": "-",
+        "inn": "-",
+        "cas": "-",
+        "ncm": "-",
+        "cbpf": "1021425257",
+        "validade": "",
+        "display_name": "Imunoglobulinas"
+      }
+    ],
+    "responsible_name": "",
+    "responsible_phone": "",
+    "responsible_email": "",
+    "source_sheet": "Fabricamos",
+    "source_workbook": "Fabricamos_18_08_26.xlsx",
+    "source_updated_label": "OBSERVAÇÃO 31/07/2026"
+  },
+  {
+    "company": "G Nutra Indústria E Comércio De Produtos Alimentícios E Nutricionais Ltda.",
+    "associate": "Não Associado",
+    "processes": [
+      "Base Vegetal"
+    ],
+    "origins": [
+      "Nacional"
+    ],
+    "substances": [
+      "Cordia verbenacea dc",
+      "Passiflora incarnata (extrato seco)"
+    ],
+    "catalog_items": [
+      {
+        "insumo": "Cordia verbenacea dc",
+        "dcb": "-",
+        "inn": "-",
+        "cas": "-",
+        "ncm": "-",
+        "cbpf": "-",
+        "validade": "",
+        "display_name": "Cordia verbenacea dc"
+      },
+      {
+        "insumo": "Passiflora incarnata (extrato seco)",
+        "dcb": "-",
+        "inn": "-",
+        "cas": "-",
+        "ncm": "-",
+        "cbpf": "-",
+        "validade": "",
+        "display_name": "Passiflora incarnata (extrato seco)"
+      }
+    ],
+    "responsible_name": "",
+    "responsible_phone": "",
+    "responsible_email": "",
+    "source_sheet": "Fabricamos",
+    "source_workbook": "Fabricamos_18_08_26.xlsx",
+    "source_updated_label": "OBSERVAÇÃO 31/07/2026"
+  },
+  {
+    "company": "Geyer Medicamentos S.a.",
+    "associate": "Não Associado",
+    "processes": [
+      "Base Biológica"
+    ],
+    "origins": [
+      "Nacional"
+    ],
+    "substances": [
+      "Bacillus cereus"
+    ],
+    "catalog_items": [
+      {
+        "insumo": "Bacillus cereus",
+        "dcb": "-",
+        "inn": "-",
+        "cas": "-",
+        "ncm": "-",
+        "cbpf": "-",
+        "validade": "",
+        "display_name": "Bacillus cereus"
+      }
+    ],
+    "responsible_name": "",
+    "responsible_phone": "",
+    "responsible_email": "",
+    "source_sheet": "Fabricamos",
+    "source_workbook": "Fabricamos_18_08_26.xlsx",
+    "source_updated_label": "OBSERVAÇÃO 31/07/2026"
+  },
+  {
+    "company": "Globe Química S/A",
+    "associate": "Associado",
+    "processes": [
+      "Base Sintética"
+    ],
+    "origins": [
+      "Nacional"
+    ],
+    "substances": [
+      "Cloridrato de amiodarona",
+      "Capecitabina",
+      "Carbonato de lítio",
+      "Cetoconazol",
+      "Cloridrato de cetamina",
+      "Cloridrato de fingolimode",
+      "Diazepam",
+      "Efavirenz",
+      "Citrato de fentanila",
+      "Fosfato de oseltamivir",
+      "Fumarato de tenofovir desoproxila",
+      "Ganciclovir sódico",
+      "Hidroxiureia",
+      "Mesilato de imatinibe",
+      "Lamivudina",
+      "L-carbocisteína",
+      "Micofenolato de sódio",
+      "Midazolam base",
+      "Cloridrato de midazolam",
+      "Maleato de midazolam",
+      "Propilenoglicolato de darunavir",
+      "Cloridrato de propranolol",
+      "Cloridrato monoidratado de sibutramina",
+      "Sildenafila citrato",
+      "Sulfadiazina de prata",
+      "Topiramato",
+      "Zidovudina",
+      "Ziprasidona cloridrato monoidratado"
+    ],
+    "catalog_items": [
+      {
+        "insumo": "Cloridrato de amiodarona",
+        "dcb": "00700",
+        "inn": "Amiodarone Hydrochloride",
+        "cas": "19774-82-4",
+        "ncm": "2932.99.91",
+        "cbpf": "1535045248",
+        "validade": "2027-05-08",
+        "display_name": "Cloridrato de amiodarona"
+      },
+      {
+        "insumo": "Capecitabina",
+        "dcb": "01686",
+        "inn": "Capecitabine",
+        "cas": "154361-50-9",
+        "ncm": "2934.99.29",
+        "cbpf": "1535045248",
+        "validade": "2027-05-08",
+        "display_name": "Capecitabina"
+      },
+      {
+        "insumo": "Carbonato de lítio",
+        "dcb": "01749",
+        "inn": "Lithium Carbonate",
+        "cas": "554-13-2",
+        "ncm": "2836.91.00",
+        "cbpf": "1535045248",
+        "validade": "2027-05-08",
+        "display_name": "Carbonato de lítio"
+      },
+      {
+        "insumo": "Cetoconazol",
+        "dcb": "01956",
+        "inn": "Ketoconazole",
+        "cas": "65277-42-1",
+        "ncm": "2934.99.31",
+        "cbpf": "1535045248",
+        "validade": "2027-05-08",
+        "display_name": "Cetoconazol"
+      },
+      {
+        "insumo": "Cloridrato de cetamina",
+        "dcb": "01937",
+        "inn": "Cetocaine Hydrochloride",
+        "cas": "1867-66-9",
+        "ncm": "2922.39.21",
+        "cbpf": "1535045248",
+        "validade": "2027-05-08",
+        "display_name": "Cloridrato de cetamina"
+      },
+      {
+        "insumo": "Cloridrato de fingolimode",
+        "dcb": "09823",
+        "inn": "Fingolimod Hydrochloride",
+        "cas": "162359-56-0",
+        "ncm": "2934.99.99",
+        "cbpf": "1535045248",
+        "validade": "2027-05-08",
+        "display_name": "Cloridrato de fingolimode"
+      },
+      {
+        "insumo": "Diazepam",
+        "dcb": "02904",
+        "inn": "Diazepam",
+        "cas": "439-14-5",
+        "ncm": "2933.91.22",
+        "cbpf": "1535045248",
+        "validade": "2027-05-08",
+        "display_name": "Diazepam"
+      },
+      {
+        "insumo": "Efavirenz",
+        "dcb": "03308",
+        "inn": "Efavirenz",
+        "cas": "154598-52-4",
+        "ncm": "2933.39.99",
+        "cbpf": "1535045248",
+        "validade": "2027-05-08",
+        "display_name": "Efavirenz"
+      },
+      {
+        "insumo": "Citrato de fentanila",
+        "dcb": "04005",
+        "inn": "Fentanyl Citrate",
+        "cas": "990-73-8",
+        "ncm": "2933.33.69",
+        "cbpf": "1535045248",
+        "validade": "2027-05-08",
+        "display_name": "Citrato de fentanila"
+      },
+      {
+        "insumo": "Fosfato de oseltamivir",
+        "dcb": "06651",
+        "inn": "Oseltamivir Phosphate",
+        "cas": "204255-11-8",
+        "ncm": "2933.59.49",
+        "cbpf": "1535045248",
+        "validade": "2027-05-08",
+        "display_name": "Fosfato de oseltamivir"
+      },
+      {
+        "insumo": "Fumarato de tenofovir desoproxila",
+        "dcb": "08389",
+        "inn": "Tenofovir Disoproxil Fumarate",
+        "cas": "202138-50-9",
+        "ncm": "2933.59.49",
+        "cbpf": "1535045248",
+        "validade": "2027-05-08",
+        "display_name": "Fumarato de tenofovir desoproxila"
+      },
+      {
+        "insumo": "Ganciclovir sódico",
+        "dcb": "04395",
+        "inn": "Ganciclovir Sodium",
+        "cas": "107910-75-8",
+        "ncm": "2933.59.49",
+        "cbpf": "1535045248",
+        "validade": "2027-05-08",
+        "display_name": "Ganciclovir sódico"
+      },
+      {
+        "insumo": "Hidroxiureia",
+        "dcb": "04689",
+        "inn": "Hydroxyurea",
+        "cas": "127-07-1",
+        "ncm": "2928.00.90",
+        "cbpf": "1535045248",
+        "validade": "2027-05-08",
+        "display_name": "Hidroxiureia"
+      },
+      {
+        "insumo": "Mesilato de imatinibe",
+        "dcb": "04821",
+        "inn": "Imatinib Mesilate",
+        "cas": "220127-57-1",
+        "ncm": "2933.59.19",
+        "cbpf": "1535045248",
+        "validade": "2027-05-08",
+        "display_name": "Mesilato de imatinibe"
+      },
+      {
+        "insumo": "Lamivudina",
+        "dcb": "05152",
+        "inn": "Lamivudine",
+        "cas": "134678-17-4",
+        "ncm": "2934.99.93",
+        "cbpf": "1535045248",
+        "validade": "2027-05-08",
+        "display_name": "Lamivudina"
+      },
+      {
+        "insumo": "L-carbocisteína",
+        "dcb": "01739",
+        "inn": "Carbocisteine",
+        "cas": "638-23-3",
+        "ncm": "2930.90.36",
+        "cbpf": "1535045248",
+        "validade": "2027-05-08",
+        "display_name": "L-carbocisteína"
+      },
+      {
+        "insumo": "Micofenolato de sódio",
+        "dcb": "00291",
+        "inn": "Mycophenolate Sodium",
+        "cas": "37415-62-6",
+        "ncm": "2932.20.00",
+        "cbpf": "1535045248",
+        "validade": "2027-05-08",
+        "display_name": "Micofenolato de sódio"
+      },
+      {
+        "insumo": "Midazolam base",
+        "dcb": "05937",
+        "inn": "Midazolam",
+        "cas": "59467-70-8",
+        "ncm": "2933.91.53",
+        "cbpf": "1535045248",
+        "validade": "2027-05-08",
+        "display_name": "Midazolam base"
+      },
+      {
+        "insumo": "Cloridrato de midazolam",
+        "dcb": "05938",
+        "inn": "Midazolam Hydrochloride",
+        "cas": "59467-96-8",
+        "ncm": "2933.91.53",
+        "cbpf": "1535045248",
+        "validade": "2027-05-08",
+        "display_name": "Cloridrato de midazolam"
+      },
+      {
+        "insumo": "Maleato de midazolam",
+        "dcb": "05939",
+        "inn": "Midazolam Maleate",
+        "cas": "59467-94-6",
+        "ncm": "2933.91.53",
+        "cbpf": "1535045248",
+        "validade": "2027-05-08",
+        "display_name": "Maleato de midazolam"
+      },
+      {
+        "insumo": "Propilenoglicolato de darunavir",
+        "dcb": "12603",
+        "inn": "darunavir propylene glycolate",
+        "cas": "1447721-06-3",
+        "ncm": "2935.90.90",
+        "cbpf": "1535045248",
+        "validade": "2027-05-08",
+        "display_name": "Propilenoglicolato de darunavir"
+      },
+      {
+        "insumo": "Cloridrato de propranolol",
+        "dcb": "07482",
+        "inn": "Propranolol Hydrochloride",
+        "cas": "318-98-9",
+        "ncm": "2922.19.96",
+        "cbpf": "1535045248",
+        "validade": "2027-05-08",
+        "display_name": "Cloridrato de propranolol"
+      },
+      {
+        "insumo": "Cloridrato monoidratado de sibutramina",
+        "dcb": "09375",
+        "inn": "Sibutramide Hydrochloride Anhydrous",
+        "cas": "125494-59-9",
+        "ncm": "2921.19.99",
+        "cbpf": "1535045248",
+        "validade": "2027-05-08",
+        "display_name": "Cloridrato monoidratado de sibutramina"
+      },
+      {
+        "insumo": "Sildenafila citrato",
+        "dcb": "07991",
+        "inn": "Sildenafil Citrate",
+        "cas": "171599-83-0",
+        "ncm": "2934.99.99",
+        "cbpf": "1535045248",
+        "validade": "2027-05-08",
+        "display_name": "Sildenafila citrato"
+      },
+      {
+        "insumo": "Sulfadiazina de prata",
+        "dcb": "08118",
+        "inn": "Sulfadiazine Silver",
+        "cas": "22199-08-2",
+        "ncm": "2935.90.19",
+        "cbpf": "1535045248",
+        "validade": "2027-05-08",
+        "display_name": "Sulfadiazina de prata"
+      },
+      {
+        "insumo": "Topiramato",
+        "dcb": "08776",
+        "inn": "Topiramate",
+        "cas": "97240-79-4",
+        "ncm": "2932.99.99",
+        "cbpf": "1535045248",
+        "validade": "2027-05-08",
+        "display_name": "Topiramato"
+      },
+      {
+        "insumo": "Zidovudina",
+        "dcb": "09256",
+        "inn": "Zidovudine",
+        "cas": "30516-87-1",
+        "ncm": "2934.99.22",
+        "cbpf": "1535045248",
+        "validade": "2027-05-08",
+        "display_name": "Zidovudina"
+      },
+      {
+        "insumo": "Ziprasidona cloridrato monoidratado",
+        "dcb": "09417",
+        "inn": "Ziprasidone Hydrochloride Anhydrous",
+        "cas": "138982-67-9",
+        "ncm": "2934.20.90",
+        "cbpf": "1535045248",
+        "validade": "2027-05-08",
+        "display_name": "Ziprasidona cloridrato monoidratado"
+      }
+    ],
+    "responsible_name": "",
+    "responsible_phone": "",
+    "responsible_email": "",
+    "source_sheet": "Fabricamos",
+    "source_workbook": "Fabricamos_18_08_26.xlsx",
+    "source_updated_label": "OBSERVAÇÃO 31/07/2026"
+  },
+  {
+    "company": "H &Amp; N Homeopatia E Produtos Naturais",
+    "associate": "Não Associado",
+    "processes": [
+      "homeopáticos"
+    ],
+    "origins": [
+      "Nacional"
+    ],
+    "substances": [
+      "Tinturas homeopáticas"
+    ],
+    "catalog_items": [
+      {
+        "insumo": "Tinturas homeopáticas",
+        "dcb": "-",
+        "inn": "-",
+        "cas": "-",
+        "ncm": "-",
+        "cbpf": "-",
+        "validade": "",
+        "display_name": "Tinturas homeopáticas"
+      }
+    ],
+    "responsible_name": "",
+    "responsible_phone": "",
+    "responsible_email": "",
+    "source_sheet": "Fabricamos",
+    "source_workbook": "Fabricamos_18_08_26.xlsx",
+    "source_updated_label": "OBSERVAÇÃO 31/07/2026"
+  },
+  {
+    "company": "Indústria Farmacêutica Catedral Ltda.",
+    "associate": "Não Associado",
+    "processes": [
+      "Base Vegetal"
+    ],
+    "origins": [
+      "Nacional"
+    ],
+    "substances": [
+      "Extrato hidroalcóolico de castanha da índia",
+      "Extrato hidroalcóolico de catuaba",
+      "Extratos hidroalcóolico de chá verde",
+      "Extrato hidroalcóolico de espinheira santa",
+      "Extrato hidroalcóolico de guaraná",
+      "Extrato seco de espinheira santa"
+    ],
+    "catalog_items": [
+      {
+        "insumo": "Extrato hidroalcóolico de castanha da índia",
+        "dcb": "-",
+        "inn": "-",
+        "cas": "-",
+        "ncm": "-",
+        "cbpf": "-",
+        "validade": "",
+        "display_name": "Extrato hidroalcóolico de castanha da índia"
+      },
+      {
+        "insumo": "Extrato hidroalcóolico de catuaba",
+        "dcb": "-",
+        "inn": "-",
+        "cas": "-",
+        "ncm": "-",
+        "cbpf": "-",
+        "validade": "",
+        "display_name": "Extrato hidroalcóolico de catuaba"
+      },
+      {
+        "insumo": "Extratos hidroalcóolico de chá verde",
+        "dcb": "-",
+        "inn": "-",
+        "cas": "-",
+        "ncm": "-",
+        "cbpf": "-",
+        "validade": "",
+        "display_name": "Extratos hidroalcóolico de chá verde"
+      },
+      {
+        "insumo": "Extrato hidroalcóolico de espinheira santa",
+        "dcb": "-",
+        "inn": "-",
+        "cas": "-",
+        "ncm": "-",
+        "cbpf": "-",
+        "validade": "",
+        "display_name": "Extrato hidroalcóolico de espinheira santa"
+      },
+      {
+        "insumo": "Extrato hidroalcóolico de guaraná",
+        "dcb": "-",
+        "inn": "-",
+        "cas": "-",
+        "ncm": "-",
+        "cbpf": "-",
+        "validade": "",
+        "display_name": "Extrato hidroalcóolico de guaraná"
+      },
+      {
+        "insumo": "Extrato seco de espinheira santa",
+        "dcb": "-",
+        "inn": "-",
+        "cas": "-",
+        "ncm": "-",
+        "cbpf": "-",
+        "validade": "",
+        "display_name": "Extrato seco de espinheira santa"
+      }
+    ],
+    "responsible_name": "",
+    "responsible_phone": "",
+    "responsible_email": "",
+    "source_sheet": "Fabricamos",
+    "source_workbook": "Fabricamos_18_08_26.xlsx",
+    "source_updated_label": "OBSERVAÇÃO 31/07/2026"
+  },
+  {
+    "company": "Instituto Butantan",
+    "associate": "Associado",
+    "processes": [
+      "Base Biológica"
+    ],
+    "origins": [
+      "Nacional (Estatal)"
+    ],
+    "substances": [
+      "Cepa influenza tipo a (h1n1)",
+      "Cepa influenza tipo a (h3n2)",
+      "Cepa influenza tipo b"
+    ],
+    "catalog_items": [
+      {
+        "insumo": "Cepa influenza tipo a (h1n1)",
+        "dcb": "-",
+        "inn": "-",
+        "cas": "-",
+        "ncm": "-",
+        "cbpf": "1161451242",
+        "validade": "2027-02-24",
+        "display_name": "Cepa influenza tipo a (h1n1)"
+      },
+      {
+        "insumo": "Cepa influenza tipo a (h3n2)",
+        "dcb": "-",
+        "inn": "-",
+        "cas": "-",
+        "ncm": "-",
+        "cbpf": "1161451242",
+        "validade": "2027-02-24",
+        "display_name": "Cepa influenza tipo a (h3n2)"
+      },
+      {
+        "insumo": "Cepa influenza tipo b",
+        "dcb": "-",
+        "inn": "-",
+        "cas": "-",
+        "ncm": "-",
+        "cbpf": "1161451242",
+        "validade": "2027-02-24",
+        "display_name": "Cepa influenza tipo b"
+      }
+    ],
+    "responsible_name": "",
+    "responsible_phone": "",
+    "responsible_email": "",
+    "source_sheet": "Fabricamos",
+    "source_workbook": "Fabricamos_18_08_26.xlsx",
+    "source_updated_label": "OBSERVAÇÃO 31/07/2026"
+  },
+  {
+    "company": "Instituto Vital Brasil",
+    "associate": "Não Associado",
+    "processes": [
+      "Base Biológica"
+    ],
+    "origins": [
+      "Nacional"
+    ],
+    "substances": [
+      "Imunoglobulinas heterólogas"
+    ],
+    "catalog_items": [
+      {
+        "insumo": "Imunoglobulinas heterólogas",
+        "dcb": "-",
+        "inn": "-",
+        "cas": "-",
+        "ncm": "-",
+        "cbpf": "-",
+        "validade": "",
+        "display_name": "Imunoglobulinas heterólogas"
+      }
+    ],
+    "responsible_name": "",
+    "responsible_phone": "",
+    "responsible_email": "",
+    "source_sheet": "Fabricamos",
+    "source_workbook": "Fabricamos_18_08_26.xlsx",
+    "source_updated_label": "OBSERVAÇÃO 31/07/2026"
+  },
+  {
+    "company": "Iqt - Indústrias Químicas Taubaté",
+    "associate": "Associado",
+    "processes": [
+      "Base Sintética"
+    ],
+    "origins": [
+      "Nacional"
+    ],
+    "substances": [
+      "Propatila nitrato"
+    ],
+    "catalog_items": [
+      {
+        "insumo": "Propatila nitrato",
+        "dcb": "07444",
+        "inn": "Propatylnitrate",
+        "cas": "2921-92-8.",
+        "ncm": "2920.90.31",
+        "cbpf": "0270395253",
+        "validade": "2027-04-22",
+        "display_name": "Propatila nitrato"
+      }
+    ],
+    "responsible_name": "",
+    "responsible_phone": "",
+    "responsible_email": "",
+    "source_sheet": "Fabricamos",
+    "source_workbook": "Fabricamos_18_08_26.xlsx",
+    "source_updated_label": "OBSERVAÇÃO 31/07/2026"
+  },
+  {
+    "company": "Itf Chemical Ltda.",
+    "associate": "Associado",
+    "processes": [
+      "Base Sintética"
+    ],
+    "origins": [
+      "Estrangeira"
+    ],
+    "substances": [
+      "Ácido risedrônico",
+      "Cloridraro de bendamustina",
+      "Estearato de cálcio",
+      "Mesilato de doxazosina",
+      "Monoestearato de glicerila",
+      "Glicerol formal",
+      "Levofloxacino hemi-hidratado",
+      "Metilergometrina",
+      "Cloridrato de moxifloxacino",
+      "Cloridrato de paroxetina hemi-hidratado",
+      "Pemetrexede",
+      "Nitrato de propatila",
+      "Cloridrato de revelamer",
+      "Risedronato sódico",
+      "Succinilato de proteína férrica",
+      "Temozolomida"
+    ],
+    "catalog_items": [
+      {
+        "insumo": "Ácido risedrônico",
+        "dcb": "00338",
+        "inn": "Risedronic Acid",
+        "cas": "105462-24-6",
+        "ncm": "2933.39.39",
+        "cbpf": "0285619250",
+        "validade": "2027-09-01",
+        "display_name": "Ácido risedrônico"
+      },
+      {
+        "insumo": "Cloridraro de bendamustina",
+        "dcb": "10633",
+        "inn": "Bendamustine Hydrochloride",
+        "cas": "3543-75-7",
+        "ncm": "2933.99.99",
+        "cbpf": "0285619250",
+        "validade": "2027-09-01",
+        "display_name": "Cloridraro de bendamustina"
+      },
+      {
+        "insumo": "Estearato de cálcio",
+        "dcb": "03576",
+        "inn": "Calcium Stearate",
+        "cas": "1592-23-0",
+        "ncm": "2915.70.39",
+        "cbpf": "0285619250",
+        "validade": "2027-09-01",
+        "display_name": "Estearato de cálcio"
+      },
+      {
+        "insumo": "Mesilato de doxazosina",
+        "dcb": "03210",
+        "inn": "Doxazosin Mesilate",
+        "cas": "77883-43-3",
+        "ncm": "2934.99.39",
+        "cbpf": "0285619250",
+        "validade": "2027-09-01",
+        "display_name": "Mesilato de doxazosina"
+      },
+      {
+        "insumo": "Monoestearato de glicerila",
+        "dcb": "06068",
+        "inn": "Glyceryl Monostearate",
+        "cas": "31566-31-1",
+        "ncm": "2915.70.40",
+        "cbpf": "0285619250",
+        "validade": "2027-09-01",
+        "display_name": "Monoestearato de glicerila"
+      },
+      {
+        "insumo": "Glicerol formal",
+        "dcb": "11026",
+        "inn": "Glycerol Formal",
+        "cas": "99569-11-6",
+        "ncm": "2912.19.99",
+        "cbpf": "0285619250",
+        "validade": "2027-09-01",
+        "display_name": "Glicerol formal"
+      },
+      {
+        "insumo": "Levofloxacino hemi-hidratado",
+        "dcb": "10688",
+        "inn": "Levofloxacin Hemihydrate",
+        "cas": "138199-71-0",
+        "ncm": "2934.99.19",
+        "cbpf": "0285619250",
+        "validade": "2027-09-01",
+        "display_name": "Levofloxacino hemi-hidratado"
+      },
+      {
+        "insumo": "Metilergometrina",
+        "dcb": "05801",
+        "inn": "Methylergometrine",
+        "cas": "113-42-8",
+        "ncm": "2939.69.19",
+        "cbpf": "0285619250",
+        "validade": "2027-09-01",
+        "display_name": "Metilergometrina"
+      },
+      {
+        "insumo": "Cloridrato de moxifloxacino",
+        "dcb": "06140",
+        "inn": "Moxifloxacin Hydrochloride",
+        "cas": "186826-86-8",
+        "ncm": "2933.49.19",
+        "cbpf": "0285619250",
+        "validade": "2027-09-01",
+        "display_name": "Cloridrato de moxifloxacino"
+      },
+      {
+        "insumo": "Cloridrato de paroxetina hemi-hidratado",
+        "dcb": "10032",
+        "inn": "Paroxetine Hydrochloride Hemihydrate",
+        "cas": "110429-35-1",
+        "ncm": "2934.99.39",
+        "cbpf": "0285619250",
+        "validade": "2027-09-01",
+        "display_name": "Cloridrato de paroxetina hemi-hidratado"
+      },
+      {
+        "insumo": "Pemetrexede",
+        "dcb": "06897",
+        "inn": "Pemetrexed",
+        "cas": "137281-23-3",
+        "ncm": "2933.59.99",
+        "cbpf": "0285619250",
+        "validade": "2027-09-01",
+        "display_name": "Pemetrexede"
+      },
+      {
+        "insumo": "Nitrato de propatila",
+        "dcb": "07444",
+        "inn": "Propatylnitrate",
+        "cas": "2921-92-8.",
+        "ncm": "2920.90.31",
+        "cbpf": "0285619250",
+        "validade": "2027-09-01",
+        "display_name": "Nitrato de propatila"
+      },
+      {
+        "insumo": "Cloridrato de revelamer",
+        "dcb": "08119",
+        "inn": "Sevelamer Hydrochloride",
+        "cas": "152751-57-0",
+        "ncm": "3911.90.29",
+        "cbpf": "0285619250",
+        "validade": "2027-09-01",
+        "display_name": "Cloridrato de revelamer"
+      },
+      {
+        "insumo": "Risedronato sódico",
+        "dcb": "00339",
+        "inn": "Risedronate Sodium",
+        "cas": "115436-72-1",
+        "ncm": "2933.39.39",
+        "cbpf": "0285619250",
+        "validade": "2027-09-01",
+        "display_name": "Risedronato sódico"
+      },
+      {
+        "insumo": "Succinilato de proteína férrica",
+        "dcb": "07936",
+        "inn": "iron protein succinylate",
+        "cas": "-",
+        "ncm": "-",
+        "cbpf": "0285619250",
+        "validade": "2027-09-01",
+        "display_name": "Succinilato de proteína férrica"
+      },
+      {
+        "insumo": "Temozolomida",
+        "dcb": "08370",
+        "inn": "Termozolomide",
+        "cas": "85622-93-1",
+        "ncm": "2933.99.99",
+        "cbpf": "285619250",
+        "validade": "2027-09-01",
+        "display_name": "Temozolomida"
+      }
+    ],
+    "responsible_name": "",
+    "responsible_phone": "",
+    "responsible_email": "",
+    "source_sheet": "Fabricamos",
+    "source_workbook": "Fabricamos_18_08_26.xlsx",
+    "source_updated_label": "OBSERVAÇÃO 31/07/2026"
+  },
+  {
+    "company": "Kin Master Produtos Químicos Ltda.",
+    "associate": "Associado",
+    "processes": [
+      "Extração Animal"
+    ],
+    "origins": [
+      "Nacional"
+    ],
+    "substances": [
+      "Ácido polissulfúrico de mucopolissacarídeo",
+      "Heparina bovina sódica injetável",
+      "Heparina suína sódica injetável",
+      "Heparina suína sódica tópica",
+      "Heparina bovina sódica tópica",
+      "Heparinóides",
+      "Sulfato de condroitina injetável",
+      "Sulfato de condroitina oral",
+      "Extrato de cortex adrenal",
+      "Extrato de bile",
+      "Extrato de fígado",
+      "Extrato de placenta",
+      "Pancreatina",
+      "Timomodulina",
+      "Pepsina"
+    ],
+    "catalog_items": [
+      {
+        "insumo": "Ácido polissulfúrico de mucopolissacarídeo",
+        "dcb": "07276",
+        "inn": "Mucopolysaccharide Polysulfate",
+        "cas": "63449-40-1",
+        "ncm": "3001.90.90",
+        "cbpf": "_",
+        "validade": "_",
+        "display_name": "Ácido polissulfúrico de mucopolissacarídeo"
+      },
+      {
+        "insumo": "Heparina bovina sódica injetável",
+        "dcb": "10807",
+        "inn": "Heparin Sodium",
+        "cas": "9041-08-1",
+        "ncm": "3001.90.10",
+        "cbpf": "_",
+        "validade": "_",
+        "display_name": "Heparina bovina sódica injetável"
+      },
+      {
+        "insumo": "Heparina suína sódica injetável",
+        "dcb": "04610",
+        "inn": "Heparin Sodium",
+        "cas": "9041-08-1",
+        "ncm": "3001.90.10",
+        "cbpf": "_",
+        "validade": "_",
+        "display_name": "Heparina suína sódica injetável"
+      },
+      {
+        "insumo": "Heparina suína sódica tópica",
+        "dcb": "04610",
+        "inn": "Heparin Sodium",
+        "cas": "9041-08-1",
+        "ncm": "3001.90.10",
+        "cbpf": "_",
+        "validade": "_",
+        "display_name": "Heparina suína sódica tópica"
+      },
+      {
+        "insumo": "Heparina bovina sódica tópica",
+        "dcb": "10807",
+        "inn": "Heparin Sodium",
+        "cas": "9041-08-1",
+        "ncm": "3001.90.10",
+        "cbpf": "_",
+        "validade": "_",
+        "display_name": "Heparina bovina sódica tópica"
+      },
+      {
+        "insumo": "Heparinóides",
+        "dcb": "-",
+        "inn": "Heparinoid",
+        "cas": "-",
+        "ncm": "3001.90.90",
+        "cbpf": "_",
+        "validade": "_",
+        "display_name": "Heparinóides"
+      },
+      {
+        "insumo": "Sulfato de condroitina injetável",
+        "dcb": "02597",
+        "inn": "Chondroitin Sulfate",
+        "cas": "9082-07-9",
+        "ncm": "3913.90.60",
+        "cbpf": "_",
+        "validade": "_",
+        "display_name": "Sulfato de condroitina injetável"
+      },
+      {
+        "insumo": "Sulfato de condroitina oral",
+        "dcb": "02597",
+        "inn": "Chondroitin Sulfate",
+        "cas": "9007-28-7",
+        "ncm": "3913.90.60",
+        "cbpf": "_",
+        "validade": "_",
+        "display_name": "Sulfato de condroitina oral"
+      },
+      {
+        "insumo": "Extrato de cortex adrenal",
+        "dcb": "11438",
+        "inn": "Adrenal Cortex Extract",
+        "cas": "_",
+        "ncm": "3001.20.90",
+        "cbpf": "1153490242",
+        "validade": "2027-02-24",
+        "display_name": "Extrato de cortex adrenal"
+      },
+      {
+        "insumo": "Extrato de bile",
+        "dcb": "11562",
+        "inn": "Bile extract",
+        "cas": "8008-63-7",
+        "ncm": "0510.00.90",
+        "cbpf": "1153490242",
+        "validade": "2027-02-24",
+        "display_name": "Extrato de bile"
+      },
+      {
+        "insumo": "Extrato de fígado",
+        "dcb": "11528",
+        "inn": "liver extract",
+        "cas": "8002-47-9",
+        "ncm": "3001.20.10",
+        "cbpf": "1153490242",
+        "validade": "2027-02-24",
+        "display_name": "Extrato de fígado"
+      },
+      {
+        "insumo": "Extrato de placenta",
+        "dcb": "11439",
+        "inn": "Placenta Extracts",
+        "cas": "_",
+        "ncm": "3001.90.90",
+        "cbpf": "1153490242",
+        "validade": "2027-02-24",
+        "display_name": "Extrato de placenta"
+      },
+      {
+        "insumo": "Pancreatina",
+        "dcb": "06811",
+        "inn": "Pancreatina",
+        "cas": "8049-47-6",
+        "ncm": "3001.20.90",
+        "cbpf": "1153490242",
+        "validade": "2027-02-24",
+        "display_name": "Pancreatina"
+      },
+      {
+        "insumo": "Timomodulina",
+        "dcb": "08605",
+        "inn": "Thymomodulin",
+        "cas": "90803-92-2",
+        "ncm": "3001.90.90",
+        "cbpf": "1153490242",
+        "validade": "2027-02-24",
+        "display_name": "Timomodulina"
+      },
+      {
+        "insumo": "Pepsina",
+        "dcb": "06963",
+        "inn": "Pepsin",
+        "cas": "9001-75-6.",
+        "ncm": "3507.90.29",
+        "cbpf": "1153490242",
+        "validade": "2027-02-24",
+        "display_name": "Pepsina"
+      }
+    ],
+    "responsible_name": "",
+    "responsible_phone": "",
+    "responsible_email": "",
+    "source_sheet": "Fabricamos",
+    "source_workbook": "Fabricamos_18_08_26.xlsx",
+    "source_updated_label": "OBSERVAÇÃO 31/07/2026"
+  },
+  {
+    "company": "Laboratório Catarinense Ltda.",
+    "associate": "Não Associado",
+    "processes": [
+      "Base Vegetal"
+    ],
+    "origins": [
+      "Nacional"
+    ],
+    "substances": [
+      "Extratos fitoterápicos hidroalcóolicos e secos."
+    ],
+    "catalog_items": [
+      {
+        "insumo": "Extratos fitoterápicos hidroalcóolicos e secos.",
+        "dcb": "-",
+        "inn": "-",
+        "cas": "-",
+        "ncm": "-",
+        "cbpf": "-",
+        "validade": "",
+        "display_name": "Extratos fitoterápicos hidroalcóolicos e secos."
+      }
+    ],
+    "responsible_name": "",
+    "responsible_phone": "",
+    "responsible_email": "",
+    "source_sheet": "Fabricamos",
+    "source_workbook": "Fabricamos_18_08_26.xlsx",
+    "source_updated_label": "OBSERVAÇÃO 31/07/2026"
+  },
+  {
+    "company": "Laboratório Extratos Alergênicos",
+    "associate": "Não Associado",
+    "processes": [
+      "Base Biológica"
+    ],
+    "origins": [
+      "Nacional"
+    ],
+    "substances": [
+      "Extratos alergênicos"
+    ],
+    "catalog_items": [
+      {
+        "insumo": "Extratos alergênicos",
+        "dcb": "-",
+        "inn": "-",
+        "cas": "-",
+        "ncm": "-",
+        "cbpf": "-",
+        "validade": "",
+        "display_name": "Extratos alergênicos"
+      }
+    ],
+    "responsible_name": "",
+    "responsible_phone": "",
+    "responsible_email": "",
+    "source_sheet": "Fabricamos",
+    "source_workbook": "Fabricamos_18_08_26.xlsx",
+    "source_updated_label": "OBSERVAÇÃO 31/07/2026"
+  },
+  {
+    "company": "Laboratório Homeopático Almeida Prado Ltda.",
+    "associate": "Não Associado",
+    "processes": [
+      "Homeopáticos"
+    ],
+    "origins": [
+      "Nacional"
+    ],
+    "substances": [
+      "Tinturas homeopáticas"
+    ],
+    "catalog_items": [
+      {
+        "insumo": "Tinturas homeopáticas",
+        "dcb": "-",
+        "inn": "-",
+        "cas": "-",
+        "ncm": "-",
+        "cbpf": "-",
+        "validade": "",
+        "display_name": "Tinturas homeopáticas"
+      }
+    ],
+    "responsible_name": "",
+    "responsible_phone": "",
+    "responsible_email": "",
+    "source_sheet": "Fabricamos",
+    "source_workbook": "Fabricamos_18_08_26.xlsx",
+    "source_updated_label": "OBSERVAÇÃO 31/07/2026"
+  },
+  {
+    "company": "Laboratório Laecco Cosmiatria Biocelular Ltda.",
+    "associate": "Não Associado",
+    "processes": [
+      "Base sintética"
+    ],
+    "origins": [
+      "Nacional"
+    ],
+    "substances": [
+      "Gliconato de lítio"
+    ],
+    "catalog_items": [
+      {
+        "insumo": "Gliconato de lítio",
+        "dcb": "-",
+        "inn": "-",
+        "cas": "-",
+        "ncm": "-",
+        "cbpf": "-",
+        "validade": "",
+        "display_name": "Gliconato de lítio"
+      }
+    ],
+    "responsible_name": "",
+    "responsible_phone": "",
+    "responsible_email": "",
+    "source_sheet": "Fabricamos",
+    "source_workbook": "Fabricamos_18_08_26.xlsx",
+    "source_updated_label": "OBSERVAÇÃO 31/07/2026"
+  },
+  {
+    "company": "Libbs Farmacêutica Ltda.",
+    "associate": "Associado",
+    "processes": [
+      "Base Sintética / Base Biológica",
+      "Base Biológica"
+    ],
+    "origins": [
+      "Nacional"
+    ],
+    "substances": [
+      "Ácido zoledrônico",
+      "Cloridrato de amiodarona",
+      "Cilostazol",
+      "Nitrendipino",
+      "Succinato de sumatriptana",
+      "Bevacizumabe",
+      "Rituximabe",
+      "Tacrolimo"
+    ],
+    "catalog_items": [
+      {
+        "insumo": "Ácido zoledrônico",
+        "dcb": "10708",
+        "inn": "Zoledronic Acid",
+        "cas": "165800-06-6",
+        "ncm": "2914.11.00",
+        "cbpf": "974253243",
+        "validade": "2027-01-20",
+        "display_name": "Ácido zoledrônico"
+      },
+      {
+        "insumo": "Cloridrato de amiodarona",
+        "dcb": "00700",
+        "inn": "Amiodarone Hydrochloride",
+        "cas": "19774-82-4",
+        "ncm": "2932.99.91",
+        "cbpf": "974253243",
+        "validade": "2027-01-20",
+        "display_name": "Cloridrato de amiodarona"
+      },
+      {
+        "insumo": "Cilostazol",
+        "dcb": "02067",
+        "inn": "Cilostazol",
+        "cas": "73963-72-1",
+        "ncm": "2933.49.90",
+        "cbpf": "974253243",
+        "validade": "2027-01-20",
+        "display_name": "Cilostazol"
+      },
+      {
+        "insumo": "Nitrendipino",
+        "dcb": "06431",
+        "inn": "Nitrendipine",
+        "cas": "39562-70-4",
+        "ncm": "29330019",
+        "cbpf": "974253243",
+        "validade": "2027-01-20",
+        "display_name": "Nitrendipino"
+      },
+      {
+        "insumo": "Succinato de sumatriptana",
+        "dcb": "08224",
+        "inn": "Sumatriptan Succinate",
+        "cas": "103628-48-4",
+        "ncm": "2935.90.19",
+        "cbpf": "974253243",
+        "validade": "2027-01-20",
+        "display_name": "Succinato de sumatriptana"
+      },
+      {
+        "insumo": "Bevacizumabe",
+        "dcb": "01236",
+        "inn": "Bevacizumab Beta",
+        "cas": "216974-75-3",
+        "ncm": "3002.13.00",
+        "cbpf": "973626241",
+        "validade": "2027-01-27",
+        "display_name": "Bevacizumabe"
+      },
+      {
+        "insumo": "Rituximabe",
+        "dcb": "07758",
+        "inn": "Rituximab",
+        "cas": "174722-31-7",
+        "ncm": "3002.15.20",
+        "cbpf": "973626241",
+        "validade": "2027-01-27",
+        "display_name": "Rituximabe"
+      },
+      {
+        "insumo": "Tacrolimo",
+        "dcb": "08252",
+        "inn": "tacrolimus",
+        "cas": "104987-11-3",
+        "ncm": "2934.99.99",
+        "cbpf": "1029934258",
+        "validade": "2028-02-18",
+        "display_name": "Tacrolimo"
+      }
+    ],
+    "responsible_name": "",
+    "responsible_phone": "",
+    "responsible_email": "",
+    "source_sheet": "Fabricamos",
+    "source_workbook": "Fabricamos_18_08_26.xlsx",
+    "source_updated_label": "OBSERVAÇÃO 31/07/2026"
+  },
+  {
+    "company": "Lotusfarma Produtos Farmacêuticos",
+    "associate": "Não Associado",
+    "processes": [
+      "Base Vegetal"
+    ],
+    "origins": [
+      "Nacional"
+    ],
+    "substances": [
+      "Dinamizados e extratos hidroalcóolicos"
+    ],
+    "catalog_items": [
+      {
+        "insumo": "Dinamizados e extratos hidroalcóolicos",
+        "dcb": "-",
+        "inn": "-",
+        "cas": "-",
+        "ncm": "-",
+        "cbpf": "-",
+        "validade": "",
+        "display_name": "Dinamizados e extratos hidroalcóolicos"
+      }
+    ],
+    "responsible_name": "",
+    "responsible_phone": "",
+    "responsible_email": "",
+    "source_sheet": "Fabricamos",
+    "source_workbook": "Fabricamos_18_08_26.xlsx",
+    "source_updated_label": "OBSERVAÇÃO 31/07/2026"
+  },
+  {
+    "company": "Microbiológica Química E Fcta Ltda.",
+    "associate": "Associado",
+    "processes": [
+      "Base Sintética"
+    ],
+    "origins": [
+      "Nacional"
+    ],
+    "substances": [
+      "Azatioprina",
+      "Cinetina",
+      "Entecavir",
+      "E-zeatina",
+      "Mercaptopurina",
+      "Sofosbuvir",
+      "Talidomida",
+      "Tioguanina"
+    ],
+    "catalog_items": [
+      {
+        "insumo": "Azatioprina",
+        "dcb": "00984",
+        "inn": "Azathioprine",
+        "cas": "446-86-6",
+        "ncm": "2933.59.34",
+        "cbpf": "_",
+        "validade": "_",
+        "display_name": "Azatioprina"
+      },
+      {
+        "insumo": "Cinetina",
+        "dcb": "02511",
+        "inn": "Cinetine",
+        "cas": "525-79-1",
+        "ncm": "2933.59.99",
+        "cbpf": "_",
+        "validade": "_",
+        "display_name": "Cinetina"
+      },
+      {
+        "insumo": "Entecavir",
+        "dcb": "03416",
+        "inn": "Entecavir",
+        "cas": "209216-23-9",
+        "ncm": "2933.59.99",
+        "cbpf": "_",
+        "validade": "_",
+        "display_name": "Entecavir"
+      },
+      {
+        "insumo": "E-zeatina",
+        "dcb": "-",
+        "inn": "Zeatin",
+        "cas": "1637-39-4",
+        "ncm": "2933.59.99",
+        "cbpf": "_",
+        "validade": "_",
+        "display_name": "E-zeatina"
+      },
+      {
+        "insumo": "Mercaptopurina",
+        "dcb": "05680",
+        "inn": "Mercaptopurine",
+        "cas": "50-44-2",
+        "ncm": "2933.59.39",
+        "cbpf": "_",
+        "validade": "_",
+        "display_name": "Mercaptopurina"
+      },
+      {
+        "insumo": "Sofosbuvir",
+        "dcb": "10988",
+        "inn": "Sofosbuvir",
+        "cas": "1190307-88-0",
+        "ncm": "2934.99.29",
+        "cbpf": "_",
+        "validade": "_",
+        "display_name": "Sofosbuvir"
+      },
+      {
+        "insumo": "Talidomida",
+        "dcb": "08266",
+        "inn": "Thalidomide",
+        "cas": "50-35-1",
+        "ncm": "2925.19.10",
+        "cbpf": "_",
+        "validade": "_",
+        "display_name": "Talidomida"
+      },
+      {
+        "insumo": "Tioguanina",
+        "dcb": "08633",
+        "inn": "Thioguanine",
+        "cas": "5580-03-0",
+        "ncm": "2933.59.99",
+        "cbpf": "_",
+        "validade": "_",
+        "display_name": "Tioguanina"
+      }
+    ],
+    "responsible_name": "",
+    "responsible_phone": "",
+    "responsible_email": "",
+    "source_sheet": "Fabricamos",
+    "source_workbook": "Fabricamos_18_08_26.xlsx",
+    "source_updated_label": "OBSERVAÇÃO 31/07/2026"
+  },
+  {
+    "company": "Nortec Química S/A",
+    "associate": "Associado",
+    "processes": [
+      "Base Sintética",
+      "Base sintética"
+    ],
+    "origins": [
+      "Nacional"
+    ],
+    "substances": [
+      "Benzonidazol",
+      "Bromazepam",
+      "Budesonida",
+      "Cloridrato de articaína",
+      "Cloridrato de bupivacaina monoidratado",
+      "Citrato de dietilcarbamazina",
+      "Citrato de orfenadrina",
+      "Clonazepam",
+      "Cloridrato de escetamina",
+      "Cloridrato de fenilefrina",
+      "Cloridrato de lidocaína monoidratado",
+      "Cloridrato de mepivacaína",
+      "Cloridrato de prilocaína",
+      "Cloridrato de pseudoefedrina",
+      "Diazepam",
+      "Diclofenaco",
+      "Diclofenaco colestiramina",
+      "Diclofenaco de dietilamônio",
+      "Diclofenaco de potássio",
+      "Diclofenaco de resinato",
+      "Diclofenaco sódico",
+      "Dicloridrato de pramipexo",
+      "Dolutegravir",
+      "Efavirenz",
+      "Entricitabina",
+      "Espironolactona",
+      "Fenitoína",
+      "Flurazepam monohidrocloridrato",
+      "Fumarato de tenofovir disoproxil",
+      "Haloperidol",
+      "Hemifumarato de quetiapina",
+      "Lamivudina",
+      "Lidocaína",
+      "Midazolam",
+      "Cloridrato de Midazolam",
+      "Maleato de midazolam",
+      "Micofenolato de sódio",
+      "Mucato de isometepteno",
+      "Olanzapina",
+      "Prilocaína",
+      "Sulfato de atazanavir",
+      "Sulfato de efedrina",
+      "Sulfato de pseudoefedrina",
+      "Tiabendazol",
+      "Zidovudina"
+    ],
+    "catalog_items": [
+      {
+        "insumo": "Benzonidazol",
+        "dcb": "01153",
+        "inn": "Benznidazole",
+        "cas": "22994-85-0",
+        "ncm": "2933.99.99",
+        "cbpf": "0734710/24-1, 0140954/25-2, 0527646/25-3",
+        "validade": "2026-12-19",
+        "display_name": "Benzonidazol"
+      },
+      {
+        "insumo": "Bromazepam",
+        "dcb": "01366",
+        "inn": "Bromazepam",
+        "cas": "1812-30-2",
+        "ncm": "2933.33.22",
+        "cbpf": "0734710/24-1, 0140954/25-2, 0527646/25-3",
+        "validade": "2026-12-19",
+        "display_name": "Bromazepam"
+      },
+      {
+        "insumo": "Budesonida",
+        "dcb": "01512",
+        "inn": "Budesonide",
+        "cas": "51333-22-3",
+        "ncm": "2937.29.90",
+        "cbpf": "0734710/24-1, 0140954/25-2, 0527646/25-3",
+        "validade": "2026-12-19",
+        "display_name": "Budesonida"
+      },
+      {
+        "insumo": "Cloridrato de articaína",
+        "dcb": "0891",
+        "inn": "Articaine hydrochloride",
+        "cas": "23964-57-0",
+        "ncm": "2934.99.99",
+        "cbpf": "0734710/24-1, 0140954/25-2, 0527646/25-3",
+        "validade": "2026-12-19",
+        "display_name": "Cloridrato de articaína"
+      },
+      {
+        "insumo": "Cloridrato de bupivacaina monoidratado",
+        "dcb": "11219",
+        "inn": "Bupivacaine Hydrochloride",
+        "cas": "73360-54-0",
+        "ncm": "2933.39.83",
+        "cbpf": "0734710/24-1, 0140954/25-2, 0527646/25-3",
+        "validade": "2026-12-19",
+        "display_name": "Cloridrato de bupivacaina monoidratado"
+      },
+      {
+        "insumo": "Citrato de dietilcarbamazina",
+        "dcb": "02959",
+        "inn": "Diethylcarbamazine Citrate",
+        "cas": "1642-54-2",
+        "ncm": "2933.59.19",
+        "cbpf": "0734710/24-1, 0140954/25-2, 0527646/25-3",
+        "validade": "2026-12-19",
+        "display_name": "Citrato de dietilcarbamazina"
+      },
+      {
+        "insumo": "Citrato de orfenadrina",
+        "dcb": "06630",
+        "inn": "Orphenadrine Citrate",
+        "cas": "4682-36-4",
+        "ncm": "2922.19.21",
+        "cbpf": "0734710/24-1, 0140954/25-2, 0527646/25-3",
+        "validade": "2026-12-19",
+        "display_name": "Citrato de orfenadrina"
+      },
+      {
+        "insumo": "Clonazepam",
+        "dcb": "02300",
+        "inn": "Clonazepam",
+        "cas": "1622-61-3",
+        "ncm": "2933.91.13",
+        "cbpf": "0734710/24-1, 0140954/25-2, 0527646/25-3",
+        "validade": "2026-12-19",
+        "display_name": "Clonazepam"
+      },
+      {
+        "insumo": "Cloridrato de escetamina",
+        "dcb": "11146",
+        "inn": "Esketamine Hydrochloride",
+        "cas": "33643-47-9",
+        "ncm": "3004.90.32",
+        "cbpf": "0734710/24-1, 0140954/25-2, 0527646/25-3",
+        "validade": "2026-12-19",
+        "display_name": "Cloridrato de escetamina"
+      },
+      {
+        "insumo": "Cloridrato de fenilefrina",
+        "dcb": "03926",
+        "inn": "Phenylephrine Hydrochloride",
+        "cas": "61-76-7",
+        "ncm": "2922.50.11",
+        "cbpf": "0734710/24-1, 0140954/25-2, 0527646/25-3",
+        "validade": "2026-12-19",
+        "display_name": "Cloridrato de fenilefrina"
+      },
+      {
+        "insumo": "Cloridrato de lidocaína monoidratado",
+        "dcb": "11386",
+        "inn": "Lidocaine Hydrochloride Anhydrous",
+        "cas": "6108-05-0",
+        "ncm": "2924.29.14",
+        "cbpf": "0734710/24-1, 0140954/25-2, 0527646/25-3",
+        "validade": "2026-12-19",
+        "display_name": "Cloridrato de lidocaína monoidratado"
+      },
+      {
+        "insumo": "Cloridrato de mepivacaína",
+        "dcb": "05657",
+        "inn": "Mepivacaine Hydrochloride",
+        "cas": "1722-62-9",
+        "ncm": "2933.39.82",
+        "cbpf": "0734710/24-1, 0140954/25-2, 0527646/25-3",
+        "validade": "2026-12-19",
+        "display_name": "Cloridrato de mepivacaína"
+      },
+      {
+        "insumo": "Cloridrato de prilocaína",
+        "dcb": "7364",
+        "inn": "Prilocaine hydrochloride",
+        "cas": "1786-81-8",
+        "ncm": "2924.29.63",
+        "cbpf": "0734710/24-1, 0140954/25-2, 0527646/25-3",
+        "validade": "2026-12-19",
+        "display_name": "Cloridrato de prilocaína"
+      },
+      {
+        "insumo": "Cloridrato de pseudoefedrina",
+        "dcb": "07520",
+        "inn": "Pseudoephedrine Hydrochloride",
+        "cas": "345-78-8",
+        "ncm": "2939.42.00",
+        "cbpf": "0734710/24-1, 0140954/25-2, 0527646/25-3",
+        "validade": "2026-12-19",
+        "display_name": "Cloridrato de pseudoefedrina"
+      },
+      {
+        "insumo": "Diazepam",
+        "dcb": "02904",
+        "inn": "Diazepam",
+        "cas": "439-14-5",
+        "ncm": "2933.91.22",
+        "cbpf": "0734710/24-1, 0140954/25-2, 0527646/25-3",
+        "validade": "2026-12-19",
+        "display_name": "Diazepam"
+      },
+      {
+        "insumo": "Diclofenaco",
+        "dcb": "02926",
+        "inn": "Diclofenac",
+        "cas": "15307-86-5",
+        "ncm": "2922.49.64",
+        "cbpf": "0734710/24-1, 0140954/25-2, 0527646/25-3",
+        "validade": "2026-12-19",
+        "display_name": "Diclofenaco"
+      },
+      {
+        "insumo": "Diclofenaco colestiramina",
+        "dcb": "02931",
+        "inn": "Diclofenac Cholestyramin",
+        "cas": "240490-15-7",
+        "ncm": "2922.49.69",
+        "cbpf": "0734710/24-1, 0140954/25-2, 0527646/25-3",
+        "validade": "2026-12-19",
+        "display_name": "Diclofenaco colestiramina"
+      },
+      {
+        "insumo": "Diclofenaco de dietilamônio",
+        "dcb": "02927",
+        "inn": "Diclofenac Diethylammonium",
+        "cas": "78213-16-8",
+        "ncm": "2922.49.63",
+        "cbpf": "0734710/24-1, 0140954/25-2, 0527646/25-3",
+        "validade": "2026-12-19",
+        "display_name": "Diclofenaco de dietilamônio"
+      },
+      {
+        "insumo": "Diclofenaco de potássio",
+        "dcb": "02929",
+        "inn": "Diclofenac Potassium",
+        "cas": "15307-81-0",
+        "ncm": "2922.49.62",
+        "cbpf": "0734710/24-1, 0140954/25-2, 0527646/25-3",
+        "validade": "2026-12-19",
+        "display_name": "Diclofenaco de potássio"
+      },
+      {
+        "insumo": "Diclofenaco de resinato",
+        "dcb": "02931",
+        "inn": "Diclofenac",
+        "cas": "240490-15-7",
+        "ncm": "3003.90.93",
+        "cbpf": "0734710/24-1, 0140954/25-2, 0527646/25-3",
+        "validade": "2026-12-19",
+        "display_name": "Diclofenaco de resinato"
+      },
+      {
+        "insumo": "Diclofenaco sódico",
+        "dcb": "02930",
+        "inn": "Diclofenac Sodium",
+        "cas": "15307-79-6",
+        "ncm": "2922.49.61",
+        "cbpf": "0734710/24-1, 0140954/25-2, 0527646/25-3",
+        "validade": "2026-12-19",
+        "display_name": "Diclofenaco sódico"
+      },
+      {
+        "insumo": "Dicloridrato de pramipexo",
+        "dcb": "10892",
+        "inn": "Pramipexole dihydrochloride monohydrate",
+        "cas": "191217-81-9",
+        "ncm": "2934.20.90",
+        "cbpf": "0734710/24-1, 0140954/25-2, 0527646/25-3",
+        "validade": "2026-12-19",
+        "display_name": "Dicloridrato de pramipexo"
+      },
+      {
+        "insumo": "Dolutegravir",
+        "dcb": "11502",
+        "inn": "Dolutegravir",
+        "cas": "1051375-16-6",
+        "ncm": "2934.99.39",
+        "cbpf": "0734710/24-1, 0140954/25-2, 0527646/25-3",
+        "validade": "2026-12-19",
+        "display_name": "Dolutegravir"
+      },
+      {
+        "insumo": "Efavirenz",
+        "dcb": "03308",
+        "inn": "Efavirenz",
+        "cas": "154598-52-4",
+        "ncm": "2933.39.99",
+        "cbpf": "0734710/24-1, 0140954/25-2, 0527646/25-3",
+        "validade": "2026-12-19",
+        "display_name": "Efavirenz"
+      },
+      {
+        "insumo": "Entricitabina",
+        "dcb": "03417",
+        "inn": "Emtricitabine",
+        "cas": "143491-57-0",
+        "ncm": "2934.99.29",
+        "cbpf": "0734710/24-1, 0140954/25-2, 0527646/25-3",
+        "validade": "2026-12-19",
+        "display_name": "Entricitabina"
+      },
+      {
+        "insumo": "Espironolactona",
+        "dcb": "03561",
+        "inn": "Spironolactone",
+        "cas": "52-01-7",
+        "ncm": "2937.29.50",
+        "cbpf": "0734710/24-1, 0140954/25-2, 0527646/25-3",
+        "validade": "2026-12-19",
+        "display_name": "Espironolactona"
+      },
+      {
+        "insumo": "Fenitoína",
+        "dcb": "03953",
+        "inn": "Phenytoin",
+        "cas": "57-41-0",
+        "ncm": "2933.21.21",
+        "cbpf": "0734710/24-1, 0140954/25-2, 0527646/25-3",
+        "validade": "2026-12-19",
+        "display_name": "Fenitoína"
+      },
+      {
+        "insumo": "Flurazepam monohidrocloridrato",
+        "dcb": "04208",
+        "inn": "Flurazepam Dihydrochloride",
+        "cas": "1172-18-5",
+        "ncm": "2933.91.33",
+        "cbpf": "0734710/24-1, 0140954/25-2, 0527646/25-3",
+        "validade": "2026-12-19",
+        "display_name": "Flurazepam monohidrocloridrato"
+      },
+      {
+        "insumo": "Fumarato de tenofovir disoproxil",
+        "dcb": "08389",
+        "inn": "Tenofovir Disoproxil Fumarate",
+        "cas": "202138-50-9",
+        "ncm": "2933.59.49",
+        "cbpf": "0734710/24-1, 0140954/25-2, 0527646/25-3",
+        "validade": "2026-12-19",
+        "display_name": "Fumarato de tenofovir disoproxil"
+      },
+      {
+        "insumo": "Haloperidol",
+        "dcb": "04589",
+        "inn": "Haloperidol",
+        "cas": "52-86-8",
+        "ncm": "2933.39.15",
+        "cbpf": "0734710/24-1, 0140954/25-2, 0527646/25-3",
+        "validade": "2026-12-19",
+        "display_name": "Haloperidol"
+      },
+      {
+        "insumo": "Hemifumarato de quetiapina",
+        "dcb": "07539",
+        "inn": "Quetiapine Hemifumarate",
+        "cas": "111974-72-2",
+        "ncm": "2933.99.39",
+        "cbpf": "0734710/24-1, 0140954/25-2, 0527646/25-3",
+        "validade": "2026-12-19",
+        "display_name": "Hemifumarato de quetiapina"
+      },
+      {
+        "insumo": "Lamivudina",
+        "dcb": "05152",
+        "inn": "Lamivudine",
+        "cas": "134678-17-4",
+        "ncm": "2934.99.93",
+        "cbpf": "0734710/24-1, 0140954/25-2, 0527646/25-3",
+        "validade": "2026-12-19",
+        "display_name": "Lamivudina"
+      },
+      {
+        "insumo": "Lidocaína",
+        "dcb": "05313",
+        "inn": "Lidocaine",
+        "cas": "137-58-6",
+        "ncm": "2924.29.14",
+        "cbpf": "0734710/24-1, 0140954/25-2, 0527646/25-3",
+        "validade": "2026-12-19",
+        "display_name": "Lidocaína"
+      },
+      {
+        "insumo": "Midazolam",
+        "dcb": "05937",
+        "inn": "Midazolam",
+        "cas": "59467-70-8",
+        "ncm": "2933.91.53",
+        "cbpf": "0734710/24-1, 0140954/25-2, 0527646/25-3",
+        "validade": "2026-12-19",
+        "display_name": "Midazolam"
+      },
+      {
+        "insumo": "Cloridrato de Midazolam",
+        "dcb": "05938",
+        "inn": "Midazolam Hydrochloride",
+        "cas": "59467-96-8",
+        "ncm": "2933.91.53",
+        "cbpf": "0734710/24-1, 0140954/25-2, 0527646/25-3",
+        "validade": "2026-12-19",
+        "display_name": "Cloridrato de Midazolam"
+      },
+      {
+        "insumo": "Maleato de midazolam",
+        "dcb": "05939",
+        "inn": "Midazolam Maleate",
+        "cas": "59467-94-6",
+        "ncm": "2933.91.53",
+        "cbpf": "0734710/24-1, 0140954/25-2, 0527646/25-3",
+        "validade": "2026-12-19",
+        "display_name": "Maleato de midazolam"
+      },
+      {
+        "insumo": "Micofenolato de sódio",
+        "dcb": "00291",
+        "inn": "Mycophenolate Sodium",
+        "cas": "37415-62-6",
+        "ncm": "2932.20.00",
+        "cbpf": "0734710/24-1, 0140954/25-2, 0527646/25-3",
+        "validade": "2026-12-19",
+        "display_name": "Micofenolato de sódio"
+      },
+      {
+        "insumo": "Mucato de isometepteno",
+        "dcb": "05091",
+        "inn": "Isometheptene Mucate",
+        "cas": "7492-31-1",
+        "ncm": "2921.19.93",
+        "cbpf": "0734710/24-1, 0140954/25-2, 0527646/25-3",
+        "validade": "2026-12-19",
+        "display_name": "Mucato de isometepteno"
+      },
+      {
+        "insumo": "Olanzapina",
+        "dcb": "06580",
+        "inn": "Olanzapine",
+        "cas": "132539-06-1",
+        "ncm": "2934.99.69",
+        "cbpf": "0734710/24-1, 0140954/25-2, 0527646/25-3",
+        "validade": "2026-12-19",
+        "display_name": "Olanzapina"
+      },
+      {
+        "insumo": "Prilocaína",
+        "dcb": "07363",
+        "inn": "Prilocaine",
+        "cas": "721-50-6",
+        "ncm": "2924.29.63",
+        "cbpf": "0734710/24-1, 0140954/25-2, 0527646/25-3",
+        "validade": "2026-12-19",
+        "display_name": "Prilocaína"
+      },
+      {
+        "insumo": "Sulfato de atazanavir",
+        "dcb": "08157",
+        "inn": "Atazanavir Sulfate",
+        "cas": "229975-97-7",
+        "ncm": "2933.39.39",
+        "cbpf": "0734710/24-1, 0140954/25-2, 0527646/25-3",
+        "validade": "2026-12-19",
+        "display_name": "Sulfato de atazanavir"
+      },
+      {
+        "insumo": "Sulfato de efedrina",
+        "dcb": "03311",
+        "inn": "Ephedrine Sulfate",
+        "cas": "50-98-6",
+        "ncm": "2939.41.00",
+        "cbpf": "0734710/24-1, 0140954/25-2, 0527646/25-3",
+        "validade": "2026-12-19",
+        "display_name": "Sulfato de efedrina"
+      },
+      {
+        "insumo": "Sulfato de pseudoefedrina",
+        "dcb": "07522",
+        "inn": "Pseudoephedrine sulfate",
+        "cas": "7460-12-0",
+        "ncm": "2939.42.00",
+        "cbpf": "0734710/24-1, 0140954/25-2, 0527646/25-3",
+        "validade": "2026-12-19",
+        "display_name": "Sulfato de pseudoefedrina"
+      },
+      {
+        "insumo": "Tiabendazol",
+        "dcb": "08493",
+        "inn": "Tiabendazole",
+        "cas": "148-79-8",
+        "ncm": "2934.10.30",
+        "cbpf": "0734710/24-1, 0140954/25-2, 0527646/25-3",
+        "validade": "2026-12-19",
+        "display_name": "Tiabendazol"
+      },
+      {
+        "insumo": "Zidovudina",
+        "dcb": "09256",
+        "inn": "Zidovudine",
+        "cas": "30516-87-1",
+        "ncm": "2934.99.22",
+        "cbpf": "0734710/24-1, 0140954/25-2, 0527646/25-3",
+        "validade": "2026-12-19",
+        "display_name": "Zidovudina"
+      }
+    ],
+    "responsible_name": "",
+    "responsible_phone": "",
+    "responsible_email": "",
+    "source_sheet": "Fabricamos",
+    "source_workbook": "Fabricamos_18_08_26.xlsx",
+    "source_updated_label": "OBSERVAÇÃO 31/07/2026"
+  },
+  {
+    "company": "Phytoplenus Bioativus S. A.",
+    "associate": "Não Associado",
+    "processes": [
+      "Base Vegetal"
+    ],
+    "origins": [
+      "Nacional"
+    ],
+    "substances": [
+      "Extrato hidroglicólico de calêndula officinalis"
+    ],
+    "catalog_items": [
+      {
+        "insumo": "Extrato hidroglicólico de calêndula officinalis",
+        "dcb": "-",
+        "inn": "-",
+        "cas": "-",
+        "ncm": "-",
+        "cbpf": "-",
+        "validade": "",
+        "display_name": "Extrato hidroglicólico de calêndula officinalis"
+      }
+    ],
+    "responsible_name": "",
+    "responsible_phone": "",
+    "responsible_email": "",
+    "source_sheet": "Fabricamos",
+    "source_workbook": "Fabricamos_18_08_26.xlsx",
+    "source_updated_label": "OBSERVAÇÃO 31/07/2026"
+  },
+  {
+    "company": "Prati Donnaduzzi",
+    "associate": "Não Associado",
+    "processes": [
+      "Base Sintética"
+    ],
+    "origins": [
+      "Nacional"
+    ],
+    "substances": [
+      "Cabergolina",
+      "Canabidiol (sintético)",
+      "Levofloxacino hemi-hidratado"
+    ],
+    "catalog_items": [
+      {
+        "insumo": "Cabergolina",
+        "dcb": "-",
+        "inn": "-",
+        "cas": "-",
+        "ncm": "-",
+        "cbpf": "0351267247",
+        "validade": "",
+        "display_name": "Cabergolina"
+      },
+      {
+        "insumo": "Canabidiol (sintético)",
+        "dcb": "-",
+        "inn": "-",
+        "cas": "-",
+        "ncm": "-",
+        "cbpf": "//",
+        "validade": "",
+        "display_name": "Canabidiol (sintético)"
+      },
+      {
+        "insumo": "Levofloxacino hemi-hidratado",
+        "dcb": "-",
+        "inn": "-",
+        "cas": "-",
+        "ncm": "-",
+        "cbpf": "//",
+        "validade": "",
+        "display_name": "Levofloxacino hemi-hidratado"
+      }
+    ],
+    "responsible_name": "",
+    "responsible_phone": "",
+    "responsible_email": "",
+    "source_sheet": "Fabricamos",
+    "source_workbook": "Fabricamos_18_08_26.xlsx",
+    "source_updated_label": "OBSERVAÇÃO 31/07/2026"
+  },
+  {
+    "company": "Queluz Química Ltda.",
+    "associate": "Não Associado",
+    "processes": [
+      "Base Sintética"
+    ],
+    "origins": [
+      "Estrangeira"
+    ],
+    "substances": [
+      "Hidróxido de alumínio",
+      "Hidróxido de magnésio"
+    ],
+    "catalog_items": [
+      {
+        "insumo": "Hidróxido de alumínio",
+        "dcb": "-",
+        "inn": "-",
+        "cas": "-",
+        "ncm": "-",
+        "cbpf": "-",
+        "validade": "",
+        "display_name": "Hidróxido de alumínio"
+      },
+      {
+        "insumo": "Hidróxido de magnésio",
+        "dcb": "-",
+        "inn": "-",
+        "cas": "-",
+        "ncm": "-",
+        "cbpf": "-",
+        "validade": "",
+        "display_name": "Hidróxido de magnésio"
+      }
+    ],
+    "responsible_name": "",
+    "responsible_phone": "",
+    "responsible_email": "",
+    "source_sheet": "Fabricamos",
+    "source_workbook": "Fabricamos_18_08_26.xlsx",
+    "source_updated_label": "OBSERVAÇÃO 31/07/2026"
+  },
+  {
+    "company": "Sanrisil S/A Indústria E Comércio",
+    "associate": "Não Associado",
+    "processes": [
+      "Base Vegetal"
+    ],
+    "origins": [
+      "Nacional"
+    ],
+    "substances": [
+      "Camomila hidrolato / extrato concentrado",
+      "Extrato de alcachofra",
+      "Extrato de ananas",
+      "Extrato de aroeira",
+      "Extrato de boldo",
+      "Extrato de cascara sagrada",
+      "Extrato de castanha da india",
+      "Extrato de crataegus",
+      "Extrato de echinacea",
+      "Extrato de espinheira santa",
+      "Extrato de guaco",
+      "Extrato de hamamelis",
+      "Extrato de harpagophytum",
+      "Extrato de passiflora",
+      "Extrato de pelargonium",
+      "Extrato de rosas rubras",
+      "Extrato de ruibarbo",
+      "Extrato de salix alba",
+      "Rutina",
+      "Quercetina"
+    ],
+    "catalog_items": [
+      {
+        "insumo": "Camomila hidrolato / extrato concentrado",
+        "dcb": "-",
+        "inn": "-",
+        "cas": "-",
+        "ncm": "-",
+        "cbpf": "-",
+        "validade": "",
+        "display_name": "Camomila hidrolato / extrato concentrado"
+      },
+      {
+        "insumo": "Extrato de alcachofra",
+        "dcb": "-",
+        "inn": "-",
+        "cas": "-",
+        "ncm": "-",
+        "cbpf": "-",
+        "validade": "",
+        "display_name": "Extrato de alcachofra"
+      },
+      {
+        "insumo": "Extrato de ananas",
+        "dcb": "-",
+        "inn": "-",
+        "cas": "-",
+        "ncm": "-",
+        "cbpf": "-",
+        "validade": "",
+        "display_name": "Extrato de ananas"
+      },
+      {
+        "insumo": "Extrato de aroeira",
+        "dcb": "-",
+        "inn": "-",
+        "cas": "-",
+        "ncm": "-",
+        "cbpf": "-",
+        "validade": "",
+        "display_name": "Extrato de aroeira"
+      },
+      {
+        "insumo": "Extrato de boldo",
+        "dcb": "-",
+        "inn": "-",
+        "cas": "-",
+        "ncm": "-",
+        "cbpf": "-",
+        "validade": "",
+        "display_name": "Extrato de boldo"
+      },
+      {
+        "insumo": "Extrato de cascara sagrada",
+        "dcb": "-",
+        "inn": "-",
+        "cas": "-",
+        "ncm": "-",
+        "cbpf": "-",
+        "validade": "",
+        "display_name": "Extrato de cascara sagrada"
+      },
+      {
+        "insumo": "Extrato de castanha da india",
+        "dcb": "-",
+        "inn": "-",
+        "cas": "-",
+        "ncm": "-",
+        "cbpf": "-",
+        "validade": "",
+        "display_name": "Extrato de castanha da india"
+      },
+      {
+        "insumo": "Extrato de crataegus",
+        "dcb": "-",
+        "inn": "-",
+        "cas": "-",
+        "ncm": "-",
+        "cbpf": "-",
+        "validade": "",
+        "display_name": "Extrato de crataegus"
+      },
+      {
+        "insumo": "Extrato de echinacea",
+        "dcb": "-",
+        "inn": "-",
+        "cas": "-",
+        "ncm": "-",
+        "cbpf": "-",
+        "validade": "",
+        "display_name": "Extrato de echinacea"
+      },
+      {
+        "insumo": "Extrato de espinheira santa",
+        "dcb": "-",
+        "inn": "-",
+        "cas": "-",
+        "ncm": "-",
+        "cbpf": "-",
+        "validade": "",
+        "display_name": "Extrato de espinheira santa"
+      },
+      {
+        "insumo": "Extrato de guaco",
+        "dcb": "-",
+        "inn": "-",
+        "cas": "-",
+        "ncm": "-",
+        "cbpf": "-",
+        "validade": "",
+        "display_name": "Extrato de guaco"
+      },
+      {
+        "insumo": "Extrato de hamamelis",
+        "dcb": "-",
+        "inn": "-",
+        "cas": "-",
+        "ncm": "-",
+        "cbpf": "-",
+        "validade": "",
+        "display_name": "Extrato de hamamelis"
+      },
+      {
+        "insumo": "Extrato de harpagophytum",
+        "dcb": "-",
+        "inn": "-",
+        "cas": "-",
+        "ncm": "-",
+        "cbpf": "-",
+        "validade": "",
+        "display_name": "Extrato de harpagophytum"
+      },
+      {
+        "insumo": "Extrato de passiflora",
+        "dcb": "-",
+        "inn": "-",
+        "cas": "-",
+        "ncm": "-",
+        "cbpf": "-",
+        "validade": "",
+        "display_name": "Extrato de passiflora"
+      },
+      {
+        "insumo": "Extrato de pelargonium",
+        "dcb": "-",
+        "inn": "-",
+        "cas": "-",
+        "ncm": "-",
+        "cbpf": "-",
+        "validade": "",
+        "display_name": "Extrato de pelargonium"
+      },
+      {
+        "insumo": "Extrato de rosas rubras",
+        "dcb": "-",
+        "inn": "-",
+        "cas": "-",
+        "ncm": "-",
+        "cbpf": "-",
+        "validade": "",
+        "display_name": "Extrato de rosas rubras"
+      },
+      {
+        "insumo": "Extrato de ruibarbo",
+        "dcb": "-",
+        "inn": "-",
+        "cas": "-",
+        "ncm": "-",
+        "cbpf": "-",
+        "validade": "",
+        "display_name": "Extrato de ruibarbo"
+      },
+      {
+        "insumo": "Extrato de salix alba",
+        "dcb": "-",
+        "inn": "-",
+        "cas": "-",
+        "ncm": "-",
+        "cbpf": "-",
+        "validade": "",
+        "display_name": "Extrato de salix alba"
+      },
+      {
+        "insumo": "Rutina",
+        "dcb": "-",
+        "inn": "-",
+        "cas": "-",
+        "ncm": "-",
+        "cbpf": "-",
+        "validade": "",
+        "display_name": "Rutina"
+      },
+      {
+        "insumo": "Quercetina",
+        "dcb": "-",
+        "inn": "-",
+        "cas": "-",
+        "ncm": "-",
+        "cbpf": "-",
+        "validade": "",
+        "display_name": "Quercetina"
+      }
+    ],
+    "responsible_name": "",
+    "responsible_phone": "",
+    "responsible_email": "",
+    "source_sheet": "Fabricamos",
+    "source_workbook": "Fabricamos_18_08_26.xlsx",
+    "source_updated_label": "OBSERVAÇÃO 31/07/2026"
+  },
+  {
+    "company": "Solabia Biotecnológica",
+    "associate": "Associado",
+    "processes": [
+      "Extração Animal"
+    ],
+    "origins": [
+      "Nacional"
+    ],
+    "substances": [
+      "Sulfato de condroitina"
+    ],
+    "catalog_items": [
+      {
+        "insumo": "Sulfato de condroitina",
+        "dcb": "02597",
+        "inn": "Chondroitin Sulfate",
+        "cas": "9007-28-7",
+        "ncm": "3913.90.60",
+        "cbpf": "1344861253",
+        "validade": "2028-04-22",
+        "display_name": "Sulfato de condroitina"
+      }
+    ],
+    "responsible_name": "",
+    "responsible_phone": "",
+    "responsible_email": "",
+    "source_sheet": "Fabricamos",
+    "source_workbook": "Fabricamos_18_08_26.xlsx",
+    "source_updated_label": "OBSERVAÇÃO 31/07/2026"
+  },
+  {
+    "company": "Sourcetech Química Ltda.",
+    "associate": "Não Associado",
+    "processes": [
+      "Base Vegetal"
+    ],
+    "origins": [
+      "Nacional"
+    ],
+    "substances": [
+      "Pilocarpina cloridrato",
+      "Pilocarpina nitrato"
+    ],
+    "catalog_items": [
+      {
+        "insumo": "Pilocarpina cloridrato",
+        "dcb": "-",
+        "inn": "-",
+        "cas": "-",
+        "ncm": "-",
+        "cbpf": "-",
+        "validade": "",
+        "display_name": "Pilocarpina cloridrato"
+      },
+      {
+        "insumo": "Pilocarpina nitrato",
+        "dcb": "-",
+        "inn": "-",
+        "cas": "-",
+        "ncm": "-",
+        "cbpf": "-",
+        "validade": "",
+        "display_name": "Pilocarpina nitrato"
+      }
+    ],
+    "responsible_name": "",
+    "responsible_phone": "",
+    "responsible_email": "",
+    "source_sheet": "Fabricamos",
+    "source_workbook": "Fabricamos_18_08_26.xlsx",
+    "source_updated_label": "OBSERVAÇÃO 31/07/2026"
+  },
+  {
+    "company": "Sustentec Produtores Associados Para Desenvolvimento De Tecnologias Sustentáveis",
+    "associate": "Não Associado",
+    "processes": [
+      "Base Vegetal"
+    ],
+    "origins": [
+      "Nacional"
+    ],
+    "substances": [
+      "Extrato fluido de guaco",
+      "Extrato seco de espinheira santa.",
+      "Tintura de guaco"
+    ],
+    "catalog_items": [
+      {
+        "insumo": "Extrato fluido de guaco",
+        "dcb": "-",
+        "inn": "-",
+        "cas": "-",
+        "ncm": "-",
+        "cbpf": "-",
+        "validade": "",
+        "display_name": "Extrato fluido de guaco"
+      },
+      {
+        "insumo": "Extrato seco de espinheira santa.",
+        "dcb": "-",
+        "inn": "-",
+        "cas": "-",
+        "ncm": "-",
+        "cbpf": "-",
+        "validade": "",
+        "display_name": "Extrato seco de espinheira santa."
+      },
+      {
+        "insumo": "Tintura de guaco",
+        "dcb": "-",
+        "inn": "-",
+        "cas": "-",
+        "ncm": "-",
+        "cbpf": "-",
+        "validade": "",
+        "display_name": "Tintura de guaco"
+      }
+    ],
+    "responsible_name": "",
+    "responsible_phone": "",
+    "responsible_email": "",
+    "source_sheet": "Fabricamos",
+    "source_workbook": "Fabricamos_18_08_26.xlsx",
+    "source_updated_label": "OBSERVAÇÃO 31/07/2026"
+  },
+  {
+    "company": "Weleda Do Brasil Laboratórios E Farmácia Ltda",
+    "associate": "Não Associado",
+    "processes": [
+      "Base Vegetal"
+    ],
+    "origins": [
+      "Nacional"
+    ],
+    "substances": [
+      "Bryophyllum calycinum (granulado em lactose 50%)"
+    ],
+    "catalog_items": [
+      {
+        "insumo": "Bryophyllum calycinum (granulado em lactose 50%)",
+        "dcb": "-",
+        "inn": "-",
+        "cas": "-",
+        "ncm": "-",
+        "cbpf": "-",
+        "validade": "",
+        "display_name": "Bryophyllum calycinum (granulado em lactose 50%)"
+      }
+    ],
+    "responsible_name": "",
+    "responsible_phone": "",
+    "responsible_email": "",
+    "source_sheet": "Fabricamos",
+    "source_workbook": "Fabricamos_18_08_26.xlsx",
+    "source_updated_label": "OBSERVAÇÃO 31/07/2026"
+  },
+  {
+    "company": "Weg Med",
+    "associate": "Associado",
+    "processes": [
+      "Extração Animal"
+    ],
+    "origins": [
+      "Nacional"
+    ],
+    "substances": [
+      "Heparina Sódica Bovina"
+    ],
+    "catalog_items": [
+      {
+        "insumo": "Heparina Sódica Bovina",
+        "dcb": "10807",
+        "inn": "Heparin Sodium",
+        "cas": "9041-08-1",
+        "ncm": "3001.90.10",
+        "cbpf": "1131273257",
+        "validade": "2027-11-09",
+        "display_name": "Heparina Sódica Bovina"
+      }
+    ],
+    "responsible_name": "",
+    "responsible_phone": "",
+    "responsible_email": "",
+    "source_sheet": "Fabricamos",
+    "source_workbook": "Fabricamos_18_08_26.xlsx",
+    "source_updated_label": "OBSERVAÇÃO 31/07/2026"
+  }
+]

@@ -1,7 +1,7 @@
 <?php
 
 if ($argc < 3) {
-    fwrite(STDERR, "Usage: php import_fabricamos_associados.php <wp-load.php> <json-file> [--match-dictionary] [--skip-wp-plugins] [--credentials-output=/path/to/file.csv] [--reset-existing-passwords] [--user-role=author]\n");
+    fwrite(STDERR, "Usage: php import_fabricamos_associados.php <wp-load.php> <json-file> [--match-dictionary] [--sync-contacts] [--skip-wp-plugins] [--credentials-output=/path/to/file.csv] [--reset-existing-passwords] [--user-role=author]\n");
     exit(1);
 }
 
@@ -78,13 +78,21 @@ foreach ($companies as $item) {
     $sourceSheet = normalize_text((string) array_get($item, 'source_sheet', ''));
     $sourceUpdatedLabel = normalize_text((string) array_get($item, 'source_updated_label', ''));
 
-    $editorAccount = ensure_editor_account(
-        $responsibleName,
-        $responsibleEmail,
-        $responsiblePhone,
-        $options['user_role'],
-        $options['reset_existing_passwords']
+    $editorAccount = array(
+        'user_id' => 0,
+        'username' => '',
+        'generated_password' => '',
+        'status' => 'preserved',
     );
+    if ($options['sync_contacts']) {
+        $editorAccount = ensure_editor_account(
+            $responsibleName,
+            $responsibleEmail,
+            $responsiblePhone,
+            $options['user_role'],
+            $options['reset_existing_passwords']
+        );
+    }
 
     if ($editorAccount['status'] === 'created') {
         $usersCreated++;
@@ -131,30 +139,34 @@ foreach ($companies as $item) {
     update_post_meta($manufacturerId, 'fab_origem', implode(' / ', $origins));
     update_post_meta($manufacturerId, 'fab_compiled_substances', array_values(array_unique($compiledSubstances)));
     update_post_meta($manufacturerId, 'fab_catalog_items', $catalogItems);
-    sync_post_meta_text($manufacturerId, 'fab_responsavel_nome', $responsibleName);
-    sync_post_meta_text($manufacturerId, 'fab_responsavel_telefone', $responsiblePhone);
-    sync_post_meta_text($manufacturerId, 'fab_responsavel_email', $responsibleEmail);
     sync_post_meta_text($manufacturerId, 'fab_source_workbook', $sourceWorkbook);
     sync_post_meta_text($manufacturerId, 'fab_source_sheet', $sourceSheet);
     sync_post_meta_text($manufacturerId, 'fab_source_updated_label', $sourceUpdatedLabel);
 
-    if ($editorAccount['user_id'] > 0) {
-        update_post_meta($manufacturerId, 'fab_editor_user_id', $editorAccount['user_id']);
-        sync_post_meta_text($manufacturerId, 'fab_editor_username', $editorAccount['username']);
-        sync_post_meta_text($manufacturerId, 'fab_editor_email', $responsibleEmail);
-    } else {
-        delete_post_meta($manufacturerId, 'fab_editor_user_id');
-        delete_post_meta($manufacturerId, 'fab_editor_username');
-        delete_post_meta($manufacturerId, 'fab_editor_email');
-    }
+    $manufacturerLogin = array('email' => '', 'generated_password' => '', 'status' => 'preserved');
+    if ($options['sync_contacts']) {
+        sync_post_meta_text($manufacturerId, 'fab_responsavel_nome', $responsibleName);
+        sync_post_meta_text($manufacturerId, 'fab_responsavel_telefone', $responsiblePhone);
+        sync_post_meta_text($manufacturerId, 'fab_responsavel_email', $responsibleEmail);
 
-    $manufacturerLogin = ensure_manufacturer_login_credentials(
-        $manufacturerId,
-        $responsibleEmail,
-        $editorAccount['generated_password'],
-        $editorAccount['user_id'],
-        $options['reset_existing_passwords']
-    );
+        if ($editorAccount['user_id'] > 0) {
+            update_post_meta($manufacturerId, 'fab_editor_user_id', $editorAccount['user_id']);
+            sync_post_meta_text($manufacturerId, 'fab_editor_username', $editorAccount['username']);
+            sync_post_meta_text($manufacturerId, 'fab_editor_email', $responsibleEmail);
+        } else {
+            delete_post_meta($manufacturerId, 'fab_editor_user_id');
+            delete_post_meta($manufacturerId, 'fab_editor_username');
+            delete_post_meta($manufacturerId, 'fab_editor_email');
+        }
+
+        $manufacturerLogin = ensure_manufacturer_login_credentials(
+            $manufacturerId,
+            $responsibleEmail,
+            $editorAccount['generated_password'],
+            $editorAccount['user_id'],
+            $options['reset_existing_passwords']
+        );
+    }
 
     if ($manufacturerLogin['generated_password'] !== '') {
         $passwordsGenerated++;
@@ -207,6 +219,7 @@ function parse_cli_options($args)
 {
     $options = array(
         'match_dictionary' => false,
+        'sync_contacts' => false,
         'skip_wp_plugins' => false,
         'credentials_output' => null,
         'reset_existing_passwords' => false,
@@ -287,6 +300,37 @@ function manufacturer_title_aliases($title)
         $aliases[] = 'Semeya';
         $aliases[] = 'Grupo Ease Labs';
         $aliases[] = 'Ease Labs';
+    }
+
+    // A planilha define o nome de exibição. Estas formas anteriores apenas
+    // localizam o mesmo cadastro, para manter descrição, contatos e imagens.
+    if (strpos($canonical_key, 'adeste industria de produtos animais') !== false) {
+        $aliases[] = 'ADESTE Indústria De Produtos Animais Ltda. (Extrasul)';
+        $aliases[] = 'Adeste Indústria De Produtos Animais Ltda. (Extrasul)';
+    }
+
+    if (strpos($canonical_key, 'buschle') !== false && strpos($canonical_key, 'lepper') !== false) {
+        $aliases[] = 'BUSCHLE & LEPPER S/A';
+        $aliases[] = 'Buschle &Amp; Lepper S/A';
+    }
+
+    if (strpos($canonical_key, 'homeopatia') !== false && strpos($canonical_key, 'produtos naturais') !== false) {
+        $aliases[] = 'H & N Homeopatia e Produtos Naturais';
+        $aliases[] = 'H &Amp; N Homeopatia E Produtos Naturais';
+    }
+
+    if (strpos($canonical_key, 'solabia') !== false) {
+        $aliases[] = 'Solabia Biotecnològia';
+        $aliases[] = 'Solabia Biotecnológica';
+    }
+
+    if ($canonical_key === 'weg med' || $canonical_key === 'wegmed') {
+        $aliases[] = 'Weg Med';
+        $aliases[] = 'WegMed';
+    }
+
+    if ($canonical_key === 'instituto butantan') {
+        $aliases[] = 'Instituto Butantan (Não Associado)';
     }
 
     if ($canonical_key === 'cristalia produtos quimicos farmaceuticos ltda.') {
@@ -650,6 +694,11 @@ function merge_manufacturer_visual_assets($primaryId, $duplicateId)
             if (!((is_string($sourceValue) && trim($sourceValue) === '') || $sourceValue === null || $sourceValue === false)) {
                 update_post_meta($primaryId, $metaKey, $sourceValue);
             }
+        }
+
+        if ($arg === '--sync-contacts') {
+            $options['sync_contacts'] = true;
+            continue;
         }
     }
 
