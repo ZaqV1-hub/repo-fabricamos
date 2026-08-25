@@ -3994,6 +3994,7 @@ class Fabricamos_Native {
 			$normalized,
 			array(
 				'',
+				'-',
 				'n/a',
 				'n/a - significa nao se aplica',
 				'nao aplicavel',
